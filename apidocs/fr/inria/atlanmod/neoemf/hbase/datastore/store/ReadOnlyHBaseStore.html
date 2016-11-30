@@ -210,14 +210,14 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/hbase/datastore/s
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/hbase/datastore/store/ReadOnlyHBaseStore.html#getFromTable-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EStructuralFeature-">getFromTable</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
             org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</code>
-<div class="block">Gets the <code>EStructuralFeature</code> <code>feature</code> from the <code>HTable</code> for the <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> <code>object</code></div>
+<div class="block">Gets the <code>EStructuralFeature</code> <code>feature</code> from the <code>Table</code> for the <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> <code>object</code></div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>protected org.apache.hadoop.hbase.client.HTable</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/hbase/datastore/store/ReadOnlyHBaseStore.html#initTable-org.apache.hadoop.conf.Configuration-org.apache.hadoop.hbase.TableName-org.apache.hadoop.hbase.client.HBaseAdmin-">initTable</a></span>(org.apache.hadoop.conf.Configuration&nbsp;conf,
+<td class="colFirst"><code>protected org.apache.hadoop.hbase.client.Table</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/hbase/datastore/store/ReadOnlyHBaseStore.html#initTable-org.apache.hadoop.hbase.client.Connection-org.apache.hadoop.hbase.TableName-org.apache.hadoop.hbase.client.Admin-">initTable</a></span>(org.apache.hadoop.hbase.client.Connection&nbsp;connection,
          org.apache.hadoop.hbase.TableName&nbsp;tableName,
-         org.apache.hadoop.hbase.client.HBaseAdmin&nbsp;admin)</code>&nbsp;</td>
+         org.apache.hadoop.hbase.client.Admin&nbsp;admin)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
@@ -319,19 +319,19 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/hbase/datastore/s
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="initTable-org.apache.hadoop.conf.Configuration-org.apache.hadoop.hbase.TableName-org.apache.hadoop.hbase.client.HBaseAdmin-">
+<a name="initTable-org.apache.hadoop.hbase.client.Connection-org.apache.hadoop.hbase.TableName-org.apache.hadoop.hbase.client.Admin-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>initTable</h4>
-<pre>protected&nbsp;org.apache.hadoop.hbase.client.HTable&nbsp;initTable(org.apache.hadoop.conf.Configuration&nbsp;conf,
-                                                          org.apache.hadoop.hbase.TableName&nbsp;tableName,
-                                                          org.apache.hadoop.hbase.client.HBaseAdmin&nbsp;admin)
-                                                   throws <a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<pre>protected&nbsp;org.apache.hadoop.hbase.client.Table&nbsp;initTable(org.apache.hadoop.hbase.client.Connection&nbsp;connection,
+                                                         org.apache.hadoop.hbase.TableName&nbsp;tableName,
+                                                         org.apache.hadoop.hbase.client.Admin&nbsp;admin)
+                                                  throws <a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/hbase/datastore/store/DirectWriteHBaseStore.html#initTable-org.apache.hadoop.conf.Configuration-org.apache.hadoop.hbase.TableName-org.apache.hadoop.hbase.client.HBaseAdmin-">initTable</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/hbase/datastore/store/DirectWriteHBaseStore.html" title="class in fr.inria.atlanmod.neoemf.hbase.datastore.store">DirectWriteHBaseStore</a></code></dd>
+<dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/hbase/datastore/store/DirectWriteHBaseStore.html#initTable-org.apache.hadoop.hbase.client.Connection-org.apache.hadoop.hbase.TableName-org.apache.hadoop.hbase.client.Admin-">initTable</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/hbase/datastore/store/DirectWriteHBaseStore.html" title="class in fr.inria.atlanmod.neoemf.hbase.datastore.store">DirectWriteHBaseStore</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
 </dl>
@@ -373,7 +373,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/hbase/datastore/s
 <h4>getFromTable</h4>
 <pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;getFromTable(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
                               org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</pre>
-<div class="block">Gets the <code>EStructuralFeature</code> <code>feature</code> from the <code>HTable</code> for the <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> <code>object</code></div>
+<div class="block">Gets the <code>EStructuralFeature</code> <code>feature</code> from the <code>Table</code> for the <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> <code>object</code></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/hbase/datastore/store/DirectWriteHBaseStore.html#getFromTable-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EStructuralFeature-">getFromTable</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/hbase/datastore/store/DirectWriteHBaseStore.html" title="class in fr.inria.atlanmod.neoemf.hbase.datastore.store">DirectWriteHBaseStore</a></code></dd>
