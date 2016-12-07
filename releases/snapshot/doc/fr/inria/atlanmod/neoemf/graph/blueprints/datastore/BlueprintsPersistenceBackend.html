@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -181,7 +181,9 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/datastore/Abstrac
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>com.tinkerpop.blueprints.Vertex</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/graph/blueprints/datastore/BlueprintsPersistenceBackend.html#addVertex-fr.inria.atlanmod.neoemf.core.Id-">addVertex</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/graph/blueprints/datastore/BlueprintsPersistenceBackend.html#addVertex-fr.inria.atlanmod.neoemf.core.Id-">addVertex</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
+<div class="block">Create a new vertex, add it to the graph, and return the newly created vertex.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -204,38 +206,30 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/datastore/Abstrac
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>com.tinkerpop.blueprints.Vertex</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/graph/blueprints/datastore/BlueprintsPersistenceBackend.html#getOrCreateVertex-org.eclipse.emf.ecore.EObject-">getOrCreateVertex</a></span>(org.eclipse.emf.ecore.EObject&nbsp;eObject)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/graph/blueprints/datastore/BlueprintsPersistenceBackend.html#getOrCreateVertex-fr.inria.atlanmod.neoemf.core.PersistentEObject-">getOrCreateVertex</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;eObject)</code>
 <div class="block">Return the vertex corresponding to the provided <code>EObject</code>.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>com.tinkerpop.blueprints.Vertex</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/graph/blueprints/datastore/BlueprintsPersistenceBackend.html#getVertex-org.eclipse.emf.ecore.EObject-">getVertex</a></span>(org.eclipse.emf.ecore.EObject&nbsp;eObject)</code>
-<div class="block">Return the vertex corresponding to the provided <code>EObject</code>.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/graph/blueprints/datastore/BlueprintsPersistenceBackend.html#getVertex-fr.inria.atlanmod.neoemf.core.Id-">getVertex</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
+<div class="block">Returns the vertex corresponding to the provided <code>id</code>.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>com.tinkerpop.blueprints.Vertex</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/graph/blueprints/datastore/BlueprintsPersistenceBackend.html#getVertex-fr.inria.atlanmod.neoemf.core.Id-">getVertex</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/graph/blueprints/datastore/BlueprintsPersistenceBackend.html#isClosed--">isClosed</a></span>()</code>
 <div class="block">Returns whether the underlying data store has been started or not.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/graph/blueprints/datastore/BlueprintsPersistenceBackend.html#reifyVertex-com.tinkerpop.blueprints.Vertex-">reifyVertex</a></span>(com.tinkerpop.blueprints.Vertex&nbsp;vertex)</code>&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/graph/blueprints/datastore/BlueprintsPersistenceBackend.html#reifyVertex-com.tinkerpop.blueprints.Vertex-org.eclipse.emf.ecore.EClass-">reifyVertex</a></span>(com.tinkerpop.blueprints.Vertex&nbsp;vertex,
            org.eclipse.emf.ecore.EClass&nbsp;eClass)</code>
 <div class="block">Reifies the given <code>Vertex</code> as an <code>EObject</code>.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/graph/blueprints/datastore/BlueprintsPersistenceBackend.html#save--">save</a></span>()</code>
 <div class="block">Saves the modifications of the owned <code>EObject</code>s in the persistence back-end.</div>
@@ -401,6 +395,13 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/datastore/Abstrac
 <li class="blockList">
 <h4>addVertex</h4>
 <pre>public&nbsp;com.tinkerpop.blueprints.Vertex&nbsp;addVertex(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</pre>
+<div class="block">Create a new vertex, add it to the graph, and return the newly created vertex.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the identifier of the <code>Vertex</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the newly created vertex</dd>
+</dl>
 </li>
 </ul>
 <a name="getVertex-fr.inria.atlanmod.neoemf.core.Id-">
@@ -410,33 +411,23 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/datastore/Abstrac
 <li class="blockList">
 <h4>getVertex</h4>
 <pre>public&nbsp;com.tinkerpop.blueprints.Vertex&nbsp;getVertex(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</pre>
-</li>
-</ul>
-<a name="getVertex-org.eclipse.emf.ecore.EObject-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getVertex</h4>
-<pre>public&nbsp;com.tinkerpop.blueprints.Vertex&nbsp;getVertex(org.eclipse.emf.ecore.EObject&nbsp;eObject)</pre>
-<div class="block">Return the vertex corresponding to the provided <code>EObject</code>. If no
- vertex corresponds to that <code>EObject</code>, then return <code>null</code>.</div>
+<div class="block">Returns the vertex corresponding to the provided <code>id</code>. If no vertex corresponds to that <code>id</code>, then
+ return <code>null</code>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the vertex referenced by the provided <code>EObject</code> or <code>null</code> when no such vertex exists</dd>
 </dl>
 </li>
 </ul>
-<a name="getOrCreateVertex-org.eclipse.emf.ecore.EObject-">
+<a name="getOrCreateVertex-fr.inria.atlanmod.neoemf.core.PersistentEObject-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getOrCreateVertex</h4>
-<pre>public&nbsp;com.tinkerpop.blueprints.Vertex&nbsp;getOrCreateVertex(org.eclipse.emf.ecore.EObject&nbsp;eObject)</pre>
-<div class="block">Return the vertex corresponding to the provided <code>EObject</code>. If no
- vertex corresponds to that <code>EObject</code>, then the corresponding
- <code>Vertex</code> together with its <code>INSTANCE_OF</code> relationship is created.</div>
+<pre>public&nbsp;com.tinkerpop.blueprints.Vertex&nbsp;getOrCreateVertex(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;eObject)</pre>
+<div class="block">Return the vertex corresponding to the provided <code>EObject</code>. If no vertex corresponds to that <code>EObject</code>,
+ then the corresponding <code>Vertex</code> together with its <a href="../../../../../../../fr/inria/atlanmod/neoemf/graph/blueprints/datastore/BlueprintsPersistenceBackend.html#KEY_INSTANCE_OF"><code>KEY_INSTANCE_OF</code></a> relationship is created.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the vertex referenced by the provided <code>EObject</code> or <code>null</code> when no such vertex exists</dd>
@@ -455,15 +446,6 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/datastore/Abstrac
  <p/>
  The method guarantees that the same <code>EObject</code> is returned for a given <code>Vertex</code> in subsequent calls,
  unless the <code>EObject</code> returned in previous calls has been already garbage collected.</div>
-</li>
-</ul>
-<a name="reifyVertex-com.tinkerpop.blueprints.Vertex-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>reifyVertex</h4>
-<pre>public&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;reifyVertex(com.tinkerpop.blueprints.Vertex&nbsp;vertex)</pre>
 </li>
 </ul>
 <a name="copyTo-fr.inria.atlanmod.neoemf.graph.blueprints.datastore.BlueprintsPersistenceBackend-">

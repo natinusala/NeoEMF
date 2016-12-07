@@ -1,7 +1,7 @@
-fr.inria.atlanmod.neoemf.cache
 fr.inria.atlanmod.neoemf.core
 fr.inria.atlanmod.neoemf.datastore
 fr.inria.atlanmod.neoemf.datastore.store
+fr.inria.atlanmod.neoemf.datastore.structure
 fr.inria.atlanmod.neoemf.graph.blueprints
 fr.inria.atlanmod.neoemf.graph.blueprints.config
 fr.inria.atlanmod.neoemf.graph.blueprints.datastore
@@ -28,9 +28,8 @@ fr.inria.atlanmod.neoemf.io.structure
 fr.inria.atlanmod.neoemf.logging
 fr.inria.atlanmod.neoemf.map
 fr.inria.atlanmod.neoemf.map.datastore
+fr.inria.atlanmod.neoemf.map.datastore.serializer
 fr.inria.atlanmod.neoemf.map.datastore.store
-fr.inria.atlanmod.neoemf.map.datastore.store.info
-fr.inria.atlanmod.neoemf.map.datastore.store.serializer
 fr.inria.atlanmod.neoemf.map.option
 fr.inria.atlanmod.neoemf.map.util
 fr.inria.atlanmod.neoemf.option
