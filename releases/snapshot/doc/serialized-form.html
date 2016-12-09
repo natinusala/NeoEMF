@@ -100,21 +100,21 @@
 </ul>
 </li>
 <li class="blockList">
-<h2 title="Package">Package&nbsp;fr.inria.atlanmod.neoemf.datastore</h2>
+<h2 title="Package">Package&nbsp;fr.inria.atlanmod.neoemf.data</h2>
 <ul class="blockList">
-<li class="blockList"><a name="fr.inria.atlanmod.neoemf.datastore.InvalidDataStoreException">
+<li class="blockList"><a name="fr.inria.atlanmod.neoemf.data.InvalidDataStoreException">
 <!--   -->
 </a>
-<h3>Class <a href="fr/inria/atlanmod/neoemf/datastore/InvalidDataStoreException.html" title="class in fr.inria.atlanmod.neoemf.datastore">fr.inria.atlanmod.neoemf.datastore.InvalidDataStoreException</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a> implements Serializable</h3>
+<h3>Class <a href="fr/inria/atlanmod/neoemf/data/InvalidDataStoreException.html" title="class in fr.inria.atlanmod.neoemf.data">fr.inria.atlanmod.neoemf.data.InvalidDataStoreException</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a> implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
 </dl>
 </li>
-<li class="blockList"><a name="fr.inria.atlanmod.neoemf.datastore.InvalidOptionsException">
+<li class="blockList"><a name="fr.inria.atlanmod.neoemf.data.InvalidOptionsException">
 <!--   -->
 </a>
-<h3>Class <a href="fr/inria/atlanmod/neoemf/datastore/InvalidOptionsException.html" title="class in fr.inria.atlanmod.neoemf.datastore">fr.inria.atlanmod.neoemf.datastore.InvalidOptionsException</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a> implements Serializable</h3>
+<h3>Class <a href="fr/inria/atlanmod/neoemf/data/InvalidOptionsException.html" title="class in fr.inria.atlanmod.neoemf.data">fr.inria.atlanmod.neoemf.data.InvalidOptionsException</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a> implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
@@ -123,12 +123,37 @@
 </ul>
 </li>
 <li class="blockList">
-<h2 title="Package">Package&nbsp;fr.inria.atlanmod.neoemf.datastore.structure</h2>
+<h2 title="Package">Package&nbsp;fr.inria.atlanmod.neoemf.data.hbase.structure</h2>
 <ul class="blockList">
-<li class="blockList"><a name="fr.inria.atlanmod.neoemf.datastore.structure.ClassInfo">
+<li class="blockList"><a name="fr.inria.atlanmod.neoemf.data.hbase.structure.HBaseFeatureKey">
 <!--   -->
 </a>
-<h3>Class <a href="fr/inria/atlanmod/neoemf/datastore/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.datastore.structure">fr.inria.atlanmod.neoemf.datastore.structure.ClassInfo</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<h3>Class <a href="fr/inria/atlanmod/neoemf/data/hbase/structure/HBaseFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.structure">fr.inria.atlanmod.neoemf.data.hbase.structure.HBaseFeatureKey</a> extends <a href="fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>feature</h4>
+<pre>org.eclipse.emf.ecore.EStructuralFeature feature</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList">
+<h2 title="Package">Package&nbsp;fr.inria.atlanmod.neoemf.data.structure</h2>
+<ul class="blockList">
+<li class="blockList"><a name="fr.inria.atlanmod.neoemf.data.structure.ClassInfo">
+<!--   -->
+</a>
+<h3>Class <a href="fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">fr.inria.atlanmod.neoemf.data.structure.ClassInfo</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
@@ -149,10 +174,10 @@
 </li>
 </ul>
 </li>
-<li class="blockList"><a name="fr.inria.atlanmod.neoemf.datastore.structure.ContainerInfo">
+<li class="blockList"><a name="fr.inria.atlanmod.neoemf.data.structure.ContainerInfo">
 <!--   -->
 </a>
-<h3>Class <a href="fr/inria/atlanmod/neoemf/datastore/structure/ContainerInfo.html" title="class in fr.inria.atlanmod.neoemf.datastore.structure">fr.inria.atlanmod.neoemf.datastore.structure.ContainerInfo</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<h3>Class <a href="fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">fr.inria.atlanmod.neoemf.data.structure.ContainerInfo</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
@@ -173,10 +198,10 @@
 </li>
 </ul>
 </li>
-<li class="blockList"><a name="fr.inria.atlanmod.neoemf.datastore.structure.FeatureKey">
+<li class="blockList"><a name="fr.inria.atlanmod.neoemf.data.structure.FeatureKey">
 <!--   -->
 </a>
-<h3>Class <a href="fr/inria/atlanmod/neoemf/datastore/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.datastore.structure">fr.inria.atlanmod.neoemf.datastore.structure.FeatureKey</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<h3>Class <a href="fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">fr.inria.atlanmod.neoemf.data.structure.FeatureKey</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
@@ -197,10 +222,10 @@
 </li>
 </ul>
 </li>
-<li class="blockList"><a name="fr.inria.atlanmod.neoemf.datastore.structure.MultivaluedFeatureKey">
+<li class="blockList"><a name="fr.inria.atlanmod.neoemf.data.structure.MultivaluedFeatureKey">
 <!--   -->
 </a>
-<h3>Class <a href="fr/inria/atlanmod/neoemf/datastore/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.datastore.structure">fr.inria.atlanmod.neoemf.datastore.structure.MultivaluedFeatureKey</a> extends <a href="fr/inria/atlanmod/neoemf/datastore/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.datastore.structure">FeatureKey</a> implements Serializable</h3>
+<h3>Class <a href="fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">fr.inria.atlanmod.neoemf.data.structure.MultivaluedFeatureKey</a> extends <a href="fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a> implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
@@ -212,31 +237,6 @@
 <li class="blockListLast">
 <h4>position</h4>
 <pre>int position</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList">
-<h2 title="Package">Package&nbsp;fr.inria.atlanmod.neoemf.hbase.datastore.store.cache</h2>
-<ul class="blockList">
-<li class="blockList"><a name="fr.inria.atlanmod.neoemf.hbase.datastore.store.cache.HBaseFeatureKey">
-<!--   -->
-</a>
-<h3>Class <a href="fr/inria/atlanmod/neoemf/hbase/datastore/store/cache/HBaseFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.hbase.datastore.store.cache">fr.inria.atlanmod.neoemf.hbase.datastore.store.cache.HBaseFeatureKey</a> extends <a href="fr/inria/atlanmod/neoemf/datastore/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.datastore.structure">FeatureKey</a> implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockListLast">
-<h4>feature</h4>
-<pre>org.eclipse.emf.ecore.EStructuralFeature feature</pre>
 </li>
 </ul>
 </li>
