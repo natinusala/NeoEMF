@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":18,"i1":18,"i2":18,"i3":18,"i4":18,"i5":18,"i6":18,"i7":18,"i8":18,"i9":6,"i10":18,"i11":18,"i12":18,"i13":18,"i14":18,"i15":18,"i16":18};
+var methods = {"i0":18,"i1":18,"i2":18,"i3":18,"i4":18,"i5":18,"i6":18,"i7":18,"i8":18,"i9":6,"i10":18,"i11":18,"i12":18,"i13":18,"i14":18};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html" title="enum in fr.inria.atlanmod.neoemf.logging"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../fr/inria/atlanmod/neoemf/logging/NeoLogger.html" title="class in fr.inria.atlanmod.neoemf.logging"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -75,13 +75,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -108,6 +108,25 @@ var activeTableTab = "activeTableTab";
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#ROOT_LOGGER_NAME">ROOT_LOGGER_NAME</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -122,85 +141,105 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#debug-java.lang.String-">debug</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#debug-java.lang.CharSequence-">debug</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;msg)</code>
+<div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#DEBUG"><code>DEBUG</code></a> level.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#debug-java.lang.String-java.lang.Object...-">debug</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
-     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#debug-java.lang.CharSequence-java.lang.Object...-">debug</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;pattern,
+     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
+<div class="block">Logs a message with parameters at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#DEBUG"><code>DEBUG</code></a> level.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#error-java.lang.String-">error</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#error-java.lang.CharSequence-">error</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;msg)</code>
+<div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#ERROR"><code>ERROR</code></a> level.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#error-java.lang.String-java.lang.Object...-">error</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
-     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#error-java.lang.CharSequence-java.lang.Object...-">error</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;pattern,
+     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
+<div class="block">Logs a message with parameters at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#ERROR"><code>ERROR</code></a> level.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#error-java.lang.Throwable-">error</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#error-java.lang.Throwable-">error</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e)</code>
+<div class="block">Logs the stack trace of the given <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a> at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#ERROR"><code>ERROR</code></a> level.</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#error-java.lang.Throwable-java.lang.String-">error</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e,
-     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#error-java.lang.Throwable-java.lang.CharSequence-">error</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;throwable,
+     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;msg)</code>
+<div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#ERROR"><code>ERROR</code></a> level including the stack trace of the given <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a>.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#error-java.lang.Throwable-java.lang.String-java.lang.Object...-">error</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e,
-     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
-     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#error-java.lang.Throwable-java.lang.CharSequence-java.lang.Object...-">error</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e,
+     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;pattern,
+     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
+<div class="block">Logs a message with parameters at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#ERROR"><code>ERROR</code></a> level including the stack trace of the given
+ <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a>.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#info-java.lang.String-">info</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#info-java.lang.CharSequence-">info</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;msg)</code>
+<div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#INFO"><code>INFO</code></a> level.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#info-java.lang.String-java.lang.Object...-">info</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
-    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#info-java.lang.CharSequence-java.lang.Object...-">info</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;pattern,
+    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
+<div class="block">Logs a message with parameters at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#INFO"><code>INFO</code></a> level.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#logMessage-org.apache.logging.log4j.Level-java.lang.Throwable-java.lang.String-java.lang.Object...-">logMessage</a></span>(org.apache.logging.log4j.Level&nbsp;level,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#logMessage-fr.inria.atlanmod.neoemf.logging.Level-java.lang.Throwable-java.lang.CharSequence-java.lang.Object...-">logMessage</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html" title="enum in fr.inria.atlanmod.neoemf.logging">Level</a>&nbsp;level,
           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;throwable,
-          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;pattern,
           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#trace-java.lang.String-">trace</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#warn-java.lang.CharSequence-">warn</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;msg)</code>
+<div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#WARN"><code>WARN</code></a> level.</div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#trace-java.lang.String-java.lang.Object...-">trace</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
-     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#warn-java.lang.CharSequence-java.lang.Object...-">warn</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;pattern,
+    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
+<div class="block">Logs a message with parameters at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#WARN"><code>WARN</code></a> level.</div>
+</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#warn-java.lang.String-">warn</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#warn-java.lang.Throwable-">warn</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e)</code>
+<div class="block">Logs the stack trace of the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a> <code>e</code> at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#WARN"><code>WARN</code></a> level.</div>
+</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#warn-java.lang.String-java.lang.Object...-">warn</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
-    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#warn-java.lang.Throwable-java.lang.CharSequence-">warn</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e,
+    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;msg)</code>
+<div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#WARN"><code>WARN</code></a> level including the stack trace of the given <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a>.</div>
+</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#warn-java.lang.Throwable-">warn</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e)</code>&nbsp;</td>
-</tr>
-<tr id="i15" class="rowColor">
-<td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#warn-java.lang.Throwable-java.lang.String-">warn</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e,
-    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg)</code>&nbsp;</td>
-</tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#warn-java.lang.Throwable-java.lang.String-java.lang.Object...-">warn</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e,
-    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
-    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html#warn-java.lang.Throwable-java.lang.CharSequence-java.lang.Object...-">warn</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e,
+    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;pattern,
+    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
+<div class="block">Logs a message with parameters at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#WARN"><code>WARN</code></a> level including the stack trace of the given <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -211,86 +250,94 @@ var activeTableTab = "activeTableTab";
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="ROOT_LOGGER_NAME">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ROOT_LOGGER_NAME</h4>
+<pre>static final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> ROOT_LOGGER_NAME</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../constant-values.html#fr.inria.atlanmod.neoemf.logging.Logger.ROOT_LOGGER_NAME">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="trace-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>trace</h4>
-<pre>default&nbsp;void&nbsp;trace(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg)</pre>
-</li>
-</ul>
-<a name="trace-java.lang.String-java.lang.Object...-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>trace</h4>
-<pre>default&nbsp;void&nbsp;trace(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
-                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
-</li>
-</ul>
-<a name="debug-java.lang.String-">
+<a name="debug-java.lang.CharSequence-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>debug</h4>
-<pre>default&nbsp;void&nbsp;debug(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg)</pre>
+<pre>default&nbsp;void&nbsp;debug(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;msg)</pre>
+<div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#DEBUG"><code>DEBUG</code></a> level.</div>
 </li>
 </ul>
-<a name="debug-java.lang.String-java.lang.Object...-">
+<a name="debug-java.lang.CharSequence-java.lang.Object...-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>debug</h4>
-<pre>default&nbsp;void&nbsp;debug(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+<pre>default&nbsp;void&nbsp;debug(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;pattern,
                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
+<div class="block">Logs a message with parameters at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#DEBUG"><code>DEBUG</code></a> level.</div>
 </li>
 </ul>
-<a name="info-java.lang.String-">
+<a name="info-java.lang.CharSequence-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>info</h4>
-<pre>default&nbsp;void&nbsp;info(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg)</pre>
+<pre>default&nbsp;void&nbsp;info(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;msg)</pre>
+<div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#INFO"><code>INFO</code></a> level.</div>
 </li>
 </ul>
-<a name="info-java.lang.String-java.lang.Object...-">
+<a name="info-java.lang.CharSequence-java.lang.Object...-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>info</h4>
-<pre>default&nbsp;void&nbsp;info(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+<pre>default&nbsp;void&nbsp;info(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;pattern,
                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
+<div class="block">Logs a message with parameters at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#INFO"><code>INFO</code></a> level.</div>
 </li>
 </ul>
-<a name="warn-java.lang.String-">
+<a name="warn-java.lang.CharSequence-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>warn</h4>
-<pre>default&nbsp;void&nbsp;warn(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg)</pre>
+<pre>default&nbsp;void&nbsp;warn(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;msg)</pre>
+<div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#WARN"><code>WARN</code></a> level.</div>
 </li>
 </ul>
-<a name="warn-java.lang.String-java.lang.Object...-">
+<a name="warn-java.lang.CharSequence-java.lang.Object...-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>warn</h4>
-<pre>default&nbsp;void&nbsp;warn(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+<pre>default&nbsp;void&nbsp;warn(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;pattern,
                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
+<div class="block">Logs a message with parameters at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#WARN"><code>WARN</code></a> level.</div>
 </li>
 </ul>
 <a name="warn-java.lang.Throwable-">
@@ -300,46 +347,51 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>warn</h4>
 <pre>default&nbsp;void&nbsp;warn(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e)</pre>
+<div class="block">Logs the stack trace of the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a> <code>e</code> at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#WARN"><code>WARN</code></a> level.</div>
 </li>
 </ul>
-<a name="warn-java.lang.Throwable-java.lang.String-">
+<a name="warn-java.lang.Throwable-java.lang.CharSequence-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>warn</h4>
 <pre>default&nbsp;void&nbsp;warn(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e,
-                  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg)</pre>
+                  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;msg)</pre>
+<div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#WARN"><code>WARN</code></a> level including the stack trace of the given <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a>.</div>
 </li>
 </ul>
-<a name="warn-java.lang.Throwable-java.lang.String-java.lang.Object...-">
+<a name="warn-java.lang.Throwable-java.lang.CharSequence-java.lang.Object...-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>warn</h4>
 <pre>default&nbsp;void&nbsp;warn(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e,
-                  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+                  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;pattern,
                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
+<div class="block">Logs a message with parameters at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#WARN"><code>WARN</code></a> level including the stack trace of the given <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a>.</div>
 </li>
 </ul>
-<a name="error-java.lang.String-">
+<a name="error-java.lang.CharSequence-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>error</h4>
-<pre>default&nbsp;void&nbsp;error(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg)</pre>
+<pre>default&nbsp;void&nbsp;error(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;msg)</pre>
+<div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#ERROR"><code>ERROR</code></a> level.</div>
 </li>
 </ul>
-<a name="error-java.lang.String-java.lang.Object...-">
+<a name="error-java.lang.CharSequence-java.lang.Object...-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>error</h4>
-<pre>default&nbsp;void&nbsp;error(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+<pre>default&nbsp;void&nbsp;error(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;pattern,
                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
+<div class="block">Logs a message with parameters at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#ERROR"><code>ERROR</code></a> level.</div>
 </li>
 </ul>
 <a name="error-java.lang.Throwable-">
@@ -349,38 +401,42 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>error</h4>
 <pre>default&nbsp;void&nbsp;error(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e)</pre>
+<div class="block">Logs the stack trace of the given <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a> at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#ERROR"><code>ERROR</code></a> level.</div>
 </li>
 </ul>
-<a name="error-java.lang.Throwable-java.lang.String-">
+<a name="error-java.lang.Throwable-java.lang.CharSequence-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>error</h4>
+<pre>default&nbsp;void&nbsp;error(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;throwable,
+                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;msg)</pre>
+<div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#ERROR"><code>ERROR</code></a> level including the stack trace of the given <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a>.</div>
+</li>
+</ul>
+<a name="error-java.lang.Throwable-java.lang.CharSequence-java.lang.Object...-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>error</h4>
 <pre>default&nbsp;void&nbsp;error(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e,
-                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg)</pre>
-</li>
-</ul>
-<a name="error-java.lang.Throwable-java.lang.String-java.lang.Object...-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>error</h4>
-<pre>default&nbsp;void&nbsp;error(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e,
-                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;pattern,
                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
+<div class="block">Logs a message with parameters at the <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#ERROR"><code>ERROR</code></a> level including the stack trace of the given
+ <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a>.</div>
 </li>
 </ul>
-<a name="logMessage-org.apache.logging.log4j.Level-java.lang.Throwable-java.lang.String-java.lang.Object...-">
+<a name="logMessage-fr.inria.atlanmod.neoemf.logging.Level-java.lang.Throwable-java.lang.CharSequence-java.lang.Object...-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>logMessage</h4>
-<pre>void&nbsp;logMessage(org.apache.logging.log4j.Level&nbsp;level,
+<pre>void&nbsp;logMessage(<a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html" title="enum in fr.inria.atlanmod.neoemf.logging">Level</a>&nbsp;level,
                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;throwable,
-                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;pattern,
                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
 </li>
 </ul>
@@ -412,7 +468,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html" title="enum in fr.inria.atlanmod.neoemf.logging"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../fr/inria/atlanmod/neoemf/logging/NeoLogger.html" title="class in fr.inria.atlanmod.neoemf.logging"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -438,13 +494,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
