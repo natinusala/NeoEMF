@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -205,31 +205,38 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>com.tinkerpop.blueprints.util.wrappers.id.IdGraph&lt;com.tinkerpop.blueprints.KeyIndexableGraph&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#getGraph--">getGraph</a></span>()</code>
+<div class="block">
+ Provides a direct access to the underlying graph.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>com.tinkerpop.blueprints.Vertex</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#getOrCreateVertex-fr.inria.atlanmod.neoemf.core.PersistentEObject-">getOrCreateVertex</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;eObject)</code>
 <div class="block">Return the vertex corresponding to the provided <code>EObject</code>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>com.tinkerpop.blueprints.Vertex</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#getVertex-fr.inria.atlanmod.neoemf.core.Id-">getVertex</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
 <div class="block">Returns the vertex corresponding to the provided <code>id</code>.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#isClosed--">isClosed</a></span>()</code>
 <div class="block">Returns whether the underlying data store has been started or not.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#reifyVertex-com.tinkerpop.blueprints.Vertex-org.eclipse.emf.ecore.EClass-">reifyVertex</a></span>(com.tinkerpop.blueprints.Vertex&nbsp;vertex,
            org.eclipse.emf.ecore.EClass&nbsp;eClass)</code>
 <div class="block">Reifies the given <code>Vertex</code> as an <code>EObject</code>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#save--">save</a></span>()</code>
 <div class="block">Saves the modifications of the owned <code>EObject</code>s in the persistence back-end.</div>
@@ -451,11 +458,30 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <a name="copyTo-fr.inria.atlanmod.neoemf.data.blueprints.BlueprintsPersistenceBackend-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>copyTo</h4>
 <pre>public&nbsp;void&nbsp;copyTo(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&nbsp;target)</pre>
 <div class="block">Copies all the contents of this backend to the target one.</div>
+</li>
+</ul>
+<a name="getGraph--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getGraph</h4>
+<pre>public&nbsp;com.tinkerpop.blueprints.util.wrappers.id.IdGraph&lt;com.tinkerpop.blueprints.KeyIndexableGraph&gt;&nbsp;getGraph()</pre>
+<div class="block"><p>
+ Provides a direct access to the underlying graph. This method is public
+ for tool compatibility (see 
+ <a href="https://github.com/atlanmod/Mogwai">the Mogwaï framework</a>),
+ NeoEMF consistency is not guaranteed if the graph is modified manually
+ </p></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the underlying Blueprints <code>IdGraph</code></dd>
+</dl>
 </li>
 </ul>
 </li>
