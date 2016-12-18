@@ -1,5 +1,10 @@
 fr.inria.atlanmod.neoemf.core
 fr.inria.atlanmod.neoemf.data
+fr.inria.atlanmod.neoemf.data.berkeleydb
+fr.inria.atlanmod.neoemf.data.berkeleydb.option
+fr.inria.atlanmod.neoemf.data.berkeleydb.serializer
+fr.inria.atlanmod.neoemf.data.berkeleydb.store
+fr.inria.atlanmod.neoemf.data.berkeleydb.util
 fr.inria.atlanmod.neoemf.data.blueprints
 fr.inria.atlanmod.neoemf.data.blueprints.config
 fr.inria.atlanmod.neoemf.data.blueprints.io
