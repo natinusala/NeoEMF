@@ -235,26 +235,26 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ContainerInfo</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BerkeleyDBPersistenceBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDBPersistenceBackend.html#containerFor-fr.inria.atlanmod.neoemf.core.Id-">containerFor</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
+<td class="colLast"><span class="typeNameLabel">BerkeleyDbPersistenceBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html#containerFor-fr.inria.atlanmod.neoemf.core.Id-">containerFor</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
 <div class="block">Retrieves container for a given object id.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ClassInfo</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BerkeleyDBPersistenceBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDBPersistenceBackend.html#metaclassFor-fr.inria.atlanmod.neoemf.core.Id-">metaclassFor</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
+<td class="colLast"><span class="typeNameLabel">BerkeleyDbPersistenceBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html#metaclassFor-fr.inria.atlanmod.neoemf.core.Id-">metaclassFor</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
 <div class="block">Retrieves metaclass (EClass) for a given object id</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">BerkeleyDBPersistenceBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDBPersistenceBackend.html#storeContainer-fr.inria.atlanmod.neoemf.core.Id-fr.inria.atlanmod.neoemf.data.structure.ContainerInfo-">storeContainer</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
+<td class="colLast"><span class="typeNameLabel">BerkeleyDbPersistenceBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html#storeContainer-fr.inria.atlanmod.neoemf.core.Id-fr.inria.atlanmod.neoemf.data.structure.ContainerInfo-">storeContainer</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
               <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ContainerInfo</a>&nbsp;container)</code>
 <div class="block">Stores containter information for an object id</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">BerkeleyDBPersistenceBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDBPersistenceBackend.html#storeMetaclass-fr.inria.atlanmod.neoemf.core.Id-fr.inria.atlanmod.neoemf.data.structure.ClassInfo-">storeMetaclass</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
+<td class="colLast"><span class="typeNameLabel">BerkeleyDbPersistenceBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html#storeMetaclass-fr.inria.atlanmod.neoemf.core.Id-fr.inria.atlanmod.neoemf.data.structure.ClassInfo-">storeMetaclass</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
               <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ClassInfo</a>&nbsp;metaclass)</code>
 <div class="block">Stores metaclass (EClass) information for an object id.</div>
 </td>
@@ -306,7 +306,7 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>protected com.github.benmanes.caffeine.cache.Cache&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>,<a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">DirectWriteBerkeleyDBStore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDBStore.html#persistentObjectsCache">persistentObjectsCache</a></span></code>
+<td class="colLast"><span class="typeNameLabel">DirectWriteBerkeleyDbStore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbStore.html#persistentObjectsCache">persistentObjectsCache</a></span></code>
 <div class="block">An in-memory cache for persistent EObjects.</div>
 </td>
 </tr>
@@ -321,7 +321,7 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>org.eclipse.emf.ecore.EObject</code></td>
-<td class="colLast"><span class="typeNameLabel">DirectWriteBerkeleyDBStore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDBStore.html#eObject-fr.inria.atlanmod.neoemf.core.Id-">eObject</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">DirectWriteBerkeleyDbStore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbStore.html#eObject-fr.inria.atlanmod.neoemf.core.Id-">eObject</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -687,11 +687,16 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ContainerInfo</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ContainerInfo.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html#of-fr.inria.atlanmod.neoemf.core.Id-java.lang.String-">of</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
+  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a></code></td>
 <td class="colLast"><span class="typeNameLabel">FeatureKey.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html#of-fr.inria.atlanmod.neoemf.core.Id-java.lang.String-">of</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">MultivaluedFeatureKey</a></code></td>
 <td class="colLast"><span class="typeNameLabel">MultivaluedFeatureKey.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html#of-fr.inria.atlanmod.neoemf.core.Id-java.lang.String-int-">of</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
@@ -848,6 +853,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2016 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Inria-AtlanMod Team</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2017 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Inria-AtlanMod Team</a>. All rights reserved.</small></p>
 </body>
 </html>

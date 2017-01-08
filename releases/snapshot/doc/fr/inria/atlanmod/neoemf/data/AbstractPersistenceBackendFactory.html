@@ -113,13 +113,14 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDBPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb">BerkeleyDBPersistenceBackendFactory</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackendFactory</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.hbase">HBasePersistenceBackendFactory</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackendFactory</a></dd>
+<dd><a href="../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb">BerkeleyDbPersistenceBackendFactory</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackendFactory</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.hbase">HBasePersistenceBackendFactory</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackendFactory</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public abstract class <span class="typeNameLabel">AbstractPersistenceBackendFactory</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackendFactory</a></pre>
+<div class="block">The abstract implementation of a <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactory</code></a>.</div>
 </li>
 </ul>
 </div>
@@ -185,13 +186,13 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBack
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html#getName--">getName</a></span>()</code>
-<div class="block">Returns a literal description of the created persistence backend.</div>
+<div class="block">Returns the literal description of the created persistence backend.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected static <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistentStoreOptions.html" title="interface in fr.inria.atlanmod.neoemf.option">PersistentStoreOptions</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html#getStoreOptions-java.util.Map-">getStoreOptions</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;?,?&gt;&nbsp;options)</code>
-<div class="block">Returns a list of store options from the given <code>options</code>.</div>
+<div class="block">Parses the store options from the given <code>options</code>.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -252,8 +253,19 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBack
 <ul class="blockList">
 <li class="blockList">
 <h4>getStoreOptions</h4>
-<pre>protected static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistentStoreOptions.html" title="interface in fr.inria.atlanmod.neoemf.option">PersistentStoreOptions</a>&gt;&nbsp;getStoreOptions(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;?,?&gt;&nbsp;options)</pre>
-<div class="block">Returns a list of store options from the given <code>options</code>.</div>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+protected static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistentStoreOptions.html" title="interface in fr.inria.atlanmod.neoemf.option">PersistentStoreOptions</a>&gt;&nbsp;getStoreOptions(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                                                       <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;?,?&gt;&nbsp;options)</pre>
+<div class="block">Parses the store options from the given <code>options</code>.
+ <p>
+ The store options must be a <code>List<PersistentStoreOptions></code> registered with the
+ <a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistentResourceOptions.html#STORE_OPTIONS"><code>PersistentResourceOptions.STORE_OPTIONS</code></a> key.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>options</code> - the options</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a immutable list of store options</dd>
+</dl>
 </li>
 </ul>
 <a name="getName--">
@@ -263,7 +275,7 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBack
 <li class="blockList">
 <h4>getName</h4>
 <pre>protected abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
-<div class="block">Returns a literal description of the created persistence backend.</div>
+<div class="block">Returns the literal description of the created persistence backend.</div>
 </li>
 </ul>
 <a name="createPersistentStore-fr.inria.atlanmod.neoemf.resource.PersistentResource-fr.inria.atlanmod.neoemf.data.PersistenceBackend-java.util.Map-">
@@ -386,6 +398,6 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBack
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2016 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Inria-AtlanMod Team</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2017 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Inria-AtlanMod Team</a>. All rights reserved.</small></p>
 </body>
 </html>

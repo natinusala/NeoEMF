@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDB.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDb.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/data/berkeleydb/Activator.html" target="_top">Frames</a></li>
@@ -100,7 +100,12 @@ var activeTableTab = "activeTableTab";
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html" title="class in fr.inria.atlanmod.neoemf">fr.inria.atlanmod.neoemf.AbstractActivator</a></li>
+<li>
+<ul class="inheritance">
 <li>fr.inria.atlanmod.neoemf.data.berkeleydb.Activator</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -114,8 +119,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">Activator</span>
-extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements org.osgi.framework.BundleActivator</pre>
+extends <a href="../../../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html" title="class in fr.inria.atlanmod.neoemf">AbstractActivator</a></pre>
 </li>
 </ul>
 </div>
@@ -152,14 +156,25 @@ implements org.osgi.framework.BundleActivator</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/Activator.html#start-org.osgi.framework.BundleContext-">start</a></span>(org.osgi.framework.BundleContext&nbsp;bundleContext)</code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackendFactory</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/Activator.html#factory--">factory</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/Activator.html#stop-org.osgi.framework.BundleContext-">stop</a></span>(org.osgi.framework.BundleContext&nbsp;bundleContext)</code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/Activator.html#name--">name</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/Activator.html#scheme--">scheme</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.AbstractActivator">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;fr.inria.atlanmod.neoemf.<a href="../../../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html" title="class in fr.inria.atlanmod.neoemf">AbstractActivator</a></h3>
+<code><a href="../../../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html#start-org.osgi.framework.BundleContext-">start</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html#stop-org.osgi.framework.BundleContext-">stop</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -198,35 +213,42 @@ implements org.osgi.framework.BundleActivator</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="start-org.osgi.framework.BundleContext-">
+<a name="name--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>start</h4>
-<pre>public&nbsp;void&nbsp;start(org.osgi.framework.BundleContext&nbsp;bundleContext)
-           throws <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<h4>name</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>start</code>&nbsp;in interface&nbsp;<code>org.osgi.framework.BundleActivator</code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd>
+<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html#name--">name</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html" title="class in fr.inria.atlanmod.neoemf">AbstractActivator</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="stop-org.osgi.framework.BundleContext-">
+<a name="scheme--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>scheme</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;scheme()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html#scheme--">scheme</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html" title="class in fr.inria.atlanmod.neoemf">AbstractActivator</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="factory--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>stop</h4>
-<pre>public&nbsp;void&nbsp;stop(org.osgi.framework.BundleContext&nbsp;bundleContext)
-          throws <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<h4>factory</h4>
+<pre>protected&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackendFactory</a>&nbsp;factory()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>stop</code>&nbsp;in interface&nbsp;<code>org.osgi.framework.BundleActivator</code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd>
+<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html#factory--">factory</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html" title="class in fr.inria.atlanmod.neoemf">AbstractActivator</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -259,7 +281,7 @@ implements org.osgi.framework.BundleActivator</pre>
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDB.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDb.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/data/berkeleydb/Activator.html" target="_top">Frames</a></li>
@@ -299,6 +321,6 @@ implements org.osgi.framework.BundleActivator</pre>
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2016 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Inria-AtlanMod Team</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2013&#x2013;2017 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Inria-AtlanMod Team</a>. All rights reserved.</small></p>
 </body>
 </html>
