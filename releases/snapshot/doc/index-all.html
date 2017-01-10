@@ -1586,7 +1586,9 @@
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#getIndex--">getIndex()</a></span> - Method in class fr.inria.atlanmod.neoemf.io.structure.<a href="fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html" title="class in fr.inria.atlanmod.neoemf.io.structure">StructuralFeature</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html#getInstance--">getInstance()</a></span> - Static method in class fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html" title="class in fr.inria.atlanmod.neoemf.core">PersistenceFactory</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns the single instance of this factory.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackendFactory.html#getInstance--">getInstance()</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.berkeleydb.<a href="fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb">BerkeleyDbPersistenceBackendFactory</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackendFactory.html#getInstance--">getInstance()</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.blueprints.<a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackendFactory</a></dt>
@@ -2549,7 +2551,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">PersistentEObject</span></a> - Interface in <a href="fr/inria/atlanmod/neoemf/core/package-summary.html">fr.inria.atlanmod.neoemf.core</a></dt>
 <dd>
-<div class="block">An <code>EObject</code> able to persist in a data store.</div>
+<div class="block">An <code>EObject</code> able to persist in data stores.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbStore.html#persistentObjectsCache">persistentObjectsCache</a></span> - Variable in class fr.inria.atlanmod.neoemf.data.berkeleydb.store.<a href="fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb.store">DirectWriteBerkeleyDbStore</a></dt>
 <dd>
@@ -2797,10 +2799,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#reifyVertex-com.tinkerpop.blueprints.Vertex-">reifyVertex(Vertex)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.blueprints.<a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a></dt>
 <dd>
-<div class="block">Reifies the given <code>Vertex</code> as an <code>EObject</code>
- <p/>
- The method guarantees that the same <code>EObject</code> is returned for a given <code>Vertex</code> in subsequent calls,
- unless the <code>EObject</code> returned in previous calls has been already garbage collected.</div>
+<div class="block">Reifies the given <code>Vertex</code> as an <code>EObject</code></div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#reifyVertex-com.tinkerpop.blueprints.Vertex-org.eclipse.emf.ecore.EClass-">reifyVertex(Vertex, EClass)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.blueprints.<a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a></dt>
 <dd>
@@ -2894,7 +2893,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/PersistentEObject.html#resource-org.eclipse.emf.ecore.resource.Resource.Internal-">resource(Resource.Internal)</a></span> - Method in interface fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a></dt>
 <dd>
-<div class="block">Defines the resource that containsthis <code>PersistentEObject</code>.</div>
+<div class="block">Defines the resource that contains this <code>PersistentEObject</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#resource--">resource()</a></span> - Method in class fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractDirectWriteStore</a></dt>
 <dd>&nbsp;</dd>
@@ -3277,7 +3276,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/Id.html#toLong--">toLong()</a></span> - Method in interface fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a></dt>
 <dd>
-<div class="block">Returns the <code>long</code> number of this <code>Id</code>.</div>
+<div class="block">Returns the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang"><code>Long</code></a> number of this <code>Id</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/StringId.html#toLong--">toLong()</a></span> - Method in class fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/StringId.html" title="class in fr.inria.atlanmod.neoemf.core">StringId</a></dt>
 <dd>&nbsp;</dd>
@@ -3287,7 +3286,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/Id.html#toString--">toString()</a></span> - Method in interface fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a></dt>
 <dd>
-<div class="block">Returns the <code>String</code> representation of this <code>Id</code>.</div>
+<div class="block">Returns the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> representation of this <code>Id</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/StringId.html#toString--">toString()</a></span> - Method in class fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/StringId.html" title="class in fr.inria.atlanmod.neoemf.core">StringId</a></dt>
 <dd>&nbsp;</dd>

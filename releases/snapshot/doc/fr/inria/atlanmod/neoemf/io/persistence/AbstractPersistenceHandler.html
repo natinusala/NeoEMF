@@ -510,7 +510,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Pe
 <pre>public&nbsp;void&nbsp;processAttribute(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Attribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Attribute</a>&nbsp;attribute)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html#processAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-">InputHandler</a></code></span></div>
 <div class="block">Process an attribute in the current element.
- <p/>
+ <p>
  An attribute is a simple key/value.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -531,7 +531,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Pe
 <pre>public&nbsp;void&nbsp;processReference(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Reference</a>&nbsp;reference)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html#processReference-fr.inria.atlanmod.neoemf.io.structure.Reference-">InputHandler</a></code></span></div>
 <div class="block">Process a reference from the current element to another element.
- <p/>
+ <p>
  A reference is an attribute which is link to another element.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -603,7 +603,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Pe
 <pre>protected&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;createElement(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Classifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Classifier</a>&nbsp;classifier,
                            <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</pre>
 <div class="block">Creates an element from the given <code>classifier</code> with the given <code>id</code>.
- <p/>
+ <p>
  If <code>id</code> is <code>null</code>, it is calculated by the <a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandler.html#getId-java.lang.String-"><code>getId(String)</code></a> method.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
