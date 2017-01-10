@@ -165,7 +165,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Abstrac
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/EcoreProcessor.html#processCharacters-java.lang.String-">processCharacters</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;characters)</code>
-<div class="block">Process characters.</div>
+<div class="block">Process a set of characters.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -246,6 +246,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Abstrac
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html#processStartElement-fr.inria.atlanmod.neoemf.io.structure.Classifier-">processStartElement</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io">InputHandler</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#processStartElement-fr.inria.atlanmod.neoemf.io.structure.Classifier-">processStartElement</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>classifier</code> - the classifier of the new element</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.structure.Classifier-"><code>InputNotifier.notifyStartElement(Classifier)</code></a></dd>
 </dl>
@@ -267,6 +269,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Abstrac
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html#processAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-">processAttribute</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io">InputHandler</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#processAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-">processAttribute</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>attribute</code> - the new attribute</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-"><code>InputNotifier.notifyAttribute(Attribute)</code></a></dd>
 </dl>
@@ -288,6 +292,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Abstrac
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html#processReference-fr.inria.atlanmod.neoemf.io.structure.Reference-">processReference</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io">InputHandler</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#processReference-fr.inria.atlanmod.neoemf.io.structure.Reference-">processReference</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>reference</code> - the new reference</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyReference-fr.inria.atlanmod.neoemf.io.structure.Reference-"><code>InputNotifier.notifyReference(Reference)</code></a></dd>
 </dl>
@@ -320,12 +326,14 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Abstrac
 <h4>processCharacters</h4>
 <pre>public&nbsp;void&nbsp;processCharacters(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;characters)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html#processCharacters-java.lang.String-">InputHandler</a></code></span></div>
-<div class="block">Process characters.</div>
+<div class="block">Process a set of characters.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html#processCharacters-java.lang.String-">processCharacters</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io">InputHandler</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#processCharacters-java.lang.String-">processCharacters</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>characters</code> - the new characters</dd>
 </dl>
 </li>
 </ul>

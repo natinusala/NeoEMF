@@ -120,6 +120,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">MultivaluedFeatureKeySerializer</span>
 extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serializer/FeatureKeySerializer.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.serializer">FeatureKeySerializer</a></pre>
+<div class="block">Serializer for <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>MultivaluedFeatureKey</code></a>.</div>
 </li>
 </ul>
 </div>
@@ -172,22 +173,15 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serial
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serializer/MultivaluedFeatureKeySerializer.html#deserialize-org.mapdb.DataInput2-int-">deserialize</a></span>(org.mapdb.DataInput2&nbsp;input,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serializer/MultivaluedFeatureKeySerializer.html#deserialize-org.mapdb.DataInput2-int-">deserialize</a></span>(org.mapdb.DataInput2&nbsp;in,
            int&nbsp;i)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serializer/MultivaluedFeatureKeySerializer.html#serialize-org.mapdb.DataOutput2-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">serialize</a></span>(org.mapdb.DataOutput2&nbsp;out,
-         <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;fk)</code>&nbsp;</td>
+         <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;key)</code>&nbsp;</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.data.mapdb.serializer.FeatureKeySerializer">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;fr.inria.atlanmod.neoemf.data.mapdb.serializer.<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serializer/FeatureKeySerializer.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.serializer">FeatureKeySerializer</a></h3>
-<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serializer/FeatureKeySerializer.html#compare-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">compare</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -200,7 +194,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serial
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;org.mapdb.Serializer</h3>
-<code>clone, deserializeFromLong, equals, fixedSize, hashCode, isTrusted, needsAvailableSizeHint</code></li>
+<code>clone, compare, deserializeFromLong, equals, fixedSize, hashCode, isTrusted, needsAvailableSizeHint</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.util.Comparator">
@@ -246,8 +240,10 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serial
 <ul class="blockList">
 <li class="blockList">
 <h4>serialize</h4>
-<pre>public&nbsp;void&nbsp;serialize(org.mapdb.DataOutput2&nbsp;out,
-                      <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;fk)
+<pre>public&nbsp;void&nbsp;serialize(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                      org.mapdb.DataOutput2&nbsp;out,
+                      <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                      <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;key)
                throws <a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -265,7 +261,8 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serial
 <ul class="blockListLast">
 <li class="blockList">
 <h4>deserialize</h4>
-<pre>public&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;deserialize(org.mapdb.DataInput2&nbsp;input,
+<pre>public&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;deserialize(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                              org.mapdb.DataInput2&nbsp;in,
                               int&nbsp;i)
                        throws <a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl>

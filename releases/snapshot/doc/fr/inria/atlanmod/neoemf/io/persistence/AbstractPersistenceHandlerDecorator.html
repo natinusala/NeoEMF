@@ -139,7 +139,9 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Pe
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandlerDecorator.html#AbstractPersistenceHandlerDecorator-fr.inria.atlanmod.neoemf.io.persistence.PersistenceHandler-">AbstractPersistenceHandlerDecorator</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a>&nbsp;handler)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandlerDecorator.html#AbstractPersistenceHandlerDecorator-fr.inria.atlanmod.neoemf.io.persistence.PersistenceHandler-">AbstractPersistenceHandlerDecorator</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a>&nbsp;handler)</code>
+<div class="block">Instantiates a new <code>AbstractPersistenceHandlerDecorator</code> with an embed handler.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -165,7 +167,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Pe
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandlerDecorator.html#processCharacters-java.lang.String-">processCharacters</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;characters)</code>
-<div class="block">Process characters.</div>
+<div class="block">Process a set of characters.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -227,6 +229,11 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Pe
 <li class="blockList">
 <h4>AbstractPersistenceHandlerDecorator</h4>
 <pre>public&nbsp;AbstractPersistenceHandlerDecorator(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a>&nbsp;handler)</pre>
+<div class="block">Instantiates a new <code>AbstractPersistenceHandlerDecorator</code> with an embed handler.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the embed handler</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -266,6 +273,8 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Pe
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html#processStartElement-fr.inria.atlanmod.neoemf.io.structure.Classifier-">processStartElement</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io">InputHandler</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>classifier</code> - the classifier of the new element</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.structure.Classifier-"><code>InputNotifier.notifyStartElement(Classifier)</code></a></dd>
 </dl>
@@ -285,6 +294,8 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Pe
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html#processAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-">processAttribute</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io">InputHandler</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>attribute</code> - the new attribute</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-"><code>InputNotifier.notifyAttribute(Attribute)</code></a></dd>
 </dl>
@@ -304,6 +315,8 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Pe
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html#processReference-fr.inria.atlanmod.neoemf.io.structure.Reference-">processReference</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io">InputHandler</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>reference</code> - the new reference</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyReference-fr.inria.atlanmod.neoemf.io.structure.Reference-"><code>InputNotifier.notifyReference(Reference)</code></a></dd>
 </dl>
@@ -351,10 +364,12 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Pe
 <h4>processCharacters</h4>
 <pre>public&nbsp;void&nbsp;processCharacters(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;characters)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html#processCharacters-java.lang.String-">InputHandler</a></code></span></div>
-<div class="block">Process characters.</div>
+<div class="block">Process a set of characters.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html#processCharacters-java.lang.String-">processCharacters</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io">InputHandler</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>characters</code> - the new characters</dd>
 </dl>
 </li>
 </ul>

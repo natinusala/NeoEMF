@@ -136,6 +136,7 @@ var activeTableTab = "activeTableTab";
 <pre>public class <span class="typeNameLabel">DefaultPersistentEObject</span>
 extends org.eclipse.emf.ecore.impl.MinimalEStoreEObjectImpl
 implements <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a></pre>
+<div class="block">The default implementation of a <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>.</div>
 </li>
 </ul>
 </div>
@@ -221,11 +222,15 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObje
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#DefaultPersistentEObject--">DefaultPersistentEObject</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#DefaultPersistentEObject--">DefaultPersistentEObject</a></span>()</code>
+<div class="block">Instantiates a new <code>DefaultPersistentEObject</code> with a generated <a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> using <a href="../../../../../fr/inria/atlanmod/neoemf/core/StringId.html#generate--"><code>StringId.generate()</code></a>.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#DefaultPersistentEObject-fr.inria.atlanmod.neoemf.core.Id-">DefaultPersistentEObject</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#DefaultPersistentEObject-fr.inria.atlanmod.neoemf.core.Id-">DefaultPersistentEObject</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
+<div class="block">Instantiates a new <code>DefaultPersistentEObject</code> with the given <code>id</code>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -257,11 +262,11 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObje
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#eBasicSetContainer-org.eclipse.emf.ecore.InternalEObject-">eBasicSetContainer</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;newContainer)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#eBasicSetContainer-org.eclipse.emf.ecore.InternalEObject-">eBasicSetContainer</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;eContainer)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#eBasicSetContainerFeatureID-int-">eBasicSetContainerFeatureID</a></span>(int&nbsp;newContainerFeatureId)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#eBasicSetContainerFeatureID-int-">eBasicSetContainerFeatureID</a></span>(int&nbsp;eContainerFeatureId)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>org.eclipse.emf.ecore.EObject</code></td>
@@ -287,7 +292,7 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObje
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>org.eclipse.emf.ecore.resource.Resource</code></td>
@@ -304,37 +309,37 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObje
 <tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#id--">id</a></span>()</code>
-<div class="block">Returns the unique identifier of this persistent object.</div>
+<div class="block">Returns the identifier of this <code>PersistentEObject</code>.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#id-fr.inria.atlanmod.neoemf.core.Id-">id</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
-<div class="block">Defines the unique identifier of this persistent object.</div>
+<div class="block">Defines the new identifier of this <code>PersistentEObject</code>.</div>
 </td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#isMapped--">isMapped</a></span>()</code>
-<div class="block">Returns <code>true</code> if this object is mapped to an entity (table, node, column, etc.) stored in a database.</div>
+<div class="block">Returns <code>true</code> if this <code>PersistentEObject</code> is mapped to an entity stored in a database.</div>
 </td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>org.eclipse.emf.ecore.resource.Resource.Internal</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#resource--">resource</a></span>()</code>
-<div class="block">Returns the resource containing this persistent object.</div>
+<div class="block">Returns the resource that contains this <code>PersistentEObject</code>.</div>
 </td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#resource-org.eclipse.emf.ecore.resource.Resource.Internal-">resource</a></span>(org.eclipse.emf.ecore.resource.Resource.Internal&nbsp;resource)</code>
-<div class="block">Sets the resource containing this persistent object.</div>
+<div class="block">Defines the resource that containsthis <code>PersistentEObject</code>.</div>
 </td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html#setMapped-boolean-">setMapped</a></span>(boolean&nbsp;mapped)</code>
-<div class="block">Sets the mapped attribute.</div>
+<div class="block">Defines whether this <code>PersistentEObject</code> is mapped to an entity stored in a database.</div>
 </td>
 </tr>
 <tr id="i20" class="altColor">
@@ -426,6 +431,7 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObje
 <li class="blockList">
 <h4>DefaultPersistentEObject</h4>
 <pre>public&nbsp;DefaultPersistentEObject()</pre>
+<div class="block">Instantiates a new <code>DefaultPersistentEObject</code> with a generated <a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> using <a href="../../../../../fr/inria/atlanmod/neoemf/core/StringId.html#generate--"><code>StringId.generate()</code></a>.</div>
 </li>
 </ul>
 <a name="DefaultPersistentEObject-fr.inria.atlanmod.neoemf.core.Id-">
@@ -434,7 +440,13 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObje
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DefaultPersistentEObject</h4>
-<pre>protected&nbsp;DefaultPersistentEObject(<a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</pre>
+<pre>protected&nbsp;DefaultPersistentEObject(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                   <a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</pre>
+<div class="block">Instantiates a new <code>DefaultPersistentEObject</code> with the given <code>id</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the identifier of this <a href="../../../../../fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.html" title="class in fr.inria.atlanmod.neoemf.core"><code>DefaultPersistentEObject</code></a></dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -451,14 +463,15 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObje
 <ul class="blockList">
 <li class="blockList">
 <h4>id</h4>
-<pre>public&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id()</pre>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html#id--">PersistentEObject</a></code></span></div>
-<div class="block">Returns the unique identifier of this persistent object.</div>
+<div class="block">Returns the identifier of this <code>PersistentEObject</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html#id--">id</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the unique identifier</dd>
+<dd>the identifier</dd>
 </dl>
 </li>
 </ul>
@@ -468,14 +481,15 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObje
 <ul class="blockList">
 <li class="blockList">
 <h4>id</h4>
-<pre>public&nbsp;void&nbsp;id(<a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</pre>
+<pre>public&nbsp;void&nbsp;id(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+               <a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html#id-fr.inria.atlanmod.neoemf.core.Id-">PersistentEObject</a></code></span></div>
-<div class="block">Defines the unique identifier of this persistent object.</div>
+<div class="block">Defines the new identifier of this <code>PersistentEObject</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html#id-fr.inria.atlanmod.neoemf.core.Id-">id</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>id</code> - a unique identifier</dd>
+<dd><code>id</code> - the new identifier</dd>
 </dl>
 </li>
 </ul>
@@ -487,10 +501,12 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObje
 <h4>isMapped</h4>
 <pre>public&nbsp;boolean&nbsp;isMapped()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html#isMapped--">PersistentEObject</a></code></span></div>
-<div class="block">Returns <code>true</code> if this object is mapped to an entity (table, node, column, etc.) stored in a database.</div>
+<div class="block">Returns <code>true</code> if this <code>PersistentEObject</code> is mapped to an entity stored in a database.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html#isMapped--">isMapped</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if this <code>PersistentEObject</code> is mapped to an entity stored in a database</dd>
 </dl>
 </li>
 </ul>
@@ -502,10 +518,12 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObje
 <h4>setMapped</h4>
 <pre>public&nbsp;void&nbsp;setMapped(boolean&nbsp;mapped)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html#setMapped-boolean-">PersistentEObject</a></code></span></div>
-<div class="block">Sets the mapped attribute.</div>
+<div class="block">Defines whether this <code>PersistentEObject</code> is mapped to an entity stored in a database.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html#setMapped-boolean-">setMapped</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>mapped</code> - <code>true</code> if this <code>PersistentEObject</code> is mapped, otherwise <code>false</code></dd>
 </dl>
 </li>
 </ul>
@@ -515,14 +533,15 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObje
 <ul class="blockList">
 <li class="blockList">
 <h4>resource</h4>
-<pre>public&nbsp;org.eclipse.emf.ecore.resource.Resource.Internal&nbsp;resource()</pre>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;org.eclipse.emf.ecore.resource.Resource.Internal&nbsp;resource()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html#resource--">PersistentEObject</a></code></span></div>
-<div class="block">Returns the resource containing this persistent object.</div>
+<div class="block">Returns the resource that contains this <code>PersistentEObject</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html#resource--">resource</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the containing resource.</dd>
+<dd>the containing resource</dd>
 </dl>
 </li>
 </ul>
@@ -534,10 +553,12 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObje
 <h4>resource</h4>
 <pre>public&nbsp;void&nbsp;resource(org.eclipse.emf.ecore.resource.Resource.Internal&nbsp;resource)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html#resource-org.eclipse.emf.ecore.resource.Resource.Internal-">PersistentEObject</a></code></span></div>
-<div class="block">Sets the resource containing this persistent object.</div>
+<div class="block">Defines the resource that containsthis <code>PersistentEObject</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html#resource-org.eclipse.emf.ecore.resource.Resource.Internal-">resource</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>resource</code> - the containing resource</dd>
 </dl>
 </li>
 </ul>
@@ -590,7 +611,7 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObje
 <ul class="blockList">
 <li class="blockList">
 <h4>eBasicSetContainer</h4>
-<pre>protected&nbsp;void&nbsp;eBasicSetContainer(org.eclipse.emf.ecore.InternalEObject&nbsp;newContainer)</pre>
+<pre>protected&nbsp;void&nbsp;eBasicSetContainer(org.eclipse.emf.ecore.InternalEObject&nbsp;eContainer)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>eBasicSetContainer</code>&nbsp;in class&nbsp;<code>org.eclipse.emf.ecore.impl.MinimalEObjectImpl</code></dd>
@@ -603,7 +624,7 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObje
 <ul class="blockList">
 <li class="blockList">
 <h4>eBasicSetContainerFeatureID</h4>
-<pre>protected&nbsp;void&nbsp;eBasicSetContainerFeatureID(int&nbsp;newContainerFeatureId)</pre>
+<pre>protected&nbsp;void&nbsp;eBasicSetContainerFeatureID(int&nbsp;eContainerFeatureId)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>eBasicSetContainerFeatureID</code>&nbsp;in class&nbsp;<code>org.eclipse.emf.ecore.impl.MinimalEObjectImpl</code></dd>
@@ -754,7 +775,8 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObje
 <ul class="blockListLast">
 <li class="blockList">
 <h4>equals</h4>
-<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</pre>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>

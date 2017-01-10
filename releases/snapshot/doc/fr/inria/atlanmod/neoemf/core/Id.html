@@ -111,6 +111,8 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public interface <span class="typeNameLabel">Id</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&gt;, <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></pre>
+<div class="block">An identifier used to identify a <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> in data stores. Each <code>Id</code> must be unique to ensure
+ data consistency.</div>
 </li>
 </ul>
 </div>
@@ -130,15 +132,15 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.h
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>long</code></td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html#toLong--">toLong</a></span>()</code>
-<div class="block">Returns the <code>long</code> number of the <code>Id</code>.</div>
+<div class="block">Returns the <code>long</code> number of this <code>Id</code>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/core/Id.html#toString--">toString</a></span>()</code>
-<div class="block">Returns the <code>String</code> representation of the <code>Id</code>.</div>
+<div class="block">Returns the <code>String</code> representation of this <code>Id</code>.</div>
 </td>
 </tr>
 </table>
@@ -169,11 +171,14 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.h
 <ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
-<div class="block">Returns the <code>String</code> representation of the <code>Id</code>.</div>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block">Returns the <code>String</code> representation of this <code>Id</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a string</dd>
 </dl>
 </li>
 </ul>
@@ -183,8 +188,13 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.h
 <ul class="blockListLast">
 <li class="blockList">
 <h4>toLong</h4>
-<pre>long&nbsp;toLong()</pre>
-<div class="block">Returns the <code>long</code> number of the <code>Id</code>.</div>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;toLong()</pre>
+<div class="block">Returns the <code>long</code> number of this <code>Id</code>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a long</dd>
+</dl>
 </li>
 </ul>
 </li>

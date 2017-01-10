@@ -193,7 +193,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html#isFeatureSet-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">isFeatureSet</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;fk)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html#isFeatureSet-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">isFeatureSet</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;featureKey)</code>
 <div class="block">Return true if the feature was set, false otherwise.</div>
 </td>
 </tr>
@@ -209,7 +209,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html#removeFeature-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">removeFeature</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;fk)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html#removeFeature-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">removeFeature</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;featureKey)</code>
 <div class="block">Removes the value of a given feature.</div>
 </td>
 </tr>
@@ -235,27 +235,27 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html#storeValue-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-java.lang.Object-">storeValue</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;fk,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html#storeValue-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-java.lang.Object-">storeValue</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;featureKey,
           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code>
 <div class="block">Store the value of a given feature.</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html#storeValueAtIndex-fr.inria.atlanmod.neoemf.data.structure.MultivaluedFeatureKey-java.lang.Object-">storeValueAtIndex</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">MultivaluedFeatureKey</a>&nbsp;fk,
-                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;val)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html#storeValueAtIndex-fr.inria.atlanmod.neoemf.data.structure.MultivaluedFeatureKey-java.lang.Object-">storeValueAtIndex</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">MultivaluedFeatureKey</a>&nbsp;featureKey,
+                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code>
 <div class="block">Stores the single value of a given multivalued feature at the given index.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html#valueAtIndex-fr.inria.atlanmod.neoemf.data.structure.MultivaluedFeatureKey-">valueAtIndex</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">MultivaluedFeatureKey</a>&nbsp;fk)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html#valueAtIndex-fr.inria.atlanmod.neoemf.data.structure.MultivaluedFeatureKey-">valueAtIndex</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">MultivaluedFeatureKey</a>&nbsp;featureKey)</code>
 <div class="block">Retrieves the value of a given multivalued feature at a given index.</div>
 </td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html#valueOf-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">valueOf</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;fk)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html#valueOf-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">valueOf</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;featureKey)</code>
 <div class="block">Retrieves the value of a given feature.</div>
 </td>
 </tr>
@@ -357,6 +357,10 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <pre>public&nbsp;boolean&nbsp;isClosed()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html#isClosed--">PersistenceBackend</a></code></span></div>
 <div class="block">Returns whether the underlying data store has been started or not.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if the data store is closed, otherwise <code>false</code></dd>
+</dl>
 </li>
 </ul>
 <a name="save--">
@@ -418,7 +422,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <ul class="blockList">
 <li class="blockList">
 <h4>storeValue</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;storeValue(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;fk,
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;storeValue(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;featureKey,
                          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</pre>
 <div class="block">Store the value of a given feature.</div>
 </li>
@@ -429,7 +433,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <ul class="blockList">
 <li class="blockList">
 <h4>valueOf</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;valueOf(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;fk)</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;valueOf(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;featureKey)</pre>
 <div class="block">Retrieves the value of a given feature.</div>
 </li>
 </ul>
@@ -439,7 +443,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <ul class="blockList">
 <li class="blockList">
 <h4>removeFeature</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;removeFeature(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;fk)</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;removeFeature(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;featureKey)</pre>
 <div class="block">Removes the value of a given feature. The feature becomes unset.</div>
 </li>
 </ul>
@@ -449,7 +453,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <ul class="blockList">
 <li class="blockList">
 <h4>isFeatureSet</h4>
-<pre>public&nbsp;boolean&nbsp;isFeatureSet(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;fk)</pre>
+<pre>public&nbsp;boolean&nbsp;isFeatureSet(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;featureKey)</pre>
 <div class="block">Return true if the feature was set, false otherwise.</div>
 </li>
 </ul>
@@ -459,8 +463,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <ul class="blockList">
 <li class="blockList">
 <h4>storeValueAtIndex</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;storeValueAtIndex(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">MultivaluedFeatureKey</a>&nbsp;fk,
-                                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;val)</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;storeValueAtIndex(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">MultivaluedFeatureKey</a>&nbsp;featureKey,
+                                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</pre>
 <div class="block">Stores the single value of a given multivalued feature at the given index.</div>
 </li>
 </ul>
@@ -470,7 +474,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <ul class="blockList">
 <li class="blockList">
 <h4>valueAtIndex</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;valueAtIndex(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">MultivaluedFeatureKey</a>&nbsp;fk)</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;valueAtIndex(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">MultivaluedFeatureKey</a>&nbsp;featureKey)</pre>
 <div class="block">Retrieves the value of a given multivalued feature at a given index.</div>
 </li>
 </ul>

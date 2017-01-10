@@ -170,13 +170,13 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparabl
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>
 <div class="block">Defines equality between feature keys.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html#from-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">from</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html#from-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">from</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
     org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -237,7 +237,9 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparabl
 <ul class="blockListLast">
 <li class="blockList">
 <h4>FeatureKey</h4>
-<pre>protected&nbsp;FeatureKey(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
+<pre>protected&nbsp;FeatureKey(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                     <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
+                     <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
 </li>
 </ul>
@@ -255,8 +257,11 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparabl
 <ul class="blockList">
 <li class="blockList">
 <h4>from</h4>
-<pre>public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;from(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
-                              org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</pre>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;from(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                       org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
+                                       <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                       org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</pre>
 </li>
 </ul>
 <a name="from-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EStructuralFeature-">
@@ -265,8 +270,11 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparabl
 <ul class="blockList">
 <li class="blockList">
 <h4>from</h4>
-<pre>public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;from(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-                              org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</pre>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;from(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                       <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
+                                       <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                       org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</pre>
 </li>
 </ul>
 <a name="of-fr.inria.atlanmod.neoemf.core.Id-java.lang.String-">
@@ -275,8 +283,11 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparabl
 <ul class="blockList">
 <li class="blockList">
 <h4>of</h4>
-<pre>public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;of(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
-                            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;of(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                     <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
+                                     <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
 </li>
 </ul>
 <a name="id--">
@@ -285,7 +296,8 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparabl
 <ul class="blockList">
 <li class="blockList">
 <h4>id</h4>
-<pre>public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id()</pre>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id()</pre>
 </li>
 </ul>
 <a name="name--">
@@ -294,7 +306,8 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparabl
 <ul class="blockList">
 <li class="blockList">
 <h4>name</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name()</pre>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name()</pre>
 </li>
 </ul>
 <a name="withPosition-int-">
@@ -303,7 +316,9 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparabl
 <ul class="blockList">
 <li class="blockList">
 <h4>withPosition</h4>
-<pre>public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">MultivaluedFeatureKey</a>&nbsp;withPosition(int&nbsp;position)</pre>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">MultivaluedFeatureKey</a>&nbsp;withPosition(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
+                                                   int&nbsp;position)</pre>
 </li>
 </ul>
 <a name="compareTo-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">
@@ -312,7 +327,8 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparabl
 <ul class="blockList">
 <li class="blockList">
 <h4>compareTo</h4>
-<pre>public&nbsp;int&nbsp;compareTo(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;o)</pre>
+<pre>public&nbsp;int&nbsp;compareTo(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                     <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;o)</pre>
 <div class="block">Compares two feature keys.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -341,7 +357,8 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparabl
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</pre>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
 <div class="block">Defines equality between feature keys.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>

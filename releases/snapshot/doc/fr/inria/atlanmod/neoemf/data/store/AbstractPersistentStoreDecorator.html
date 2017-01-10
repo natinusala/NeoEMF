@@ -75,13 +75,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -137,19 +137,6 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <!--   -->
 </a>
 <h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#eStore">eStore</a></span></code>
-<div class="block">The decorated <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a>.</div>
-</td>
-</tr>
-</table>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.fr.inria.atlanmod.neoemf.data.store.PersistentStore">
 <!--   -->
@@ -171,7 +158,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#AbstractPersistentStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-">AbstractPersistentStoreDecorator</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;eStore)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#AbstractPersistentStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-">AbstractPersistentStoreDecorator</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -190,19 +177,19 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#add-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-java.lang.Object-">add</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#add-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-java.lang.Object-">add</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
    org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
    int&nbsp;index,
    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#clear-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">clear</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#clear-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">clear</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
      org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#contains-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">contains</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#contains-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">contains</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
         org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
@@ -219,7 +206,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#get-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-">get</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#get-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-">get</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
    org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
    int&nbsp;index)</code>&nbsp;</td>
 </tr>
@@ -232,11 +219,11 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>org.eclipse.emf.ecore.InternalEObject</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#getContainer-org.eclipse.emf.ecore.InternalEObject-">getContainer</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#getContainer-org.eclipse.emf.ecore.InternalEObject-">getContainer</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>org.eclipse.emf.ecore.EStructuralFeature</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#getContainingFeature-org.eclipse.emf.ecore.InternalEObject-">getContainingFeature</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#getContainingFeature-org.eclipse.emf.ecore.InternalEObject-">getContainingFeature</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a></code></td>
@@ -246,41 +233,41 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#hashCode-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">hashCode</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#hashCode-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">hashCode</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
         org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#indexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">indexOf</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#indexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">indexOf</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
        org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#isEmpty-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">isEmpty</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#isEmpty-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">isEmpty</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
        org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#isSet-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">isSet</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#isSet-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">isSet</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
      org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#lastIndexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">lastIndexOf</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#lastIndexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">lastIndexOf</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
            org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#move-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-int-">move</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#move-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-int-">move</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
     org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
     int&nbsp;targetIndex,
     int&nbsp;sourceIndex)</code>&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#remove-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-">remove</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#remove-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-">remove</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
       org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
       int&nbsp;index)</code>&nbsp;</td>
 </tr>
@@ -298,30 +285,30 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#set-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-java.lang.Object-">set</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#set-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-java.lang.Object-">set</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
    org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
    int&nbsp;index,
    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#size-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">size</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#size-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">size</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
     org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</code>&nbsp;</td>
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#toArray-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">toArray</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#toArray-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">toArray</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
        org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</code>&nbsp;</td>
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;T[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#toArray-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-T:A-">toArray</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#toArray-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-T:A-">toArray</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
        org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
        T[]&nbsp;array)</code>&nbsp;</td>
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#unset-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">unset</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#unset-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">unset</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
      org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</code>&nbsp;</td>
 </tr>
 </table>
@@ -340,24 +327,6 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="eStore">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>eStore</h4>
-<pre>protected final&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a> eStore</pre>
-<div class="block">The decorated <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a>.</div>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -370,7 +339,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AbstractPersistentStoreDecorator</h4>
-<pre>public&nbsp;AbstractPersistentStoreDecorator(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;eStore)</pre>
+<pre>public&nbsp;AbstractPersistentStoreDecorator(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</pre>
 </li>
 </ul>
 </li>
@@ -387,7 +356,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;get(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;get(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                   org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
                   int&nbsp;index)</pre>
 </li>
@@ -398,7 +367,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="blockList">
 <li class="blockList">
 <h4>set</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;set(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;set(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                   org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
                   int&nbsp;index,
                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
@@ -410,7 +379,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="blockList">
 <li class="blockList">
 <h4>isSet</h4>
-<pre>public&nbsp;boolean&nbsp;isSet(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;boolean&nbsp;isSet(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                      org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</pre>
 </li>
 </ul>
@@ -420,7 +389,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="blockList">
 <li class="blockList">
 <h4>unset</h4>
-<pre>public&nbsp;void&nbsp;unset(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;void&nbsp;unset(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                   org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</pre>
 </li>
 </ul>
@@ -430,7 +399,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="blockList">
 <li class="blockList">
 <h4>isEmpty</h4>
-<pre>public&nbsp;boolean&nbsp;isEmpty(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;boolean&nbsp;isEmpty(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                        org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</pre>
 </li>
 </ul>
@@ -440,7 +409,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="blockList">
 <li class="blockList">
 <h4>size</h4>
-<pre>public&nbsp;int&nbsp;size(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;int&nbsp;size(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                 org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</pre>
 </li>
 </ul>
@@ -450,7 +419,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="blockList">
 <li class="blockList">
 <h4>contains</h4>
-<pre>public&nbsp;boolean&nbsp;contains(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;boolean&nbsp;contains(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                         org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
 </li>
@@ -461,7 +430,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="blockList">
 <li class="blockList">
 <h4>indexOf</h4>
-<pre>public&nbsp;int&nbsp;indexOf(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;int&nbsp;indexOf(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                    org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
 </li>
@@ -472,7 +441,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="blockList">
 <li class="blockList">
 <h4>lastIndexOf</h4>
-<pre>public&nbsp;int&nbsp;lastIndexOf(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;int&nbsp;lastIndexOf(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                        org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
 </li>
@@ -483,7 +452,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="blockList">
 <li class="blockList">
 <h4>add</h4>
-<pre>public&nbsp;void&nbsp;add(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;void&nbsp;add(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                 org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
                 int&nbsp;index,
                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
@@ -495,7 +464,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="blockList">
 <li class="blockList">
 <h4>remove</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;remove(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;remove(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                      org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
                      int&nbsp;index)</pre>
 </li>
@@ -506,7 +475,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="blockList">
 <li class="blockList">
 <h4>move</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;move(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;move(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                    org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
                    int&nbsp;targetIndex,
                    int&nbsp;sourceIndex)</pre>
@@ -518,7 +487,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="blockList">
 <li class="blockList">
 <h4>clear</h4>
-<pre>public&nbsp;void&nbsp;clear(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;void&nbsp;clear(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                   org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</pre>
 </li>
 </ul>
@@ -528,7 +497,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="blockList">
 <li class="blockList">
 <h4>toArray</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;toArray(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;toArray(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                         org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</pre>
 </li>
 </ul>
@@ -540,7 +509,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="blockList">
 <li class="blockList">
 <h4>toArray</h4>
-<pre>public&nbsp;&lt;T&gt;&nbsp;T[]&nbsp;toArray(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;&lt;T&gt;&nbsp;T[]&nbsp;toArray(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                        org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
                        T[]&nbsp;array)</pre>
 </li>
@@ -551,7 +520,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="blockList">
 <li class="blockList">
 <h4>hashCode</h4>
-<pre>public&nbsp;int&nbsp;hashCode(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;int&nbsp;hashCode(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                     org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</pre>
 </li>
 </ul>
@@ -561,7 +530,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="blockList">
 <li class="blockList">
 <h4>getContainer</h4>
-<pre>public&nbsp;org.eclipse.emf.ecore.InternalEObject&nbsp;getContainer(org.eclipse.emf.ecore.InternalEObject&nbsp;object)</pre>
+<pre>public&nbsp;org.eclipse.emf.ecore.InternalEObject&nbsp;getContainer(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject)</pre>
 </li>
 </ul>
 <a name="getContainingFeature-org.eclipse.emf.ecore.InternalEObject-">
@@ -570,7 +539,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="blockList">
 <li class="blockList">
 <h4>getContainingFeature</h4>
-<pre>public&nbsp;org.eclipse.emf.ecore.EStructuralFeature&nbsp;getContainingFeature(org.eclipse.emf.ecore.InternalEObject&nbsp;object)</pre>
+<pre>public&nbsp;org.eclipse.emf.ecore.EStructuralFeature&nbsp;getContainingFeature(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject)</pre>
 </li>
 </ul>
 <a name="create-org.eclipse.emf.ecore.EClass-">
@@ -632,7 +601,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <h4>getEStore</h4>
 <pre>public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;getEStore()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html#getEStore--">PersistentStore</a></code></span></div>
-<div class="block">Utility method used for tests. Returns the decorated eStore, if it exists.</div>
+<div class="block">Utility method used for tests. Returns the decorated <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a>, if it exists.</div>
 </li>
 </ul>
 <a name="save--">
@@ -700,13 +669,13 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

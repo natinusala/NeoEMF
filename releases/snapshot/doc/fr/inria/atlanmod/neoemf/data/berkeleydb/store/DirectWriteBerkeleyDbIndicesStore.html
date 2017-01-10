@@ -154,7 +154,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/s
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;fr.inria.atlanmod.neoemf.data.store.<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractDirectWriteStore</a></h3>
-<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#persistenceBackend">persistenceBackend</a></code></li>
+<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#backend">backend</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.fr.inria.atlanmod.neoemf.data.store.PersistentStore">
@@ -178,7 +178,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/s
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbIndicesStore.html#DirectWriteBerkeleyDbIndicesStore-org.eclipse.emf.ecore.resource.Resource.Internal-fr.inria.atlanmod.neoemf.data.berkeleydb.BerkeleyDbPersistenceBackend-">DirectWriteBerkeleyDbIndicesStore</a></span>(org.eclipse.emf.ecore.resource.Resource.Internal&nbsp;resource,
-                                 <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb">BerkeleyDbPersistenceBackend</a>&nbsp;persistenceBackend)</code>&nbsp;</td>
+                                 <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb">BerkeleyDbPersistenceBackend</a>&nbsp;backend)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -197,63 +197,63 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/s
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbIndicesStore.html#add-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-java.lang.Object-">add</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbIndicesStore.html#add-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-java.lang.Object-">add</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
    org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
    int&nbsp;index,
    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbIndicesStore.html#clear-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">clear</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbIndicesStore.html#clear-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">clear</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
      org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbIndicesStore.html#getAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-">getAttribute</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-            org.eclipse.emf.ecore.EAttribute&nbsp;eAttribute,
+            org.eclipse.emf.ecore.EAttribute&nbsp;attribute,
             int&nbsp;index)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbIndicesStore.html#getReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-">getReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-            org.eclipse.emf.ecore.EReference&nbsp;eReference,
+            org.eclipse.emf.ecore.EReference&nbsp;reference,
             int&nbsp;index)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbIndicesStore.html#indexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">indexOf</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbIndicesStore.html#indexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">indexOf</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
        org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbIndicesStore.html#lastIndexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">lastIndexOf</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbIndicesStore.html#lastIndexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">lastIndexOf</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
            org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbIndicesStore.html#remove-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-">remove</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbIndicesStore.html#remove-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-">remove</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
       org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
       int&nbsp;index)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbIndicesStore.html#setAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-java.lang.Object-">setAttribute</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-            org.eclipse.emf.ecore.EAttribute&nbsp;eAttribute,
+            org.eclipse.emf.ecore.EAttribute&nbsp;attribute,
             int&nbsp;index,
             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbIndicesStore.html#setReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-fr.inria.atlanmod.neoemf.core.PersistentEObject-">setReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-            org.eclipse.emf.ecore.EReference&nbsp;eReference,
+            org.eclipse.emf.ecore.EReference&nbsp;reference,
             int&nbsp;index,
             <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbIndicesStore.html#size-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">size</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbIndicesStore.html#size-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">size</a></span>(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
     org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</code>&nbsp;</td>
 </tr>
 </table>
@@ -306,7 +306,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/s
 <li class="blockList">
 <h4>DirectWriteBerkeleyDbIndicesStore</h4>
 <pre>public&nbsp;DirectWriteBerkeleyDbIndicesStore(org.eclipse.emf.ecore.resource.Resource.Internal&nbsp;resource,
-                                         <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb">BerkeleyDbPersistenceBackend</a>&nbsp;persistenceBackend)</pre>
+                                         <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb">BerkeleyDbPersistenceBackend</a>&nbsp;backend)</pre>
 </li>
 </ul>
 </li>
@@ -323,7 +323,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/s
 <ul class="blockList">
 <li class="blockList">
 <h4>add</h4>
-<pre>public&nbsp;void&nbsp;add(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;void&nbsp;add(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                 org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
                 int&nbsp;index,
                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
@@ -341,7 +341,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/s
 <ul class="blockList">
 <li class="blockList">
 <h4>remove</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;remove(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;remove(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                      org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
                      int&nbsp;index)</pre>
 <dl>
@@ -358,7 +358,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/s
 <ul class="blockList">
 <li class="blockList">
 <h4>indexOf</h4>
-<pre>public&nbsp;int&nbsp;indexOf(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;int&nbsp;indexOf(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                    org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
 <dl>
@@ -375,7 +375,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/s
 <ul class="blockList">
 <li class="blockList">
 <h4>lastIndexOf</h4>
-<pre>public&nbsp;int&nbsp;lastIndexOf(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;int&nbsp;lastIndexOf(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                        org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature,
                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
 <dl>
@@ -392,7 +392,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/s
 <ul class="blockList">
 <li class="blockList">
 <h4>clear</h4>
-<pre>public&nbsp;void&nbsp;clear(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;void&nbsp;clear(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                   org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -409,7 +409,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/s
 <li class="blockList">
 <h4>getAttribute</h4>
 <pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;getAttribute(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-                              org.eclipse.emf.ecore.EAttribute&nbsp;eAttribute,
+                              org.eclipse.emf.ecore.EAttribute&nbsp;attribute,
                               int&nbsp;index)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -424,7 +424,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/s
 <li class="blockList">
 <h4>getReference</h4>
 <pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;getReference(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-                              org.eclipse.emf.ecore.EReference&nbsp;eReference,
+                              org.eclipse.emf.ecore.EReference&nbsp;reference,
                               int&nbsp;index)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -439,7 +439,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/s
 <li class="blockList">
 <h4>setAttribute</h4>
 <pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;setAttribute(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-                              org.eclipse.emf.ecore.EAttribute&nbsp;eAttribute,
+                              org.eclipse.emf.ecore.EAttribute&nbsp;attribute,
                               int&nbsp;index,
                               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
 <dl>
@@ -455,7 +455,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/s
 <li class="blockList">
 <h4>setReference</h4>
 <pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;setReference(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-                              org.eclipse.emf.ecore.EReference&nbsp;eReference,
+                              org.eclipse.emf.ecore.EReference&nbsp;reference,
                               int&nbsp;index,
                               <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;value)</pre>
 <dl>
@@ -470,7 +470,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/s
 <ul class="blockListLast">
 <li class="blockList">
 <h4>size</h4>
-<pre>public&nbsp;int&nbsp;size(org.eclipse.emf.ecore.InternalEObject&nbsp;object,
+<pre>public&nbsp;int&nbsp;size(org.eclipse.emf.ecore.InternalEObject&nbsp;internalObject,
                 org.eclipse.emf.ecore.EStructuralFeature&nbsp;feature)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>

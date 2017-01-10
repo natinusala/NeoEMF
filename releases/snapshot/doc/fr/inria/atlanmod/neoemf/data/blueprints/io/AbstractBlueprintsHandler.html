@@ -168,7 +168,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Ab
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/io/AbstractBlueprintsHandler.html#AbstractBlueprintsHandler-fr.inria.atlanmod.neoemf.data.blueprints.BlueprintsPersistenceBackend-">AbstractBlueprintsHandler</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&nbsp;persistenceBackend)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/io/AbstractBlueprintsHandler.html#AbstractBlueprintsHandler-fr.inria.atlanmod.neoemf.data.blueprints.BlueprintsPersistenceBackend-">AbstractBlueprintsHandler</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&nbsp;backend)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -191,14 +191,18 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Ab
             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
             int&nbsp;index,
             boolean&nbsp;many,
-            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>&nbsp;</td>
+            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>
+<div class="block">Adds a new attribute to the element identified by the given <code>id</code>.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/io/AbstractBlueprintsHandler.html#addElement-fr.inria.atlanmod.neoemf.core.Id-java.lang.String-java.lang.String-boolean-">addElement</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;nsUri,
           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-          boolean&nbsp;root)</code>&nbsp;</td>
+          boolean&nbsp;root)</code>
+<div class="block">Adds a new element.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
@@ -207,7 +211,9 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Ab
             int&nbsp;index,
             boolean&nbsp;many,
             boolean&nbsp;containment,
-            <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;idReference)</code>&nbsp;</td>
+            <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;idReference)</code>
+<div class="block">Adds a new reference to the element identified by the given <code>id</code>.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected abstract com.tinkerpop.blueprints.Vertex</code></td>
@@ -215,7 +221,9 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Ab
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/io/AbstractBlueprintsHandler.html#getId-java.lang.String-">getId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;reference)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/io/AbstractBlueprintsHandler.html#getId-java.lang.String-">getId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;reference)</code>
+<div class="block">Returns the <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> of the given <code>reference</code>.</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected abstract com.tinkerpop.blueprints.Vertex</code></td>
@@ -230,7 +238,9 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Ab
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/io/AbstractBlueprintsHandler.html#setMetaClass-fr.inria.atlanmod.neoemf.core.Id-fr.inria.atlanmod.neoemf.core.Id-">setMetaClass</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
-            <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;metaClassId)</code>&nbsp;</td>
+            <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;metaClassId)</code>
+<div class="block">Defines the metaclass to the element identified by the given <code>id</code>.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -284,7 +294,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Ab
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AbstractBlueprintsHandler</h4>
-<pre>public&nbsp;AbstractBlueprintsHandler(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&nbsp;persistenceBackend)</pre>
+<pre>public&nbsp;AbstractBlueprintsHandler(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&nbsp;backend)</pre>
 </li>
 </ul>
 </li>
@@ -302,9 +312,15 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Ab
 <li class="blockList">
 <h4>getId</h4>
 <pre>protected&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;getId(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;reference)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandler.html#getId-java.lang.String-">AbstractPersistenceHandler</a></code></span></div>
+<div class="block">Returns the <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> of the given <code>reference</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandler.html#getId-java.lang.String-">getId</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandler.html" title="class in fr.inria.atlanmod.neoemf.io.persistence">AbstractPersistenceHandler</a>&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>reference</code> - the reference</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> of the given <code>reference</code></dd>
 </dl>
 </li>
 </ul>
@@ -318,9 +334,16 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Ab
                           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;nsUri,
                           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
                           boolean&nbsp;root)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandler.html#addElement-fr.inria.atlanmod.neoemf.core.Id-java.lang.String-java.lang.String-boolean-">AbstractPersistenceHandler</a></code></span></div>
+<div class="block">Adds a new element.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandler.html#addElement-fr.inria.atlanmod.neoemf.core.Id-java.lang.String-java.lang.String-boolean-">addElement</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandler.html" title="class in fr.inria.atlanmod.neoemf.io.persistence">AbstractPersistenceHandler</a>&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the identifier of the new element</dd>
+<dd><code>nsUri</code> - the uri of the new element</dd>
+<dd><code>name</code> - the name of the new element</dd>
+<dd><code>root</code> - <code>true</code> if the new element is a root node</dd>
 </dl>
 </li>
 </ul>
@@ -335,9 +358,17 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Ab
                             int&nbsp;index,
                             boolean&nbsp;many,
                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandler.html#addAttribute-fr.inria.atlanmod.neoemf.core.Id-java.lang.String-int-boolean-java.lang.Object-">AbstractPersistenceHandler</a></code></span></div>
+<div class="block">Adds a new attribute to the element identified by the given <code>id</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandler.html#addAttribute-fr.inria.atlanmod.neoemf.core.Id-java.lang.String-int-boolean-java.lang.Object-">addAttribute</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandler.html" title="class in fr.inria.atlanmod.neoemf.io.persistence">AbstractPersistenceHandler</a>&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the identifier of the element</dd>
+<dd><code>name</code> - the name of the attribute</dd>
+<dd><code>index</code> - the index of the attribute if it's a multivalued attribute</dd>
+<dd><code>many</code> - <code>true</code> if the attribute is multivalued</dd>
+<dd><code>value</code> - the value of the attribute</dd>
 </dl>
 </li>
 </ul>
@@ -353,9 +384,18 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Ab
                             boolean&nbsp;many,
                             boolean&nbsp;containment,
                             <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;idReference)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandler.html#addReference-fr.inria.atlanmod.neoemf.core.Id-java.lang.String-int-boolean-boolean-fr.inria.atlanmod.neoemf.core.Id-">AbstractPersistenceHandler</a></code></span></div>
+<div class="block">Adds a new reference to the element identified by the given <code>id</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandler.html#addReference-fr.inria.atlanmod.neoemf.core.Id-java.lang.String-int-boolean-boolean-fr.inria.atlanmod.neoemf.core.Id-">addReference</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandler.html" title="class in fr.inria.atlanmod.neoemf.io.persistence">AbstractPersistenceHandler</a>&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the identifier of the element</dd>
+<dd><code>name</code> - the name of the reference</dd>
+<dd><code>index</code> - the index of the reference if it's a multivalued reference</dd>
+<dd><code>many</code> - <code>true</code> if the reference is multivalued</dd>
+<dd><code>containment</code> - <code>true</code> if the reference is a containment</dd>
+<dd><code>idReference</code> - the identifier of the referenced element</dd>
 </dl>
 </li>
 </ul>
@@ -367,9 +407,14 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/Ab
 <h4>setMetaClass</h4>
 <pre>protected&nbsp;void&nbsp;setMetaClass(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
                             <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;metaClassId)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandler.html#setMetaClass-fr.inria.atlanmod.neoemf.core.Id-fr.inria.atlanmod.neoemf.core.Id-">AbstractPersistenceHandler</a></code></span></div>
+<div class="block">Defines the metaclass to the element identified by the given <code>id</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandler.html#setMetaClass-fr.inria.atlanmod.neoemf.core.Id-fr.inria.atlanmod.neoemf.core.Id-">setMetaClass</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandler.html" title="class in fr.inria.atlanmod.neoemf.io.persistence">AbstractPersistenceHandler</a>&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the identifier of the element</dd>
+<dd><code>metaClassId</code> - the identifier of the metaclass</dd>
 </dl>
 </li>
 </ul>

@@ -213,7 +213,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>com.tinkerpop.blueprints.Vertex</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#getOrCreateVertex-fr.inria.atlanmod.neoemf.core.PersistentEObject-">getOrCreateVertex</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;eObject)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#getOrCreateVertex-fr.inria.atlanmod.neoemf.core.PersistentEObject-">getOrCreateVertex</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object)</code>
 <div class="block">Return the vertex corresponding to the provided <code>EObject</code>.</div>
 </td>
 </tr>
@@ -361,6 +361,10 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <pre>public&nbsp;boolean&nbsp;isClosed()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html#isClosed--">PersistenceBackend</a></code></span></div>
 <div class="block">Returns whether the underlying data store has been started or not.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if the data store is closed, otherwise <code>false</code></dd>
+</dl>
 </li>
 </ul>
 <a name="close--">
@@ -441,7 +445,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <ul class="blockList">
 <li class="blockList">
 <h4>getOrCreateVertex</h4>
-<pre>public&nbsp;com.tinkerpop.blueprints.Vertex&nbsp;getOrCreateVertex(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;eObject)</pre>
+<pre>public&nbsp;com.tinkerpop.blueprints.Vertex&nbsp;getOrCreateVertex(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object)</pre>
 <div class="block">Return the vertex corresponding to the provided <code>EObject</code>. If no vertex corresponds to that <code>EObject</code>,
  then the corresponding <code>Vertex</code> together with its <a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#KEY_INSTANCE_OF"><code>KEY_INSTANCE_OF</code></a> relationship is created.</div>
 <dl>
