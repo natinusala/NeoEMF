@@ -138,9 +138,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>default <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html#getAllInstances-org.eclipse.emf.ecore.EClass-boolean-">getAllInstances</a></span>(org.eclipse.emf.ecore.EClass&nbsp;eClass,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html#getAllInstances-org.eclipse.emf.ecore.EClass-boolean-">getAllInstances</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a>&nbsp;eClass,
                boolean&nbsp;strict)</code>
-<div class="block">Back-end specific computation of <code>Resource.getAllContents()</code>.</div>
+<div class="block">Back-end specific computation of <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getAllContents--" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource.getAllContents()</code></a>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -152,7 +152,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html#save--">save</a></span>()</code>
-<div class="block">Saves the modifications of the owned <code>EObject</code>s in the persistence back-end.</div>
+<div class="block">Saves the modifications of the owned <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>s in the persistence back-end.</div>
 </td>
 </tr>
 </table>
@@ -207,7 +207,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html
 <li class="blockList">
 <h4>save</h4>
 <pre>void&nbsp;save()</pre>
-<div class="block">Saves the modifications of the owned <code>EObject</code>s in the persistence back-end.</div>
+<div class="block">Saves the modifications of the owned <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>s in the persistence back-end.</div>
 </li>
 </ul>
 <a name="getAllInstances-org.eclipse.emf.ecore.EClass-boolean-">
@@ -216,15 +216,15 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getAllInstances</h4>
-<pre>default&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;getAllInstances(org.eclipse.emf.ecore.EClass&nbsp;eClass,
+<pre>default&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;getAllInstances(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a>&nbsp;eClass,
                                boolean&nbsp;strict)</pre>
-<div class="block">Back-end specific computation of <code>Resource.getAllContents()</code>.</div>
+<div class="block">Back-end specific computation of <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getAllContents--" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource.getAllContents()</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>eClass</code> - the class to compute the instances of</dd>
 <dd><code>strict</code> - <code>true</code> if the lookup searches for strict instances</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> containing the back-end specific objects corresponding to the instances of the <code>EClass</code></dd>
+<dd>an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> containing the back-end specific objects corresponding to the instances of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang">UnsupportedOperationException</a></code> - if the back-end does not support all instances lookup</dd>
 </dl>
