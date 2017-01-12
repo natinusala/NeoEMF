@@ -132,8 +132,8 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?is
  <li><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#TRACE"><code>TRACE</code></a> (least specific, a lot of data)</li>
  </ul>
  <p>
- Typically, configuring a level in a filter or on a logger will cause logging events of that level and those that are
- more specific to pass through the filter.</div>
+ Typically, configuring a level in a filter or on a <a href="../../../../../fr/inria/atlanmod/neoemf/logging/Logger.html" title="interface in fr.inria.atlanmod.neoemf.logging"><code>Logger</code></a> will cause logging events of that level and those
+ that are more specific to pass through the filter.</div>
 </li>
 </ul>
 </div>
@@ -152,22 +152,34 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?is
 <th class="colOne" scope="col">Enum Constant and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#DEBUG">DEBUG</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#DEBUG">DEBUG</a></span></code>
+<div class="block">A general debugging event.</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#ERROR">ERROR</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#ERROR">ERROR</a></span></code>
+<div class="block">An error in the application, possibly recoverable.</div>
+</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#FATAL">FATAL</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#FATAL">FATAL</a></span></code>
+<div class="block">A severe error that will prevent the application from continuing.</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#INFO">INFO</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#INFO">INFO</a></span></code>
+<div class="block">An event for informational purposes.</div>
+</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#TRACE">TRACE</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#TRACE">TRACE</a></span></code>
+<div class="block">A fine-grained debug message, typically capturing the flow through the application.</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#WARN">WARN</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html#WARN">WARN</a></span></code>
+<div class="block">An event that might possible lead to an error.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -233,6 +245,7 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>TRACE</h4>
 <pre>public static final&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html" title="enum in fr.inria.atlanmod.neoemf.logging">Level</a> TRACE</pre>
+<div class="block">A fine-grained debug message, typically capturing the flow through the application.</div>
 </li>
 </ul>
 <a name="DEBUG">
@@ -242,6 +255,7 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>DEBUG</h4>
 <pre>public static final&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html" title="enum in fr.inria.atlanmod.neoemf.logging">Level</a> DEBUG</pre>
+<div class="block">A general debugging event.</div>
 </li>
 </ul>
 <a name="INFO">
@@ -251,6 +265,7 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>INFO</h4>
 <pre>public static final&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html" title="enum in fr.inria.atlanmod.neoemf.logging">Level</a> INFO</pre>
+<div class="block">An event for informational purposes.</div>
 </li>
 </ul>
 <a name="WARN">
@@ -260,6 +275,7 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>WARN</h4>
 <pre>public static final&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html" title="enum in fr.inria.atlanmod.neoemf.logging">Level</a> WARN</pre>
+<div class="block">An event that might possible lead to an error.</div>
 </li>
 </ul>
 <a name="ERROR">
@@ -269,6 +285,7 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>ERROR</h4>
 <pre>public static final&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html" title="enum in fr.inria.atlanmod.neoemf.logging">Level</a> ERROR</pre>
+<div class="block">An error in the application, possibly recoverable.</div>
 </li>
 </ul>
 <a name="FATAL">
@@ -278,6 +295,7 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>FATAL</h4>
 <pre>public static final&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/logging/Level.html" title="enum in fr.inria.atlanmod.neoemf.logging">Level</a> FATAL</pre>
+<div class="block">A severe error that will prevent the application from continuing.</div>
 </li>
 </ul>
 </li>
