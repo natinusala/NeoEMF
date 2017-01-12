@@ -349,7 +349,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html#BACKEND_PROPERTY">BACKEND_PROPERTY</a></span> - Static variable in interface fr.inria.atlanmod.neoemf.data.<a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackendFactory</a></dt>
 <dd>
-<div class="block">The "backend" property in the configuration file.</div>
+<div class="block">The "back-end" property in the configuration file.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceDecorator.html#base">base</a></span> - Variable in class fr.inria.atlanmod.neoemf.resource.<a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceDecorator.html" title="class in fr.inria.atlanmod.neoemf.resource">PersistentResourceDecorator</a></dt>
 <dd>&nbsp;</dd>
@@ -541,7 +541,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html#CONFIG_FILE">CONFIG_FILE</a></span> - Static variable in interface fr.inria.atlanmod.neoemf.data.<a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackendFactory</a></dt>
 <dd>
-<div class="block">The name of the configuration file of a backend persistence.</div>
+<div class="block">The name of the configuration file of a back-end persistence.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html#CONTAINER">CONTAINER</a></span> - Static variable in class fr.inria.atlanmod.neoemf.data.blueprints.store.<a href="fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.store">DirectWriteBlueprintsStore</a></dt>
 <dd>&nbsp;</dd>
@@ -609,15 +609,15 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html#copyTo-fr.inria.atlanmod.neoemf.data.berkeleydb.BerkeleyDbPersistenceBackend-">copyTo(BerkeleyDbPersistenceBackend)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.berkeleydb.<a href="fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb">BerkeleyDbPersistenceBackend</a></dt>
 <dd>
-<div class="block">Copies all the contents of this backend to the target one.</div>
+<div class="block">Copies all the contents of this back-end to the target one.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#copyTo-fr.inria.atlanmod.neoemf.data.blueprints.BlueprintsPersistenceBackend-">copyTo(BlueprintsPersistenceBackend)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.blueprints.<a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a></dt>
 <dd>
-<div class="block">Copies all the contents of this backend to the target one.</div>
+<div class="block">Copies all the contents of this back-end to the target one.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#copyTo-fr.inria.atlanmod.neoemf.data.mapdb.MapDbPersistenceBackend-">copyTo(MapDbPersistenceBackend)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a></dt>
 <dd>
-<div class="block">Copies all the contents of this backend to the target one.</div>
+<div class="block">Copies all the contents of this back-end to the target one.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/persistence/CounterPersistenceHandlerDecorator.html" title="class in fr.inria.atlanmod.neoemf.io.persistence"><span class="typeNameLink">CounterPersistenceHandlerDecorator</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/io/persistence/package-summary.html">fr.inria.atlanmod.neoemf.io.persistence</a></dt>
 <dd>
@@ -693,7 +693,10 @@
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceFactory.html#createResource-org.eclipse.emf.common.util.URI-">createResource(URI)</a></span> - Method in class fr.inria.atlanmod.neoemf.resource.<a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceFactory.html" title="class in fr.inria.atlanmod.neoemf.resource">PersistentResourceFactory</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html#createSpecificPersistentStore-fr.inria.atlanmod.neoemf.resource.PersistentResource-fr.inria.atlanmod.neoemf.data.PersistenceBackend-java.util.Map-">createSpecificPersistentStore(PersistentResource, PersistenceBackend, Map&lt;?, ?&gt;)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.<a href="fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data">AbstractPersistenceBackendFactory</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a <a href="fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>store</code></a> between the given <code>resource</code> and the given <code>backend</code>
+ according to the given <code>options</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackendFactory.html#createSpecificPersistentStore-fr.inria.atlanmod.neoemf.resource.PersistentResource-fr.inria.atlanmod.neoemf.data.PersistenceBackend-java.util.Map-">createSpecificPersistentStore(PersistentResource, PersistenceBackend, Map&lt;?, ?&gt;)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.berkeleydb.<a href="fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb">BerkeleyDbPersistenceBackendFactory</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackendFactory.html#createSpecificPersistentStore-fr.inria.atlanmod.neoemf.resource.PersistentResource-fr.inria.atlanmod.neoemf.data.PersistenceBackend-java.util.Map-">createSpecificPersistentStore(PersistentResource, PersistenceBackend, Map&lt;?, ?&gt;)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.blueprints.<a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackendFactory</a></dt>
@@ -712,7 +715,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html#createTransientBackend--">createTransientBackend()</a></span> - Method in interface fr.inria.atlanmod.neoemf.data.<a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackendFactory</a></dt>
 <dd>
-<div class="block">Creates transient backend persistence backend.</div>
+<div class="block">Creates an in-memory <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackendFactory.html#createTransientStore-fr.inria.atlanmod.neoemf.resource.PersistentResource-fr.inria.atlanmod.neoemf.data.PersistenceBackend-">createTransientStore(PersistentResource, PersistenceBackend)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.berkeleydb.<a href="fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb">BerkeleyDbPersistenceBackendFactory</a></dt>
 <dd>&nbsp;</dd>
@@ -1513,11 +1516,11 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html#getFactories--">getFactories()</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.<a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data">PersistenceBackendFactoryRegistry</a></dt>
 <dd>
-<div class="block">Returns all registered factories.</div>
+<div class="block">Returns all registered URI schemes with their <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>back-end factory</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html#getFactoryProvider-java.lang.String-">getFactoryProvider(String)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.<a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data">PersistenceBackendFactoryRegistry</a></dt>
 <dd>
-<div class="block">Returns a specific <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactory</code></a> identified by <code>uriScheme</code>.</div>
+<div class="block">Returns a specific <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>factory</code></a> identified by the given URI <code>scheme</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#getFile--">getFile()</a></span> - Method in class fr.inria.atlanmod.neoemf.resource.<a href="fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html" title="class in fr.inria.atlanmod.neoemf.resource">DefaultPersistentResource</a></dt>
 <dd>
@@ -1618,7 +1621,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html#getName--">getName()</a></span> - Method in class fr.inria.atlanmod.neoemf.data.<a href="fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data">AbstractPersistenceBackendFactory</a></dt>
 <dd>
-<div class="block">Returns the literal description of the created persistence backend.</div>
+<div class="block">Returns the literal description of the created persistence back-end.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackendFactory.html#getName--">getName()</a></span> - Method in class fr.inria.atlanmod.neoemf.data.berkeleydb.<a href="fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb">BerkeleyDbPersistenceBackendFactory</a></dt>
 <dd>&nbsp;</dd>
@@ -1804,7 +1807,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.hbase"><span class="typeNameLink">HBasePersistenceBackend</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/hbase/package-summary.html">fr.inria.atlanmod.neoemf.data.hbase</a></dt>
 <dd>
-<div class="block">Dummy backend implementation for HBase to fit core architecture.</div>
+<div class="block">Dummy back-end implementation for HBase to fit core architecture.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackend.html#HBasePersistenceBackend--">HBasePersistenceBackend()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.hbase.<a href="fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.hbase">HBasePersistenceBackend</a></dt>
 <dd>&nbsp;</dd>
@@ -1983,7 +1986,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/store/InvalidStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">InvalidStore</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/store/package-summary.html">fr.inria.atlanmod.neoemf.data.store</a></dt>
 <dd>
-<div class="block">Utility class which can be used by backend-specific implementations that does not provide a transient layer.</div>
+<div class="block">Utility class which can be used by back-end implementations that do not provide transient layer.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/store/InvalidStore.html#InvalidStore--">InvalidStore()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/InvalidStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">InvalidStore</a></dt>
 <dd>&nbsp;</dd>
@@ -2073,7 +2076,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html#isRegistered-java.lang.String-">isRegistered(String)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.<a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data">PersistenceBackendFactoryRegistry</a></dt>
 <dd>
-<div class="block">Defines if a <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactory</code></a> is registered for the given <code>uriScheme</code>.</div>
+<div class="block">Defines if a <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>factory</code></a> is registered for the given URI <code>scheme</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#isRelative--">isRelative()</a></span> - Method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
 <dd>&nbsp;</dd>
@@ -2346,7 +2349,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html#NAME">NAME</a></span> - Static variable in class fr.inria.atlanmod.neoemf.data.berkeleydb.<a href="fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb">BerkeleyDbPersistenceBackend</a></dt>
 <dd>
-<div class="block">The literal description of this backend.</div>
+<div class="block">The literal description of this back-end.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackendFactory.html#NAME">NAME</a></span> - Static variable in class fr.inria.atlanmod.neoemf.data.berkeleydb.<a href="fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb">BerkeleyDbPersistenceBackendFactory</a></dt>
 <dd>&nbsp;</dd>
@@ -2354,7 +2357,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#NAME">NAME</a></span> - Static variable in class fr.inria.atlanmod.neoemf.data.blueprints.<a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a></dt>
 <dd>
-<div class="block">The literal description of this backend.</div>
+<div class="block">The literal description of this back-end.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackendFactory.html#NAME">NAME</a></span> - Static variable in class fr.inria.atlanmod.neoemf.data.blueprints.<a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackendFactory</a></dt>
 <dd>&nbsp;</dd>
@@ -2362,7 +2365,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackend.html#NAME">NAME</a></span> - Static variable in class fr.inria.atlanmod.neoemf.data.hbase.<a href="fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.hbase">HBasePersistenceBackend</a></dt>
 <dd>
-<div class="block">The literal description of this backend.</div>
+<div class="block">The literal description of this back-end.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackendFactory.html#NAME">NAME</a></span> - Static variable in class fr.inria.atlanmod.neoemf.data.hbase.<a href="fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.hbase">HBasePersistenceBackendFactory</a></dt>
 <dd>&nbsp;</dd>
@@ -2370,7 +2373,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#NAME">NAME</a></span> - Static variable in class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a></dt>
 <dd>
-<div class="block">The literal description of this backend.</div>
+<div class="block">The literal description of this back-end.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html#NAME">NAME</a></span> - Static variable in class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackendFactory</a></dt>
 <dd>&nbsp;</dd>
@@ -2523,7 +2526,10 @@
 <div class="block">A factory of <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a>.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><span class="typeNameLink">PersistenceBackendFactoryRegistry</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/package-summary.html">fr.inria.atlanmod.neoemf.data</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">A registry that keeps in memory links of registered <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> schemes to their
+ associated <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>factory</code></a>.</div>
+</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/core/PersistenceFactory.html" title="class in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">PersistenceFactory</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/core/package-summary.html">fr.inria.atlanmod.neoemf.core</a></dt>
 <dd>
 <div class="block">A factory able to create a <a href="fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> from an <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>.</div>
@@ -2791,7 +2797,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html#register-java.lang.String-fr.inria.atlanmod.neoemf.data.PersistenceBackendFactory-">register(String, PersistenceBackendFactory)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.<a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data">PersistenceBackendFactoryRegistry</a></dt>
 <dd>
-<div class="block">Registers a <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactory</code></a> identified by the given <code>uriScheme</code>.</div>
+<div class="block">Registers a <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>factory</code></a> identified by the given URI <code>scheme</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/structure/Namespace.Registry.html#register-java.lang.String-java.lang.String-">register(String, String)</a></span> - Method in class fr.inria.atlanmod.neoemf.io.structure.<a href="fr/inria/atlanmod/neoemf/io/structure/Namespace.Registry.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Namespace.Registry</a></dt>
 <dd>
@@ -3373,11 +3379,11 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html#unregister-java.lang.String-">unregister(String)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.<a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data">PersistenceBackendFactoryRegistry</a></dt>
 <dd>
-<div class="block">Unregisters a <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactory</code></a> identified by the given <code>uriScheme</code>.</div>
+<div class="block">Unregisters a <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>factory</code></a> identified by the given URI <code>scheme</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html#unregisterAll--">unregisterAll()</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.<a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data">PersistenceBackendFactoryRegistry</a></dt>
 <dd>
-<div class="block">Unregisters all backend factories.</div>
+<div class="block">Unregisters all back-end factories.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbStore.html#unset-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">unset(InternalEObject, EStructuralFeature)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.berkeleydb.store.<a href="fr/inria/atlanmod/neoemf/data/berkeleydb/store/DirectWriteBerkeleyDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb.store">DirectWriteBerkeleyDbStore</a></dt>
 <dd>&nbsp;</dd>

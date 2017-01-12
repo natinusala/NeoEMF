@@ -182,12 +182,15 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <td class="colFirst"><code>protected <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackendFactory.html#createSpecificPersistentStore-fr.inria.atlanmod.neoemf.resource.PersistentResource-fr.inria.atlanmod.neoemf.data.PersistenceBackend-java.util.Map-">createSpecificPersistentStore</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a>&nbsp;resource,
                              <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackend</a>&nbsp;backend,
-                             <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;?,?&gt;&nbsp;options)</code>&nbsp;</td>
+                             <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;?,?&gt;&nbsp;options)</code>
+<div class="block">Creates a <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>store</code></a> between the given <code>resource</code> and the given <code>backend</code>
+ according to the given <code>options</code>.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackend</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackendFactory.html#createTransientBackend--">createTransientBackend</a></span>()</code>
-<div class="block">Creates transient backend persistence backend.</div>
+<div class="block">Creates an in-memory <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a>.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -204,7 +207,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackendFactory.html#getName--">getName</a></span>()</code>
-<div class="block">Returns the literal description of the created persistence backend.</div>
+<div class="block">Returns the literal description of the created persistence back-end.</div>
 </td>
 </tr>
 </table>
@@ -274,7 +277,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <h4>getName</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html#getName--">AbstractPersistenceBackendFactory</a></code></span></div>
-<div class="block">Returns the literal description of the created persistence backend.</div>
+<div class="block">Returns the literal description of the created persistence back-end.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html#getName--">getName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data">AbstractPersistenceBackendFactory</a></code></dd>
@@ -291,11 +294,27 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
                                                         <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackend</a>&nbsp;backend,
                                                         <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;?,?&gt;&nbsp;options)
                                                  throws <a href="../../../../../../fr/inria/atlanmod/neoemf/data/InvalidDataStoreException.html" title="class in fr.inria.atlanmod.neoemf.data">InvalidDataStoreException</a></pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html#createSpecificPersistentStore-fr.inria.atlanmod.neoemf.resource.PersistentResource-fr.inria.atlanmod.neoemf.data.PersistenceBackend-java.util.Map-">AbstractPersistenceBackendFactory</a></code></span></div>
+<div class="block">Creates a <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>store</code></a> between the given <code>resource</code> and the given <code>backend</code>
+ according to the given <code>options</code>.
+ <p>
+ The returned <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> may be a succession of several <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a>.
+ <p>
+ Contrary to <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html#createPersistentStore-fr.inria.atlanmod.neoemf.resource.PersistentResource-fr.inria.atlanmod.neoemf.data.PersistenceBackend-java.util.Map-"><code>AbstractPersistenceBackendFactory.createPersistentStore(PersistentResource, PersistenceBackend, Map)</code></a>, this method is
+ associated to a specific <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>back-end</code></a>, and called before creating global
+ <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>stores</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html#createSpecificPersistentStore-fr.inria.atlanmod.neoemf.resource.PersistentResource-fr.inria.atlanmod.neoemf.data.PersistenceBackend-java.util.Map-">createSpecificPersistentStore</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data">AbstractPersistenceBackendFactory</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>resource</code> - the resource</dd>
+<dd><code>backend</code> - the back-end</dd>
+<dd><code>options</code> - the options</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the newly created persistent store</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/InvalidDataStoreException.html" title="class in fr.inria.atlanmod.neoemf.data">InvalidDataStoreException</a></code></dd>
+<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/InvalidDataStoreException.html" title="class in fr.inria.atlanmod.neoemf.data">InvalidDataStoreException</a></code> - if there is at least one invalid value in <code>options</code>, or if an option is
+                                   missing</dd>
 </dl>
 </li>
 </ul>
@@ -307,10 +326,10 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <h4>createTransientBackend</h4>
 <pre>public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackend</a>&nbsp;createTransientBackend()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html#createTransientBackend--">PersistenceBackendFactory</a></code></span></div>
-<div class="block">Creates transient backend persistence backend.</div>
+<div class="block">Creates an in-memory <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the persistence backend</dd>
+<dd>the persistence back-end</dd>
 </dl>
 </li>
 </ul>
@@ -329,7 +348,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <dd><code>file</code> - the file</dd>
 <dd><code>options</code> - the options</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the persistence backend</dd>
+<dd>the persistence back-end</dd>
 </dl>
 </li>
 </ul>
@@ -346,7 +365,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>resource</code> - the resource</dd>
-<dd><code>backend</code> - the backend</dd>
+<dd><code>backend</code> - the back-end</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the newly created persistent store.</dd>
 </dl>
@@ -364,7 +383,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <div class="block">Copies the content from a <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a> to another.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>from</code> - the backend to copy</dd>
+<dd><code>from</code> - the back-end to copy</dd>
 <dd><code>to</code> - the destination</dd>
 </dl>
 </li>
