@@ -116,6 +116,8 @@ var activeTableTab = "activeTableTab";
 <pre>public class <span class="typeNameLabel">ContainerInfo</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></pre>
+<div class="block">A simple representation of a containment between a <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> and another. The referenced
+ <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> is identified by the name the reference used to retrieve it.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../serialized-form.html#fr.inria.atlanmod.neoemf.data.structure.ContainerInfo">Serialized Form</a></dd>
@@ -141,7 +143,9 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializabl
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html#ContainerInfo-fr.inria.atlanmod.neoemf.core.Id-java.lang.String-">ContainerInfo</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
-             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
+             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
+<div class="block">Instantiates a new <code>ContainerInfo</code> with the given <code>id</code> and the given <code>name</code>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -161,20 +165,28 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializabl
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ContainerInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html#from-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-">from</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-    <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;reference)</code>&nbsp;</td>
+    <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;reference)</code>
+<div class="block">Creates a new <code>ContainerInfo</code> from the given <code>object</code> and <code>reference</code>.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html#id--">id</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html#id--">id</a></span>()</code>
+<div class="block">Returns the identifier of the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html#name--">name</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html#name--">name</a></span>()</code>
+<div class="block">Returns the name the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a> used to retrieve the container of the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ContainerInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html#of-fr.inria.atlanmod.neoemf.core.Id-java.lang.String-">of</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
-  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
+  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
+<div class="block">Creates a new <code>ContainerInfo</code> with the given <code>id</code> and <code>name</code>.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -208,6 +220,12 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializabl
                         <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
                         <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+<div class="block">Instantiates a new <code>ContainerInfo</code> with the given <code>id</code> and the given <code>name</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the identifier of the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a></dd>
+<dd><code>name</code> - the name the reference used to retrieve the container of the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a></dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -229,6 +247,18 @@ public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/stru
                                           <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
                                           <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                                           <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;reference)</pre>
+<div class="block">Creates a new <code>ContainerInfo</code> from the given <code>object</code> and <code>reference</code>.
+ <p>
+ This method behaves like: <pre>ContainerInfo.of(object.id(), reference.getName())</pre></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>object</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a></dd>
+<dd><code>reference</code> - the reference used to retrieve the container of the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <code>ContainerInfo</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html#of-fr.inria.atlanmod.neoemf.core.Id-java.lang.String-"><code>of(Id, String)</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="of-fr.inria.atlanmod.neoemf.core.Id-java.lang.String-">
@@ -242,6 +272,14 @@ public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/stru
                                         <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
                                         <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+<div class="block">Creates a new <code>ContainerInfo</code> with the given <code>id</code> and <code>name</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the identifier of the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a></dd>
+<dd><code>name</code> - the name the reference used to retrieve the container of the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new <code>ContainerInfo</code></dd>
+</dl>
 </li>
 </ul>
 <a name="id--">
@@ -252,6 +290,11 @@ public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/stru
 <h4>id</h4>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id()</pre>
+<div class="block">Returns the identifier of the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the identifier of the object</dd>
+</dl>
 </li>
 </ul>
 <a name="name--">
@@ -262,6 +305,11 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" ti
 <h4>name</h4>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name()</pre>
+<div class="block">Returns the name the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a> used to retrieve the container of the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the name of the reference</dd>
+</dl>
 </li>
 </ul>
 </li>

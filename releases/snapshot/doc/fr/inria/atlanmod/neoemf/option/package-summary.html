@@ -87,12 +87,28 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistenceOptions.html" title="interface in fr.inria.atlanmod.neoemf.option">PersistenceOptions</a></td>
+<td class="colLast">
+<div class="block">Represents options managed by <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactory</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistenceOptionsBuilder.html" title="interface in fr.inria.atlanmod.neoemf.option">PersistenceOptionsBuilder</a></td>
+<td class="colLast">
+<div class="block">A builder of <a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonOptions.html" title="class in fr.inria.atlanmod.neoemf.option"><code>CommonOptions</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistentResourceOptions.html" title="interface in fr.inria.atlanmod.neoemf.option">PersistentResourceOptions</a></td>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Represents options related to resource-level features.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistentStoreOptions.html" title="interface in fr.inria.atlanmod.neoemf.option">PersistentStoreOptions</a></td>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Represents options related to datastore access features.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -107,19 +123,27 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/option/AbstractPersistenceOptions.html" title="class in fr.inria.atlanmod.neoemf.option">AbstractPersistenceOptions</a></td>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">The abstract implementation of <a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistenceOptions.html" title="interface in fr.inria.atlanmod.neoemf.option"><code>PersistenceOptions</code></a>.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/option/AbstractPersistenceOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.option">AbstractPersistenceOptionsBuilder</a>&lt;B extends <a href="../../../../../fr/inria/atlanmod/neoemf/option/AbstractPersistenceOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.option">AbstractPersistenceOptionsBuilder</a>&lt;B,O&gt;,O extends <a href="../../../../../fr/inria/atlanmod/neoemf/option/AbstractPersistenceOptions.html" title="class in fr.inria.atlanmod.neoemf.option">AbstractPersistenceOptions</a>&gt;</td>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">The abstract implementation of <a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistenceOptionsBuilder.html" title="interface in fr.inria.atlanmod.neoemf.option"><code>PersistenceOptionsBuilder</code></a>.</div>
+</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistenceOptions.html" title="class in fr.inria.atlanmod.neoemf.option">PersistenceOptions</a></td>
-<td class="colLast">&nbsp;</td>
+<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonOptions.html" title="class in fr.inria.atlanmod.neoemf.option">CommonOptions</a></td>
+<td class="colLast">
+<div class="block">Represents common options managed by <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactory</code></a>.</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistenceOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.option">PersistenceOptionsBuilder</a></td>
-<td class="colLast">&nbsp;</td>
+<td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.option">CommonOptionsBuilder</a></td>
+<td class="colLast">
+<div class="block">A common <a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistenceOptionsBuilder.html" title="interface in fr.inria.atlanmod.neoemf.option"><code>PersistenceOptionsBuilder</code></a> that creates common options that are available for all backend implementations.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -135,7 +159,8 @@
 <tr class="altColor">
 <td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonStoreOptions.html" title="enum in fr.inria.atlanmod.neoemf.option">CommonStoreOptions</a></td>
 <td class="colLast">
-<div class="block"><a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistentStoreOptions.html" title="interface in fr.inria.atlanmod.neoemf.option"><code>PersistentStoreOptions</code></a> that are available for all modules.</div>
+<div class="block">Represents common options related to datastore access, managed by
+ <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactory</code></a>.</div>
 </td>
 </tr>
 </tbody>
@@ -151,7 +176,9 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><a href="../../../../../fr/inria/atlanmod/neoemf/option/InvalidOptionException.html" title="class in fr.inria.atlanmod.neoemf.option">InvalidOptionException</a></td>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Exception thrown if an error is detected when validating options during assembly.</div>
+</td>
 </tr>
 </tbody>
 </table>

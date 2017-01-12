@@ -117,15 +117,20 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/option/PersistenceOptionsBuilder.html" title="interface in fr.inria.atlanmod.neoemf.option">PersistenceOptionsBuilder</a></dd>
+</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">BlueprintsOptionsBuilder</span>
 extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option">AbstractBlueprintsOptionsBuilder</a>&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option">BlueprintsOptionsBuilder</a>,<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsOptions.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option">BlueprintsOptions</a>&gt;</pre>
-<div class="block">A specific <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option"><code>AbstractBlueprintsOptionsBuilder</code></a> that creates Blueprints <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/impls/tg/TinkerGraph.html?is-external=true" title="class or interface in com.tinkerpop.blueprints.impls.tg"><code>TinkerGraph</code></a> specific
- options.
+<div class="block">A specific <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option"><code>AbstractBlueprintsOptionsBuilder</code></a> that creates Blueprints TinkerGraph specific options.
  <p>
  This builder doesn't contain specific methods for now: the only <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/impls/tg/TinkerGraph.html?is-external=true" title="class or interface in com.tinkerpop.blueprints.impls.tg"><code>TinkerGraph</code></a> configuration
- supported is the graph type, which is set by default.</div>
+ supported is the graph type, which is set by default.
+ <p>
+ All features are all optional: options can be created using all or none of them.</div>
 </li>
 </ul>
 </div>
@@ -141,10 +146,14 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/o
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
 <caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
-<th class="colOne" scope="col">Constructor and Description</th>
+<th class="colFirst" scope="col">Modifier</th>
+<th class="colLast" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsOptionsBuilder.html#BlueprintsOptionsBuilder--">BlueprintsOptionsBuilder</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsOptionsBuilder.html#BlueprintsOptionsBuilder--">BlueprintsOptionsBuilder</a></span>()</code>
+<div class="block">Instantiates a new <code>BlueprintsOptionsBuilder</code>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -164,7 +173,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/o
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option">BlueprintsOptionsBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsOptionsBuilder.html#newBuilder--">newBuilder</a></span>()</code>
-<div class="block">Creates a new builder</div>
+<div class="block">Constructs a new <code>BlueprintsOptionsBuilder</code> instance.</div>
 </td>
 </tr>
 </table>
@@ -209,7 +218,10 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/o
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BlueprintsOptionsBuilder</h4>
-<pre>public&nbsp;BlueprintsOptionsBuilder()</pre>
+<pre>protected&nbsp;BlueprintsOptionsBuilder()</pre>
+<div class="block">Instantiates a new <code>BlueprintsOptionsBuilder</code>.
+ <p>
+ This constructor is protected for API consistency purpose, to create a new builder use <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsOptionsBuilder.html#newBuilder--"><code>newBuilder()</code></a>.</div>
 </li>
 </ul>
 </li>
@@ -226,11 +238,12 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/o
 <ul class="blockListLast">
 <li class="blockList">
 <h4>newBuilder</h4>
-<pre>public static&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option">BlueprintsOptionsBuilder</a>&nbsp;newBuilder()</pre>
-<div class="block">Creates a new builder</div>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option">BlueprintsOptionsBuilder</a>&nbsp;newBuilder()</pre>
+<div class="block">Constructs a new <code>BlueprintsOptionsBuilder</code> instance.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a fresh instance of the builder</dd>
+<dd>a new builder</dd>
 </dl>
 </li>
 </ul>

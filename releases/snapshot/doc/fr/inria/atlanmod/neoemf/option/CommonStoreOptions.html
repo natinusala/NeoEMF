@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/option/AbstractPersistenceOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.option"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.option"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../fr/inria/atlanmod/neoemf/option/InvalidOptionException.html" title="class in fr.inria.atlanmod.neoemf.option"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -121,7 +121,8 @@ var activeTableTab = "activeTableTab";
 <pre>public enum <span class="typeNameLabel">CommonStoreOptions</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonStoreOptions.html" title="enum in fr.inria.atlanmod.neoemf.option">CommonStoreOptions</a>&gt;
 implements <a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistentStoreOptions.html" title="interface in fr.inria.atlanmod.neoemf.option">PersistentStoreOptions</a></pre>
-<div class="block"><a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistentStoreOptions.html" title="interface in fr.inria.atlanmod.neoemf.option"><code>PersistentStoreOptions</code></a> that are available for all modules.</div>
+<div class="block">Represents common options related to datastore access, managed by
+ <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactory</code></a>.</div>
 </li>
 </ul>
 </div>
@@ -140,19 +141,27 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistentSto
 <th class="colOne" scope="col">Enum Constant and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonStoreOptions.html#CACHE_IS_SET">CACHE_IS_SET</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonStoreOptions.html#CACHE_IS_SET">CACHE_IS_SET</a></span></code>
+<div class="block">Caches the presence of a value.</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonStoreOptions.html#CACHE_SIZE">CACHE_SIZE</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonStoreOptions.html#CACHE_SIZE">CACHE_SIZE</a></span></code>
+<div class="block">Caches the size data.</div>
+</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonStoreOptions.html#CACHE_STRUCTURAL_FEATURE">CACHE_STRUCTURAL_FEATURE</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonStoreOptions.html#CACHE_STRUCTURAL_FEATURE">CACHE_STRUCTURAL_FEATURE</a></span></code>
+<div class="block">Caches <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a>.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonStoreOptions.html#COUNT_LOADED_OBJECT">COUNT_LOADED_OBJECT</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonStoreOptions.html#LOG">LOG</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonStoreOptions.html#LOG">LOG</a></span></code>
+<div class="block">Logs every call to a methods.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -218,6 +227,11 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>CACHE_IS_SET</h4>
 <pre>public static final&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonStoreOptions.html" title="enum in fr.inria.atlanmod.neoemf.option">CommonStoreOptions</a> CACHE_IS_SET</pre>
+<div class="block">Caches the presence of a value.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/inria/atlanmod/neoemf/data/store/IsSetCachingStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store"><code>IsSetCachingStoreDecorator</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="CACHE_SIZE">
@@ -227,6 +241,11 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>CACHE_SIZE</h4>
 <pre>public static final&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonStoreOptions.html" title="enum in fr.inria.atlanmod.neoemf.option">CommonStoreOptions</a> CACHE_SIZE</pre>
+<div class="block">Caches the size data.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/inria/atlanmod/neoemf/data/store/SizeCachingStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store"><code>SizeCachingStoreDecorator</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="CACHE_STRUCTURAL_FEATURE">
@@ -236,6 +255,11 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>CACHE_STRUCTURAL_FEATURE</h4>
 <pre>public static final&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonStoreOptions.html" title="enum in fr.inria.atlanmod.neoemf.option">CommonStoreOptions</a> CACHE_STRUCTURAL_FEATURE</pre>
+<div class="block">Caches <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a>.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/inria/atlanmod/neoemf/data/store/FeatureCachingStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store"><code>FeatureCachingStoreDecorator</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="LOG">
@@ -245,6 +269,11 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>LOG</h4>
 <pre>public static final&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonStoreOptions.html" title="enum in fr.inria.atlanmod.neoemf.option">CommonStoreOptions</a> LOG</pre>
+<div class="block">Logs every call to a methods.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/inria/atlanmod/neoemf/data/store/LoggingStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store"><code>LoggingStoreDecorator</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="COUNT_LOADED_OBJECT">
@@ -254,6 +283,10 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>COUNT_LOADED_OBJECT</h4>
 <pre>public static final&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonStoreOptions.html" title="enum in fr.inria.atlanmod.neoemf.option">CommonStoreOptions</a> COUNT_LOADED_OBJECT</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/inria/atlanmod/neoemf/data/store/LoadedObjectCounterStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store"><code>LoadedObjectCounterStoreDecorator</code></a></dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -334,7 +367,7 @@ not permitted.)</div>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../fr/inria/atlanmod/neoemf/option/AbstractPersistenceOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.option"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../fr/inria/atlanmod/neoemf/option/CommonOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.option"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../fr/inria/atlanmod/neoemf/option/InvalidOptionException.html" title="class in fr.inria.atlanmod.neoemf.option"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

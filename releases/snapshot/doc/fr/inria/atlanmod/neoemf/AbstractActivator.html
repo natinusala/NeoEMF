@@ -120,8 +120,8 @@ var activeTableTab = "activeTableTab";
 <pre>public abstract class <span class="typeNameLabel">AbstractActivator</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleActivator.html?is-external=true" title="class or interface in org.osgi.framework">BundleActivator</a></pre>
-<div class="block">A <a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleActivator.html?is-external=true" title="class or interface in org.osgi.framework"><code>BundleActivator</code></a> that automatically registers a <a href="../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>factory</code></a> with its
- associated <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> in the <a href="../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>registry</code></a> when
+<div class="block">A <a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleActivator.html?is-external=true" title="class or interface in org.osgi.framework"><code>BundleActivator</code></a> that automatically registers a <a href="../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactory</code></a> with its
+ associated <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> in the global <a href="../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactoryRegistry</code></a> when
  loading an OSGi bundle.</div>
 </li>
 </ul>
@@ -161,7 +161,7 @@ implements <a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleAc
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected abstract <a href="../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackendFactory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html#factory--">factory</a></span>()</code>
-<div class="block">Returns the <a href="../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>factory</code></a> associated with this bundle.</div>
+<div class="block">Returns the <a href="../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactory</code></a> associated with this bundle.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -233,7 +233,7 @@ implements <a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleAc
                  throws <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
 <div class="block">
  <p>
- Registers the <a href="../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>factory</code></a> from <a href="../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html#factory--"><code>factory()</code></a>, with its <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> scheme from <a href="../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html#scheme--"><code>scheme()</code></a>, in the <a href="../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>registry</code></a> if it's not already.</div>
+ Registers the <a href="../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactory</code></a> from <a href="../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html#factory--"><code>factory()</code></a>, with its <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> scheme from <a href="../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html#scheme--"><code>scheme()</code></a>, in the <a href="../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>registry</code></a> if it's not already.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleActivator.html?is-external=true#start-org.osgi.framework.BundleContext-" title="class or interface in org.osgi.framework">start</a></code>&nbsp;in interface&nbsp;<code><a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleActivator.html?is-external=true" title="class or interface in org.osgi.framework">BundleActivator</a></code></dd>
@@ -295,7 +295,7 @@ implements <a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleAc
 <li class="blockList">
 <h4>factory</h4>
 <pre>protected abstract&nbsp;<a href="../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackendFactory</a>&nbsp;factory()</pre>
-<div class="block">Returns the <a href="../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>factory</code></a> associated with this bundle.</div>
+<div class="block">Returns the <a href="../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactory</code></a> associated with this bundle.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the factory</dd>
