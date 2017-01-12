@@ -116,6 +116,15 @@ var activeTableTab = "activeTableTab";
 <pre>public final class <span class="typeNameLabel">InternalBlueprintsNeo4jConfiguration</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/config/InternalBlueprintsConfiguration.html" title="interface in fr.inria.atlanmod.neoemf.data.blueprints.config">InternalBlueprintsConfiguration</a></pre>
+<div class="block">An internal class that sets Blueprints Neo4j default configuration properties
+ in the current NeoEMF <a href="https://commons.apache.org/proper/commons-configuration/javadocs/v1.10/apidocs/org/apache/commons/configuration/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration"><code>Configuration</code></a>.
+ <p>
+ This class is called dynamically by <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints"><code>BlueprintsPersistenceBackendFactory</code></a> if Neo4j 
+ implementation is used to store the underlying database.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints"><code>BlueprintsPersistenceBackendFactory</code></a></dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -137,13 +146,15 @@ implements <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/bluepr
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/config/InternalBlueprintsConfiguration.html" title="interface in fr.inria.atlanmod.neoemf.data.blueprints.config">InternalBlueprintsConfiguration</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/config/InternalBlueprintsNeo4jConfiguration.html#getInstance--">getInstance</a></span>()</code>
-<div class="block">Returns the instance of this <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/config/InternalBlueprintsConfiguration.html" title="interface in fr.inria.atlanmod.neoemf.data.blueprints.config"><code>InternalBlueprintsConfiguration</code></a>.</div>
+<div class="block">Returns the instance of this class.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/config/InternalBlueprintsNeo4jConfiguration.html#putDefaultConfiguration-org.apache.commons.configuration.Configuration-java.io.File-">putDefaultConfiguration</a></span>(<a href="https://commons.apache.org/proper/commons-configuration/javadocs/v1.10/apidocs/org/apache/commons/configuration/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration">Configuration</a>&nbsp;currentConfiguration,
-                       <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;dbLocation)</code>&nbsp;</td>
+                       <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;dbLocation)</code>
+<div class="block">Add Neo4j database directory to the current resource <a href="https://commons.apache.org/proper/commons-configuration/javadocs/v1.10/apidocs/org/apache/commons/configuration/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration"><code>Configuration</code></a></div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -174,7 +185,7 @@ implements <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/bluepr
 <li class="blockList">
 <h4>getInstance</h4>
 <pre>public static&nbsp;<a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/config/InternalBlueprintsConfiguration.html" title="interface in fr.inria.atlanmod.neoemf.data.blueprints.config">InternalBlueprintsConfiguration</a>&nbsp;getInstance()</pre>
-<div class="block">Returns the instance of this <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/config/InternalBlueprintsConfiguration.html" title="interface in fr.inria.atlanmod.neoemf.data.blueprints.config"><code>InternalBlueprintsConfiguration</code></a>.</div>
+<div class="block">Returns the instance of this class.</div>
 </li>
 </ul>
 <a name="putDefaultConfiguration-org.apache.commons.configuration.Configuration-java.io.File-">
@@ -185,9 +196,13 @@ implements <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/bluepr
 <h4>putDefaultConfiguration</h4>
 <pre>public&nbsp;void&nbsp;putDefaultConfiguration(<a href="https://commons.apache.org/proper/commons-configuration/javadocs/v1.10/apidocs/org/apache/commons/configuration/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration">Configuration</a>&nbsp;currentConfiguration,
                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;dbLocation)</pre>
+<div class="block">Add Neo4j database directory to the current resource <a href="https://commons.apache.org/proper/commons-configuration/javadocs/v1.10/apidocs/org/apache/commons/configuration/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration"><code>Configuration</code></a></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/config/InternalBlueprintsConfiguration.html#putDefaultConfiguration-org.apache.commons.configuration.Configuration-java.io.File-">putDefaultConfiguration</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/config/InternalBlueprintsConfiguration.html" title="interface in fr.inria.atlanmod.neoemf.data.blueprints.config">InternalBlueprintsConfiguration</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>currentConfiguration</code> - the <a href="https://commons.apache.org/proper/commons-configuration/javadocs/v1.10/apidocs/org/apache/commons/configuration/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration"><code>Configuration</code></a> holding resource properties</dd>
+<dd><code>dbLocation</code> - the <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> that contains the Blueprints database</dd>
 </dl>
 </li>
 </ul>

@@ -121,6 +121,16 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">BlueprintsNeo4jOptionsBuilder</span>
 extends <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option">AbstractBlueprintsOptionsBuilder</a>&lt;<a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a>,<a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptions.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptions</a>&gt;</pre>
+<div class="block">A specific <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option"><code>AbstractBlueprintsOptionsBuilder</code></a> that creates Blueprints Neo4j specific
+ options.
+ <p>
+ This builder contains methods to set the Neo4j cache type, the low-level buffer sizes, and the use of
+ memory mapped files. The graph type is automatically set to <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.html#GRAPH_TYPE_NEO4J"><code>BlueprintsNeo4jResourceOptions.GRAPH_TYPE_NEO4J</code></a>
+ in the builder constructor.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.html" title="interface in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option"><code>BlueprintsNeo4jResourceOptions</code></a></dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -141,7 +151,9 @@ extends <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprint
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#BlueprintsNeo4jOptionsBuilder--">BlueprintsNeo4jOptionsBuilder</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#BlueprintsNeo4jOptionsBuilder--">BlueprintsNeo4jOptionsBuilder</a></span>()</code>
+<div class="block">Creates a new builder and sets the graph type to <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.html#GRAPH_TYPE_NEO4J"><code>BlueprintsNeo4jResourceOptions.GRAPH_TYPE_NEO4J</code></a>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -160,55 +172,81 @@ extends <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprint
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#arraysMappedBuffer-java.lang.String-">arraysMappedBuffer</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;size)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#arraysMappedBuffer-java.lang.String-">arraysMappedBuffer</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;size)</code>
+<div class="block">Set the <code>arrays mapped memory</code> property in the created options.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#cache-fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option.BlueprintsNeo4jResourceOptions.CacheType-">cache</a></span>(<a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.CacheType.html" title="enum in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jResourceOptions.CacheType</a>&nbsp;type)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#cache-fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option.BlueprintsNeo4jResourceOptions.CacheType-">cache</a></span>(<a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.CacheType.html" title="enum in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jResourceOptions.CacheType</a>&nbsp;type)</code>
+<div class="block">Set the <code>cache type</code> feature in the created options</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#memoryMappedBuffers--">memoryMappedBuffers</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#memoryMappedBuffers--">memoryMappedBuffers</a></span>()</code>
+<div class="block">Add the <code>memory mapped buffer</code> feature in the created options.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#memoryMappedBuffers-boolean-">memoryMappedBuffers</a></span>(boolean&nbsp;memoryBuffers)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#memoryMappedBuffers-boolean-">memoryMappedBuffers</a></span>(boolean&nbsp;memoryBuffers)</code>
+<div class="block">Set the <code>memory mapped buffer</code> feature to the given value in the created options.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#newBuilder--">newBuilder</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#newBuilder--">newBuilder</a></span>()</code>
+<div class="block">Creates a new builder</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#noCache--">noCache</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#noCache--">noCache</a></span>()</code>
+<div class="block">Set the <code>no cache</code> feature in the created options.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#nodesMappedBuffer-java.lang.String-">nodesMappedBuffer</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;size)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#nodesMappedBuffer-java.lang.String-">nodesMappedBuffer</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;size)</code>
+<div class="block">Set the <code>node mapped memory</code> property in the created options.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#propertiesMappedBuffer-java.lang.String-">propertiesMappedBuffer</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;size)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#propertiesMappedBuffer-java.lang.String-">propertiesMappedBuffer</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;size)</code>
+<div class="block">Set the <code>property mapped memory</code> property in the created options.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#relationshipsMappedBuffer-java.lang.String-">relationshipsMappedBuffer</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;size)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#relationshipsMappedBuffer-java.lang.String-">relationshipsMappedBuffer</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;size)</code>
+<div class="block">Set the <code>relationship mapped memory</code> property in the created options.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#softCache--">softCache</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#softCache--">softCache</a></span>()</code>
+<div class="block">Set the <code>soft cache</code> feature in the created options.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#stringsMappedBuffer-java.lang.String-">stringsMappedBuffer</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;size)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#stringsMappedBuffer-java.lang.String-">stringsMappedBuffer</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;size)</code>
+<div class="block">Set the <code>string mapped memory</code> property in the created options.</div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#strongCache--">strongCache</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#strongCache--">strongCache</a></span>()</code>
+<div class="block">Set the <code>strong cache</code> feature in the created options.</div>
+</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#weakCache--">weakCache</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#weakCache--">weakCache</a></span>()</code>
+<div class="block">Set the <code>weak cache</code> feature in the created options.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -253,6 +291,10 @@ extends <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprint
 <li class="blockList">
 <h4>BlueprintsNeo4jOptionsBuilder</h4>
 <pre>protected&nbsp;BlueprintsNeo4jOptionsBuilder()</pre>
+<div class="block">Creates a new builder and sets the graph type to <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.html#GRAPH_TYPE_NEO4J"><code>BlueprintsNeo4jResourceOptions.GRAPH_TYPE_NEO4J</code></a>.
+ <p>
+ This constructor is protected for API consistency purpose, to create a new builder use 
+ <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#newBuilder--"><code>newBuilder()</code></a></div>
 </li>
 </ul>
 </li>
@@ -270,6 +312,11 @@ extends <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprint
 <li class="blockList">
 <h4>newBuilder</h4>
 <pre>public static&nbsp;<a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a>&nbsp;newBuilder()</pre>
+<div class="block">Creates a new builder</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a fresh instance of the builder</dd>
+</dl>
 </li>
 </ul>
 <a name="cache-fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option.BlueprintsNeo4jResourceOptions.CacheType-">
@@ -279,6 +326,15 @@ extends <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprint
 <li class="blockList">
 <h4>cache</h4>
 <pre>protected&nbsp;<a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a>&nbsp;cache(<a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.CacheType.html" title="enum in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jResourceOptions.CacheType</a>&nbsp;type)</pre>
+<div class="block">Set the <code>cache type</code> feature in the created options</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.CacheType.html" title="enum in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option"><code>BlueprintsNeo4jResourceOptions.CacheType</code></a> to set</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the builder</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.CacheType.html" title="enum in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option"><code>BlueprintsNeo4jResourceOptions.CacheType</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="noCache--">
@@ -288,6 +344,14 @@ extends <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprint
 <li class="blockList">
 <h4>noCache</h4>
 <pre>public&nbsp;<a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a>&nbsp;noCache()</pre>
+<div class="block">Set the <code>no cache</code> feature in the created options. This tells Neo4j to disable all
+ its caches</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the builder</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.CacheType.html#NONE"><code>BlueprintsNeo4jResourceOptions.CacheType.NONE</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="softCache--">
@@ -297,6 +361,14 @@ extends <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprint
 <li class="blockList">
 <h4>softCache</h4>
 <pre>public&nbsp;<a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a>&nbsp;softCache()</pre>
+<div class="block">Set the <code>soft cache</code> feature in the created options. This tells Neo4j to use a cache
+ containing soft values</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the builder</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.CacheType.html#SOFT"><code>BlueprintsNeo4jResourceOptions.CacheType.SOFT</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="weakCache--">
@@ -306,6 +378,14 @@ extends <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprint
 <li class="blockList">
 <h4>weakCache</h4>
 <pre>public&nbsp;<a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a>&nbsp;weakCache()</pre>
+<div class="block">Set the <code>weak cache</code> feature in the created options. This tells Neo4j to use a cache 
+ containing weak values</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the builder</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.CacheType.html#WEAK"><code>BlueprintsNeo4jResourceOptions.CacheType.WEAK</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="strongCache--">
@@ -315,6 +395,16 @@ extends <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprint
 <li class="blockList">
 <h4>strongCache</h4>
 <pre>public&nbsp;<a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a>&nbsp;strongCache()</pre>
+<div class="block">Set the <code>strong cache</code> feature in the created options. This tells Neo4j to use a cache
+ containing string references. Note that using this option the created cache cannot be garbage
+ collected, and <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/OutOfMemoryError.html?is-external=true" title="class or interface in java.lang"><code>OutOfMemoryError</code></a> can occur if there is not enough memory to handle the 
+ model</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the builder</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.CacheType.html#STRONG"><code>BlueprintsNeo4jResourceOptions.CacheType.STRONG</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="memoryMappedBuffers--">
@@ -324,6 +414,14 @@ extends <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprint
 <li class="blockList">
 <h4>memoryMappedBuffers</h4>
 <pre>public&nbsp;<a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a>&nbsp;memoryMappedBuffers()</pre>
+<div class="block">Add the <code>memory mapped buffer</code> feature in the created options. If the operating system
+ supports memory mapped files Neo4j will use them to speed up read/write operations</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the builder</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.html#USE_MEMORY_MAPPED_BUFFERS"><code>BlueprintsNeo4jResourceOptions.USE_MEMORY_MAPPED_BUFFERS</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="memoryMappedBuffers-boolean-">
@@ -333,6 +431,15 @@ extends <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprint
 <li class="blockList">
 <h4>memoryMappedBuffers</h4>
 <pre>public&nbsp;<a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a>&nbsp;memoryMappedBuffers(boolean&nbsp;memoryBuffers)</pre>
+<div class="block">Set the <code>memory mapped buffer</code> feature to the given value in the created options.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>memoryBuffers</code> - true to enable <code>memory mapped buffers</code>, false otherwise</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the builder</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.html#USE_MEMORY_MAPPED_BUFFERS"><code>BlueprintsNeo4jResourceOptions.USE_MEMORY_MAPPED_BUFFERS</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="stringsMappedBuffer-java.lang.String-">
@@ -342,6 +449,16 @@ extends <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprint
 <li class="blockList">
 <h4>stringsMappedBuffer</h4>
 <pre>public&nbsp;<a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a>&nbsp;stringsMappedBuffer(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;size)</pre>
+<div class="block">Set the <code>string mapped memory</code> property in the created options. This tells Neo4j the size of
+ the buffer to allocate to handle strings.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>size</code> - the size of the buffer in megabytes</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the builder</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.html#STRINGS_MAPPED_MEMORY"><code>BlueprintsNeo4jResourceOptions.STRINGS_MAPPED_MEMORY</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="arraysMappedBuffer-java.lang.String-">
@@ -351,6 +468,16 @@ extends <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprint
 <li class="blockList">
 <h4>arraysMappedBuffer</h4>
 <pre>public&nbsp;<a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a>&nbsp;arraysMappedBuffer(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;size)</pre>
+<div class="block">Set the <code>arrays mapped memory</code> property in the created options. This tells Neo4j the size of
+ the buffer to allocate to handle arrays.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>size</code> - the size of the buffer in megabytes</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the builder</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.html#ARRAYS_MAPPED_MEMORY"><code>BlueprintsNeo4jResourceOptions.ARRAYS_MAPPED_MEMORY</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="nodesMappedBuffer-java.lang.String-">
@@ -360,6 +487,16 @@ extends <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprint
 <li class="blockList">
 <h4>nodesMappedBuffer</h4>
 <pre>public&nbsp;<a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a>&nbsp;nodesMappedBuffer(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;size)</pre>
+<div class="block">Set the <code>node mapped memory</code> property in the created options. This tells Neo4j the size of 
+ the buffer to allocate to handle nodes.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>size</code> - the size of the buffer in megabytes</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the builder</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.html#NODES_MAPPED_MEMORY"><code>BlueprintsNeo4jResourceOptions.NODES_MAPPED_MEMORY</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="propertiesMappedBuffer-java.lang.String-">
@@ -369,6 +506,16 @@ extends <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprint
 <li class="blockList">
 <h4>propertiesMappedBuffer</h4>
 <pre>public&nbsp;<a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a>&nbsp;propertiesMappedBuffer(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;size)</pre>
+<div class="block">Set the <code>property mapped memory</code> property in the created options. This tells Neo4j the size of
+ the buffer to allocate to handle properties.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>size</code> - the size of the buffer in megabytes</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the builder</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.html#PROPERTIES_MAPPED_MEMORY"><code>BlueprintsNeo4jResourceOptions.PROPERTIES_MAPPED_MEMORY</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="relationshipsMappedBuffer-java.lang.String-">
@@ -378,6 +525,16 @@ extends <a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprint
 <li class="blockList">
 <h4>relationshipsMappedBuffer</h4>
 <pre>public&nbsp;<a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a>&nbsp;relationshipsMappedBuffer(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;size)</pre>
+<div class="block">Set the <code>relationship mapped memory</code> property in the created options. This tells Neo4j the size of
+ the buffer to allocate to handle properties.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>size</code> - the size of the buffer in megabytes</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the builder</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.html#RELATIONSHIPS_MAPPED_MEMORY"><code>BlueprintsNeo4jResourceOptions.RELATIONSHIPS_MAPPED_MEMORY</code></a></dd>
+</dl>
 </li>
 </ul>
 </li>
