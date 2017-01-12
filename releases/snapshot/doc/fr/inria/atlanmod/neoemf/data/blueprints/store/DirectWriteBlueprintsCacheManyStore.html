@@ -130,6 +130,14 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">DirectWriteBlueprintsCacheManyStore</span>
 extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.store">DirectWriteBlueprintsStore</a></pre>
+<div class="block">A specific subclass of <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.store"><code>DirectWriteBlueprintsStore</code></a> that uses an internal cache to store <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints"><code>Vertex</code></a> elements
+ that are part of multi-valued <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a>.
+ <p>
+ Large multi-valued <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a>s can be an execution time bottleneck in the graph implementation because any
+ element access forces the underlying database engine to load all the <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Edge.html?is-external=true" title="class or interface in com.tinkerpop.blueprints"><code>Edge</code></a>s corresponding to the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a>.
+ We overcome this limitation by caching all the <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints"><code>Vertex</code></a> elements involved in multi-valued <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a>s the first time they are
+ traversed, limiting database access. Note that the cache can contain up to <code>10000</code> elements, limiting memory consumption. 
+ is accessed.</div>
 </li>
 </ul>
 </div>
@@ -178,7 +186,9 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/s
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsCacheManyStore.html#DirectWriteBlueprintsCacheManyStore-org.eclipse.emf.ecore.resource.Resource.Internal-fr.inria.atlanmod.neoemf.data.blueprints.BlueprintsPersistenceBackend-">DirectWriteBlueprintsCacheManyStore</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.Internal.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">Resource.Internal</a>&nbsp;resource,
-                                   <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&nbsp;backend)</code>&nbsp;</td>
+                                   <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&nbsp;backend)</code>
+<div class="block">Creates a new <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsCacheManyStore.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.store"><code>DirectWriteBlueprintsCacheManyStore</code></a> for the given <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> and <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints"><code>BlueprintsPersistenceBackend</code></a>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -199,7 +209,10 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/s
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsCacheManyStore.html#getReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-">getReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
             <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;reference,
-            int&nbsp;index)</code>&nbsp;</td>
+            int&nbsp;index)</code>
+<div class="block">Custom implementation of <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html#getReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-"><code>DirectWriteBlueprintsStore.getReference(PersistentEObject, EReference, int)</code></a> that
+ caches all the vertices traversed to retrieve the element at the given <code>index</code>.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -245,6 +258,12 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/s
 <h4>DirectWriteBlueprintsCacheManyStore</h4>
 <pre>public&nbsp;DirectWriteBlueprintsCacheManyStore(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.Internal.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">Resource.Internal</a>&nbsp;resource,
                                            <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&nbsp;backend)</pre>
+<div class="block">Creates a new <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsCacheManyStore.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.store"><code>DirectWriteBlueprintsCacheManyStore</code></a> for the given <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> and <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints"><code>BlueprintsPersistenceBackend</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>resource</code> - the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> to persist and access</dd>
+<dd><code>backend</code> - the <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints"><code>BlueprintsPersistenceBackend</code></a> used to store the model</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -264,9 +283,20 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/s
 <pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;getReference(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
                               <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;reference,
                               int&nbsp;index)</pre>
+<div class="block">Custom implementation of <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html#getReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-"><code>DirectWriteBlueprintsStore.getReference(PersistentEObject, EReference, int)</code></a> that
+ caches all the vertices traversed to retrieve the element at the given <code>index</code>. This implementation bypasses 
+ the graph API limitation that has to traverse all the <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Edge.html?is-external=true" title="class or interface in com.tinkerpop.blueprints"><code>Edge</code></a>s connected to the input vertex to 
+ find the one with the given <code>index</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html#getReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-">getReference</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.store">DirectWriteBlueprintsStore</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>object</code> - the input model element</dd>
+<dd><code>reference</code> - the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a> to retrieve</dd>
+<dd><code>index</code> - the index of the element to retrieve</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a list of <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a> if the given <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a> is multi-valued, an <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a> if 
+ it is single-valued, <code>null</code> if the element doesn't exist</dd>
 </dl>
 </li>
 </ul>

@@ -113,6 +113,11 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>B</code> - the builder subclass returned by each method</dd>
+<dd><code>O</code> - the <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptions.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option"><code>AbstractBlueprintsOptions</code></a> subclass handled by the builder</dd>
+</dl>
+<dl>
 <dt>Direct Known Subclasses:</dt>
 <dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option">BlueprintsOptionsBuilder</a></dd>
 </dl>
@@ -120,6 +125,11 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public abstract class <span class="typeNameLabel">AbstractBlueprintsOptionsBuilder&lt;B extends AbstractBlueprintsOptionsBuilder&lt;B,O&gt;,O extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptions.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option">AbstractBlueprintsOptions</a>&gt;</span>
 extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/option/AbstractPersistenceOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.option">AbstractPersistenceOptionsBuilder</a>&lt;B,O&gt;</pre>
+<div class="block">An abstract option builder that extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/option/AbstractPersistenceOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.option"><code>AbstractPersistenceOptionsBuilder</code></a> by providing 
+ utility methods to create generic Blueprints options.
+ <p>
+ Created options can be <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsResourceOptions.html" title="interface in fr.inria.atlanmod.neoemf.data.blueprints.option"><code>BlueprintsResourceOptions</code></a> if they define resource-level features, or
+ <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsStoreOptions.html" title="enum in fr.inria.atlanmod.neoemf.data.blueprints.option"><code>BlueprintsStoreOptions</code></a> if they define datastore access feature.</div>
 </li>
 </ul>
 </div>
@@ -140,7 +150,9 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/option/AbstractPe
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html#AbstractBlueprintsOptionsBuilder--">AbstractBlueprintsOptionsBuilder</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html#AbstractBlueprintsOptionsBuilder--">AbstractBlueprintsOptionsBuilder</a></span>()</code>
+<div class="block">Creates a new builder</div>
+</td>
 </tr>
 </table>
 </li>
@@ -159,23 +171,33 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/option/AbstractPe
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html" title="type parameter in AbstractBlueprintsOptionsBuilder">B</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html#autocommit--">autocommit</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html#autocommit--">autocommit</a></span>()</code>
+<div class="block">Add the <code>autocommit</code> feature in the created options</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html" title="type parameter in AbstractBlueprintsOptionsBuilder">B</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html#autocommit-int-">autocommit</a></span>(int&nbsp;chunk)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html#autocommit-int-">autocommit</a></span>(int&nbsp;chunk)</code>
+<div class="block">Add the <code>autocommit</code> feature with the given <code>chunk</code> size in the created options</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html" title="type parameter in AbstractBlueprintsOptionsBuilder">B</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html#directWrite--">directWrite</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html#directWrite--">directWrite</a></span>()</code>
+<div class="block">Add the <code>directWrite</code> feature in the created options.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html" title="type parameter in AbstractBlueprintsOptionsBuilder">B</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html#directWriteCacheMany--">directWriteCacheMany</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html#directWriteCacheMany--">directWriteCacheMany</a></span>()</code>
+<div class="block">Add the <code>directWriteCacheMany</code> feature in the created options.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html" title="type parameter in AbstractBlueprintsOptionsBuilder">B</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html#graph-java.lang.String-">graph</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;graph)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html#graph-java.lang.String-">graph</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;graphType)</code>
+<div class="block">Add the given <code>graphType</code> in the created options</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -213,6 +235,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/option/AbstractPe
 <li class="blockList">
 <h4>AbstractBlueprintsOptionsBuilder</h4>
 <pre>protected&nbsp;AbstractBlueprintsOptionsBuilder()</pre>
+<div class="block">Creates a new builder</div>
 </li>
 </ul>
 </li>
@@ -229,7 +252,16 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/option/AbstractPe
 <ul class="blockList">
 <li class="blockList">
 <h4>graph</h4>
-<pre>protected&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html" title="type parameter in AbstractBlueprintsOptionsBuilder">B</a>&nbsp;graph(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;graph)</pre>
+<pre>protected&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html" title="type parameter in AbstractBlueprintsOptionsBuilder">B</a>&nbsp;graph(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;graphType)</pre>
+<div class="block">Add the given <code>graphType</code> in the created options</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>graphType</code> - the type of the Blueprints graph</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the builder</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsResourceOptions.html#GRAPH_TYPE"><code>BlueprintsResourceOptions.GRAPH_TYPE</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="autocommit--">
@@ -239,6 +271,13 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/option/AbstractPe
 <li class="blockList">
 <h4>autocommit</h4>
 <pre>public&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html" title="type parameter in AbstractBlueprintsOptionsBuilder">B</a>&nbsp;autocommit()</pre>
+<div class="block">Add the <code>autocommit</code> feature in the created options</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the builder</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsStoreOptions.html#AUTOCOMMIT"><code>BlueprintsStoreOptions.AUTOCOMMIT</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="autocommit-int-">
@@ -248,6 +287,15 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/option/AbstractPe
 <li class="blockList">
 <h4>autocommit</h4>
 <pre>public&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html" title="type parameter in AbstractBlueprintsOptionsBuilder">B</a>&nbsp;autocommit(int&nbsp;chunk)</pre>
+<div class="block">Add the <code>autocommit</code> feature with the given <code>chunk</code> size in the created options</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>chunk</code> - the number of database operations between each commit</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the builder</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsStoreOptions.html#AUTOCOMMIT"><code>BlueprintsStoreOptions.AUTOCOMMIT</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="directWrite--">
@@ -257,6 +305,15 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/option/AbstractPe
 <li class="blockList">
 <h4>directWrite</h4>
 <pre>public&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html" title="type parameter in AbstractBlueprintsOptionsBuilder">B</a>&nbsp;directWrite()</pre>
+<div class="block">Add the <code>directWrite</code> feature in the created options. Created resource will embed a
+ <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.store"><code>DirectWriteBlueprintsStore</code></a> to interact with the database</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the builder</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsStoreOptions.html#DIRECT_WRITE"><code>BlueprintsStoreOptions.DIRECT_WRITE</code></a>, 
+<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.store"><code>DirectWriteBlueprintsStore</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="directWriteCacheMany--">
@@ -266,6 +323,15 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/option/AbstractPe
 <li class="blockList">
 <h4>directWriteCacheMany</h4>
 <pre>public&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html" title="type parameter in AbstractBlueprintsOptionsBuilder">B</a>&nbsp;directWriteCacheMany()</pre>
+<div class="block">Add the <code>directWriteCacheMany</code> feature in the created options. Created resource will embed a
+ <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsCacheManyStore.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.store"><code>DirectWriteBlueprintsCacheManyStore</code></a> to interact with the database</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the builder</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsStoreOptions.html#CACHE_MANY"><code>BlueprintsStoreOptions.CACHE_MANY</code></a>, 
+<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsCacheManyStore.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.store"><code>DirectWriteBlueprintsCacheManyStore</code></a></dd>
+</dl>
 </li>
 </ul>
 </li>

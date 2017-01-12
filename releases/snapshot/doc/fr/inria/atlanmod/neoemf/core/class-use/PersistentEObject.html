@@ -188,7 +188,7 @@
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a></code></td>
 <td class="colLast"><span class="typeNameLabel">BlueprintsPersistenceBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#reifyVertex-com.tinkerpop.blueprints.Vertex-">reifyVertex</a></span>(<a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints">Vertex</a>&nbsp;vertex)</code>
-<div class="block">Reifies the given <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints"><code>Vertex</code></a> as an <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a></div>
+<div class="block">Reifies the given <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints"><code>Vertex</code></a> as a <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a></div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -210,7 +210,7 @@
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints">Vertex</a></code></td>
 <td class="colLast"><span class="typeNameLabel">BlueprintsPersistenceBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#getOrCreateVertex-fr.inria.atlanmod.neoemf.core.PersistentEObject-">getOrCreateVertex</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object)</code>
-<div class="block">Return the vertex corresponding to the provided <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>.</div>
+<div class="block">Return the vertex corresponding to the provided <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>.</div>
 </td>
 </tr>
 </tbody>
@@ -279,7 +279,10 @@
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><span class="typeNameLabel">DirectWriteBlueprintsCacheManyStore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsCacheManyStore.html#getReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-">getReference</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
             <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;reference,
-            int&nbsp;index)</code>&nbsp;</td>
+            int&nbsp;index)</code>
+<div class="block">Custom implementation of <a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html#getReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-"><code>DirectWriteBlueprintsStore.getReference(PersistentEObject, EReference, int)</code></a> that
+ caches all the vertices traversed to retrieve the element at the given <code>index</code>.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected int</code></td>
