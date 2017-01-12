@@ -101,12 +101,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data">AbstractPersistenceBackendFactory</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb">BerkeleyDbPersistenceBackendFactory</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackendFactory</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.hbase">HBasePersistenceBackendFactory</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackendFactory</a></dd>
+<dd><a href="../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data">AbstractPersistenceBackendFactory</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackendFactory</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.hbase">HBasePersistenceBackendFactory</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackendFactory</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">PersistenceBackendFactory</span></pre>
-<div class="block">A factory of <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a>.</div>
+<div class="block">A factory of <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a> and <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a>.</div>
 </li>
 </ul>
 </div>
@@ -185,7 +185,7 @@ var activeTableTab = "activeTableTab";
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html#createTransientStore-fr.inria.atlanmod.neoemf.resource.PersistentResource-fr.inria.atlanmod.neoemf.data.PersistenceBackend-">createTransientStore</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a>&nbsp;resource,
                     <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackend</a>&nbsp;backend)</code>
-<div class="block">Creates a <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> between the given <code>resource</code> and the given <code>backend</code>.</div>
+<div class="block">Creates a <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> between the given <code>resource</code> and the given in-memory <code>backend</code>.</div>
 </td>
 </tr>
 </table>
@@ -266,7 +266,7 @@ var activeTableTab = "activeTableTab";
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>file</code> - the file</dd>
-<dd><code>options</code> - the options</dd>
+<dd><code>options</code> - the options that defines the behaviour of the back-end</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the persistence back-end</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -282,7 +282,7 @@ var activeTableTab = "activeTableTab";
 <h4>createTransientStore</h4>
 <pre><a href="../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;createTransientStore(<a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a>&nbsp;resource,
                                      <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackend</a>&nbsp;backend)</pre>
-<div class="block">Creates a <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> between the given <code>resource</code> and the given <code>backend</code>.</div>
+<div class="block">Creates a <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> between the given <code>resource</code> and the given in-memory <code>backend</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>resource</code> - the resource</dd>
@@ -311,7 +311,7 @@ var activeTableTab = "activeTableTab";
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>resource</code> - the resource</dd>
 <dd><code>backend</code> - the back-end</dd>
-<dd><code>options</code> - the options</dd>
+<dd><code>options</code> - the options that defines the behaviour of the back-end</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the newly created persistent store.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

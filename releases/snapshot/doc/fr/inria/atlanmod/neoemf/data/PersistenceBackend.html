@@ -105,13 +105,19 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data">AbstractPersistenceBackend</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/berkeleydb/BerkeleyDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.berkeleydb">BerkeleyDbPersistenceBackend</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.hbase">HBasePersistenceBackend</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a></dd>
+<dd><a href="../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data">AbstractPersistenceBackend</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.hbase">HBasePersistenceBackend</a>, <a href="../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">PersistenceBackend</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</a></pre>
-<div class="block">An adapter on top of a data store.</div>
+<div class="block">An adapter on top of a data store that provides specific methods for communicating with a data store implementation.
+ <p>
+ Each <code>PersistenceBackend</code> manage one single instance of a data store.</div>
+<dl>
+<dt><span class="simpleTagLabel">In future:</span></dt>
+<dd>an abstraction of <code>PersistenceBackend</code> will be implemented to define a global behaviour</dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -133,7 +139,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html#close--">close</a></span>()</code>
-<div class="block">Cleanly stops the underlying data store.</div>
+<div class="block">
+
+ In our case, it cleanly stops the underlying data store.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -152,7 +160,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html#save--">save</a></span>()</code>
-<div class="block">Saves the modifications of the owned <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>s in the persistence back-end.</div>
+<div class="block">Saves the modifications of the owned <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>s in the underlying data store.</div>
 </td>
 </tr>
 </table>
@@ -191,7 +199,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html
 <li class="blockList">
 <h4>close</h4>
 <pre>void&nbsp;close()</pre>
-<div class="block">Cleanly stops the underlying data store.</div>
+<div class="block">
+
+ In our case, it cleanly stops the underlying data store.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true#close--" title="class or interface in java.lang">close</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang">AutoCloseable</a></code></dd>
@@ -207,7 +217,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html
 <li class="blockList">
 <h4>save</h4>
 <pre>void&nbsp;save()</pre>
-<div class="block">Saves the modifications of the owned <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>s in the persistence back-end.</div>
+<div class="block">Saves the modifications of the owned <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>s in the underlying data store.</div>
 </li>
 </ul>
 <a name="getAllInstances-org.eclipse.emf.ecore.EClass-boolean-">
