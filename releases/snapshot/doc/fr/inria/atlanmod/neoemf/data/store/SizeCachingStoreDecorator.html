@@ -125,7 +125,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">SizeCachingStoreDecorator</span>
 extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractPersistentStoreDecorator</a></pre>
-<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> decorator that caches the size data.</div>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> wrapper that caches the size data.</div>
 </li>
 </ul>
 </div>
@@ -159,11 +159,15 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/SizeCachingStoreDecorator.html#SizeCachingStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-">SizeCachingStoreDecorator</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/SizeCachingStoreDecorator.html#SizeCachingStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-">SizeCachingStoreDecorator</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</code>
+<div class="block">Instantiates a new <code>SizeCachingStoreDecorator</code> with the default cache size.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/SizeCachingStoreDecorator.html#SizeCachingStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-int-">SizeCachingStoreDecorator</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store,
-                         int&nbsp;cacheSize)</code>&nbsp;</td>
+                         int&nbsp;cacheSize)</code>
+<div class="block">Instantiates a new <code>SizeCachingStoreDecorator</code> with the given <code>cacheSize</code>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -249,6 +253,11 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <li class="blockList">
 <h4>SizeCachingStoreDecorator</h4>
 <pre>public&nbsp;SizeCachingStoreDecorator(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</pre>
+<div class="block">Instantiates a new <code>SizeCachingStoreDecorator</code> with the default cache size.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>store</code> - the underlying store</dd>
+</dl>
 </li>
 </ul>
 <a name="SizeCachingStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-int-">
@@ -259,6 +268,12 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <h4>SizeCachingStoreDecorator</h4>
 <pre>public&nbsp;SizeCachingStoreDecorator(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store,
                                  int&nbsp;cacheSize)</pre>
+<div class="block">Instantiates a new <code>SizeCachingStoreDecorator</code> with the given <code>cacheSize</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>store</code> - the underlying store</dd>
+<dd><code>cacheSize</code> - the size of the cache</dd>
+</dl>
 </li>
 </ul>
 </li>

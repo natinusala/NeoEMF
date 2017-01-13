@@ -125,6 +125,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">AutocommitStoreDecorator</span>
 extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractPersistentStoreDecorator</a></pre>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> wrapper that automatically saves modifications as calls are made.</div>
 </li>
 </ul>
 </div>
@@ -159,14 +160,13 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AutocommitStoreDecorator.html#AutocommitStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-">AutocommitStoreDecorator</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</code>
-<div class="block">Allows to make <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AutocommitStoreDecorator.html#OPS_BETWEEN_COMMITS_DEFAULT"><code>OPS_BETWEEN_COMMITS_DEFAULT</code></a> modifications on the underlying <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>InternalEObject.EStore</code></a> before saving
- automatically.</div>
+<div class="block">Instantiates a new <code>AutocommitStoreDecorator</code> with the default number of modifications between commits.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AutocommitStoreDecorator.html#AutocommitStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-long-">AutocommitStoreDecorator</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store,
                         long&nbsp;opsBetweenCommits)</code>
-<div class="block">Allows to specify the number of allowed modification on the underlying <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>InternalEObject.EStore</code></a> before saving automatically.</div>
+<div class="block">Instantiates a new <code>AutocommitStoreDecorator</code> with the given <code>opsBetweenCommits</code>.</div>
 </td>
 </tr>
 </table>
@@ -198,7 +198,11 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AutocommitStoreDecorator.html#finalize--">finalize</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AutocommitStoreDecorator.html#finalize--">finalize</a></span>()</code>
+<div class="block">
+
+ In our case, it commits the last modifications.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
@@ -262,7 +266,12 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <h4>AutocommitStoreDecorator</h4>
 <pre>public&nbsp;AutocommitStoreDecorator(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store,
                                 long&nbsp;opsBetweenCommits)</pre>
-<div class="block">Allows to specify the number of allowed modification on the underlying <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>InternalEObject.EStore</code></a> before saving automatically.</div>
+<div class="block">Instantiates a new <code>AutocommitStoreDecorator</code> with the given <code>opsBetweenCommits</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>store</code> - the underlying store</dd>
+<dd><code>opsBetweenCommits</code> - the number of modifications between commit</dd>
+</dl>
 </li>
 </ul>
 <a name="AutocommitStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-">
@@ -272,8 +281,11 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <li class="blockList">
 <h4>AutocommitStoreDecorator</h4>
 <pre>public&nbsp;AutocommitStoreDecorator(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</pre>
-<div class="block">Allows to make <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AutocommitStoreDecorator.html#OPS_BETWEEN_COMMITS_DEFAULT"><code>OPS_BETWEEN_COMMITS_DEFAULT</code></a> modifications on the underlying <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>InternalEObject.EStore</code></a> before saving
- automatically.</div>
+<div class="block">Instantiates a new <code>AutocommitStoreDecorator</code> with the default number of modifications between commits.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>store</code> - the underlying store</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -395,6 +407,9 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <h4>finalize</h4>
 <pre>protected&nbsp;void&nbsp;finalize()
                  throws <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a></pre>
+<div class="block">
+
+ In our case, it commits the last modifications.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>

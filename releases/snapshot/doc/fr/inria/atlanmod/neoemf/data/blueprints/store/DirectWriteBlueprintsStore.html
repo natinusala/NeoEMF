@@ -129,15 +129,15 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">DirectWriteBlueprintsStore</span>
 extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractDirectWriteStore</a>&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&gt;</pre>
-<div class="block">An <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><code>AbstractDirectWriteStore</code></a> subclass that translates model-level operations
+<div class="block">An <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/DirectWriteStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>DirectWriteStore</code></a> subclass that translates model-level operations
  to Blueprints calls.
  <p>
  This class implements the <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> interface that defines a set of operations to implement in order
- to allow EMF persistence delegation. If this store is used, every method call and property access on 
- <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> is forwarded to this class, that takes care of the database serialization and deserialization 
+ to allow EMF persistence delegation. If this store is used, every method call and property access on
+ <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> is forwarded to this class, that takes care of the database serialization and deserialization
  using its embedded <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints"><code>BlueprintsPersistenceBackend</code></a>.
  <p>
- This store can be used as a base store that can be complemented by plugging decorator stores on top of it 
+ This store can be used as a base store that can be complemented by plugging decorator stores on top of it
  (see <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store"><code>AbstractPersistentStoreDecorator</code></a> subclasses) to provide additional features such as caching or logging.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -230,7 +230,8 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/Abstra
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html#DirectWriteBlueprintsStore-org.eclipse.emf.ecore.resource.Resource.Internal-fr.inria.atlanmod.neoemf.data.blueprints.BlueprintsPersistenceBackend-">DirectWriteBlueprintsStore</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.Internal.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">Resource.Internal</a>&nbsp;resource,
                           <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&nbsp;backend)</code>
-<div class="block">Creates a new <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.store"><code>DirectWriteBlueprintsStore</code></a> for the given <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> and <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints"><code>BlueprintsPersistenceBackend</code></a>.</div>
+<div class="block">Instantiates a new <code>DirectWriteBlueprintsStore</code> between the given <code>resource</code> and the
+ <code>backend</code>.</div>
 </td>
 </tr>
 </table>
@@ -581,11 +582,12 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/Abstra
 <h4>DirectWriteBlueprintsStore</h4>
 <pre>public&nbsp;DirectWriteBlueprintsStore(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.Internal.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">Resource.Internal</a>&nbsp;resource,
                                   <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&nbsp;backend)</pre>
-<div class="block">Creates a new <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.store"><code>DirectWriteBlueprintsStore</code></a> for the given <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> and <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints"><code>BlueprintsPersistenceBackend</code></a>.</div>
+<div class="block">Instantiates a new <code>DirectWriteBlueprintsStore</code> between the given <code>resource</code> and the
+ <code>backend</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>resource</code> - the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> to persist and access</dd>
-<dd><code>backend</code> - the <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints"><code>BlueprintsPersistenceBackend</code></a> used to serialize and deserialize the model</dd>
+<dd><code>resource</code> - the resource to persist and access</dd>
+<dd><code>backend</code> - the persistence backend used to store the model</dd>
 </dl>
 </li>
 </ul>

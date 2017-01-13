@@ -232,7 +232,7 @@
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.store">DirectWriteBlueprintsStore</a></span></code>
-<div class="block">An <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><code>AbstractDirectWriteStore</code></a> subclass that translates model-level operations
+<div class="block">An <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/DirectWriteStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>DirectWriteStore</code></a> subclass that translates model-level operations
  to Blueprints calls.</div>
 </td>
 </tr>
@@ -367,7 +367,9 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/DirectWriteStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">DirectWriteStore</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/DirectWriteStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">DirectWriteStore</a></span></code>
+<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> that translates model-level operations into data store calls.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -386,7 +388,9 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractPersistentStore</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractPersistentStore</a></span></code>
+<div class="block">The abstract implementation of a <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a>.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
@@ -396,18 +400,20 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AutocommitStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store">AutocommitStoreDecorator</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AutocommitStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store">AutocommitStoreDecorator</a></span></code>
+<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> wrapper that automatically saves modifications as calls are made.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/FeatureCachingStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store">FeatureCachingStoreDecorator</a></span></code>
-<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> decorator that caches <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a>.</div>
+<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> wrapper that caches <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/InvalidStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">InvalidStore</a></span></code>
-<div class="block">Utility class which can be used by back-end implementations that do not provide transient layer.</div>
+<div class="block"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> which can be used by back-end implementations that do not provide transient layer.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -418,18 +424,20 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/LoadedObjectCounterStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store">LoadedObjectCounterStoreDecorator</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/LoadedObjectCounterStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store">LoadedObjectCounterStoreDecorator</a></span></code>
+<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> wrapper that count the number elements used.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/LoggingStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store">LoggingStoreDecorator</a></span></code>
-<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> decorator that logs every call to its methods in the <a href="../../../../../../../fr/inria/atlanmod/neoemf/logging/NeoLogger.html" title="class in fr.inria.atlanmod.neoemf.logging"><code>NeoLogger</code></a>.</div>
+<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> wrapper that logs every call to its methods in the <a href="../../../../../../../fr/inria/atlanmod/neoemf/logging/NeoLogger.html" title="class in fr.inria.atlanmod.neoemf.logging"><code>NeoLogger</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/SizeCachingStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store">SizeCachingStoreDecorator</a></span></code>
-<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> decorator that caches the size data.</div>
+<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> wrapper that caches the size data.</div>
 </td>
 </tr>
 </tbody>
@@ -468,46 +476,63 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#AbstractPersistentStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-">AbstractPersistentStoreDecorator</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#AbstractPersistentStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-">AbstractPersistentStoreDecorator</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</code>
+<div class="block">Instantiates a new <code>AbstractPersistentStoreDecorator</code> on the given <code>store</code>.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AutocommitStoreDecorator.html#AutocommitStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-">AutocommitStoreDecorator</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</code>
-<div class="block">Allows to make <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AutocommitStoreDecorator.html#OPS_BETWEEN_COMMITS_DEFAULT"><code>AutocommitStoreDecorator.OPS_BETWEEN_COMMITS_DEFAULT</code></a> modifications on the underlying <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>InternalEObject.EStore</code></a> before saving
- automatically.</div>
+<div class="block">Instantiates a new <code>AutocommitStoreDecorator</code> with the default number of modifications between commits.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AutocommitStoreDecorator.html#AutocommitStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-long-">AutocommitStoreDecorator</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store,
                         long&nbsp;opsBetweenCommits)</code>
-<div class="block">Allows to specify the number of allowed modification on the underlying <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>InternalEObject.EStore</code></a> before saving automatically.</div>
+<div class="block">Instantiates a new <code>AutocommitStoreDecorator</code> with the given <code>opsBetweenCommits</code>.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/FeatureCachingStoreDecorator.html#FeatureCachingStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-">FeatureCachingStoreDecorator</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/FeatureCachingStoreDecorator.html#FeatureCachingStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-">FeatureCachingStoreDecorator</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</code>
+<div class="block">Instantiates a new <code>FeatureCachingStoreDecorator</code> with the default cache size.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/FeatureCachingStoreDecorator.html#FeatureCachingStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-int-">FeatureCachingStoreDecorator</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store,
-                            int&nbsp;cacheSize)</code>&nbsp;</td>
+                            int&nbsp;cacheSize)</code>
+<div class="block">Instantiates a new <code>FeatureCachingStoreDecorator</code> with the given <code>cacheSize</code>.</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/IsSetCachingStoreDecorator.html#IsSetCachingStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-">IsSetCachingStoreDecorator</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/IsSetCachingStoreDecorator.html#IsSetCachingStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-">IsSetCachingStoreDecorator</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</code>
+<div class="block">Instantiates a new <code>IsSetCachingStoreDecorator</code> with the default cache size.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/IsSetCachingStoreDecorator.html#IsSetCachingStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-int-">IsSetCachingStoreDecorator</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store,
-                          int&nbsp;cacheSize)</code>&nbsp;</td>
+                          int&nbsp;cacheSize)</code>
+<div class="block">Instantiates a new <code>IsSetCachingStoreDecorator</code> with the given <code>cacheSize</code>.</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/LoadedObjectCounterStoreDecorator.html#LoadedObjectCounterStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-">LoadedObjectCounterStoreDecorator</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/LoadedObjectCounterStoreDecorator.html#LoadedObjectCounterStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-">LoadedObjectCounterStoreDecorator</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</code>
+<div class="block">Instantiates a new <code>LoadedObjectCounterStoreDecorator</code>.</div>
+</td>
 </tr>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/LoggingStoreDecorator.html#LoggingStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-">LoggingStoreDecorator</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/LoggingStoreDecorator.html#LoggingStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-">LoggingStoreDecorator</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</code>
+<div class="block">Instantiates a new <code>LoggingStoreDecorator</code>.</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/SizeCachingStoreDecorator.html#SizeCachingStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-">SizeCachingStoreDecorator</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/SizeCachingStoreDecorator.html#SizeCachingStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-">SizeCachingStoreDecorator</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store)</code>
+<div class="block">Instantiates a new <code>SizeCachingStoreDecorator</code> with the default cache size.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/SizeCachingStoreDecorator.html#SizeCachingStoreDecorator-fr.inria.atlanmod.neoemf.data.store.PersistentStore-int-">SizeCachingStoreDecorator</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;store,
-                         int&nbsp;cacheSize)</code>&nbsp;</td>
+                         int&nbsp;cacheSize)</code>
+<div class="block">Instantiates a new <code>SizeCachingStoreDecorator</code> with the given <code>cacheSize</code>.</div>
+</td>
 </tr>
 </tbody>
 </table>

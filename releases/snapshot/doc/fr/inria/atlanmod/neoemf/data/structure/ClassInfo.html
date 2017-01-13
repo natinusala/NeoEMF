@@ -191,7 +191,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializabl
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html#uri--">uri</a></span>()</code>
-<div class="block">Returns the string of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>.</div>
+<div class="block">Returns the literal representation of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -231,7 +231,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializabl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>name</code> - the name of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a></dd>
-<dd><code>uri</code> - the string of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a></dd>
+<dd><code>uri</code> - the literal representation of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -255,7 +255,7 @@ public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/stru
 <div class="block">Creates a new <code>ClassInfo</code> from the given <code>object</code>. The <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a> will be found by calling the
  <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true#eClass--" title="class or interface in org.eclipse.emf.ecore"><code>EObject.eClass()</code></a> method.
  <p>
- This method behaves like: <pre>ClassInfo.of(eClass.getName(), eClass.getEPackage().getNsURI())</pre></div>
+ This method behaves like: <code>ClassInfo.of(eClass.getName(), eClass.getEPackage().getNsURI())</code></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>object</code> - the object from which the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a> has to be retreive with the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true#eClass--" title="class or interface in org.eclipse.emf.ecore"><code>EObject.eClass()</code></a> method</dd>
@@ -282,7 +282,7 @@ public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/stru
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>name</code> - the name of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a></dd>
-<dd><code>uri</code> - the string of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a></dd>
+<dd><code>uri</code> - the literal representation of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new <code>ClassInfo</code></dd>
 </dl>
@@ -311,10 +311,10 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.h
 <h4>uri</h4>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri()</pre>
-<div class="block">Returns the string of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>.</div>
+<div class="block">Returns the literal representation of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the string of the URI</dd>
+<dd>the literal representation of the URI</dd>
 </dl>
 </li>
 </ul>
