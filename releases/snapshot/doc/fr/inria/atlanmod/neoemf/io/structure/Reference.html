@@ -121,7 +121,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">Reference</span>
 extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html" title="class in fr.inria.atlanmod.neoemf.io.structure">StructuralFeature</a></pre>
-<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>StructuralFeature</code></a> of a link between two <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Classifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Classifier</code></a>.</div>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>StructuralFeature</code></a> representing an reference, which links several <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Classifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Classifier</code></a>s.</div>
 </li>
 </ul>
 </div>
@@ -140,7 +140,9 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Structu
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html#Reference-java.lang.String-">Reference</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;localName)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html#Reference-java.lang.String-">Reference</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;localName)</code>
+<div class="block">Constructs a new <code>Reference</code> with the given <code>localName</code>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -159,29 +161,39 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Structu
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Reference</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html#from-fr.inria.atlanmod.neoemf.io.structure.Attribute-">from</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Attribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Attribute</a>&nbsp;attribute)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html#from-fr.inria.atlanmod.neoemf.io.structure.Attribute-">from</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Attribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Attribute</a>&nbsp;attribute)</code>
+<div class="block">Converts an <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Attribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Attribute</code></a> to a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Reference</code></a>.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Identifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Identifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html#getIdReference--">getIdReference</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html#getIdReference--">getIdReference</a></span>()</code>
+<div class="block">Returns the identifier of the referenced element.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html#isContainment--">isContainment</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html#isContainment--">isContainment</a></span>()</code>
+<div class="block">Returns whether this reference is a containment.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html#isReference--">isReference</a></span>()</code>
-<div class="block">Defines if this structural element is a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Reference</code></a>.</div>
+<div class="block">Defines whether this feature is a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Reference</code></a>.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html#setContainment-boolean-">setContainment</a></span>(boolean&nbsp;containment)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html#setContainment-boolean-">setContainment</a></span>(boolean&nbsp;containment)</code>
+<div class="block">Defines whether this reference is a containment.</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html#setIdReference-fr.inria.atlanmod.neoemf.io.structure.Identifier-">setIdReference</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Identifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Identifier</a>&nbsp;idReference)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html#setIdReference-fr.inria.atlanmod.neoemf.io.structure.Identifier-">setIdReference</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Identifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Identifier</a>&nbsp;idReference)</code>
+<div class="block">Defines the identifier of the referenced element.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -226,6 +238,11 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Structu
 <li class="blockList">
 <h4>Reference</h4>
 <pre>public&nbsp;Reference(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;localName)</pre>
+<div class="block">Constructs a new <code>Reference</code> with the given <code>localName</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>localName</code> - the name of this reference</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -243,6 +260,13 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Structu
 <li class="blockList">
 <h4>from</h4>
 <pre>public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Reference</a>&nbsp;from(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Attribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Attribute</a>&nbsp;attribute)</pre>
+<div class="block">Converts an <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Attribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Attribute</code></a> to a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Reference</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>attribute</code> - the attribute to convert</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new reference</dd>
+</dl>
 </li>
 </ul>
 <a name="getIdReference--">
@@ -252,6 +276,11 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Structu
 <li class="blockList">
 <h4>getIdReference</h4>
 <pre>public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Identifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Identifier</a>&nbsp;getIdReference()</pre>
+<div class="block">Returns the identifier of the referenced element.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the identifier</dd>
+</dl>
 </li>
 </ul>
 <a name="setIdReference-fr.inria.atlanmod.neoemf.io.structure.Identifier-">
@@ -261,6 +290,11 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Structu
 <li class="blockList">
 <h4>setIdReference</h4>
 <pre>public&nbsp;void&nbsp;setIdReference(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Identifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Identifier</a>&nbsp;idReference)</pre>
+<div class="block">Defines the identifier of the referenced element.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>idReference</code> - the identifier</dd>
+</dl>
 </li>
 </ul>
 <a name="isReference--">
@@ -271,12 +305,12 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Structu
 <h4>isReference</h4>
 <pre>public&nbsp;boolean&nbsp;isReference()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#isReference--">StructuralFeature</a></code></span></div>
-<div class="block">Defines if this structural element is a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Reference</code></a>.</div>
+<div class="block">Defines whether this feature is a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Reference</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#isReference--">isReference</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html" title="class in fr.inria.atlanmod.neoemf.io.structure">StructuralFeature</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if this structural element is a reference.</dd>
+<dd><code>true</code> if this feature is a reference.</dd>
 </dl>
 </li>
 </ul>
@@ -287,6 +321,11 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Structu
 <li class="blockList">
 <h4>isContainment</h4>
 <pre>public&nbsp;boolean&nbsp;isContainment()</pre>
+<div class="block">Returns whether this reference is a containment.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if this reference is a containment</dd>
+</dl>
 </li>
 </ul>
 <a name="setContainment-boolean-">
@@ -296,6 +335,11 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Structu
 <li class="blockList">
 <h4>setContainment</h4>
 <pre>public&nbsp;void&nbsp;setContainment(boolean&nbsp;containment)</pre>
+<div class="block">Defines whether this reference is a containment.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>containment</code> - <code>true</code> if this reference is a containment</dd>
+</dl>
 </li>
 </ul>
 </li>

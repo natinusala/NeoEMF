@@ -120,7 +120,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public abstract class <span class="typeNameLabel">StructuralFeature</span>
 extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/NamedElement.html" title="class in fr.inria.atlanmod.neoemf.io.structure">NamedElement</a></pre>
-<div class="block">A simple structural feature which can be either a reference or an attribute.</div>
+<div class="block">A simple representation of a structural feature, which can be either a reference or an attribute.</div>
 </li>
 </ul>
 </div>
@@ -139,7 +139,9 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/NamedEl
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#StructuralFeature-java.lang.String-">StructuralFeature</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;localName)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#StructuralFeature-java.lang.String-">StructuralFeature</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;localName)</code>
+<div class="block">Constructs a new <code>StructuralFeature</code> with the given <code>name</code>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -158,39 +160,51 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/NamedEl
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Identifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Identifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#getId--">getId</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#getId--">getId</a></span>()</code>
+<div class="block">Returns the identifier of this feature.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#getIndex--">getIndex</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#getIndex--">getIndex</a></span>()</code>
+<div class="block">Returns the index of this feature.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#isAttribute--">isAttribute</a></span>()</code>
-<div class="block">Defines if this structural element is a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Attribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Attribute</code></a>.</div>
+<div class="block">Defines whether this feature is an <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Attribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Attribute</code></a>.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#isMany--">isMany</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#isMany--">isMany</a></span>()</code>
+<div class="block">Sets whether this feature is multi-valued, or not.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#isReference--">isReference</a></span>()</code>
-<div class="block">Defines if this structural element is a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Reference</code></a>.</div>
+<div class="block">Defines whether this feature is a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Reference</code></a>.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#setId-fr.inria.atlanmod.neoemf.io.structure.Identifier-">setId</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Identifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Identifier</a>&nbsp;id)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#setId-fr.inria.atlanmod.neoemf.io.structure.Identifier-">setId</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Identifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Identifier</a>&nbsp;id)</code>
+<div class="block">Defines the identifier of this feature.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#setIndex-int-">setIndex</a></span>(int&nbsp;index)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#setIndex-int-">setIndex</a></span>(int&nbsp;index)</code>
+<div class="block">Defines the index of this feature.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#setMany-boolean-">setMany</a></span>(boolean&nbsp;many)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#setMany-boolean-">setMany</a></span>(boolean&nbsp;many)</code>
+<div class="block">Defines whether this feature is multi-valued.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -228,6 +242,12 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/NamedEl
 <li class="blockList">
 <h4>StructuralFeature</h4>
 <pre>public&nbsp;StructuralFeature(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;localName)</pre>
+<div class="block">Constructs a new <code>StructuralFeature</code> with the given <code>name</code>. Its index is initialized to
+ <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html#NO_INDEX"><code>PersistentStore.NO_INDEX</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>localName</code> - the name of this feature</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -245,6 +265,11 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/NamedEl
 <li class="blockList">
 <h4>getId</h4>
 <pre>public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Identifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Identifier</a>&nbsp;getId()</pre>
+<div class="block">Returns the identifier of this feature.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the identifier</dd>
+</dl>
 </li>
 </ul>
 <a name="setId-fr.inria.atlanmod.neoemf.io.structure.Identifier-">
@@ -254,6 +279,11 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/NamedEl
 <li class="blockList">
 <h4>setId</h4>
 <pre>public&nbsp;void&nbsp;setId(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Identifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Identifier</a>&nbsp;id)</pre>
+<div class="block">Defines the identifier of this feature.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the identifier</dd>
+</dl>
 </li>
 </ul>
 <a name="getIndex--">
@@ -263,6 +293,11 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/NamedEl
 <li class="blockList">
 <h4>getIndex</h4>
 <pre>public&nbsp;int&nbsp;getIndex()</pre>
+<div class="block">Returns the index of this feature.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the index</dd>
+</dl>
 </li>
 </ul>
 <a name="setIndex-int-">
@@ -272,6 +307,11 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/NamedEl
 <li class="blockList">
 <h4>setIndex</h4>
 <pre>public&nbsp;void&nbsp;setIndex(int&nbsp;index)</pre>
+<div class="block">Defines the index of this feature.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>index</code> - the index</dd>
+</dl>
 </li>
 </ul>
 <a name="isMany--">
@@ -281,6 +321,11 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/NamedEl
 <li class="blockList">
 <h4>isMany</h4>
 <pre>public&nbsp;boolean&nbsp;isMany()</pre>
+<div class="block">Sets whether this feature is multi-valued, or not.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if this feature is multi-valued</dd>
+</dl>
 </li>
 </ul>
 <a name="setMany-boolean-">
@@ -290,6 +335,11 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/NamedEl
 <li class="blockList">
 <h4>setMany</h4>
 <pre>public&nbsp;void&nbsp;setMany(boolean&nbsp;many)</pre>
+<div class="block">Defines whether this feature is multi-valued.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>many</code> - <code>true</code> if this feature is multi-valued</dd>
+</dl>
 </li>
 </ul>
 <a name="isReference--">
@@ -299,10 +349,10 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/NamedEl
 <li class="blockList">
 <h4>isReference</h4>
 <pre>public&nbsp;boolean&nbsp;isReference()</pre>
-<div class="block">Defines if this structural element is a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Reference</code></a>.</div>
+<div class="block">Defines whether this feature is a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Reference</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if this structural element is a reference.</dd>
+<dd><code>true</code> if this feature is a reference.</dd>
 </dl>
 </li>
 </ul>
@@ -313,10 +363,10 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/NamedEl
 <li class="blockList">
 <h4>isAttribute</h4>
 <pre>public&nbsp;boolean&nbsp;isAttribute()</pre>
-<div class="block">Defines if this structural element is a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Attribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Attribute</code></a>.</div>
+<div class="block">Defines whether this feature is an <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Attribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Attribute</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if this structural element is a attribute.</dd>
+<dd><code>true</code> if this feature is an attribute.</dd>
 </dl>
 </li>
 </ul>

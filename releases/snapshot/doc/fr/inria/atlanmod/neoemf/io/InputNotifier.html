@@ -114,8 +114,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">InputNotifier&lt;T extends <a href="../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io">InputHandler</a>&gt;</span></pre>
-<div class="block">A object able to notify previously registered <a href="../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputHandler</code></a>s of events during an I/O process, such as
- import or export.</div>
+<div class="block">An object that notifies registered <a href="../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputHandler</code></a>s of events during an I/O process, such as import or export.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputHandler</code></a></dd>
@@ -141,7 +140,7 @@ var activeTableTab = "activeTableTab";
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#addHandler-T-">addHandler</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html" title="type parameter in InputNotifier">T</a>&nbsp;handler)</code>
-<div class="block">Add an <a href="../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputHandler</code></a> that will be notified.</div>
+<div class="block">Adds an <a href="../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputHandler</code></a> that will be notified.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -159,43 +158,43 @@ var activeTableTab = "activeTableTab";
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-">notifyAttribute</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/io/structure/Attribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Attribute</a>&nbsp;attribute)</code>
-<div class="block">Notifies a new attribute to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of a new attribute.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyCharacters-java.lang.String-">notifyCharacters</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;characters)</code>
-<div class="block">Notifies a new set of characters to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of a new set of characters.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyEndDocument--">notifyEndDocument</a></span>()</code>
-<div class="block">Notifies the end of the current document to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of the end of the current document.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyEndElement--">notifyEndElement</a></span>()</code>
-<div class="block">Notifies the end of the current element to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of the end of the current element.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyReference-fr.inria.atlanmod.neoemf.io.structure.Reference-">notifyReference</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Reference</a>&nbsp;reference)</code>
-<div class="block">Notifies a new reference to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of a new reference.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyStartDocument--">notifyStartDocument</a></span>()</code>
-<div class="block">Notifies the start of a document to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of the start of a document.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.structure.Classifier-">notifyStartElement</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/io/structure/Classifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Classifier</a>&nbsp;classifier)</code>
-<div class="block">Notifies the start of a new element to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of the start of a new element.</div>
 </td>
 </tr>
 </table>
@@ -222,7 +221,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>addHandler</h4>
 <pre>void&nbsp;addHandler(<a href="../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html" title="type parameter in InputNotifier">T</a>&nbsp;handler)</pre>
-<div class="block">Add an <a href="../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputHandler</code></a> that will be notified.</div>
+<div class="block">Adds an <a href="../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputHandler</code></a> that will be notified.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>handler</code> - the handler to add</dd>
@@ -253,7 +252,7 @@ var activeTableTab = "activeTableTab";
 <div class="block">Returns all registered handlers.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>an immutable collection</dd>
+<dd>an collection</dd>
 </dl>
 </li>
 </ul>
@@ -264,7 +263,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>notifyStartDocument</h4>
 <pre>default&nbsp;void&nbsp;notifyStartDocument()</pre>
-<div class="block">Notifies the start of a document to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of the start of a document.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyEndDocument--"><code>notifyEndDocument()</code></a>, 
@@ -279,7 +278,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>notifyStartElement</h4>
 <pre>default&nbsp;void&nbsp;notifyStartElement(<a href="../../../../../fr/inria/atlanmod/neoemf/io/structure/Classifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Classifier</a>&nbsp;classifier)</pre>
-<div class="block">Notifies the start of a new element to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of the start of a new element.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>classifier</code> - the classifier of the new element</dd>
@@ -296,7 +295,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>notifyAttribute</h4>
 <pre>default&nbsp;void&nbsp;notifyAttribute(<a href="../../../../../fr/inria/atlanmod/neoemf/io/structure/Attribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Attribute</a>&nbsp;attribute)</pre>
-<div class="block">Notifies a new attribute to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of a new attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>attribute</code> - the new attribute</dd>
@@ -312,7 +311,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>notifyReference</h4>
 <pre>default&nbsp;void&nbsp;notifyReference(<a href="../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Reference</a>&nbsp;reference)</pre>
-<div class="block">Notifies a new reference to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of a new reference.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>reference</code> - the new reference</dd>
@@ -328,7 +327,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>notifyCharacters</h4>
 <pre>default&nbsp;void&nbsp;notifyCharacters(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;characters)</pre>
-<div class="block">Notifies a new set of characters to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of a new set of characters.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>characters</code> - the new characters</dd>
@@ -344,7 +343,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>notifyEndElement</h4>
 <pre>default&nbsp;void&nbsp;notifyEndElement()</pre>
-<div class="block">Notifies the end of the current element to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of the end of the current element.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.structure.Classifier-"><code>notifyStartElement(Classifier)</code></a>, 
@@ -359,7 +358,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>notifyEndDocument</h4>
 <pre>default&nbsp;void&nbsp;notifyEndDocument()</pre>
-<div class="block">Notifies the end of the current document to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of the end of the current document.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyStartDocument--"><code>notifyStartDocument()</code></a>, 

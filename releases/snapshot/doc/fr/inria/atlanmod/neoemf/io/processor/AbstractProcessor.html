@@ -163,7 +163,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Proc
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#addHandler-fr.inria.atlanmod.neoemf.io.persistence.PersistenceHandler-">addHandler</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a>&nbsp;persistenceHandler)</code>
-<div class="block">Add an <a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputHandler</code></a> that will be notified.</div>
+<div class="block">Adds an <a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputHandler</code></a> that will be notified.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -181,43 +181,43 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Proc
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#notifyAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-">notifyAttribute</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Attribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Attribute</a>&nbsp;attribute)</code>
-<div class="block">Notifies a new attribute to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of a new attribute.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#notifyCharacters-java.lang.String-">notifyCharacters</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;characters)</code>
-<div class="block">Notifies a new set of characters to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of a new set of characters.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#notifyEndDocument--">notifyEndDocument</a></span>()</code>
-<div class="block">Notifies the end of the current document to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of the end of the current document.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#notifyEndElement--">notifyEndElement</a></span>()</code>
-<div class="block">Notifies the end of the current element to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of the end of the current element.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#notifyReference-fr.inria.atlanmod.neoemf.io.structure.Reference-">notifyReference</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Reference</a>&nbsp;reference)</code>
-<div class="block">Notifies a new reference to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of a new reference.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#notifyStartDocument--">notifyStartDocument</a></span>()</code>
-<div class="block">Notifies the start of a document to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of the start of a document.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.structure.Classifier-">notifyStartElement</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Classifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Classifier</a>&nbsp;classifier)</code>
-<div class="block">Notifies the start of a new element to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of the start of a new element.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
@@ -445,7 +445,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Proc
 <h4>addHandler</h4>
 <pre>public final&nbsp;void&nbsp;addHandler(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a>&nbsp;persistenceHandler)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#addHandler-T-">InputNotifier</a></code></span></div>
-<div class="block">Add an <a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputHandler</code></a> that will be notified.</div>
+<div class="block">Adds an <a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputHandler</code></a> that will be notified.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#addHandler-T-">addHandler</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html" title="interface in fr.inria.atlanmod.neoemf.io">InputNotifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a>&gt;</code></dd>
@@ -484,7 +484,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Proc
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#getHandlers--">getHandlers</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html" title="interface in fr.inria.atlanmod.neoemf.io">InputNotifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>an immutable collection</dd>
+<dd>an collection</dd>
 </dl>
 </li>
 </ul>
@@ -496,7 +496,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Proc
 <h4>notifyStartDocument</h4>
 <pre>public final&nbsp;void&nbsp;notifyStartDocument()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyStartDocument--">InputNotifier</a></code></span></div>
-<div class="block">Notifies the start of a document to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of the start of a document.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyStartDocument--">notifyStartDocument</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html" title="interface in fr.inria.atlanmod.neoemf.io">InputNotifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a>&gt;</code></dd>
@@ -514,7 +514,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Proc
 <h4>notifyStartElement</h4>
 <pre>public final&nbsp;void&nbsp;notifyStartElement(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Classifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Classifier</a>&nbsp;classifier)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.structure.Classifier-">InputNotifier</a></code></span></div>
-<div class="block">Notifies the start of a new element to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of the start of a new element.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.structure.Classifier-">notifyStartElement</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html" title="interface in fr.inria.atlanmod.neoemf.io">InputNotifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a>&gt;</code></dd>
@@ -534,7 +534,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Proc
 <h4>notifyAttribute</h4>
 <pre>public final&nbsp;void&nbsp;notifyAttribute(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Attribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Attribute</a>&nbsp;attribute)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-">InputNotifier</a></code></span></div>
-<div class="block">Notifies a new attribute to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of a new attribute.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-">notifyAttribute</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html" title="interface in fr.inria.atlanmod.neoemf.io">InputNotifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a>&gt;</code></dd>
@@ -553,7 +553,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Proc
 <h4>notifyReference</h4>
 <pre>public final&nbsp;void&nbsp;notifyReference(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Reference</a>&nbsp;reference)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyReference-fr.inria.atlanmod.neoemf.io.structure.Reference-">InputNotifier</a></code></span></div>
-<div class="block">Notifies a new reference to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of a new reference.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyReference-fr.inria.atlanmod.neoemf.io.structure.Reference-">notifyReference</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html" title="interface in fr.inria.atlanmod.neoemf.io">InputNotifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a>&gt;</code></dd>
@@ -572,7 +572,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Proc
 <h4>notifyCharacters</h4>
 <pre>public final&nbsp;void&nbsp;notifyCharacters(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;characters)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyCharacters-java.lang.String-">InputNotifier</a></code></span></div>
-<div class="block">Notifies a new set of characters to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of a new set of characters.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyCharacters-java.lang.String-">notifyCharacters</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html" title="interface in fr.inria.atlanmod.neoemf.io">InputNotifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a>&gt;</code></dd>
@@ -591,7 +591,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Proc
 <h4>notifyEndElement</h4>
 <pre>public final&nbsp;void&nbsp;notifyEndElement()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyEndElement--">InputNotifier</a></code></span></div>
-<div class="block">Notifies the end of the current element to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of the end of the current element.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyEndElement--">notifyEndElement</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html" title="interface in fr.inria.atlanmod.neoemf.io">InputNotifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a>&gt;</code></dd>
@@ -609,7 +609,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Proc
 <h4>notifyEndDocument</h4>
 <pre>public final&nbsp;void&nbsp;notifyEndDocument()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyEndDocument--">InputNotifier</a></code></span></div>
-<div class="block">Notifies the end of the current document to all registered handlers.</div>
+<div class="block">Notifies all registered handlers of the end of the current document.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyEndDocument--">notifyEndDocument</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html" title="interface in fr.inria.atlanmod.neoemf.io">InputNotifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a>&gt;</code></dd>
