@@ -72,7 +72,7 @@
 <div class="header">
 <h1 title="Package" class="title">Package&nbsp;fr.inria.atlanmod.neoemf.io.persistence</h1>
 <div class="docSummary">
-<div class="block">A brief description of this package.</div>
+<div class="block">Classes linking I/O features to persistence features.</div>
 </div>
 <p>See:&nbsp;<a href="#package.description">Description</a></p>
 </div>
@@ -89,7 +89,7 @@
 <tr class="altColor">
 <td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a></td>
 <td class="colLast">
-<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputHandler</code></a> that persists data based on received events.</div>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputHandler</code></a> that process received events, in order to persist data.</div>
 </td>
 </tr>
 </tbody>
@@ -112,7 +112,7 @@
 <tr class="rowColor">
 <td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandlerDecorator.html" title="class in fr.inria.atlanmod.neoemf.io.persistence">AbstractPersistenceHandlerDecorator</a></td>
 <td class="colLast">
-<div class="block">An abstract implementation of a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence"><code>PersistenceHandler</code></a> that delegates all methods to its underlying handler.</div>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence"><code>PersistenceHandler</code></a> that delegates all methods to its underlying handler.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -130,13 +130,13 @@
 <tr class="altColor">
 <td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceNotifier.html" title="class in fr.inria.atlanmod.neoemf.io.persistence">PersistenceNotifier</a></td>
 <td class="colLast">
-<div class="block">A simple <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that notifies registered <a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence"><code>PersistenceHandler</code></a>.</div>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that notifies registered <a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence"><code>PersistenceHandler</code></a> of events.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/TimerPersistenceHandlerDecorator.html" title="class in fr.inria.atlanmod.neoemf.io.persistence">TimerPersistenceHandlerDecorator</a></td>
 <td class="colLast">
-<div class="block">A delegated <a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence"><code>PersistenceHandler</code></a> that gives the time to process.</div>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence"><code>PersistenceHandler</code></a> wrapper that measures elapsed time between the start and the end of an I/O process.</div>
 </td>
 </tr>
 </tbody>
@@ -147,11 +147,7 @@
 <!--   -->
 </a>
 <h2 title="Package fr.inria.atlanmod.neoemf.io.persistence Description">Package fr.inria.atlanmod.neoemf.io.persistence Description</h2>
-<div class="block"><p>A brief description of this package.</p>
-<p>Proin dolor nibh, dictum vel efficitur quis, mollis eget nulla. Etiam interdum urna mattis purus hendrerit feugiat.
-    Donec eget ex quis est cursus ornare. Nulla sapien ipsum, porttitor et lacus sit amet, viverra malesuada lectus. Ut
-    massa orci, laoreet ultrices dignissim a, malesuada eu nunc. Vivamus ullamcorper nibh sit amet diam sagittis
-    consequat. Donec egestas nibh et nisl interdum, vel ultrices dui fringilla. Aenean eu rutrum dui.</p></div>
+<div class="block"><p>Classes linking I/O features to persistence features.</p></div>
 </div>
 <!-- ======= START OF BOTTOM NAVBAR ====== -->
 <div class="bottomNav"><a name="navbar.bottom">

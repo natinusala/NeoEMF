@@ -105,8 +105,9 @@
 <br>
 <pre>public interface <span class="typeNameLabel">Processor</span>
 extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io">InputHandler</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html" title="interface in fr.inria.atlanmod.neoemf.io">InputNotifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a>&gt;</pre>
-<div class="block">A structural handler that receives and uses events sent from a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputNotifier</code></a> where it has to be registered by
- the <a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#addHandler-T-"><code>InputNotifier.addHandler(InputHandler)</code></a> method.</div>
+<div class="block">A <code>InputHandler</code> that pre-processes and post-processes received events.
+ <p>
+ It can add validation, redirection, cancellation, or data enhancement capabilities.</div>
 </li>
 </ul>
 </div>

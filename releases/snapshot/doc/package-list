@@ -27,7 +27,6 @@ fr.inria.atlanmod.neoemf.io.hash
 fr.inria.atlanmod.neoemf.io.persistence
 fr.inria.atlanmod.neoemf.io.processor
 fr.inria.atlanmod.neoemf.io.reader
-fr.inria.atlanmod.neoemf.io.reader.xmi
 fr.inria.atlanmod.neoemf.io.structure
 fr.inria.atlanmod.neoemf.logging
 fr.inria.atlanmod.neoemf.option

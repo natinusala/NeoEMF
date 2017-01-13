@@ -168,10 +168,14 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/i
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
 <caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
-<th class="colOne" scope="col">Constructor and Description</th>
+<th class="colFirst" scope="col">Modifier</th>
+<th class="colLast" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsAwareHandler.html#BlueprintsAwareHandler-fr.inria.atlanmod.neoemf.data.blueprints.BlueprintsPersistenceBackend-">BlueprintsAwareHandler</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&nbsp;backend)</code>&nbsp;</td>
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsAwareHandler.html#BlueprintsAwareHandler-fr.inria.atlanmod.neoemf.data.blueprints.BlueprintsPersistenceBackend-">BlueprintsAwareHandler</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&nbsp;backend)</code>
+<div class="block">Constructs a new <code>BlueprintsAwareHandler</code> on the given <code>backend</code>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -190,11 +194,15 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/i
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints">Vertex</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsAwareHandler.html#createVertex-fr.inria.atlanmod.neoemf.core.Id-">createVertex</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsAwareHandler.html#createVertex-fr.inria.atlanmod.neoemf.core.Id-">createVertex</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
+<div class="block">Creates a <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints"><code>Vertex</code></a> identified by the specified <code>id</code>.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints">Vertex</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsAwareHandler.html#getVertex-fr.inria.atlanmod.neoemf.core.Id-">getVertex</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsAwareHandler.html#getVertex-fr.inria.atlanmod.neoemf.core.Id-">getVertex</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
+<div class="block">Returns the <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints"><code>Vertex</code></a> which has the specified <code>id</code>.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -238,7 +246,12 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/i
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BlueprintsAwareHandler</h4>
-<pre>public&nbsp;BlueprintsAwareHandler(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&nbsp;backend)</pre>
+<pre>protected&nbsp;BlueprintsAwareHandler(<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&nbsp;backend)</pre>
+<div class="block">Constructs a new <code>BlueprintsAwareHandler</code> on the given <code>backend</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>backend</code> - the backend where to store data</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -256,10 +269,15 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/i
 <li class="blockList">
 <h4>getVertex</h4>
 <pre>protected&nbsp;<a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints">Vertex</a>&nbsp;getVertex(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/io/AbstractBlueprintsHandler.html#getVertex-fr.inria.atlanmod.neoemf.core.Id-">AbstractBlueprintsHandler</a></code></span></div>
+<div class="block">Returns the <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints"><code>Vertex</code></a> which has the specified <code>id</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/io/AbstractBlueprintsHandler.html#getVertex-fr.inria.atlanmod.neoemf.core.Id-">getVertex</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/io/AbstractBlueprintsHandler.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.io">AbstractBlueprintsHandler</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the identifier of the vertex</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <code>Vertex</code></dd>
 </dl>
 </li>
 </ul>
@@ -270,10 +288,15 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/i
 <li class="blockList">
 <h4>createVertex</h4>
 <pre>protected&nbsp;<a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints">Vertex</a>&nbsp;createVertex(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/io/AbstractBlueprintsHandler.html#createVertex-fr.inria.atlanmod.neoemf.core.Id-">AbstractBlueprintsHandler</a></code></span></div>
+<div class="block">Creates a <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints"><code>Vertex</code></a> identified by the specified <code>id</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/io/AbstractBlueprintsHandler.html#createVertex-fr.inria.atlanmod.neoemf.core.Id-">createVertex</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/io/AbstractBlueprintsHandler.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.io">AbstractBlueprintsHandler</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the identifier of the vertex</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new <code>Vertex</code></dd>
 </dl>
 </li>
 </ul>

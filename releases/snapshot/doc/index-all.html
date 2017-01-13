@@ -146,7 +146,7 @@
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandlerDecorator.html" title="class in fr.inria.atlanmod.neoemf.io.persistence"><span class="typeNameLink">AbstractPersistenceHandlerDecorator</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/io/persistence/package-summary.html">fr.inria.atlanmod.neoemf.io.persistence</a></dt>
 <dd>
-<div class="block">An abstract implementation of a <a href="fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence"><code>PersistenceHandler</code></a> that delegates all methods to its underlying handler.</div>
+<div class="block">A <a href="fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence"><code>PersistenceHandler</code></a> that delegates all methods to its underlying handler.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandlerDecorator.html#AbstractPersistenceHandlerDecorator-fr.inria.atlanmod.neoemf.io.persistence.PersistenceHandler-">AbstractPersistenceHandlerDecorator(PersistenceHandler)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.io.persistence.<a href="fr/inria/atlanmod/neoemf/io/persistence/AbstractPersistenceHandlerDecorator.html" title="class in fr.inria.atlanmod.neoemf.io.persistence">AbstractPersistenceHandlerDecorator</a></dt>
 <dd>
@@ -184,7 +184,7 @@
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor"><span class="typeNameLink">AbstractProcessor</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/io/processor/package-summary.html">fr.inria.atlanmod.neoemf.io.processor</a></dt>
 <dd>
-<div class="block">An abstract implementation of a <a href="fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that delegates all methods to its embedded processor.</div>
+<div class="block">A <a href="fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that delegates all methods to its underlying processor.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#AbstractProcessor-fr.inria.atlanmod.neoemf.io.processor.Processor-">AbstractProcessor(Processor)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.io.processor.<a href="fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">AbstractProcessor</a></dt>
 <dd>
@@ -192,7 +192,8 @@
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader"><span class="typeNameLink">AbstractReader</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/io/reader/package-summary.html">fr.inria.atlanmod.neoemf.io.reader</a></dt>
 <dd>
-<div class="block">An abstract implementation of <a href="fr/inria/atlanmod/neoemf/io/reader/Reader.html" title="interface in fr.inria.atlanmod.neoemf.io.reader"><code>Reader</code></a> that notifies <a href="fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a>.</div>
+<div class="block">An abstract implementation of <a href="fr/inria/atlanmod/neoemf/io/reader/Reader.html" title="interface in fr.inria.atlanmod.neoemf.io.reader"><code>Reader</code></a> that notifies <a href="fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> and provides overall behavior for the
+ management of namespaces.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#AbstractReader--">AbstractReader()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.io.reader.<a href="fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">AbstractReader</a></dt>
 <dd>&nbsp;</dd>
@@ -204,11 +205,11 @@
 <dd>
 <div class="block">Constructs a new <code>AbstractTransientStore</code>.</div>
 </dd>
-<dt><a href="fr/inria/atlanmod/neoemf/io/reader/xmi/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader.xmi"><span class="typeNameLink">AbstractXmiReader</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/io/reader/xmi/package-summary.html">fr.inria.atlanmod.neoemf.io.reader.xmi</a></dt>
+<dt><a href="fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader"><span class="typeNameLink">AbstractXmiReader</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/io/reader/package-summary.html">fr.inria.atlanmod.neoemf.io.reader</a></dt>
 <dd>
-<div class="block">An abstract implementation of <a href="fr/inria/atlanmod/neoemf/io/reader/Reader.html" title="interface in fr.inria.atlanmod.neoemf.io.reader"><code>Reader</code></a> able to process XMI files.</div>
+<div class="block">An abstract implementation of <a href="fr/inria/atlanmod/neoemf/io/reader/Reader.html" title="interface in fr.inria.atlanmod.neoemf.io.reader"><code>Reader</code></a> that processes XMI files.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/reader/xmi/AbstractXmiReader.html#AbstractXmiReader--">AbstractXmiReader()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.io.reader.xmi.<a href="fr/inria/atlanmod/neoemf/io/reader/xmi/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader.xmi">AbstractXmiReader</a></dt>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#AbstractXmiReader--">AbstractXmiReader()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.io.reader.<a href="fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">AbstractXmiReader</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/blueprints/Activator.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints"><span class="typeNameLink">Activator</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/blueprints/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints</a></dt>
 <dd>
@@ -421,7 +422,9 @@
 <div class="block">A <a href="fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence"><code>PersistenceHandler</code></a> for a <a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints"><code>BlueprintsPersistenceBackend</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsAwareHandler.html#BlueprintsAwareHandler-fr.inria.atlanmod.neoemf.data.blueprints.BlueprintsPersistenceBackend-">BlueprintsAwareHandler(BlueprintsPersistenceBackend)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.blueprints.io.<a href="fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsAwareHandler.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.io">BlueprintsAwareHandler</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Constructs a new <code>BlueprintsAwareHandler</code> on the given <code>backend</code>.</div>
+</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsHandlerFactory.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.io"><span class="typeNameLink">BlueprintsHandlerFactory</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/blueprints/io/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.io</a></dt>
 <dd>
 <div class="block">The factory that creates instances of <a href="fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence"><code>PersistenceHandler</code></a>s which are specific to the Blueprints
@@ -432,7 +435,9 @@
 <div class="block">A <a href="fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence"><code>PersistenceHandler</code></a> for a <a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints"><code>BlueprintsPersistenceBackend</code></a>, <b>without</b> key conflict resolution.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsNaiveHandler.html#BlueprintsNaiveHandler-fr.inria.atlanmod.neoemf.data.blueprints.BlueprintsPersistenceBackend-">BlueprintsNaiveHandler(BlueprintsPersistenceBackend)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.blueprints.io.<a href="fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsNaiveHandler.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.io">BlueprintsNaiveHandler</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Constructs a new <code>BlueprintsNaiveHandler</code> on the given <code>backend</code>.</div>
+</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptions.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option"><span class="typeNameLink">BlueprintsNeo4jOptions</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option</a></dt>
 <dd>
 <div class="block">A specific class that holds Blueprints Neo4j specific options.</div>
@@ -843,7 +848,9 @@
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/store/SynchronizedTransientStore.html#createValue--">createValue()</a></span> - Method in class fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/SynchronizedTransientStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">SynchronizedTransientStore</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/io/AbstractBlueprintsHandler.html#createVertex-fr.inria.atlanmod.neoemf.core.Id-">createVertex(Id)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.blueprints.io.<a href="fr/inria/atlanmod/neoemf/data/blueprints/io/AbstractBlueprintsHandler.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.io">AbstractBlueprintsHandler</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints"><code>Vertex</code></a> identified by the specified <code>id</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsAwareHandler.html#createVertex-fr.inria.atlanmod.neoemf.core.Id-">createVertex(Id)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.blueprints.io.<a href="fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsAwareHandler.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.io">BlueprintsAwareHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsNaiveHandler.html#createVertex-fr.inria.atlanmod.neoemf.core.Id-">createVertex(Id)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.blueprints.io.<a href="fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsNaiveHandler.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.io">BlueprintsNaiveHandler</a></dt>
@@ -926,7 +933,7 @@
 <dd>
 <div class="block">Creates a series of processors in order to build and analyze the read struture.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/reader/xmi/XmiStreamReader.html#defaultProcessor--">defaultProcessor()</a></span> - Method in class fr.inria.atlanmod.neoemf.io.reader.xmi.<a href="fr/inria/atlanmod/neoemf/io/reader/xmi/XmiStreamReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader.xmi">XmiStreamReader</a></dt>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/reader/XmiStreamReader.html#defaultProcessor--">defaultProcessor()</a></span> - Method in class fr.inria.atlanmod.neoemf.io.reader.<a href="fr/inria/atlanmod/neoemf/io/reader/XmiStreamReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">XmiStreamReader</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceDecorator.html#delete-java.util.Map-">delete(Map&lt;?, ?&gt;)</a></span> - Method in class fr.inria.atlanmod.neoemf.resource.<a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceDecorator.html" title="class in fr.inria.atlanmod.neoemf.resource">PersistentResourceDecorator</a></dt>
 <dd>&nbsp;</dd>
@@ -1068,7 +1075,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/processor/EcoreProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor"><span class="typeNameLink">EcoreProcessor</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/io/processor/package-summary.html">fr.inria.atlanmod.neoemf.io.processor</a></dt>
 <dd>
-<div class="block">An <a href="fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that creates and links simple elements to an EMF structure.</div>
+<div class="block">A <a href="fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that creates and links simple elements to an EMF structure.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/processor/EcoreProcessor.html#EcoreProcessor-fr.inria.atlanmod.neoemf.io.processor.Processor-">EcoreProcessor(Processor)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.io.processor.<a href="fr/inria/atlanmod/neoemf/io/processor/EcoreProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">EcoreProcessor</a></dt>
 <dd>
@@ -1372,31 +1379,27 @@
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/package-summary.html">fr.inria.atlanmod.neoemf.io</a> - package fr.inria.atlanmod.neoemf.io</dt>
 <dd>
-<div class="block">A brief description of this package.</div>
+<div class="block">Utility methods and classes for working with Java I/O; for example import/export features</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/hash/package-summary.html">fr.inria.atlanmod.neoemf.io.hash</a> - package fr.inria.atlanmod.neoemf.io.hash</dt>
 <dd>
-<div class="block">A brief description of this package.</div>
+<div class="block">Hash functions and related structures.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/persistence/package-summary.html">fr.inria.atlanmod.neoemf.io.persistence</a> - package fr.inria.atlanmod.neoemf.io.persistence</dt>
 <dd>
-<div class="block">A brief description of this package.</div>
+<div class="block">Classes linking I/O features to persistence features.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/processor/package-summary.html">fr.inria.atlanmod.neoemf.io.processor</a> - package fr.inria.atlanmod.neoemf.io.processor</dt>
 <dd>
-<div class="block">A brief description of this package.</div>
+<div class="block">Structural features adding pre-processing and post-processing functionalities during an I/O process.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/reader/package-summary.html">fr.inria.atlanmod.neoemf.io.reader</a> - package fr.inria.atlanmod.neoemf.io.reader</dt>
 <dd>
-<div class="block">A brief description of this package.</div>
-</dd>
-<dt><a href="fr/inria/atlanmod/neoemf/io/reader/xmi/package-summary.html">fr.inria.atlanmod.neoemf.io.reader.xmi</a> - package fr.inria.atlanmod.neoemf.io.reader.xmi</dt>
-<dd>
-<div class="block">A brief description of this package.</div>
+<div class="block">Classes related to the reading of data.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/structure/package-summary.html">fr.inria.atlanmod.neoemf.io.structure</a> - package fr.inria.atlanmod.neoemf.io.structure</dt>
 <dd>
-<div class="block">A brief description of this package.</div>
+<div class="block">Simple representations of objects used during import/export.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/logging/package-summary.html">fr.inria.atlanmod.neoemf.logging</a> - package fr.inria.atlanmod.neoemf.logging</dt>
 <dd>
@@ -1835,7 +1838,9 @@
 <div class="block">Returns the vertex corresponding to the provided <code>id</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/io/AbstractBlueprintsHandler.html#getVertex-fr.inria.atlanmod.neoemf.core.Id-">getVertex(Id)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.blueprints.io.<a href="fr/inria/atlanmod/neoemf/data/blueprints/io/AbstractBlueprintsHandler.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.io">AbstractBlueprintsHandler</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns the <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints"><code>Vertex</code></a> which has the specified <code>id</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsAwareHandler.html#getVertex-fr.inria.atlanmod.neoemf.core.Id-">getVertex(Id)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.blueprints.io.<a href="fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsAwareHandler.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.io">BlueprintsAwareHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsNaiveHandler.html#getVertex-fr.inria.atlanmod.neoemf.core.Id-">getVertex(Id)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.blueprints.io.<a href="fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsNaiveHandler.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.io">BlueprintsNaiveHandler</a></dt>
@@ -1920,7 +1925,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/hash/Hasher.html" title="interface in fr.inria.atlanmod.neoemf.io.hash"><span class="typeNameLink">Hasher</span></a> - Interface in <a href="fr/inria/atlanmod/neoemf/io/hash/package-summary.html">fr.inria.atlanmod.neoemf.io.hash</a></dt>
 <dd>
-<div class="block">An object able to calculate the <a href="fr/inria/atlanmod/neoemf/io/hash/HashCode.html" title="interface in fr.inria.atlanmod.neoemf.io.hash"><code>HashCode</code></a> from a value.</div>
+<div class="block">An object that calculates a <a href="fr/inria/atlanmod/neoemf/io/hash/HashCode.html" title="interface in fr.inria.atlanmod.neoemf.io.hash"><code>HashCode</code></a> from a value.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/hash/HasherFactory.html" title="class in fr.inria.atlanmod.neoemf.io.hash"><span class="typeNameLink">HasherFactory</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/io/hash/package-summary.html">fr.inria.atlanmod.neoemf.io.hash</a></dt>
 <dd>
@@ -2014,7 +2019,7 @@
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/structure/Identifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><span class="typeNameLink">Identifier</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/io/structure/package-summary.html">fr.inria.atlanmod.neoemf.io.structure</a></dt>
 <dd>
-<div class="block">The simple reprensetation of an identifier of a <a href="fr/inria/atlanmod/neoemf/io/structure/Classifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Classifier</code></a>.</div>
+<div class="block">The simple representation of an identifier of a <a href="fr/inria/atlanmod/neoemf/io/structure/Classifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Classifier</code></a>.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/mapdb/serializer/IdSerializer.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.serializer"><span class="typeNameLink">IdSerializer</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/mapdb/serializer/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb.serializer</a></dt>
 <dd>
@@ -2186,7 +2191,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#isAttribute--">isAttribute()</a></span> - Method in class fr.inria.atlanmod.neoemf.io.structure.<a href="fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html" title="class in fr.inria.atlanmod.neoemf.io.structure">StructuralFeature</a></dt>
 <dd>
-<div class="block">Defines whether this feature is an <a href="fr/inria/atlanmod/neoemf/io/structure/Attribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Attribute</code></a>.</div>
+<div class="block">Defines whether this feature is an <code>Attribute</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#isClosed--">isClosed()</a></span> - Method in class fr.inria.atlanmod.neoemf.data.blueprints.<a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a></dt>
 <dd>&nbsp;</dd>
@@ -2262,7 +2267,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html#isReference--">isReference()</a></span> - Method in class fr.inria.atlanmod.neoemf.io.structure.<a href="fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html" title="class in fr.inria.atlanmod.neoemf.io.structure">StructuralFeature</a></dt>
 <dd>
-<div class="block">Defines whether this feature is a <a href="fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Reference</code></a>.</div>
+<div class="block">Defines whether this feature is a <code>Reference</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html#isRegistered-java.lang.String-">isRegistered(String)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.<a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data">PersistenceBackendFactoryRegistry</a></dt>
 <dd>
@@ -2810,11 +2815,11 @@
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence"><span class="typeNameLink">PersistenceHandler</span></a> - Interface in <a href="fr/inria/atlanmod/neoemf/io/persistence/package-summary.html">fr.inria.atlanmod.neoemf.io.persistence</a></dt>
 <dd>
-<div class="block">A <a href="fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputHandler</code></a> that persists data based on received events.</div>
+<div class="block">A <a href="fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputHandler</code></a> that process received events, in order to persist data.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/persistence/PersistenceNotifier.html" title="class in fr.inria.atlanmod.neoemf.io.persistence"><span class="typeNameLink">PersistenceNotifier</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/io/persistence/package-summary.html">fr.inria.atlanmod.neoemf.io.persistence</a></dt>
 <dd>
-<div class="block">A simple <a href="fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that notifies registered <a href="fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence"><code>PersistenceHandler</code></a>.</div>
+<div class="block">A <a href="fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that notifies registered <a href="fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence"><code>PersistenceHandler</code></a> of events.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/persistence/PersistenceNotifier.html#PersistenceNotifier--">PersistenceNotifier()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.io.persistence.<a href="fr/inria/atlanmod/neoemf/io/persistence/PersistenceNotifier.html" title="class in fr.inria.atlanmod.neoemf.io.persistence">PersistenceNotifier</a></dt>
 <dd>&nbsp;</dd>
@@ -2914,7 +2919,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/processor/EcoreProcessor.html#processCharacters-java.lang.String-">processCharacters(String)</a></span> - Method in class fr.inria.atlanmod.neoemf.io.processor.<a href="fr/inria/atlanmod/neoemf/io/processor/EcoreProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">EcoreProcessor</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/reader/xmi/AbstractXmiReader.html#processCharacters-java.lang.String-">processCharacters(String)</a></span> - Method in class fr.inria.atlanmod.neoemf.io.reader.xmi.<a href="fr/inria/atlanmod/neoemf/io/reader/xmi/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader.xmi">AbstractXmiReader</a></dt>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#processCharacters-java.lang.String-">processCharacters(String)</a></span> - Method in class fr.inria.atlanmod.neoemf.io.reader.<a href="fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">AbstractXmiReader</a></dt>
 <dd>
 <div class="block">Processes characters.</div>
 </dd>
@@ -2958,7 +2963,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/processor/XPathProcessor.html#processEndElement--">processEndElement()</a></span> - Method in class fr.inria.atlanmod.neoemf.io.processor.<a href="fr/inria/atlanmod/neoemf/io/processor/XPathProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">XPathProcessor</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/reader/xmi/AbstractXmiReader.html#processEndElement-java.lang.String-java.lang.String-">processEndElement(String, String)</a></span> - Method in class fr.inria.atlanmod.neoemf.io.reader.xmi.<a href="fr/inria/atlanmod/neoemf/io/reader/xmi/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader.xmi">AbstractXmiReader</a></dt>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#processEndElement-java.lang.String-java.lang.String-">processEndElement(String, String)</a></span> - Method in class fr.inria.atlanmod.neoemf.io.reader.<a href="fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">AbstractXmiReader</a></dt>
 <dd>
 <div class="block">Processes the end of an element.</div>
 </dd>
@@ -2972,8 +2977,7 @@
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><span class="typeNameLink">Processor</span></a> - Interface in <a href="fr/inria/atlanmod/neoemf/io/processor/package-summary.html">fr.inria.atlanmod.neoemf.io.processor</a></dt>
 <dd>
-<div class="block">A structural handler that receives and uses events sent from a <a href="fr/inria/atlanmod/neoemf/io/InputNotifier.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputNotifier</code></a> where it has to be registered by
- the <a href="fr/inria/atlanmod/neoemf/io/InputNotifier.html#addHandler-T-"><code>InputNotifier.addHandler(InputHandler)</code></a> method.</div>
+<div class="block">A <code>InputHandler</code> that pre-processes and post-processes received events.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/InputHandler.html#processReference-fr.inria.atlanmod.neoemf.io.structure.Reference-">processReference(Reference)</a></span> - Method in interface fr.inria.atlanmod.neoemf.io.<a href="fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io">InputHandler</a></dt>
 <dd>
@@ -3037,7 +3041,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/processor/XPathProcessor.html#processStartElement-fr.inria.atlanmod.neoemf.io.structure.Classifier-">processStartElement(Classifier)</a></span> - Method in class fr.inria.atlanmod.neoemf.io.processor.<a href="fr/inria/atlanmod/neoemf/io/processor/XPathProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">XPathProcessor</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/reader/xmi/AbstractXmiReader.html#processStartElement-java.lang.String-java.lang.String-org.xml.sax.Attributes-">processStartElement(String, String, Attributes)</a></span> - Method in class fr.inria.atlanmod.neoemf.io.reader.xmi.<a href="fr/inria/atlanmod/neoemf/io/reader/xmi/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader.xmi">AbstractXmiReader</a></dt>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#processStartElement-java.lang.String-java.lang.String-org.xml.sax.Attributes-">processStartElement(String, String, Attributes)</a></span> - Method in class fr.inria.atlanmod.neoemf.io.reader.<a href="fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">AbstractXmiReader</a></dt>
 <dd>
 <div class="block">Processes a new element and send a notification to handlers.</div>
 </dd>
@@ -3079,7 +3083,7 @@
 <dd>
 <div class="block">Reads a stream and notifies registered <a href="fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/reader/xmi/XmiStreamReader.html#read-java.io.InputStream-">read(InputStream)</a></span> - Method in class fr.inria.atlanmod.neoemf.io.reader.xmi.<a href="fr/inria/atlanmod/neoemf/io/reader/xmi/XmiStreamReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader.xmi">XmiStreamReader</a></dt>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/reader/XmiStreamReader.html#read-java.io.InputStream-">read(InputStream)</a></span> - Method in class fr.inria.atlanmod.neoemf.io.reader.<a href="fr/inria/atlanmod/neoemf/io/reader/XmiStreamReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">XmiStreamReader</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/hbase/option/HBaseResourceOptions.html#READ_ONLY">READ_ONLY</a></span> - Static variable in interface fr.inria.atlanmod.neoemf.data.hbase.option.<a href="fr/inria/atlanmod/neoemf/data/hbase/option/HBaseResourceOptions.html" title="interface in fr.inria.atlanmod.neoemf.data.hbase.option">HBaseResourceOptions</a></dt>
 <dd>&nbsp;</dd>
@@ -3097,7 +3101,7 @@
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><span class="typeNameLink">Reference</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/io/structure/package-summary.html">fr.inria.atlanmod.neoemf.io.structure</a></dt>
 <dd>
-<div class="block">A <a href="fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>StructuralFeature</code></a> representing an reference, which links several <a href="fr/inria/atlanmod/neoemf/io/structure/Classifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Classifier</code></a>s.</div>
+<div class="block">A <a href="fr/inria/atlanmod/neoemf/io/structure/StructuralFeature.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>StructuralFeature</code></a> representing a reference, which links several <a href="fr/inria/atlanmod/neoemf/io/structure/Classifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Classifier</code></a>s.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/structure/Reference.html#Reference-java.lang.String-">Reference(String)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.io.structure.<a href="fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Reference</a></dt>
 <dd>
@@ -3533,7 +3537,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/store/SynchronizedTransientStore.html#SynchronizedTransientStore--">SynchronizedTransientStore()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/SynchronizedTransientStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">SynchronizedTransientStore</a></dt>
 <dd>
-<div class="block">Constructs a new .</div>
+<div class="block">Constructs a new <code>SynchronizedTransientStore</code>.</div>
 </dd>
 </dl>
 <a name="I:T">
@@ -3545,7 +3549,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/persistence/TimerPersistenceHandlerDecorator.html" title="class in fr.inria.atlanmod.neoemf.io.persistence"><span class="typeNameLink">TimerPersistenceHandlerDecorator</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/io/persistence/package-summary.html">fr.inria.atlanmod.neoemf.io.persistence</a></dt>
 <dd>
-<div class="block">A delegated <a href="fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence"><code>PersistenceHandler</code></a> that gives the time to process.</div>
+<div class="block">A <a href="fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence"><code>PersistenceHandler</code></a> wrapper that measures elapsed time between the start and the end of an I/O process.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/persistence/TimerPersistenceHandlerDecorator.html#TimerPersistenceHandlerDecorator-fr.inria.atlanmod.neoemf.io.persistence.PersistenceHandler-java.lang.String-">TimerPersistenceHandlerDecorator(PersistenceHandler, String)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.io.persistence.<a href="fr/inria/atlanmod/neoemf/io/persistence/TimerPersistenceHandlerDecorator.html" title="class in fr.inria.atlanmod.neoemf.io.persistence">TimerPersistenceHandlerDecorator</a></dt>
 <dd>
@@ -3830,7 +3834,9 @@ the order they are declared.</div>
 the order they are declared.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/io/AbstractBlueprintsHandler.html#verticesCache">verticesCache</a></span> - Variable in class fr.inria.atlanmod.neoemf.data.blueprints.io.<a href="fr/inria/atlanmod/neoemf/data/blueprints/io/AbstractBlueprintsHandler.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.io">AbstractBlueprintsHandler</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block"><code>Cache</code> that holds recently processed <code>Vertex</code>.</div>
+</dd>
 </dl>
 <a name="I:W">
 <!--   -->
@@ -3894,25 +3900,25 @@ the order they are declared.</div>
 </a>
 <h2 class="title">X</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/reader/xmi/AbstractXmiReader.html#XMI_NS">XMI_NS</a></span> - Static variable in class fr.inria.atlanmod.neoemf.io.reader.xmi.<a href="fr/inria/atlanmod/neoemf/io/reader/xmi/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader.xmi">AbstractXmiReader</a></dt>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#XMI_NS">XMI_NS</a></span> - Static variable in class fr.inria.atlanmod.neoemf.io.reader.<a href="fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">AbstractXmiReader</a></dt>
 <dd>
 <div class="block">The namespace prefix of XMI.</div>
 </dd>
-<dt><a href="fr/inria/atlanmod/neoemf/io/reader/xmi/XmiStreamReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader.xmi"><span class="typeNameLink">XmiStreamReader</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/io/reader/xmi/package-summary.html">fr.inria.atlanmod.neoemf.io.reader.xmi</a></dt>
+<dt><a href="fr/inria/atlanmod/neoemf/io/reader/XmiStreamReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader"><span class="typeNameLink">XmiStreamReader</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/io/reader/package-summary.html">fr.inria.atlanmod.neoemf.io.reader</a></dt>
 <dd>
-<div class="block">A XMI <a href="fr/inria/atlanmod/neoemf/io/reader/Reader.html" title="interface in fr.inria.atlanmod.neoemf.io.reader"><code>Reader</code></a> that uses stream for reading.</div>
+<div class="block">A <a href="fr/inria/atlanmod/neoemf/io/reader/Reader.html" title="interface in fr.inria.atlanmod.neoemf.io.reader"><code>Reader</code></a> that uses streams for reading and parsing XMI files.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/reader/xmi/XmiStreamReader.html#XmiStreamReader--">XmiStreamReader()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.io.reader.xmi.<a href="fr/inria/atlanmod/neoemf/io/reader/xmi/XmiStreamReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader.xmi">XmiStreamReader</a></dt>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/reader/XmiStreamReader.html#XmiStreamReader--">XmiStreamReader()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.io.reader.<a href="fr/inria/atlanmod/neoemf/io/reader/XmiStreamReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">XmiStreamReader</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/processor/XPathProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor"><span class="typeNameLink">XPathProcessor</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/io/processor/package-summary.html">fr.inria.atlanmod.neoemf.io.processor</a></dt>
 <dd>
-<div class="block">An <a href="fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that analyses XML elements in order to create and to process XPath references.</div>
+<div class="block">A <a href="fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that analyses XML elements in order to create and to process XPath references.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/processor/XPathProcessor.html#XPathProcessor-fr.inria.atlanmod.neoemf.io.processor.Processor-">XPathProcessor(Processor)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.io.processor.<a href="fr/inria/atlanmod/neoemf/io/processor/XPathProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">XPathProcessor</a></dt>
 <dd>
 <div class="block">Constructs a new <code>XPathProcessor</code> on the given <code>processor</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/reader/xmi/AbstractXmiReader.html#XSI_NS">XSI_NS</a></span> - Static variable in class fr.inria.atlanmod.neoemf.io.reader.xmi.<a href="fr/inria/atlanmod/neoemf/io/reader/xmi/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader.xmi">AbstractXmiReader</a></dt>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#XSI_NS">XSI_NS</a></span> - Static variable in class fr.inria.atlanmod.neoemf.io.reader.<a href="fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">AbstractXmiReader</a></dt>
 <dd>
 <div class="block">The namespace prefix of XSI.</div>
 </dd>
