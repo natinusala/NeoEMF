@@ -147,8 +147,25 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeExcep
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/AlreadyExistingIdException.html#AlreadyExistingIdException--">AlreadyExistingIdException</a></span>()</code>
+<div class="block">Constructs an <code>AlreadyExistingIdException</code> with <code>null</code> as its error detail message.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/AlreadyExistingIdException.html#AlreadyExistingIdException-java.lang.String-">AlreadyExistingIdException</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
-<div class="block">Instantiates a new <code>AlreadyExistingIdException</code> with a detail message.</div>
+<div class="block">Constructs an <code>AlreadyExistingIdException</code> with the specified detail <code>message</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/AlreadyExistingIdException.html#AlreadyExistingIdException-java.lang.String-java.lang.Throwable-">AlreadyExistingIdException</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+                          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause)</code>
+<div class="block">Constructs an <code>AlreadyExistingIdException</code> with the specified detail <code>message</code> and <code>cause</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/AlreadyExistingIdException.html#AlreadyExistingIdException-java.lang.Throwable-">AlreadyExistingIdException</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause)</code>
+<div class="block">Constructs an <code>AlreadyExistingIdException</code> with the specified <code>cause</code> and a detail message of
+ <code>(cause==null ? null : cause.toString())</code> (which typically contains the class and detail message of cause).</div>
 </td>
 </tr>
 </table>
@@ -188,17 +205,62 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeExcep
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
+<a name="AlreadyExistingIdException--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AlreadyExistingIdException</h4>
+<pre>public&nbsp;AlreadyExistingIdException()</pre>
+<div class="block">Constructs an <code>AlreadyExistingIdException</code> with <code>null</code> as its error detail message.</div>
+</li>
+</ul>
 <a name="AlreadyExistingIdException-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AlreadyExistingIdException</h4>
+<pre>public&nbsp;AlreadyExistingIdException(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
+<div class="block">Constructs an <code>AlreadyExistingIdException</code> with the specified detail <code>message</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - the detail message (which is saved for later retrieval by the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#getMessage--" title="class or interface in java.lang"><code>Throwable.getMessage()</code></a> method)</dd>
+</dl>
+</li>
+</ul>
+<a name="AlreadyExistingIdException-java.lang.Throwable-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AlreadyExistingIdException</h4>
+<pre>public&nbsp;AlreadyExistingIdException(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause)</pre>
+<div class="block">Constructs an <code>AlreadyExistingIdException</code> with the specified <code>cause</code> and a detail message of
+ <code>(cause==null ? null : cause.toString())</code> (which typically contains the class and detail message of cause).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>cause</code> - </dd>
+</dl>
+</li>
+</ul>
+<a name="AlreadyExistingIdException-java.lang.String-java.lang.Throwable-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AlreadyExistingIdException</h4>
-<pre>public&nbsp;AlreadyExistingIdException(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
-<div class="block">Instantiates a new <code>AlreadyExistingIdException</code> with a detail message.</div>
+<pre>public&nbsp;AlreadyExistingIdException(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+                                  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause)</pre>
+<div class="block">Constructs an <code>AlreadyExistingIdException</code> with the specified detail <code>message</code> and <code>cause</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>message</code> - the detail message</dd>
+<dd><code>message</code> - the detail message (which is saved for later retrieval by the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#getMessage--" title="class or interface in java.lang"><code>Throwable.getMessage()</code></a> method)</dd>
+<dd><code>cause</code> - the cause (which is saved for later retrieval by the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true#getCause--" title="class or interface in java.lang"><code>Throwable.getCause()</code></a> method). (A <code>null</code>
+              value is permitted, and indicates that the cause is nonexistent or unknown.)</dd>
+<dt><span class="simpleTagLabel">Note:</span></dt>
+<dd>The detail message associated with cause is not automatically incorporated into this exception's detail
+ message.</dd>
 </dl>
 </li>
 </ul>
