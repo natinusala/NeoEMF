@@ -125,7 +125,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
  Persistent backend creation can be configured using <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#save-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource.save(Map)</code></a> and <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#load-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource.load(Map)</code></a>
  option maps.
  <p>
- The factory handles transient backends by creating in-memory <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> instances. Persistent 
+ The factory handles transient backends by creating in-memory <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> instances. Persistent
  backends are created according to the provided resource options (<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbStoreOptions.html" title="enum in fr.inria.atlanmod.neoemf.data.mapdb.option"><code>MapDbStoreOptions</code></a>).</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -285,7 +285,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <ul class="blockList">
 <li class="blockList">
 <h4>getInstance</h4>
-<pre>public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackendFactory</a>&nbsp;getInstance()</pre>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackendFactory</a>&nbsp;getInstance()</pre>
 <div class="block">Returns the instance of this class.</div>
 </li>
 </ul>

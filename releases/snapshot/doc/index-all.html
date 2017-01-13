@@ -92,7 +92,7 @@
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptions.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option"><span class="typeNameLink">AbstractBlueprintsOptions</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/blueprints/option/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.option</a></dt>
 <dd>
-<div class="block">The abstract implementation of <code>CommonOptions</code> that holds generic options
+<div class="block">The abstract implementation of <a href="fr/inria/atlanmod/neoemf/option/CommonOptions.html" title="class in fr.inria.atlanmod.neoemf.option"><code>CommonOptions</code></a> that holds generic options
  for all Blueprints based implementations.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptions.html#AbstractBlueprintsOptions--">AbstractBlueprintsOptions()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.blueprints.option.<a href="fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptions.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option">AbstractBlueprintsOptions</a></dt>
@@ -420,7 +420,8 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsHandlerFactory.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.io"><span class="typeNameLink">BlueprintsHandlerFactory</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/blueprints/io/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.io</a></dt>
 <dd>
-<div class="block">The factory of <a href="fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence"><code>PersistenceHandler</code></a>s specific to the Blueprints implementation.</div>
+<div class="block">The factory that creates instances of <a href="fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence"><code>PersistenceHandler</code></a>s which are specific to the Blueprints
+ implementation.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/blueprints/io/BlueprintsNaiveHandler.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.io"><span class="typeNameLink">BlueprintsNaiveHandler</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/blueprints/io/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.io</a></dt>
 <dd>
@@ -489,9 +490,9 @@
 <div class="block">A specific subclass of <a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util"><code>PersistenceURI</code></a> that creates Blueprints specific resource <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s from
  a <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> descriptor or an existing <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsURI.html#BlueprintsURI-int-org.eclipse.emf.common.util.URI-">BlueprintsURI(int, URI)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.blueprints.util.<a href="fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsURI.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.util">BlueprintsURI</a></dt>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsURI.html#BlueprintsURI-org.eclipse.emf.common.util.URI-">BlueprintsURI(URI)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.blueprints.util.<a href="fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsURI.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.util">BlueprintsURI</a></dt>
 <dd>
-<div class="block">Creates a new <a href="fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsURI.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.util"><code>BlueprintsURI</code></a> from the given <code>hashCode</code> and <code>internalURI</code>.</div>
+<div class="block">Constructs a new <code>BlueprintsURI</code> from the given <code>internalURI</code>.</div>
 </dd>
 </dl>
 <a name="I:C">
@@ -588,11 +589,6 @@
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#close--">close()</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/PersistenceBackend.html#close--">close()</a></span> - Method in interface fr.inria.atlanmod.neoemf.data.<a href="fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackend</a></dt>
-<dd>
-<div class="block">
-
- In our case, it cleanly stops the underlying data store.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#close--">close()</a></span> - Method in class fr.inria.atlanmod.neoemf.resource.<a href="fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html" title="class in fr.inria.atlanmod.neoemf.resource">DefaultPersistentResource</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/resource/PersistentResource.html#close--">close()</a></span> - Method in interface fr.inria.atlanmod.neoemf.resource.<a href="fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a></dt>
@@ -731,12 +727,12 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsURI.html#createFileURI-java.io.File-">createFileURI(File)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.blueprints.util.<a href="fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsURI.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.util">BlueprintsURI</a></dt>
 <dd>
-<div class="block">Creates a new <a href="fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsURI.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.util"><code>BlueprintsURI</code></a> from the given <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> descriptor.</div>
+<div class="block">Creates a new <code>BlueprintsURI</code> from the given <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> descriptor.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsURI.html#createFileURI-org.eclipse.emf.common.util.URI-">createFileURI(URI)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.blueprints.util.<a href="fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsURI.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.util">BlueprintsURI</a></dt>
 <dd>
-<div class="block">Creates a new <a href="fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsURI.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.util"><code>BlueprintsURI</code></a> from the given <code>uri</code> by checking the referenced file
- exists on the file system.</div>
+<div class="block">Creates a new <code>BlueprintsURI</code> from the given <code>uri</code> by checking the referenced file exists on the file
+ system.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html#createFileURI-java.io.File-">createFileURI(File)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.hbase.util.<a href="fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.util">HBaseURI</a></dt>
 <dd>&nbsp;</dd>
@@ -744,17 +740,22 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html#createFileURI-java.io.File-">createFileURI(File)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.mapdb.util.<a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util">MapDbURI</a></dt>
 <dd>
-<div class="block">Creates a new <a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util"><code>MapDbURI</code></a> from the given <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> descriptor.</div>
+<div class="block">Creates a new <code>MapDbURI</code> from the given <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> descriptor.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html#createFileURI-org.eclipse.emf.common.util.URI-">createFileURI(URI)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.mapdb.util.<a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util">MapDbURI</a></dt>
 <dd>
-<div class="block">Creates a new <a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util"><code>MapDbURI</code></a> from the given <code>uri</code> by checking the referenced file
+<div class="block">Creates a new <code>MapDbURI</code> from the given <code>uri</code> by checking the referenced file
  exists on the file system.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#createFileURI-java.io.File-java.lang.String-">createFileURI(File, String)</a></span> - Static method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a new <a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util"><code>PersistenceURI</code></a> from the given <code>file</code> descriptor.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#createFileURI-org.eclipse.emf.common.util.URI-java.lang.String-">createFileURI(URI, String)</a></span> - Static method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a new <a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util"><code>PersistenceURI</code></a> from the given <code>uri</code> by checking the referenced file exists on the
+ file system.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html#createHierarchicalURI-java.lang.String-java.lang.String-org.eclipse.emf.common.util.URI-">createHierarchicalURI(String, String, URI)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.hbase.util.<a href="fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.util">HBaseURI</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/NeoEContentsEList.html#createNeoEContentsEList-org.eclipse.emf.ecore.EObject-">createNeoEContentsEList(EObject)</a></span> - Static method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/NeoEContentsEList.html" title="class in fr.inria.atlanmod.neoemf.util">NeoEContentsEList</a></dt>
@@ -781,7 +782,6 @@
  according to the given <code>options</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceFactory.html#createResource-org.eclipse.emf.common.util.URI-">createResource(URI)</a></span> - Method in class fr.inria.atlanmod.neoemf.resource.<a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceFactory.html" title="class in fr.inria.atlanmod.neoemf.resource">PersistentResourceFactory</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html#createSpecificPersistentStore-fr.inria.atlanmod.neoemf.resource.PersistentResource-fr.inria.atlanmod.neoemf.data.PersistenceBackend-java.util.Map-">createSpecificPersistentStore(PersistentResource, PersistenceBackend, Map&lt;?, ?&gt;)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.<a href="fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data">AbstractPersistenceBackendFactory</a></dt>
 <dd>
 <div class="block">Creates a <a href="fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> between the given <code>resource</code> and the given <code>backend</code>
@@ -815,16 +815,18 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsURI.html#createURI-org.eclipse.emf.common.util.URI-">createURI(URI)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.blueprints.util.<a href="fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsURI.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.util">BlueprintsURI</a></dt>
 <dd>
-<div class="block">Creates a new <a href="fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsURI.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.util"><code>BlueprintsURI</code></a> from the given <code>uri</code>.</div>
+<div class="block">Creates a new <code>BlueprintsURI</code> from the given <code>uri</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html#createURI-org.eclipse.emf.common.util.URI-">createURI(URI)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.hbase.util.<a href="fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.util">HBaseURI</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html#createURI-org.eclipse.emf.common.util.URI-">createURI(URI)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.mapdb.util.<a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util">MapDbURI</a></dt>
 <dd>
-<div class="block">Create a new <a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util"><code>MapDbURI</code></a> from the given <code>uri</code>.</div>
+<div class="block">Create a new <code>MapDbURI</code> from the given <code>uri</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#createURI-org.eclipse.emf.common.util.URI-">createURI(URI)</a></span> - Static method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a new <a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util"><code>PersistenceURI</code></a> from the given <code>uri</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/store/AbstractTransientStore.html#createValue--">createValue()</a></span> - Method in class fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/AbstractTransientStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractTransientStore</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/store/SynchronizedTransientStore.html#createValue--">createValue()</a></span> - Method in class fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/SynchronizedTransientStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">SynchronizedTransientStore</a></dt>
@@ -1245,15 +1247,12 @@
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/serializer/FeatureKeySerializer.html#FeatureKeySerializer--">FeatureKeySerializer()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.mapdb.serializer.<a href="fr/inria/atlanmod/neoemf/data/mapdb/serializer/FeatureKeySerializer.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.serializer">FeatureKeySerializer</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#FILE_SCHEME">FILE_SCHEME</a></span> - Static variable in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">The URI scheme corresponding to a file.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#fileExtension--">fileExtension()</a></span> - Method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/store/AutocommitStoreDecorator.html#finalize--">finalize()</a></span> - Method in class fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/AutocommitStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store">AutocommitStoreDecorator</a></dt>
-<dd>
-<div class="block">
-
- In our case, it commits the last modifications.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#finalize--">finalize()</a></span> - Method in class fr.inria.atlanmod.neoemf.resource.<a href="fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html" title="class in fr.inria.atlanmod.neoemf.resource">DefaultPersistentResource</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html#format-org.eclipse.emf.common.util.URI-">format(URI)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.hbase.util.<a href="fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.util">HBaseURI</a></dt>
@@ -1873,7 +1872,7 @@
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/hash/HasherFactory.html" title="class in fr.inria.atlanmod.neoemf.io.hash"><span class="typeNameLink">HasherFactory</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/io/hash/package-summary.html">fr.inria.atlanmod.neoemf.io.hash</a></dt>
 <dd>
-<div class="block">The factory of <a href="fr/inria/atlanmod/neoemf/io/hash/Hasher.html" title="interface in fr.inria.atlanmod.neoemf.io.hash"><code>Hasher</code></a>.</div>
+<div class="block">The factory that creates instances of <a href="fr/inria/atlanmod/neoemf/io/hash/Hasher.html" title="interface in fr.inria.atlanmod.neoemf.io.hash"><code>Hasher</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#hasOpaquePart--">hasOpaquePart()</a></span> - Method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
 <dd>&nbsp;</dd>
@@ -1925,8 +1924,10 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.util"><span class="typeNameLink">HBaseURI</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/hbase/util/package-summary.html">fr.inria.atlanmod.neoemf.data.hbase.util</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html#HBaseURI-int-org.eclipse.emf.common.util.URI-">HBaseURI(int, URI)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.hbase.util.<a href="fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.util">HBaseURI</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html#HBaseURI-org.eclipse.emf.common.util.URI-">HBaseURI(URI)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.hbase.util.<a href="fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.util">HBaseURI</a></dt>
+<dd>
+<div class="block">Constructs a new <code>HBaseURI</code> from the given <code>internalURI</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#host--">host()</a></span> - Method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
 <dd>&nbsp;</dd>
 </dl>
@@ -2442,9 +2443,9 @@
 <div class="block">A specific subclass of <a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util"><code>PersistenceURI</code></a> that creates MapDB specific resource <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s from
  a <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> descriptor or an existing <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html#MapDbURI-int-org.eclipse.emf.common.util.URI-">MapDbURI(int, URI)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.mapdb.util.<a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util">MapDbURI</a></dt>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html#MapDbURI-org.eclipse.emf.common.util.URI-">MapDbURI(URI)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.mapdb.util.<a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util">MapDbURI</a></dt>
 <dd>
-<div class="block">Creates a new <a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util"><code>MapDbURI</code></a> from the given <code>HashCode</code> and <code>internalURI</code>.</div>
+<div class="block">Constructs a new <code>MapDbURI</code> from the given <code>internalURI</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/hash/HasherFactory.html#md5--">md5()</a></span> - Static method in class fr.inria.atlanmod.neoemf.io.hash.<a href="fr/inria/atlanmod/neoemf/io/hash/HasherFactory.html" title="class in fr.inria.atlanmod.neoemf.io.hash">HasherFactory</a></dt>
 <dd>
@@ -2581,7 +2582,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/logging/NeoLogger.html" title="class in fr.inria.atlanmod.neoemf.logging"><span class="typeNameLink">NeoLogger</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/logging/package-summary.html">fr.inria.atlanmod.neoemf.logging</a></dt>
 <dd>
-<div class="block">A factory of <a href="fr/inria/atlanmod/neoemf/logging/Logger.html" title="interface in fr.inria.atlanmod.neoemf.logging"><code>Logger</code></a>s.</div>
+<div class="block">The factory that creates instances of <a href="fr/inria/atlanmod/neoemf/logging/Logger.html" title="interface in fr.inria.atlanmod.neoemf.logging"><code>Logger</code></a>s.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html#newBuilder--">newBuilder()</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option.<a href="fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jOptionsBuilder</a></dt>
 <dd>
@@ -2756,9 +2757,14 @@
 <div class="block">A builder of <a href="fr/inria/atlanmod/neoemf/option/CommonOptions.html" title="class in fr.inria.atlanmod.neoemf.option"><code>CommonOptions</code></a>.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util"><span class="typeNameLink">PersistenceURI</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/util/package-summary.html">fr.inria.atlanmod.neoemf.util</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#PersistenceURI-int-org.eclipse.emf.common.util.URI-">PersistenceURI(int, URI)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">A <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> wrapper that creates specific resource <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s from a <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> descriptor or an existing
+ <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#PersistenceURI-org.eclipse.emf.common.util.URI-">PersistenceURI(URI)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
+<dd>
+<div class="block">Constructs a new <code>PersistenceURI</code> from the given <code>internalURI</code>.</div>
+</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">PersistentEObject</span></a> - Interface in <a href="fr/inria/atlanmod/neoemf/core/package-summary.html">fr.inria.atlanmod.neoemf.core</a></dt>
 <dd>
 <div class="block">An <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a> identified by a unique <a href="fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>, able to persist in data stores.</div>
@@ -2771,14 +2777,18 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceDecorator.html" title="class in fr.inria.atlanmod.neoemf.resource"><span class="typeNameLink">PersistentResourceDecorator</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/resource/package-summary.html">fr.inria.atlanmod.neoemf.resource</a></dt>
 <dd>
-<div class="block">An empty <a href="fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource"><code>PersistentResource</code></a> decorator that delegates all method calls to the decorated resource.</div>
+<div class="block">A <a href="fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource"><code>PersistentResource</code></a> wrapper that delegates all method calls to the decorated resource.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceDecorator.html#PersistentResourceDecorator-fr.inria.atlanmod.neoemf.resource.PersistentResource-">PersistentResourceDecorator(PersistentResource)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.resource.<a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceDecorator.html" title="class in fr.inria.atlanmod.neoemf.resource">PersistentResourceDecorator</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceFactory.html" title="class in fr.inria.atlanmod.neoemf.resource"><span class="typeNameLink">PersistentResourceFactory</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/resource/package-summary.html">fr.inria.atlanmod.neoemf.resource</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">The factory that creates <a href="fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource"><code>PersistentResource</code></a>s.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceFactory.html#PersistentResourceFactory--">PersistentResourceFactory()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.resource.<a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceFactory.html" title="class in fr.inria.atlanmod.neoemf.resource">PersistentResourceFactory</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Constructs a new <code>PersistentResourceFactory</code>.</div>
+</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/option/PersistentResourceOptions.html" title="interface in fr.inria.atlanmod.neoemf.option"><span class="typeNameLink">PersistentResourceOptions</span></a> - Interface in <a href="fr/inria/atlanmod/neoemf/option/package-summary.html">fr.inria.atlanmod.neoemf.option</a></dt>
 <dd>
 <div class="block">Represents options related to resource-level features.</div>

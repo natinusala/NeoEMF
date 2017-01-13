@@ -189,8 +189,9 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/PersistenceU
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html#HBaseURI-int-org.eclipse.emf.common.util.URI-">HBaseURI</a></span>(int&nbsp;hashCode,
-        <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;internalURI)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html#HBaseURI-org.eclipse.emf.common.util.URI-">HBaseURI</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;internalURI)</code>
+<div class="block">Constructs a new <code>HBaseURI</code> from the given <code>internalURI</code>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -271,7 +272,8 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/PersistenceU
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SCHEME</h4>
-<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> SCHEME</pre>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> SCHEME</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../../constant-values.html#fr.inria.atlanmod.neoemf.data.hbase.util.HBaseURI.SCHEME">Constant Field Values</a></dd>
@@ -286,14 +288,23 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/PersistenceU
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="HBaseURI-int-org.eclipse.emf.common.util.URI-">
+<a name="HBaseURI-org.eclipse.emf.common.util.URI-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>HBaseURI</h4>
-<pre>protected&nbsp;HBaseURI(int&nbsp;hashCode,
+<pre>protected&nbsp;HBaseURI(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                    <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;internalURI)</pre>
+<div class="block">Constructs a new <code>HBaseURI</code> from the given <code>internalURI</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>internalURI</code> - the base <code>URI</code></dd>
+<dt><span class="simpleTagLabel">Note:</span></dt>
+<dd>This constructor is protected to avoid wrong <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> instantiations. Use <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html#createURI-org.eclipse.emf.common.util.URI-"><code>createURI(URI)</code></a>,
+ <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html#createFileURI-java.io.File-"><code>createFileURI(File)</code></a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html#createFileURI-org.eclipse.emf.common.util.URI-"><code>createFileURI(URI)</code></a> or <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html#createHierarchicalURI-java.lang.String-java.lang.String-org.eclipse.emf.common.util.URI-"><code>createHierarchicalURI(String, String, URI)</code></a>
+ instead.</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -310,7 +321,18 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/PersistenceU
 <ul class="blockList">
 <li class="blockList">
 <h4>createURI</h4>
-<pre>public static&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;createURI(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;uri)</pre>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;createURI(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                     <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;uri)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>uri</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the <code>uri</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the scheme of the provided <code>uri</code> is not <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html#SCHEME"><code>SCHEME</code></a> or
+                                  <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/PersistenceURI.html#FILE_SCHEME"><code>PersistenceURI.FILE_SCHEME</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="createFileURI-java.io.File-">
@@ -319,7 +341,16 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/PersistenceU
 <ul class="blockList">
 <li class="blockList">
 <h4>createFileURI</h4>
-<pre>public static&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;createFileURI(<a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)</pre>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;createFileURI(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                         <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>file</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the <code>file</code> is <code>null</code></dd>
+</dl>
 </li>
 </ul>
 <a name="createFileURI-org.eclipse.emf.common.util.URI-">
@@ -328,7 +359,16 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/PersistenceU
 <ul class="blockList">
 <li class="blockList">
 <h4>createFileURI</h4>
-<pre>public static&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;createFileURI(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;uri)</pre>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;createFileURI(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                         <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;uri)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>uri</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the <code>uri</code> is <code>null</code></dd>
+</dl>
 </li>
 </ul>
 <a name="createHierarchicalURI-java.lang.String-java.lang.String-org.eclipse.emf.common.util.URI-">
@@ -337,9 +377,22 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/PersistenceU
 <ul class="blockList">
 <li class="blockList">
 <h4>createHierarchicalURI</h4>
-<pre>public static&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;createHierarchicalURI(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;host,
-                                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;port,
-                                        <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;modelURI)</pre>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;createHierarchicalURI(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;host,
+                                                 <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;port,
+                                                 <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                                 <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;modelURI)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>host</code> - </dd>
+<dd><code>port</code> - </dd>
+<dd><code>modelURI</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if any of the parameters is <code>null</code></dd>
+</dl>
 </li>
 </ul>
 <a name="format-org.eclipse.emf.common.util.URI-">
@@ -348,7 +401,9 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/PersistenceU
 <ul class="blockListLast">
 <li class="blockList">
 <h4>format</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;uri)</pre>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                     <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;uri)</pre>
 </li>
 </ul>
 </li>

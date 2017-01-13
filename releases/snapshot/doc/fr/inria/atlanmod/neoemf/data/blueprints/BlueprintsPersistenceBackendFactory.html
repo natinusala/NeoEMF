@@ -121,7 +121,7 @@ var activeTableTab = "activeTableTab";
 <pre>public final class <span class="typeNameLabel">BlueprintsPersistenceBackendFactory</span>
 extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data">AbstractPersistenceBackendFactory</a></pre>
 <div class="block">A factory that creates instances of <a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints"><code>BlueprintsPersistenceBackend</code></a>. As other implementations of 
- <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data"><code>AbstractPersistenceBackendFactory</code></a>, this class can create transient and persistent databases.
+ <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactory</code></a>, this class can create transient and persistent databases.
  Persistent backend creation can be configured using <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#save-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource.save(Map)</code></a> and <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#load-java.util.Map-" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource.load(Map)</code></a>
  option maps.
  <p>
@@ -287,7 +287,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <ul class="blockList">
 <li class="blockList">
 <h4>getInstance</h4>
-<pre>public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackendFactory</a>&nbsp;getInstance()</pre>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackendFactory</a>&nbsp;getInstance()</pre>
 <div class="block">Returns the instance of this class.</div>
 </li>
 </ul>

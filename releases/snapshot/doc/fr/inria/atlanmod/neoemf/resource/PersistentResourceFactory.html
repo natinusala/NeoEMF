@@ -116,6 +116,7 @@ var activeTableTab = "activeTableTab";
 <pre>public class <span class="typeNameLabel">PersistentResourceFactory</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.Factory.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">Resource.Factory</a></pre>
+<div class="block">The factory that creates <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource"><code>PersistentResource</code></a>s.</div>
 </li>
 </ul>
 </div>
@@ -151,7 +152,9 @@ implements <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/or
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResourceFactory.html#PersistentResourceFactory--">PersistentResourceFactory</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResourceFactory.html#PersistentResourceFactory--">PersistentResourceFactory</a></span>()</code>
+<div class="block">Constructs a new <code>PersistentResourceFactory</code>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -170,7 +173,7 @@ implements <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/or
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">Resource</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResourceFactory.html#createResource-org.eclipse.emf.common.util.URI-">createResource</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;uri)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResourceFactory.html#createResource-org.eclipse.emf.common.util.URI-">createResource</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;uri)</code></td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResourceFactory.html" title="class in fr.inria.atlanmod.neoemf.resource">PersistentResourceFactory</a></code></td>
@@ -207,6 +210,7 @@ implements <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/or
 <li class="blockList">
 <h4>PersistentResourceFactory</h4>
 <pre>protected&nbsp;PersistentResourceFactory()</pre>
+<div class="block">Constructs a new <code>PersistentResourceFactory</code>.</div>
 </li>
 </ul>
 </li>
@@ -223,7 +227,8 @@ implements <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/or
 <ul class="blockList">
 <li class="blockList">
 <h4>getInstance</h4>
-<pre>public static&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResourceFactory.html" title="class in fr.inria.atlanmod.neoemf.resource">PersistentResourceFactory</a>&nbsp;getInstance()</pre>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResourceFactory.html" title="class in fr.inria.atlanmod.neoemf.resource">PersistentResourceFactory</a>&nbsp;getInstance()</pre>
 <div class="block">Returns the instance of this class.</div>
 </li>
 </ul>
@@ -233,7 +238,12 @@ implements <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/or
 <ul class="blockListLast">
 <li class="blockList">
 <h4>createResource</h4>
-<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">Resource</a>&nbsp;createResource(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;uri)</pre>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">Resource</a>&nbsp;createResource(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                         <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;uri)</pre>
+<div class="block">
+ <p>
+ The <code>uri</code> must be registered in the <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactoryRegistry</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.Factory.html?is-external=true#createResource-org.eclipse.emf.common.util.URI-" title="class or interface in org.eclipse.emf.ecore.resource">createResource</a></code>&nbsp;in interface&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.Factory.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">Resource.Factory</a></code></dd>
