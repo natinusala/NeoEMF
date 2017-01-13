@@ -111,9 +111,11 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public interface <span class="typeNameLabel">Reader</span>
 extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html" title="interface in fr.inria.atlanmod.neoemf.io">InputNotifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&gt;</pre>
-<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputNotifier</code></a> able to read a file.
- </p>
- It correspond to the head of the parsing process in case of an import.</div>
+<div class="block">An <a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputNotifier</code></a> that reads data from a file.</div>
+<dl>
+<dt><span class="simpleTagLabel">Note:</span></dt>
+<dd>It correspond to the head of the parsing process in case of an import.</dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -193,7 +195,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.htm
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>stream</code> - the stream to read</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if this reader hasn't any handler</dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if an error occurred during the I/O process</dd>
 </dl>
 </li>
 </ul>
