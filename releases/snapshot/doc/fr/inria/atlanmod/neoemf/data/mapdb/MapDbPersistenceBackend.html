@@ -120,6 +120,30 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">MapDbPersistenceBackend</span>
 extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data">AbstractPersistenceBackend</a></pre>
+<div class="block">This class is responsible of low-level access to a MapDB database. 
+ <p>
+ It wraps an existing <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/DB.html?is-external=true" title="class or interface in org.mapdb"><code>DB</code></a> and provides facilities to create and retrieve elements.
+ This class manages a set of <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a>s used to represent model elements:
+ <ul>
+  <li><b>Containers Map: </b> holds containment and container links between elements</li>
+  <li><b>InstanceOf Map: </b> holds metaclass information for each element</li>
+  <li><b>Features Map: </b> holds non-containment <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a> links between elements </li>
+  <li><b>Multivalued Map: </b> optional Map used in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbIndicesStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbIndicesStore</code></a> that stores <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> indices instead of a serialized version of the collection itself</li>
+ </ul>
+ <p>
+ This class is used in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbStore</code></a> and its subclasses to access and manipulate
+ the database.
+ <p>
+ Instances of <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbPersistenceBackend</code></a> are created by <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbPersistenceBackendFactory</code></a> that
+ provides an usable <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/DB.html?is-external=true" title="class or interface in org.mapdb"><code>DB</code></a> that can be manipulated by this wrapper.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbPersistenceBackendFactory</code></a>, 
+<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbStore</code></a>, 
+<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbListsStore</code></a>, 
+<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbIndicesStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbIndicesStore</code></a>, 
+<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbCacheManyStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbCacheManyStore</code></a></dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -170,13 +194,13 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ContainerInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#containerFor-fr.inria.atlanmod.neoemf.core.Id-">containerFor</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
-<div class="block">Retrieves container for a given object id.</div>
+<div class="block">Retrieves container for a given object <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#copyTo-fr.inria.atlanmod.neoemf.data.mapdb.MapDbPersistenceBackend-">copyTo</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a>&nbsp;target)</code>
-<div class="block">Copies all the contents of this back-end to the target one.</div>
+<div class="block">Copies all the contents of this this backend to the target one.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -185,7 +209,9 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#getAll--">getAll</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#getAll--">getAll</a></span>()</code>
+<div class="block">Return all the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a>s contained in the database</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -196,19 +222,19 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#isFeatureSet-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">isFeatureSet</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;key)</code>
-<div class="block">Return true if the feature was set, false otherwise.</div>
+<div class="block">Checks if the given <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a> is set</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ClassInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#metaclassFor-fr.inria.atlanmod.neoemf.core.Id-">metaclassFor</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
-<div class="block">Retrieves metaclass (EClass) for a given object id</div>
+<div class="block">Retrieves the metaclass (EClass) of the element with the given <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#removeFeature-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">removeFeature</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;key)</code>
-<div class="block">Removes the value of a given feature.</div>
+<div class="block">Removes the value of a given <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a> from the database, and unset it (<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#isFeatureSet-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-"><code>isFeatureSet(FeatureKey)</code></a>).</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -221,40 +247,40 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#storeContainer-fr.inria.atlanmod.neoemf.core.Id-fr.inria.atlanmod.neoemf.data.structure.ContainerInfo-">storeContainer</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
               <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ContainerInfo</a>&nbsp;container)</code>
-<div class="block">Stores containter information for an object id</div>
+<div class="block">Stores container information for a given id in the Container Map.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#storeMetaclass-fr.inria.atlanmod.neoemf.core.Id-fr.inria.atlanmod.neoemf.data.structure.ClassInfo-">storeMetaclass</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
               <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ClassInfo</a>&nbsp;metaclass)</code>
-<div class="block">Stores metaclass (EClass) information for an object id.</div>
+<div class="block">Stores metaclass (EClass) information for the element with the given <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#storeValue-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-java.lang.Object-">storeValue</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;key,
           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>
-<div class="block">Store the value of a given feature.</div>
+<div class="block">Store the value of a given <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a>.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#storeValueAtIndex-fr.inria.atlanmod.neoemf.data.structure.MultivaluedFeatureKey-java.lang.Object-">storeValueAtIndex</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">MultivaluedFeatureKey</a>&nbsp;key,
                  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>
-<div class="block">Stores the single value of a given multivalued feature at the given index.</div>
+<div class="block">Stores the value of a given <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>MultivaluedFeatureKey</code></a>.</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#valueAtIndex-fr.inria.atlanmod.neoemf.data.structure.MultivaluedFeatureKey-">valueAtIndex</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">MultivaluedFeatureKey</a>&nbsp;key)</code>
-<div class="block">Retrieves the value of a given multivalued feature at a given index.</div>
+<div class="block">Retrieves the value of a given <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>MultivaluedFeatureKey</code></a>.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#valueOf-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">valueOf</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;key)</code>
-<div class="block">Retrieves the value of a given feature.</div>
+<div class="block">Retrieves the value of a given <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -354,6 +380,13 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <li class="blockList">
 <h4>getAll</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;getAll()</pre>
+<div class="block">Return all the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a>s contained in the database
+ <p>
+ <b>Note: </b>this method is public for test purposes, client code should not call it.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> containing all the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a>s contained in the database and their associated names</dd>
+</dl>
 </li>
 </ul>
 <a name="get-java.lang.String-">
@@ -372,7 +405,13 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <li class="blockList">
 <h4>containerFor</h4>
 <pre>public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ContainerInfo</a>&nbsp;containerFor(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</pre>
-<div class="block">Retrieves container for a given object id.</div>
+<div class="block">Retrieves container for a given object <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> of the contained object</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>ContainerInfo</code></a> descriptor that contains element's container informations</dd>
+</dl>
 </li>
 </ul>
 <a name="storeContainer-fr.inria.atlanmod.neoemf.core.Id-fr.inria.atlanmod.neoemf.data.structure.ContainerInfo-">
@@ -383,7 +422,12 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <h4>storeContainer</h4>
 <pre>public&nbsp;void&nbsp;storeContainer(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
                            <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ContainerInfo</a>&nbsp;container)</pre>
-<div class="block">Stores containter information for an object id</div>
+<div class="block">Stores container information for a given id in the Container Map.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> of the contained element</dd>
+<dd><code>container</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>ContainerInfo</code></a> descriptor containing element's container information to store</dd>
+</dl>
 </li>
 </ul>
 <a name="metaclassFor-fr.inria.atlanmod.neoemf.core.Id-">
@@ -393,7 +437,14 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <li class="blockList">
 <h4>metaclassFor</h4>
 <pre>public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ClassInfo</a>&nbsp;metaclassFor(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</pre>
-<div class="block">Retrieves metaclass (EClass) for a given object id</div>
+<div class="block">Retrieves the metaclass (EClass) of the element with the given <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> of the element</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>ClassInfo</code></a> descriptor containing element's metaclass informations (<code>EClass</code>, metamodel
+ name, and <code>nsURI</code>)</dd>
+</dl>
 </li>
 </ul>
 <a name="storeMetaclass-fr.inria.atlanmod.neoemf.core.Id-fr.inria.atlanmod.neoemf.data.structure.ClassInfo-">
@@ -404,7 +455,13 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <h4>storeMetaclass</h4>
 <pre>public&nbsp;void&nbsp;storeMetaclass(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
                            <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ClassInfo</a>&nbsp;metaclass)</pre>
-<div class="block">Stores metaclass (EClass) information for an object id.</div>
+<div class="block">Stores metaclass (EClass) information for the element with the given <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> of the element</dd>
+<dd><code>metaclass</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>ClassInfo</code></a> descriptor containing element's metaclass informations (<code>EClass</code>, metamodel
+ name, and <code>nsURI</code>)</dd>
+</dl>
 </li>
 </ul>
 <a name="storeValue-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-java.lang.Object-">
@@ -415,7 +472,12 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <h4>storeValue</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;storeValue(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;key,
                          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
-<div class="block">Store the value of a given feature.</div>
+<div class="block">Store the value of a given <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a> to set the value of</dd>
+<dd><code>value</code> - an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> representing the value associated to the given <code>key</code></dd>
+</dl>
 </li>
 </ul>
 <a name="valueOf-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">
@@ -425,7 +487,14 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <li class="blockList">
 <h4>valueOf</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;valueOf(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;key)</pre>
-<div class="block">Retrieves the value of a given feature.</div>
+<div class="block">Retrieves the value of a given <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a> to look for</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> representing the value associated to the given <code>key</code>, <code>null</code>
+ if it is not in the database</dd>
+</dl>
 </li>
 </ul>
 <a name="removeFeature-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">
@@ -435,7 +504,14 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <li class="blockList">
 <h4>removeFeature</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;removeFeature(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;key)</pre>
-<div class="block">Removes the value of a given feature. The feature becomes unset.</div>
+<div class="block">Removes the value of a given <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a> from the database, and unset it (<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#isFeatureSet-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-"><code>isFeatureSet(FeatureKey)</code></a>).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a> to remove</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> representing the removed value, <code>null</code> if it
+ hasn't been found</dd>
+</dl>
 </li>
 </ul>
 <a name="isFeatureSet-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">
@@ -445,7 +521,13 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <li class="blockList">
 <h4>isFeatureSet</h4>
 <pre>public&nbsp;boolean&nbsp;isFeatureSet(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">FeatureKey</a>&nbsp;key)</pre>
-<div class="block">Return true if the feature was set, false otherwise.</div>
+<div class="block">Checks if the given <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a> is set</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a> to check</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if the feature is set, <code>false</code> otherwise</dd>
+</dl>
 </li>
 </ul>
 <a name="storeValueAtIndex-fr.inria.atlanmod.neoemf.data.structure.MultivaluedFeatureKey-java.lang.Object-">
@@ -456,7 +538,17 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <h4>storeValueAtIndex</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;storeValueAtIndex(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">MultivaluedFeatureKey</a>&nbsp;key,
                                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
-<div class="block">Stores the single value of a given multivalued feature at the given index.</div>
+<div class="block">Stores the value of a given <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>MultivaluedFeatureKey</code></a>.
+ <p>
+ This method is similar to <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#storeValue-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-java.lang.Object-"><code>storeValue(FeatureKey, Object)</code></a> but it
+ uses the Multivalued <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> that stores indices explicitly.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>MultivaluedFeatureKey</code></a> to set the value of</dd>
+<dd><code>value</code> - an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> representing the value associated to the given <code>key</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbIndicesStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbIndicesStore</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="valueAtIndex-fr.inria.atlanmod.neoemf.data.structure.MultivaluedFeatureKey-">
@@ -466,7 +558,19 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <li class="blockList">
 <h4>valueAtIndex</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;valueAtIndex(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure">MultivaluedFeatureKey</a>&nbsp;key)</pre>
-<div class="block">Retrieves the value of a given multivalued feature at a given index.</div>
+<div class="block">Retrieves the value of a given <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>MultivaluedFeatureKey</code></a>.
+ <p>
+ This method is similar to <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#valueOf-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-"><code>valueOf(FeatureKey)</code></a> but it
+ uses Multivalued <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> to retrieve the element at the given index directly instead of
+ returning the entire <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>MultivaluedFeatureKey</code></a> to get the value from</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> representing the value associated to the given <code>key</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbIndicesStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbIndicesStore</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="copyTo-fr.inria.atlanmod.neoemf.data.mapdb.MapDbPersistenceBackend-">
@@ -476,7 +580,14 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <li class="blockList">
 <h4>copyTo</h4>
 <pre>public&nbsp;void&nbsp;copyTo(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a>&nbsp;target)</pre>
-<div class="block">Copies all the contents of this back-end to the target one.</div>
+<div class="block">Copies all the contents of this this backend to the target one.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>target</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbPersistenceBackend</code></a> to copy the database contents to</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang">UnsupportedOperationException</a></code> - if the current <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/DB.html?is-external=true" title="class or interface in org.mapdb"><code>DB</code></a> contains <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a>s
+ which are not <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a>s</dd>
+</dl>
 </li>
 </ul>
 </li>

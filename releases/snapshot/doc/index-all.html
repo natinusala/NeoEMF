@@ -92,7 +92,7 @@
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptions.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option"><span class="typeNameLink">AbstractBlueprintsOptions</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/blueprints/option/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.option</a></dt>
 <dd>
-<div class="block">The abstract implementation of <a href="fr/inria/atlanmod/neoemf/option/CommonOptions.html" title="class in fr.inria.atlanmod.neoemf.option"><code>CommonOptions</code></a> that holds generic options
+<div class="block">The abstract implementation of <code>CommonOptions</code> that holds generic options
  for all Blueprints based implementations.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptions.html#AbstractBlueprintsOptions--">AbstractBlueprintsOptions()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.blueprints.option.<a href="fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptions.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option">AbstractBlueprintsOptions</a></dt>
@@ -222,7 +222,10 @@
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/hbase/Activator.html#Activator--">Activator()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.hbase.<a href="fr/inria/atlanmod/neoemf/data/hbase/Activator.html" title="class in fr.inria.atlanmod.neoemf.data.hbase">Activator</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/mapdb/Activator.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><span class="typeNameLink">Activator</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/mapdb/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">A <a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleActivator.html?is-external=true" title="class or interface in org.osgi.framework"><code>BundleActivator</code></a> that automatically registers an instance of <a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbPersistenceBackendFactory</code></a>
+ in the global <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactoryRegistry</code></a> when the plugin is started.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/Activator.html#Activator--">Activator()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/Activator.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">Activator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/hbase/store/ReadOnlyHBaseStore.html#add-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-java.lang.Object-">add(InternalEObject, EStructuralFeature, int, Object)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.hbase.store.<a href="fr/inria/atlanmod/neoemf/data/hbase/store/ReadOnlyHBaseStore.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.store">ReadOnlyHBaseStore</a></dt>
@@ -457,7 +460,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option"><span class="typeNameLink">BlueprintsOptionsBuilder</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/blueprints/option/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.option</a></dt>
 <dd>
-<div class="block">A specific <a href="fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option"><code>AbstractBlueprintsOptionsBuilder</code></a> that creates Blueprints TinkerGraph specific options.</div>
+<div class="block">A <a href="fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option"><code>AbstractBlueprintsOptionsBuilder</code></a> subclass that creates Blueprints TinkerGraph specific options.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsOptionsBuilder.html#BlueprintsOptionsBuilder--">BlueprintsOptionsBuilder()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.blueprints.option.<a href="fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option">BlueprintsOptionsBuilder</a></dt>
 <dd>
@@ -631,7 +634,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#containerFor-fr.inria.atlanmod.neoemf.core.Id-">containerFor(Id)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a></dt>
 <dd>
-<div class="block">Retrieves container for a given object id.</div>
+<div class="block">Retrieves container for a given object <a href="fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><span class="typeNameLink">ContainerInfo</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/structure/package-summary.html">fr.inria.atlanmod.neoemf.data.structure</a></dt>
 <dd>
@@ -696,7 +699,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#copyTo-fr.inria.atlanmod.neoemf.data.mapdb.MapDbPersistenceBackend-">copyTo(MapDbPersistenceBackend)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a></dt>
 <dd>
-<div class="block">Copies all the contents of this back-end to the target one.</div>
+<div class="block">Copies all the contents of this this backend to the target one.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/persistence/CounterPersistenceHandlerDecorator.html" title="class in fr.inria.atlanmod.neoemf.io.persistence"><span class="typeNameLink">CounterPersistenceHandlerDecorator</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/io/persistence/package-summary.html">fr.inria.atlanmod.neoemf.io.persistence</a></dt>
 <dd>
@@ -740,9 +743,14 @@
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html#createFileURI-org.eclipse.emf.common.util.URI-">createFileURI(URI)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.hbase.util.<a href="fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.util">HBaseURI</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html#createFileURI-java.io.File-">createFileURI(File)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.mapdb.util.<a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util">MapDbURI</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a new <a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util"><code>MapDbURI</code></a> from the given <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> descriptor.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html#createFileURI-org.eclipse.emf.common.util.URI-">createFileURI(URI)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.mapdb.util.<a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util">MapDbURI</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a new <a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util"><code>MapDbURI</code></a> from the given <code>uri</code> by checking the referenced file
+ exists on the file system.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#createFileURI-java.io.File-java.lang.String-">createFileURI(File, String)</a></span> - Static method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#createFileURI-org.eclipse.emf.common.util.URI-java.lang.String-">createFileURI(URI, String)</a></span> - Static method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
@@ -812,7 +820,9 @@
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html#createURI-org.eclipse.emf.common.util.URI-">createURI(URI)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.hbase.util.<a href="fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.util">HBaseURI</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html#createURI-org.eclipse.emf.common.util.URI-">createURI(URI)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.mapdb.util.<a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util">MapDbURI</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Create a new <a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util"><code>MapDbURI</code></a> from the given <code>uri</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#createURI-org.eclipse.emf.common.util.URI-">createURI(URI)</a></span> - Static method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/store/AbstractTransientStore.html#createValue--">createValue()</a></span> - Method in class fr.inria.atlanmod.neoemf.data.store.<a href="fr/inria/atlanmod/neoemf/data/store/AbstractTransientStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractTransientStore</a></dt>
@@ -970,32 +980,44 @@
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html#directWriteLists--">directWriteLists()</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.option.<a href="fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.option">MapDbOptionsBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbCacheManyStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><span class="typeNameLink">DirectWriteMapDbCacheManyStore</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/mapdb/store/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb.store</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">A <a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbStore</code></a> subclass that uses an internal cache to store persisted <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a>s
+ that are part of multi-valued <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a>s to speed-up their access.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbCacheManyStore.html#DirectWriteMapDbCacheManyStore-org.eclipse.emf.ecore.resource.Resource.Internal-fr.inria.atlanmod.neoemf.data.mapdb.MapDbPersistenceBackend-">DirectWriteMapDbCacheManyStore(Resource.Internal, MapDbPersistenceBackend)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.mapdb.store.<a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbCacheManyStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbCacheManyStore</a></dt>
 <dd>
 <div class="block">Constructs a new <code>DirectWriteMapDbCacheManyStore</code> between the given <code>resource</code> and the
  <code>backend</code>.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbIndicesStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><span class="typeNameLink">DirectWriteMapDbIndicesStore</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/mapdb/store/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb.store</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">A <a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbStore</code></a> subclass that persists <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> indices instead of
+ serialized arrays.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbIndicesStore.html#DirectWriteMapDbIndicesStore-org.eclipse.emf.ecore.resource.Resource.Internal-fr.inria.atlanmod.neoemf.data.mapdb.MapDbPersistenceBackend-">DirectWriteMapDbIndicesStore(Resource.Internal, MapDbPersistenceBackend)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.mapdb.store.<a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbIndicesStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbIndicesStore</a></dt>
 <dd>
 <div class="block">Constructs a new <code>DirectWriteMapDbIndicesStore</code> between the given <code>resource</code> and the
  <code>backend</code>.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><span class="typeNameLink">DirectWriteMapDbListsStore</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/mapdb/store/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb.store</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">A <a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbStore</code></a> subclass that uses Java <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>s instead of arrays to 
+ persist multi-valued <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EAttribute</code></a>s and <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a>s.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html#DirectWriteMapDbListsStore-org.eclipse.emf.ecore.resource.Resource.Internal-fr.inria.atlanmod.neoemf.data.mapdb.MapDbPersistenceBackend-">DirectWriteMapDbListsStore(Resource.Internal, MapDbPersistenceBackend)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.mapdb.store.<a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbListsStore</a></dt>
 <dd>
 <div class="block">Constructs a new <code>DirectWriteMapDbListsStore</code> between the given <code>resource</code> and the
  <code>backend</code>.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><span class="typeNameLink">DirectWriteMapDbStore</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/mapdb/store/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb.store</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">An <a href="fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><code>AbstractDirectWriteStore</code></a> subclass that translates model-level operations
+ to MapDB operations.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#DirectWriteMapDbStore-org.eclipse.emf.ecore.resource.Resource.Internal-fr.inria.atlanmod.neoemf.data.mapdb.MapDbPersistenceBackend-">DirectWriteMapDbStore(Resource.Internal, MapDbPersistenceBackend)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.mapdb.store.<a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></dt>
 <dd>
-<div class="block">Constructs a new <code>DirectWriteMapDbStore</code> between the given <code>resource</code> and the
- <code>backend</code>.</div>
+<div class="block">Constructs a new <code>DirectWriteMapDbStore</code> between the given <code>resource</code> and
+ the <code>backend</code>.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/store/DirectWriteStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">DirectWriteStore</span></a> - Interface in <a href="fr/inria/atlanmod/neoemf/data/store/package-summary.html">fr.inria.atlanmod.neoemf.data.store</a></dt>
 <dd>
@@ -1218,7 +1240,7 @@
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/mapdb/serializer/FeatureKeySerializer.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.serializer"><span class="typeNameLink">FeatureKeySerializer</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/mapdb/serializer/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb.serializer</a></dt>
 <dd>
-<div class="block">Serializer for <a href="fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a>.</div>
+<div class="block">A <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/Serializer.html?is-external=true" title="class or interface in org.mapdb"><code>Serializer</code></a> implementation for <a href="fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/serializer/FeatureKeySerializer.html#FeatureKeySerializer--">FeatureKeySerializer()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.mapdb.serializer.<a href="fr/inria/atlanmod/neoemf/data/mapdb/serializer/FeatureKeySerializer.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.serializer">FeatureKeySerializer</a></dt>
 <dd>&nbsp;</dd>
@@ -1457,7 +1479,9 @@
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/NeoEContentsEList.html#get-int-">get(int)</a></span> - Method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/NeoEContentsEList.html" title="class in fr.inria.atlanmod.neoemf.util">NeoEContentsEList</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#getAll--">getAll()</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Return all the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a>s contained in the database</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceDecorator.html#getAllContents--">getAllContents()</a></span> - Method in class fr.inria.atlanmod.neoemf.resource.<a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceDecorator.html" title="class in fr.inria.atlanmod.neoemf.resource">PersistentResourceDecorator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#getAllInstances-org.eclipse.emf.ecore.EClass-boolean-">getAllInstances(EClass, boolean)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.blueprints.<a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a></dt>
@@ -1589,9 +1613,13 @@
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html#getFromMap-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EStructuralFeature-">getFromMap(PersistentEObject, EStructuralFeature)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.store.<a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbListsStore</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#getFromMap-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">getFromMap(FeatureKey)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.store.<a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Get the value associated to <code>featureKey</code> in the underlying database.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#getFromMap-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EStructuralFeature-">getFromMap(PersistentEObject, EStructuralFeature)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.store.<a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Get the value associated to (<code>object</code>, <code>feature</code>) in the underlying database.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/structure/Namespace.Registry.html#getFromPrefix-java.lang.String-">getFromPrefix(String)</a></span> - Method in class fr.inria.atlanmod.neoemf.io.structure.<a href="fr/inria/atlanmod/neoemf/io/structure/Namespace.Registry.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Namespace.Registry</a></dt>
 <dd>
 <div class="block">Returns a <a href="fr/inria/atlanmod/neoemf/io/structure/Namespace.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Namespace</code></a> identified by the given <code>prefix</code>, or <code>null</code> if no
@@ -1937,7 +1965,7 @@
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/mapdb/serializer/IdSerializer.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.serializer"><span class="typeNameLink">IdSerializer</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/mapdb/serializer/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb.serializer</a></dt>
 <dd>
-<div class="block">Serializer for <a href="fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
+<div class="block">A <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/Serializer.html?is-external=true" title="class or interface in org.mapdb"><code>Serializer</code></a> implementation for <a href="fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>s.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/serializer/IdSerializer.html#IdSerializer--">IdSerializer()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.mapdb.serializer.<a href="fr/inria/atlanmod/neoemf/data/mapdb/serializer/IdSerializer.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.serializer">IdSerializer</a></dt>
 <dd>&nbsp;</dd>
@@ -2141,7 +2169,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#isFeatureSet-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">isFeatureSet(FeatureKey)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a></dt>
 <dd>
-<div class="block">Return true if the feature was set, false otherwise.</div>
+<div class="block">Checks if the given <a href="fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a> is set</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#isFile--">isFile()</a></span> - Method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
 <dd>&nbsp;</dd>
@@ -2390,23 +2418,32 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.option"><span class="typeNameLink">MapDbOptionsBuilder</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/mapdb/option/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb.option</a></dt>
 <dd>
-<div class="block">
- All features are all optional: options can be created using all or none of them.</div>
+<div class="block">A <a href="fr/inria/atlanmod/neoemf/option/AbstractPersistenceOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.option"><code>AbstractPersistenceOptionsBuilder</code></a> subclass that creates MapDB specific options.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html#MapDbOptionsBuilder--">MapDbOptionsBuilder()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.mapdb.option.<a href="fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.option">MapDbOptionsBuilder</a></dt>
 <dd>
 <div class="block">Constructs a new <code>MapDbOptionsBuilder</code>.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><span class="typeNameLink">MapDbPersistenceBackend</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/mapdb/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">This class is responsible of low-level access to a MapDB database.</div>
+</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><span class="typeNameLink">MapDbPersistenceBackendFactory</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/mapdb/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbStoreOptions.html" title="enum in fr.inria.atlanmod.neoemf.data.mapdb.option"><span class="typeNameLink">MapDbStoreOptions</span></a> - Enum in <a href="fr/inria/atlanmod/neoemf/data/mapdb/option/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb.option</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">An implementation of <a href="fr/inria/atlanmod/neoemf/option/PersistentStoreOptions.html" title="interface in fr.inria.atlanmod.neoemf.option"><code>PersistentStoreOptions</code></a> holding MapDB related datastore access
+ features, such as autocommit, direct write, usage of raw arrays or <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>s.</div>
+</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util"><span class="typeNameLink">MapDbURI</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/mapdb/util/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb.util</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">A specific subclass of <a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util"><code>PersistenceURI</code></a> that creates MapDB specific resource <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s from
+ a <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> descriptor or an existing <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html#MapDbURI-int-org.eclipse.emf.common.util.URI-">MapDbURI(int, URI)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.mapdb.util.<a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util">MapDbURI</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a new <a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util"><code>MapDbURI</code></a> from the given <code>HashCode</code> and <code>internalURI</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/hash/HasherFactory.html#md5--">md5()</a></span> - Static method in class fr.inria.atlanmod.neoemf.io.hash.<a href="fr/inria/atlanmod/neoemf/io/hash/HasherFactory.html" title="class in fr.inria.atlanmod.neoemf.io.hash">HasherFactory</a></dt>
 <dd>
 <div class="block">Returns an instance of a <a href="fr/inria/atlanmod/neoemf/io/hash/Hasher.html" title="interface in fr.inria.atlanmod.neoemf.io.hash"><code>Hasher</code></a> using <code>MD5</code>.</div>
@@ -2425,7 +2462,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#metaclassFor-fr.inria.atlanmod.neoemf.core.Id-">metaclassFor(Id)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a></dt>
 <dd>
-<div class="block">Retrieves metaclass (EClass) for a given object id</div>
+<div class="block">Retrieves the metaclass (EClass) of the element with the given <a href="fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/io/structure/MetaClassifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><span class="typeNameLink">MetaClassifier</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/io/structure/package-summary.html">fr.inria.atlanmod.neoemf.io.structure</a></dt>
 <dd>
@@ -2466,7 +2503,7 @@
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/mapdb/serializer/MultivaluedFeatureKeySerializer.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.serializer"><span class="typeNameLink">MultivaluedFeatureKeySerializer</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/mapdb/serializer/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb.serializer</a></dt>
 <dd>
-<div class="block">Serializer for <a href="fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>MultivaluedFeatureKey</code></a>.</div>
+<div class="block">A <a href="fr/inria/atlanmod/neoemf/data/mapdb/serializer/FeatureKeySerializer.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.serializer"><code>FeatureKeySerializer</code></a> subclass that is able to serialize <a href="fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>MultivaluedFeatureKey</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/serializer/MultivaluedFeatureKeySerializer.html#MultivaluedFeatureKeySerializer--">MultivaluedFeatureKeySerializer()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.mapdb.serializer.<a href="fr/inria/atlanmod/neoemf/data/mapdb/serializer/MultivaluedFeatureKeySerializer.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.serializer">MultivaluedFeatureKeySerializer</a></dt>
 <dd>&nbsp;</dd>
@@ -3049,7 +3086,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#removeFeature-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">removeFeature(FeatureKey)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a></dt>
 <dd>
-<div class="block">Removes the value of a given feature.</div>
+<div class="block">Removes the value of a given <a href="fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a> from the database, and unset it (<a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#isFeatureSet-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-"><code>MapDbPersistenceBackend.isFeatureSet(FeatureKey)</code></a>).</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html#removeReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-">removeReference(PersistentEObject, EReference, int)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.blueprints.store.<a href="fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.store">DirectWriteBlueprintsStore</a></dt>
 <dd>&nbsp;</dd>
@@ -3152,7 +3189,9 @@
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/Activator.html#scheme--">scheme()</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/Activator.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">Activator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html#SCHEME">SCHEME</a></span> - Static variable in class fr.inria.atlanmod.neoemf.data.mapdb.util.<a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util">MapDbURI</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">The scheme associated to the URI.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#scheme--">scheme()</a></span> - Method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#segment-int-">segment(int)</a></span> - Method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
@@ -3331,11 +3370,11 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#storeContainer-fr.inria.atlanmod.neoemf.core.Id-fr.inria.atlanmod.neoemf.data.structure.ContainerInfo-">storeContainer(Id, ContainerInfo)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a></dt>
 <dd>
-<div class="block">Stores containter information for an object id</div>
+<div class="block">Stores container information for a given id in the Container Map.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#storeMetaclass-fr.inria.atlanmod.neoemf.core.Id-fr.inria.atlanmod.neoemf.data.structure.ClassInfo-">storeMetaclass(Id, ClassInfo)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a></dt>
 <dd>
-<div class="block">Stores metaclass (EClass) information for an object id.</div>
+<div class="block">Stores metaclass (EClass) information for the element with the given <a href="fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/option/AbstractPersistenceOptionsBuilder.html#storeOption-fr.inria.atlanmod.neoemf.option.PersistentStoreOptions-">storeOption(PersistentStoreOptions)</a></span> - Method in class fr.inria.atlanmod.neoemf.option.<a href="fr/inria/atlanmod/neoemf/option/AbstractPersistenceOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.option">AbstractPersistenceOptionsBuilder</a></dt>
 <dd>
@@ -3343,11 +3382,11 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#storeValue-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-java.lang.Object-">storeValue(FeatureKey, Object)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a></dt>
 <dd>
-<div class="block">Store the value of a given feature.</div>
+<div class="block">Store the value of a given <a href="fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#storeValueAtIndex-fr.inria.atlanmod.neoemf.data.structure.MultivaluedFeatureKey-java.lang.Object-">storeValueAtIndex(MultivaluedFeatureKey, Object)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a></dt>
 <dd>
-<div class="block">Stores the single value of a given multivalued feature at the given index.</div>
+<div class="block">Stores the value of a given <a href="fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>MultivaluedFeatureKey</code></a>.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/core/StringId.html" title="class in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">StringId</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/core/package-summary.html">fr.inria.atlanmod.neoemf.core</a></dt>
 <dd>
@@ -3585,13 +3624,17 @@
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/hbase/store/ReadOnlyHBaseStore.html#updateContainment-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-">updateContainment(PersistentEObject, EReference, PersistentEObject)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.hbase.store.<a href="fr/inria/atlanmod/neoemf/data/hbase/store/ReadOnlyHBaseStore.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.store">ReadOnlyHBaseStore</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#updateContainment-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-">updateContainment(PersistentEObject, EReference, PersistentEObject)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.store.<a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Tells the underlying database to put <code>referencedObject</code> in the containment list of <code>object</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/hbase/store/DirectWriteHBaseStore.html#updateInstanceOf-fr.inria.atlanmod.neoemf.core.PersistentEObject-">updateInstanceOf(PersistentEObject)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.hbase.store.<a href="fr/inria/atlanmod/neoemf/data/hbase/store/DirectWriteHBaseStore.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.store">DirectWriteHBaseStore</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/hbase/store/ReadOnlyHBaseStore.html#updateInstanceOf-fr.inria.atlanmod.neoemf.core.PersistentEObject-">updateInstanceOf(PersistentEObject)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.hbase.store.<a href="fr/inria/atlanmod/neoemf/data/hbase/store/ReadOnlyHBaseStore.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.store">ReadOnlyHBaseStore</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#updateInstanceOf-fr.inria.atlanmod.neoemf.core.PersistentEObject-">updateInstanceOf(PersistentEObject)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.store.<a href="fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Computes the type of  in a <a href="fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>ClassInfo</code></a> object and persists it in the database.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html#uri--">uri()</a></span> - Method in class fr.inria.atlanmod.neoemf.data.structure.<a href="fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ClassInfo</a></dt>
 <dd>
 <div class="block">Returns the literal representation of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>.</div>
@@ -3618,7 +3661,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#valueAtIndex-fr.inria.atlanmod.neoemf.data.structure.MultivaluedFeatureKey-">valueAtIndex(MultivaluedFeatureKey)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a></dt>
 <dd>
-<div class="block">Retrieves the value of a given multivalued feature at a given index.</div>
+<div class="block">Retrieves the value of a given <a href="fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>MultivaluedFeatureKey</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.CacheType.html#valueOf-java.lang.String-">valueOf(String)</a></span> - Static method in enum fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option.<a href="fr/inria/atlanmod/neoemf/data/blueprints/neo4j/option/BlueprintsNeo4jResourceOptions.CacheType.html" title="enum in fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option">BlueprintsNeo4jResourceOptions.CacheType</a></dt>
 <dd>
@@ -3630,7 +3673,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#valueOf-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">valueOf(FeatureKey)</a></span> - Method in class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a></dt>
 <dd>
-<div class="block">Retrieves the value of a given feature.</div>
+<div class="block">Retrieves the value of a given <a href="fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbStoreOptions.html#valueOf-java.lang.String-">valueOf(String)</a></span> - Static method in enum fr.inria.atlanmod.neoemf.data.mapdb.option.<a href="fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbStoreOptions.html" title="enum in fr.inria.atlanmod.neoemf.data.mapdb.option">MapDbStoreOptions</a></dt>
 <dd>
