@@ -173,9 +173,9 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackend</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackendFactory.html#createPersistentBackend-java.io.File-java.util.Map-">createPersistentBackend</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackendFactory.html#createPersistentBackend-java.io.File-java.util.Map-">createPersistentBackend</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;directory,
                        <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;?,?&gt;&nbsp;options)</code>
-<div class="block">Creates a <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a> in the given <code>file</code>.</div>
+<div class="block">Creates a <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a> in the given <code>directory</code>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -343,13 +343,13 @@ public static&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/Pers
 <ul class="blockList">
 <li class="blockList">
 <h4>createPersistentBackend</h4>
-<pre>public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackend</a>&nbsp;createPersistentBackend(<a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file,
+<pre>public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackend</a>&nbsp;createPersistentBackend(<a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;directory,
                                                   <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;?,?&gt;&nbsp;options)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html#createPersistentBackend-java.io.File-java.util.Map-">PersistenceBackendFactory</a></code></span></div>
-<div class="block">Creates a <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a> in the given <code>file</code>.</div>
+<div class="block">Creates a <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a> in the given <code>directory</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>file</code> - the file</dd>
+<dd><code>directory</code> - the directory</dd>
 <dd><code>options</code> - the options that defines the behaviour of the back-end</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the persistence back-end</dd>
