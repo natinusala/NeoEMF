@@ -129,7 +129,9 @@ var activeTableTab = "activeTableTab";
 <pre>public abstract class <span class="typeNameLabel">AbstractDirectWriteStore&lt;P extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackend</a>&gt;</span>
 extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractPersistentStore</a>
 implements <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/DirectWriteStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">DirectWriteStore</a></pre>
-<div class="block">The abstract implementation of <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/DirectWriteStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>DirectWriteStore</code></a>.</div>
+<div class="block">An abstract <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/DirectWriteStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>DirectWriteStore</code></a> that redirects certain methods according to the instance of the encountered
+ <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a>. If the subclass does not re-implement the inherited methods of EMF, the call is
+ automatically redirected to the associated method that begins with the same name.</div>
 </li>
 </ul>
 </div>
