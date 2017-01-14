@@ -111,9 +111,9 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public interface <span class="typeNameLabel">PersistenceBackend</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</a></pre>
-<div class="block">An adapter on top of a data store that provides specific methods for communicating with a data store implementation.
+<div class="block">An adapter on top of a database that provides specific methods for communicating with a database implementation.
  <p>
- Each <code>PersistenceBackend</code> manage one single instance of a data store.</div>
+ Each <code>PersistenceBackend</code> manage one single instance of a database.</div>
 <dl>
 <dt><span class="simpleTagLabel">In Future:</span></dt>
 <dd>an abstraction of <code>PersistenceBackend</code> will be implemented to define a global behaviour</dd>
@@ -150,13 +150,13 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html#isClosed--">isClosed</a></span>()</code>
-<div class="block">Returns whether the underlying data store has been started or not.</div>
+<div class="block">Returns whether the underlying database has been started or not.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html#save--">save</a></span>()</code>
-<div class="block">Saves the modifications of the owned <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>s in the underlying data store.</div>
+<div class="block">Saves the modifications of the owned <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>s in the underlying database.</div>
 </td>
 </tr>
 </table>
@@ -181,10 +181,10 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html
 <li class="blockList">
 <h4>isClosed</h4>
 <pre>boolean&nbsp;isClosed()</pre>
-<div class="block">Returns whether the underlying data store has been started or not.</div>
+<div class="block">Returns whether the underlying database has been started or not.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if the data store is closed, otherwise <code>false</code></dd>
+<dd><code>true</code> if the database is closed, otherwise <code>false</code></dd>
 </dl>
 </li>
 </ul>
@@ -197,7 +197,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html
 <pre>void&nbsp;close()</pre>
 <div class="block">
  <p>
- In our case, it cleanly stops the underlying data store.</div>
+ In our case, it cleanly stops the underlying database.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true#close--" title="class or interface in java.lang">close</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang">AutoCloseable</a></code></dd>
@@ -213,7 +213,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html
 <li class="blockList">
 <h4>save</h4>
 <pre>void&nbsp;save()</pre>
-<div class="block">Saves the modifications of the owned <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>s in the underlying data store.</div>
+<div class="block">Saves the modifications of the owned <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>s in the underlying database.</div>
 </li>
 </ul>
 <a name="getAllInstances-org.eclipse.emf.ecore.EClass-boolean-">

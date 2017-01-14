@@ -151,7 +151,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Direct
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html" title="type parameter in AbstractDirectWriteStore">P</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#backend">backend</a></span></code>
-<div class="block">The persistence backend used to store the model.</div>
+<div class="block">The persistence back-end used to store the model.</div>
 </td>
 </tr>
 </table>
@@ -553,7 +553,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Direct
 <li class="blockList">
 <h4>backend</h4>
 <pre>protected final&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html" title="type parameter in AbstractDirectWriteStore">P</a> extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackend</a> backend</pre>
-<div class="block">The persistence backend used to store the model.</div>
+<div class="block">The persistence back-end used to store the model.</div>
 </li>
 </ul>
 </li>
@@ -578,7 +578,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Direct
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>resource</code> - the resource to persist and access</dd>
-<dd><code>backend</code> - the persistence backend used to store the model</dd>
+<dd><code>backend</code> - the persistence back-end used to store the model</dd>
 </dl>
 </li>
 </ul>
@@ -991,25 +991,6 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Direct
 </dl>
 </li>
 </ul>
-<a name="create-org.eclipse.emf.ecore.EClass-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>create</h4>
-<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&nbsp;create(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a>&nbsp;eClass)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true#create-org.eclipse.emf.ecore.EClass-" title="class or interface in org.eclipse.emf.ecore">org.eclipse.emf.ecore.InternalEObject.EStore</a></code></span></div>
-<div class="block">Creates a new instance of the class.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true#create-org.eclipse.emf.ecore.EClass-" title="class or interface in org.eclipse.emf.ecore">create</a></code>&nbsp;in interface&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject.EStore</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>eClass</code> - the class to instantiate.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>a new instance of the class.</dd>
-</dl>
-</li>
-</ul>
 <a name="hashCode-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">
 <!--   -->
 </a>
@@ -1028,6 +1009,25 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/Direct
 <dd><code>feature</code> - a <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/ETypedElement.html?is-external=true#isMany--" title="class or interface in org.eclipse.emf.ecore"><code>many-valued</code></a> feature of the object.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the hash code of the content of the object's feature.</dd>
+</dl>
+</li>
+</ul>
+<a name="create-org.eclipse.emf.ecore.EClass-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&nbsp;create(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a>&nbsp;eClass)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true#create-org.eclipse.emf.ecore.EClass-" title="class or interface in org.eclipse.emf.ecore">org.eclipse.emf.ecore.InternalEObject.EStore</a></code></span></div>
+<div class="block">Creates a new instance of the class.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true#create-org.eclipse.emf.ecore.EClass-" title="class or interface in org.eclipse.emf.ecore">create</a></code>&nbsp;in interface&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject.EStore</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>eClass</code> - the class to instantiate.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new instance of the class.</dd>
 </dl>
 </li>
 </ul>

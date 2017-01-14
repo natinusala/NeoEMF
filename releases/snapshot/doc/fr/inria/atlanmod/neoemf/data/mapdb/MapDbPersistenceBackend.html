@@ -120,22 +120,19 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">MapDbPersistenceBackend</span>
 extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data">AbstractPersistenceBackend</a></pre>
-<div class="block">This class is responsible of low-level access to a MapDB database. 
+<div class="block">This class is responsible of low-level access to a MapDB database.
  <p>
- It wraps an existing <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/DB.html?is-external=true" title="class or interface in org.mapdb"><code>DB</code></a> and provides facilities to create and retrieve elements.
- This class manages a set of <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a>s used to represent model elements:
- <ul>
-  <li><b>Containers Map: </b> holds containment and container links between elements</li>
-  <li><b>InstanceOf Map: </b> holds metaclass information for each element</li>
-  <li><b>Features Map: </b> holds non-containment <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a> links between elements </li>
-  <li><b>Multivalued Map: </b> optional Map used in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbIndicesStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbIndicesStore</code></a> that stores <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> indices instead of a serialized version of the collection itself</li>
- </ul>
+ It wraps an existing <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/DB.html?is-external=true" title="class or interface in org.mapdb"><code>DB</code></a> and provides facilities to create and retrieve elements. This class manages a set of
+ <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a>s used to represent model elements: <ul> <li><b>Containers Map: </b> holds containment and container links
+ between elements</li> <li><b>InstanceOf Map: </b> holds metaclass information for each element</li> <li><b>Features
+ Map: </b> holds non-containment <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a> links between elements </li> <li><b>Multivalued Map: </b>
+ optional Map used in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbIndicesStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbIndicesStore</code></a> that stores <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> indices instead of a
+ serialized version of the collection itself</li> </ul>
  <p>
- This class is used in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbStore</code></a> and its subclasses to access and manipulate
- the database.
+ This class is used in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbStore</code></a> and its subclasses to access and manipulate the database.
  <p>
- Instances of <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbPersistenceBackend</code></a> are created by <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbPersistenceBackendFactory</code></a> that
- provides an usable <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/DB.html?is-external=true" title="class or interface in org.mapdb"><code>DB</code></a> that can be manipulated by this wrapper.</div>
+ Instances of <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbPersistenceBackend</code></a> are created by <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbPersistenceBackendFactory</code></a> that provides an
+ usable <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/DB.html?is-external=true" title="class or interface in org.mapdb"><code>DB</code></a> that can be manipulated by this wrapper.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbPersistenceBackendFactory</code></a>, 
@@ -196,7 +193,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#copyTo-fr.inria.atlanmod.neoemf.data.mapdb.MapDbPersistenceBackend-">copyTo</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a>&nbsp;target)</code>
-<div class="block">Copies all the contents of this this backend to the target one.</div>
+<div class="block">Copies all the contents of this this back-end to the target one.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -212,7 +209,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#isClosed--">isClosed</a></span>()</code>
-<div class="block">Returns whether the underlying data store has been started or not.</div>
+<div class="block">Returns whether the underlying database has been started or not.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
@@ -236,7 +233,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#save--">save</a></span>()</code>
-<div class="block">Saves the modifications of the owned <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>s in the underlying data store.</div>
+<div class="block">Saves the modifications of the owned <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>s in the underlying database.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
@@ -338,10 +335,10 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <h4>isClosed</h4>
 <pre>public&nbsp;boolean&nbsp;isClosed()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html#isClosed--">PersistenceBackend</a></code></span></div>
-<div class="block">Returns whether the underlying data store has been started or not.</div>
+<div class="block">Returns whether the underlying database has been started or not.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if the data store is closed, otherwise <code>false</code></dd>
+<dd><code>true</code> if the database is closed, otherwise <code>false</code></dd>
 </dl>
 </li>
 </ul>
@@ -355,7 +352,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html#close--">PersistenceBackend</a></code></span></div>
 <div class="block">
  <p>
- In our case, it cleanly stops the underlying data store.</div>
+ In our case, it cleanly stops the underlying database.</div>
 </li>
 </ul>
 <a name="save--">
@@ -366,7 +363,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <h4>save</h4>
 <pre>public&nbsp;void&nbsp;save()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html#save--">PersistenceBackend</a></code></span></div>
-<div class="block">Saves the modifications of the owned <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>s in the underlying data store.</div>
+<div class="block">Saves the modifications of the owned <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>s in the underlying database.</div>
 </li>
 </ul>
 <a name="getAll--">
@@ -438,8 +435,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>id</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> of the element</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>ClassInfo</code></a> descriptor containing element's metaclass informations (<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>, metamodel
- name, and <code>nsURI</code>)</dd>
+<dd>a <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>ClassInfo</code></a> descriptor containing element's metaclass informations (<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>, metamodel name, and <code>nsURI</code>)</dd>
 </dl>
 </li>
 </ul>
@@ -455,8 +451,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>id</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> of the element</dd>
-<dd><code>metaclass</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>ClassInfo</code></a> descriptor containing element's metaclass informations (<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>, metamodel
- name, and <code>nsURI</code>)</dd>
+<dd><code>metaclass</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>ClassInfo</code></a> descriptor containing element's metaclass informations (<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>, metamodel name, and <code>nsURI</code>)</dd>
 </dl>
 </li>
 </ul>
@@ -488,8 +483,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a> to look for</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> representing the value associated to the given <code>key</code>, <code>null</code>
- if it is not in the database</dd>
+<dd>an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> representing the value associated to the given <code>key</code>, <code>null</code> if it is not
+ in the database</dd>
 </dl>
 </li>
 </ul>
@@ -505,8 +500,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a> to remove</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> representing the removed value, <code>null</code> if it
- hasn't been found</dd>
+<dd>an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> representing the removed value, <code>null</code> if it hasn't been found</dd>
 </dl>
 </li>
 </ul>
@@ -576,13 +570,12 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <li class="blockList">
 <h4>copyTo</h4>
 <pre>public&nbsp;void&nbsp;copyTo(<a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a>&nbsp;target)</pre>
-<div class="block">Copies all the contents of this this backend to the target one.</div>
+<div class="block">Copies all the contents of this this back-end to the target one.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>target</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbPersistenceBackend</code></a> to copy the database contents to</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang">UnsupportedOperationException</a></code> - if the current <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/DB.html?is-external=true" title="class or interface in org.mapdb"><code>DB</code></a> contains <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a>s
- which are not <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a>s</dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang">UnsupportedOperationException</a></code> - if the current <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/DB.html?is-external=true" title="class or interface in org.mapdb"><code>DB</code></a> contains <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a>s which are not <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a>s</dd>
 </dl>
 </li>
 </ul>

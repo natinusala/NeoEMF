@@ -130,14 +130,13 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">DirectWriteMapDbCacheManyStore</span>
 extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></pre>
-<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbStore</code></a> subclass that uses an internal cache to store persisted <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a>s
- that are part of multi-valued <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a>s to speed-up their access.
+<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbStore</code></a> subclass that uses an internal cache to store persisted <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a>s that are part
+ of multi-valued <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a>s to speed-up their access.
  <p>
- Using a cache avoids multiple <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> deserialization to retrieve the same element, which can be an important bottleneck
- in terms of execution time and memory consumption if the underlying model contains very large <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a>s.
+ Using a cache avoids multiple <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> deserialization to retrieve the same element, which can be an important
+ bottleneck in terms of execution time and memory consumption if the underlying model contains very large <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a>s.
  <p>
- This store can be used as a base store that can be complemented by plugging decorator stores on top of it
- (see <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store"><code>AbstractPersistentStoreDecorator</code></a> subclasses) to provide additional features such as caching or logging.</div>
+ This store can be used as a base store that can be complemented by plugging decorator stores on top of it (see <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store"><code>AbstractPersistentStoreDecorator</code></a> subclasses) to provide additional features such as caching or logging.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbStore</code></a>, 
@@ -284,7 +283,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>resource</code> - the resource to persist and access</dd>
-<dd><code>backend</code> - the persistence backend used to store the model</dd>
+<dd><code>backend</code> - the persistence back-end used to store the model</dd>
 </dl>
 </li>
 </ul>
@@ -332,8 +331,9 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#getFromMap-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EStructuralFeature-">DirectWriteMapDbStore</a></code></span></div>
 <div class="block">Get the value associated to (<code>object</code>, <code>feature</code>) in the underlying database.
  <p>
- This method is a wrapper for <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#getFromMap-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-"><code>DirectWriteMapDbStore.getFromMap(FeatureKey)</code></a>. A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a>
- is computed for the given <code>object</code> and <code>feature</code> using <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html#from-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EStructuralFeature-"><code>FeatureKey.from(PersistentEObject, EStructuralFeature)</code></a>.</div>
+ This method is a wrapper for <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#getFromMap-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-"><code>DirectWriteMapDbStore.getFromMap(FeatureKey)</code></a>. A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a> is
+ computed for the given <code>object</code> and <code>feature</code> using <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html#from-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EStructuralFeature-"><code>FeatureKey.from(PersistentEObject,
+ EStructuralFeature)</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#getFromMap-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EStructuralFeature-">getFromMap</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></code></dd>
@@ -341,8 +341,8 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/
 <dd><code>object</code> - the <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> to look for</dd>
 <dd><code>feature</code> - the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a> of <code>object</code> to look for</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> stored in the database if it exists, <code>null</code> otherwise. Note that
- the returned <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> can be a single element or a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a>.</dd>
+<dd>the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> stored in the database if it exists, <code>null</code> otherwise. Note that the returned
+ <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> can be a single element or a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a>.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#getFromMap-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-"><code>DirectWriteMapDbStore.getFromMap(FeatureKey)</code></a></dd>
 </dl>
