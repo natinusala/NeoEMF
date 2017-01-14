@@ -121,6 +121,17 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">HBaseURI</span>
 extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></pre>
+<div class="block">A specific subclass of <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util"><code>PersistenceURI</code></a> that creates MapDB specific resource <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s from a <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a>
+ descriptor or an existing <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>.
+ <p>
+ The class defines a HBase specific <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> scheme that is used to register <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.hbase"><code>HBasePersistenceBackendFactory</code></a>
+ in <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactoryRegistry</code></a> and configure the <code>protocol-to-factory</code> map of an existing <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/ResourceSet.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>ResourceSet</code></a> with a <a href="../../../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResourceFactory.html" title="class in fr.inria.atlanmod.neoemf.resource"><code>PersistentResourceFactory</code></a>.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactoryRegistry</code></a>, 
+<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.hbase"><code>HBasePersistenceBackendFactory</code></a>, 
+<a href="../../../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResourceFactory.html" title="class in fr.inria.atlanmod.neoemf.resource"><code>PersistentResourceFactory</code></a></dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -226,7 +237,8 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/PersistenceU
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html#createHierarchicalURI-java.lang.String-java.lang.String-org.eclipse.emf.common.util.URI-">createHierarchicalURI</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;host,
                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;port,
                      <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;modelURI)</code>
-<div class="block">???</div>
+<div class="block">Creates a new <code>HBaseURI</code> from the <code>host</code>, <code>port</code>, and <code>modelURI</code> 
+ by creating a hierarchical <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> that references the distant model resource</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -238,7 +250,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/PersistenceU
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html#format-org.eclipse.emf.common.util.URI-">format</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;uri)</code>
-<div class="block">???</div>
+<div class="block">Format the given <code>URI</code> by removing HBase reserved characters.</div>
 </td>
 </tr>
 </table>
@@ -407,12 +419,13 @@ public static&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc
                                                  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;port,
                                                  <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                                                  <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;modelURI)</pre>
-<div class="block">???</div>
+<div class="block">Creates a new <code>HBaseURI</code> from the <code>host</code>, <code>port</code>, and <code>modelURI</code> 
+ by creating a hierarchical <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> that references the distant model resource</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>host</code> - ???</dd>
-<dd><code>port</code> - ???</dd>
-<dd><code>modelURI</code> - ???</dd>
+<dd><code>host</code> - the address of the HBase server (use <code>localhost</code> if HBase is running locally)</dd>
+<dd><code>port</code> - the port of the HBase server</dd>
+<dd><code>modelURI</code> - a <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> identifying the model in the database</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the created <code>URI</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -429,10 +442,10 @@ public static&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                                      <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;uri)</pre>
-<div class="block">???</div>
+<div class="block">Format the given <code>URI</code> by removing HBase reserved characters.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>uri</code> - ???</dd>
+<dd><code>uri</code> - the <code>URI</code> to format</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the formatted <code>URI</code></dd>
 </dl>
