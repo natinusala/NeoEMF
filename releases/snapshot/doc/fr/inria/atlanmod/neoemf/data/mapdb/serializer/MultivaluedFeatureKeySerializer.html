@@ -75,13 +75,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -120,7 +120,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">MultivaluedFeatureKeySerializer</span>
 extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serializer/FeatureKeySerializer.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.serializer">FeatureKeySerializer</a></pre>
-<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serializer/FeatureKeySerializer.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.serializer"><code>FeatureKeySerializer</code></a> subclass that is able to serialize <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>MultivaluedFeatureKey</code></a>.</div>
+<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serializer/FeatureKeySerializer.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.serializer"><code>FeatureKeySerializer</code></a> that is able to serialize <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/structure/MultivaluedFeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>MultivaluedFeatureKey</code></a>.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serializer/FeatureKeySerializer.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.serializer"><code>FeatureKeySerializer</code></a>, 
@@ -138,6 +138,26 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serial
 <!--   -->
 </a>
 <h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/Serializer.html?is-external=true" title="class or interface in org.mapdb">Serializer</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serializer/MultivaluedFeatureKeySerializer.html#intSerializer">intSerializer</a></span></code>
+<div class="block">An embedded <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang"><code>Integer</code></a> <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/Serializer.html?is-external=true" title="class or interface in org.mapdb"><code>Serializer</code></a> used to handle collection indices.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.fr.inria.atlanmod.neoemf.data.mapdb.serializer.FeatureKeySerializer">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;fr.inria.atlanmod.neoemf.data.mapdb.serializer.<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serializer/FeatureKeySerializer.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.serializer">FeatureKeySerializer</a></h3>
+<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serializer/FeatureKeySerializer.html#idSerializer">idSerializer</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serializer/FeatureKeySerializer.html#stringSerializer">stringSerializer</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.org.mapdb.Serializer">
 <!--   -->
@@ -216,6 +236,24 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serial
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="intSerializer">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>intSerializer</h4>
+<pre>protected final&nbsp;<a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/Serializer.html?is-external=true" title="class or interface in org.mapdb">Serializer</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt; intSerializer</pre>
+<div class="block">An embedded <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang"><code>Integer</code></a> <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/Serializer.html?is-external=true" title="class or interface in org.mapdb"><code>Serializer</code></a> used to handle collection indices.</div>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -334,13 +372,13 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serial
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

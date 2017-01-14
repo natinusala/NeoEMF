@@ -75,13 +75,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -137,6 +137,25 @@ implements <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/Serializ
 <!--   -->
 </a>
 <h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/Serializer.html?is-external=true" title="class or interface in org.mapdb">Serializer</a>&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serializer/FeatureKeySerializer.html#idSerializer">idSerializer</a></span></code>
+<div class="block">The <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/Serializer.html?is-external=true" title="class or interface in org.mapdb"><code>Serializer</code></a> the manages <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>s.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/Serializer.html?is-external=true" title="class or interface in org.mapdb">Serializer</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serializer/FeatureKeySerializer.html#stringSerializer">stringSerializer</a></span></code>
+<div class="block">The <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/Serializer.html?is-external=true" title="class or interface in org.mapdb"><code>Serializer</code></a> that manages <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a>s.</div>
+</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.org.mapdb.Serializer">
 <!--   -->
@@ -215,6 +234,34 @@ implements <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/Serializ
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="stringSerializer">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>stringSerializer</h4>
+<pre>protected final&nbsp;<a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/Serializer.html?is-external=true" title="class or interface in org.mapdb">Serializer</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt; stringSerializer</pre>
+<div class="block">The <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/Serializer.html?is-external=true" title="class or interface in org.mapdb"><code>Serializer</code></a> that manages <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a>s.</div>
+</li>
+</ul>
+<a name="idSerializer">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>idSerializer</h4>
+<pre>protected final&nbsp;<a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/Serializer.html?is-external=true" title="class or interface in org.mapdb">Serializer</a>&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&gt; idSerializer</pre>
+<div class="block">The <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/Serializer.html?is-external=true" title="class or interface in org.mapdb"><code>Serializer</code></a> the manages <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>s.</div>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -329,13 +376,13 @@ implements <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/Serializ
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

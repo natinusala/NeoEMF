@@ -263,21 +263,21 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <td class="colFirst"><code>static <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/util/PersistenceURI.html#createFileURI-java.io.File-java.lang.String-">createFileURI</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file,
              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;scheme)</code>
-<div class="block">Creates a new <a href="../../../../../fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util"><code>PersistenceURI</code></a> from the given <code>file</code> descriptor.</div>
+<div class="block">Creates a new <code>PersistenceURI</code> from the given <code>file</code> descriptor.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/util/PersistenceURI.html#createFileURI-org.eclipse.emf.common.util.URI-java.lang.String-">createFileURI</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;uri,
              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;scheme)</code>
-<div class="block">Creates a new <a href="../../../../../fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util"><code>PersistenceURI</code></a> from the given <code>uri</code> by checking the referenced file exists on the
+<div class="block">Creates a new <code>PersistenceURI</code> from the given <code>uri</code> by checking the referenced file exists on the
  file system.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/util/PersistenceURI.html#createURI-org.eclipse.emf.common.util.URI-">createURI</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;uri)</code>
-<div class="block">Creates a new <a href="../../../../../fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util"><code>PersistenceURI</code></a> from the given <code>uri</code>.</div>
+<div class="block">Creates a new <code>PersistenceURI</code> from the given <code>uri</code>.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -725,7 +725,7 @@ protected static final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/ja
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public static&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;createURI(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                                      <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;uri)</pre>
-<div class="block">Creates a new <a href="../../../../../fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util"><code>PersistenceURI</code></a> from the given <code>uri</code>.
+<div class="block">Creates a new <code>PersistenceURI</code> from the given <code>uri</code>.
  <p>
  This method checks that the scheme of the provided <code>uri</code> can be used to create a new <a href="../../../../../fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util"><code>PersistenceURI</code></a>. Its scheme must be registered in the <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactoryRegistry</code></a>.</div>
 <dl>
@@ -753,7 +753,7 @@ public static&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc
                                          <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file,
                                          <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;scheme)</pre>
-<div class="block">Creates a new <a href="../../../../../fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util"><code>PersistenceURI</code></a> from the given <code>file</code> descriptor.</div>
+<div class="block">Creates a new <code>PersistenceURI</code> from the given <code>file</code> descriptor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>file</code> - the <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> to build a <code>URI</code> from</dd>
@@ -776,7 +776,7 @@ public static&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc
                                          <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">URI</a>&nbsp;uri,
                                          <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;scheme)</pre>
-<div class="block">Creates a new <a href="../../../../../fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util"><code>PersistenceURI</code></a> from the given <code>uri</code> by checking the referenced file exists on the
+<div class="block">Creates a new <code>PersistenceURI</code> from the given <code>uri</code> by checking the referenced file exists on the
  file system.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

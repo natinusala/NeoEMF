@@ -280,8 +280,7 @@
 <td class="colLast"><span class="typeNameLabel">DirectWriteBlueprintsCacheManyStore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsCacheManyStore.html#getReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-">getReference</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
             <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;reference,
             int&nbsp;index)</code>
-<div class="block">Custom implementation of <a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html#getReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-"><code>DirectWriteBlueprintsStore.getReference(PersistentEObject, EReference, int)</code></a> that
- caches all the vertices traversed to retrieve the element at the given <code>index</code>.</div>
+<div class="block">Returns the value at the <code>index</code> in the content of the <code>reference</code> of the <code>object</code>.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -492,7 +491,7 @@
 <tr class="altColor">
 <td class="colFirst"><code>protected com.github.benmanes.caffeine.cache.Cache&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>,<a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">DirectWriteMapDbStore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#persistentObjectsCache">persistentObjectsCache</a></span></code>
-<div class="block">An in-memory cache for persistent EObjects.</div>
+<div class="block">An in-memory cache for <code>PersistentEObject</code>s.</div>
 </td>
 </tr>
 </tbody>
@@ -571,7 +570,7 @@
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><span class="typeNameLabel">DirectWriteMapDbStore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#getFromMap-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EStructuralFeature-">getFromMap</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
           <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EStructuralFeature</a>&nbsp;feature)</code>
-<div class="block">Get the value associated to (<code>object</code>, <code>feature</code>) in the underlying database.</div>
+<div class="block">Returns the value associated to (<code>object</code>, <code>feature</code>) in the underlying database.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -663,13 +662,13 @@
 <td class="colLast"><span class="typeNameLabel">DirectWriteMapDbStore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#updateContainment-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-">updateContainment</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
                  <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;reference,
                  <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;referencedObject)</code>
-<div class="block">Tells the underlying database to put <code>referencedObject</code> in the containment list of <code>object</code>.</div>
+<div class="block">Tells the underlying database to put the <code>referencedObject</code> in the containment list of the <code>object</code>.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><span class="typeNameLabel">DirectWriteMapDbStore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#updateInstanceOf-fr.inria.atlanmod.neoemf.core.PersistentEObject-">updateInstanceOf</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object)</code>
-<div class="block">Computes the type of <code>object</code> in a <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>ClassInfo</code></a> object and persists it in the database.</div>
+<div class="block">Computes the type of the <code>object</code> in a <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>ClassInfo</code></a> object and persists it in the database.</div>
 </td>
 </tr>
 </tbody>
