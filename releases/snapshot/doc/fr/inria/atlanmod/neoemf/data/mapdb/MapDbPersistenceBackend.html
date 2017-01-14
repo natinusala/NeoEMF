@@ -376,12 +376,12 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <li class="blockList">
 <h4>getAll</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;getAll()</pre>
-<div class="block">Return all the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a>s contained in the database
- <p>
- <b>Note: </b>this method is public for test purposes, client code should not call it.</div>
+<div class="block">Return all the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a>s contained in the database</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> containing all the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a>s contained in the database and their associated names</dd>
+<dt><span class="simpleTagLabel">Note:</span></dt>
+<dd>This method is public for test purposes, client code should not call it.</dd>
 </dl>
 </li>
 </ul>
@@ -438,7 +438,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>id</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> of the element</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>ClassInfo</code></a> descriptor containing element's metaclass informations (<code>EClass</code>, metamodel
+<dd>a <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>ClassInfo</code></a> descriptor containing element's metaclass informations (<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>, metamodel
  name, and <code>nsURI</code>)</dd>
 </dl>
 </li>
@@ -455,7 +455,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>id</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a> of the element</dd>
-<dd><code>metaclass</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>ClassInfo</code></a> descriptor containing element's metaclass informations (<code>EClass</code>, metamodel
+<dd><code>metaclass</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>ClassInfo</code></a> descriptor containing element's metaclass informations (<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>, metamodel
  name, and <code>nsURI</code>)</dd>
 </dl>
 </li>

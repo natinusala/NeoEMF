@@ -178,11 +178,17 @@ implements <a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleAc
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html#start-org.osgi.framework.BundleContext-">start</a></span>(<a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleContext.html?is-external=true" title="class or interface in org.osgi.framework">BundleContext</a>&nbsp;bundleContext)</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html#start-org.osgi.framework.BundleContext-">start</a></span>(<a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleContext.html?is-external=true" title="class or interface in org.osgi.framework">BundleContext</a>&nbsp;bundleContext)</code>
+<div class="block">Called when this bundle is started so the Framework can perform the
+ bundle-specific activities necessary to start this bundle.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html#stop-org.osgi.framework.BundleContext-">stop</a></span>(<a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleContext.html?is-external=true" title="class or interface in org.osgi.framework">BundleContext</a>&nbsp;bundleContext)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html#stop-org.osgi.framework.BundleContext-">stop</a></span>(<a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleContext.html?is-external=true" title="class or interface in org.osgi.framework">BundleContext</a>&nbsp;bundleContext)</code>
+<div class="block">Called when this bundle is stopped so the Framework can perform the
+ bundle-specific activities necessary to stop the bundle.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -231,7 +237,13 @@ implements <a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleAc
 <h4>start</h4>
 <pre>public final&nbsp;void&nbsp;start(<a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleContext.html?is-external=true" title="class or interface in org.osgi.framework">BundleContext</a>&nbsp;bundleContext)
                  throws <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
-<div class="block">
+<div class="block">Called when this bundle is started so the Framework can perform the
+ bundle-specific activities necessary to start this bundle. This method
+ can be used to register services or to allocate any resources that this
+ bundle needs.
+ 
+ <p>
+ This method must complete and return to its caller in a timely manner.
  <p>
  Registers the <a href="../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactory</code></a> from <a href="../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html#factory--"><code>factory()</code></a>, with its <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> scheme from <a href="../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html#scheme--"><code>scheme()</code></a>, in the <a href="../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>registry</code></a> if it's not already.</div>
 <dl>
@@ -240,7 +252,10 @@ implements <a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleAc
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>bundleContext</code> - the execution context of the bundle being started</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code> - If this method throws an exception, this bundle is
+         marked as stopped and the Framework will remove this bundle's
+         listeners, unregister all services registered by this bundle, and
+         release all services used by this bundle.</dd>
 </dl>
 </li>
 </ul>
@@ -252,11 +267,26 @@ implements <a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleAc
 <h4>stop</h4>
 <pre>public final&nbsp;void&nbsp;stop(<a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleContext.html?is-external=true" title="class or interface in org.osgi.framework">BundleContext</a>&nbsp;bundleContext)
                 throws <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleActivator.html?is-external=true#stop-org.osgi.framework.BundleContext-" title="class or interface in org.osgi.framework">org.osgi.framework.BundleActivator</a></code></span></div>
+<div class="block">Called when this bundle is stopped so the Framework can perform the
+ bundle-specific activities necessary to stop the bundle. In general, this
+ method should undo the work that the <code>BundleActivator.start</code> method
+ started. There should be no active threads that were started by this
+ bundle when this bundle returns. A stopped bundle must not call any
+ Framework objects.
+ 
+ <p>
+ This method must complete and return to its caller in a timely manner.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleActivator.html?is-external=true#stop-org.osgi.framework.BundleContext-" title="class or interface in org.osgi.framework">stop</a></code>&nbsp;in interface&nbsp;<code><a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleActivator.html?is-external=true" title="class or interface in org.osgi.framework">BundleActivator</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>bundleContext</code> - The execution context of the bundle being stopped.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code> - If this method throws an exception, the bundle is still
+         marked as stopped, and the Framework will remove the bundle's
+         listeners, unregister all services registered by the bundle, and
+         release all services used by the bundle.</dd>
 </dl>
 </li>
 </ul>
