@@ -92,7 +92,7 @@
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptions.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option"><span class="typeNameLink">AbstractBlueprintsOptions</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/blueprints/option/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints.option</a></dt>
 <dd>
-<div class="block">The abstract implementation of <a href="fr/inria/atlanmod/neoemf/option/CommonOptions.html" title="class in fr.inria.atlanmod.neoemf.option"><code>CommonOptions</code></a> that holds generic options
+<div class="block">The abstract implementation of <a href="fr/inria/atlanmod/neoemf/option/PersistenceOptions.html" title="interface in fr.inria.atlanmod.neoemf.option"><code>PersistenceOptions</code></a> that holds generic options
  for all Blueprints based implementations.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptions.html#AbstractBlueprintsOptions--">AbstractBlueprintsOptions()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.blueprints.option.<a href="fr/inria/atlanmod/neoemf/data/blueprints/option/AbstractBlueprintsOptions.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.option">AbstractBlueprintsOptions</a></dt>
@@ -215,19 +215,22 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/blueprints/Activator.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints"><span class="typeNameLink">Activator</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/blueprints/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints</a></dt>
 <dd>
-<div class="block">A <a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleActivator.html?is-external=true" title="class or interface in org.osgi.framework"><code>BundleActivator</code></a> that automatically registers an instance of <a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints"><code>BlueprintsPersistenceBackendFactory</code></a>
- in the global <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactoryRegistry</code></a> when the plugin is started.</div>
+<div class="block">A <a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleActivator.html?is-external=true" title="class or interface in org.osgi.framework"><code>BundleActivator</code></a> that automatically registers a <a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints"><code>BlueprintsPersistenceBackendFactory</code></a> with its
+ associated <a href="fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsURI.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.util"><code>BlueprintsURI</code></a> in the global <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactoryRegistry</code></a> when loading an OSGi bundle.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/Activator.html#Activator--">Activator()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.blueprints.<a href="fr/inria/atlanmod/neoemf/data/blueprints/Activator.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">Activator</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/hbase/Activator.html" title="class in fr.inria.atlanmod.neoemf.data.hbase"><span class="typeNameLink">Activator</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/hbase/package-summary.html">fr.inria.atlanmod.neoemf.data.hbase</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">A <a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleActivator.html?is-external=true" title="class or interface in org.osgi.framework"><code>BundleActivator</code></a> that automatically registers a <a href="fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.hbase"><code>HBasePersistenceBackendFactory</code></a> with its
+ associated <a href="fr/inria/atlanmod/neoemf/data/hbase/util/HBaseURI.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.util"><code>HBaseURI</code></a> in the global <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactoryRegistry</code></a> when loading an OSGi bundle.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/hbase/Activator.html#Activator--">Activator()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.hbase.<a href="fr/inria/atlanmod/neoemf/data/hbase/Activator.html" title="class in fr.inria.atlanmod.neoemf.data.hbase">Activator</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/mapdb/Activator.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><span class="typeNameLink">Activator</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/mapdb/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb</a></dt>
 <dd>
-<div class="block">A <a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleActivator.html?is-external=true" title="class or interface in org.osgi.framework"><code>BundleActivator</code></a> that automatically registers an instance of <a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbPersistenceBackendFactory</code></a> in the
- global <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactoryRegistry</code></a> when the plugin is started.</div>
+<div class="block">A <a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleActivator.html?is-external=true" title="class or interface in org.osgi.framework"><code>BundleActivator</code></a> that automatically registers a <a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbPersistenceBackendFactory</code></a> with its
+ associated <a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util"><code>MapDbURI</code></a> in the global <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactoryRegistry</code></a> when loading an OSGi bundle.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/Activator.html#Activator--">Activator()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/Activator.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">Activator</a></dt>
 <dd>&nbsp;</dd>
@@ -482,6 +485,10 @@
 <dd>
 <div class="block">A <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a> that is responsible of low-level access to a Blueprints
  database.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#BlueprintsPersistenceBackend-com.tinkerpop.blueprints.KeyIndexableGraph-">BlueprintsPersistenceBackend(KeyIndexableGraph)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.blueprints.<a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a></dt>
+<dd>
+<div class="block">Constructs a new <code>BlueprintsPersistenceBackend</code> wrapping the provided <code>baseGraph</code>.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints"><span class="typeNameLink">BlueprintsPersistenceBackendFactory</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/blueprints/package-summary.html">fr.inria.atlanmod.neoemf.data.blueprints</a></dt>
 <dd>
@@ -1308,7 +1315,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#FILE_SCHEME">FILE_SCHEME</a></span> - Static variable in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
 <dd>
-<div class="block">The URI scheme corresponding to a file.</div>
+<div class="block">The <code>URI</code> scheme corresponding to a file.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#fileExtension--">fileExtension()</a></span> - Method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
 <dd>&nbsp;</dd>
@@ -2014,10 +2021,12 @@
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.hbase"><span class="typeNameLink">HBasePersistenceBackend</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/hbase/package-summary.html">fr.inria.atlanmod.neoemf.data.hbase</a></dt>
 <dd>
-<div class="block">Dummy back-end implementation for HBase to fit core architecture.</div>
+<div class="block">Dummy <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a> implementation for HBase to fit core architecture.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackend.html#HBasePersistenceBackend--">HBasePersistenceBackend()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.hbase.<a href="fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.hbase">HBasePersistenceBackend</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Constructs a new <code>HBasePersistenceBackend</code>.</div>
+</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.hbase"><span class="typeNameLink">HBasePersistenceBackendFactory</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/hbase/package-summary.html">fr.inria.atlanmod.neoemf.data.hbase</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/hbase/option/HBaseResourceOptions.html" title="interface in fr.inria.atlanmod.neoemf.data.hbase.option"><span class="typeNameLink">HBaseResourceOptions</span></a> - Interface in <a href="fr/inria/atlanmod/neoemf/data/hbase/option/package-summary.html">fr.inria.atlanmod.neoemf.data.hbase.option</a></dt>
@@ -2051,7 +2060,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><span class="typeNameLink">Id</span></a> - Interface in <a href="fr/inria/atlanmod/neoemf/core/package-summary.html">fr.inria.atlanmod.neoemf.core</a></dt>
 <dd>
-<div class="block">An identifier used to identify a <a href="fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> in datastores.</div>
+<div class="block">An identifier used to identify <a href="fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>s in datastores.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/PersistentEObject.html#id--">id()</a></span> - Method in interface fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a></dt>
 <dd>
@@ -2263,7 +2272,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/PersistenceBackend.html#isClosed--">isClosed()</a></span> - Method in interface fr.inria.atlanmod.neoemf.data.<a href="fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data">PersistenceBackend</a></dt>
 <dd>
-<div class="block">Returns whether the underlying database has been started or not.</div>
+<div class="block">Returns whether the underlying database is closed.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/structure/Reference.html#isContainment--">isContainment()</a></span> - Method in class fr.inria.atlanmod.neoemf.io.structure.<a href="fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Reference</a></dt>
 <dd>
@@ -2313,7 +2322,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/core/PersistentEObject.html#isMapped--">isMapped()</a></span> - Method in interface fr.inria.atlanmod.neoemf.core.<a href="fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a></dt>
 <dd>
-<div class="block">Returns <code>true</code> if this <code>PersistentEObject</code> is mapped to an entity stored in a database.</div>
+<div class="block">Returns whether this <code>PersistentEObject</code> is mapped to an entity stored in a database.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceDecorator.html#isModified--">isModified()</a></span> - Method in class fr.inria.atlanmod.neoemf.resource.<a href="fr/inria/atlanmod/neoemf/resource/PersistentResourceDecorator.html" title="class in fr.inria.atlanmod.neoemf.resource">PersistentResourceDecorator</a></dt>
 <dd>&nbsp;</dd>
@@ -2565,6 +2574,10 @@
 <dt><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><span class="typeNameLink">MapDbPersistenceBackend</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/mapdb/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb</a></dt>
 <dd>
 <div class="block"><a href="fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a> that is responsible of low-level access to a MapDB database.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#MapDbPersistenceBackend-org.mapdb.DB-">MapDbPersistenceBackend(DB)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.data.mapdb.<a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a></dt>
+<dd>
+<div class="block">Constructs a new <code>MapDbPersistenceBackend</code> wrapping the provided <code>db</code>.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><span class="typeNameLink">MapDbPersistenceBackendFactory</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/data/mapdb/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb</a></dt>
 <dd>
@@ -2874,7 +2887,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><span class="typeNameLink">PersistenceBackend</span></a> - Interface in <a href="fr/inria/atlanmod/neoemf/data/package-summary.html">fr.inria.atlanmod.neoemf.data</a></dt>
 <dd>
-<div class="block">An adapter on top of a database that provides specific methods for communicating with a database implementation.</div>
+<div class="block">An adapter on top of a database that provides specific methods for communicating with the database that it uses.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/PersistenceBackendFactory.html" title="interface in fr.inria.atlanmod.neoemf.data"><span class="typeNameLink">PersistenceBackendFactory</span></a> - Interface in <a href="fr/inria/atlanmod/neoemf/data/package-summary.html">fr.inria.atlanmod.neoemf.data</a></dt>
 <dd>
@@ -2907,7 +2920,7 @@
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/option/PersistenceOptionsBuilder.html" title="interface in fr.inria.atlanmod.neoemf.option"><span class="typeNameLink">PersistenceOptionsBuilder</span></a> - Interface in <a href="fr/inria/atlanmod/neoemf/option/package-summary.html">fr.inria.atlanmod.neoemf.option</a></dt>
 <dd>
-<div class="block">A builder of <a href="fr/inria/atlanmod/neoemf/option/CommonOptions.html" title="class in fr.inria.atlanmod.neoemf.option"><code>CommonOptions</code></a>.</div>
+<div class="block">A builder of <a href="fr/inria/atlanmod/neoemf/option/PersistenceOptions.html" title="interface in fr.inria.atlanmod.neoemf.option"><code>PersistenceOptions</code></a>.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util"><span class="typeNameLink">PersistenceURI</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/util/package-summary.html">fr.inria.atlanmod.neoemf.util</a></dt>
 <dd>
@@ -2952,8 +2965,7 @@
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><span class="typeNameLink">PersistentStore</span></a> - Interface in <a href="fr/inria/atlanmod/neoemf/data/store/package-summary.html">fr.inria.atlanmod.neoemf.data.store</a></dt>
 <dd>
-<div class="block">An <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>InternalEObject.EStore</code></a> to establish a mapping between <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a>s and <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>InternalEObject.EStore</code></a>s in a persistent context, i.e,
- when storing data in a datastore.</div>
+<div class="block">An <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>InternalEObject.EStore</code></a> to establish a mapping between <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a>s and <a href="fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a>s.</div>
 </dd>
 <dt><a href="fr/inria/atlanmod/neoemf/option/PersistentStoreOptions.html" title="interface in fr.inria.atlanmod.neoemf.option"><span class="typeNameLink">PersistentStoreOptions</span></a> - Interface in <a href="fr/inria/atlanmod/neoemf/option/package-summary.html">fr.inria.atlanmod.neoemf.option</a></dt>
 <dd>
@@ -3378,7 +3390,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html#SCHEME">SCHEME</a></span> - Static variable in class fr.inria.atlanmod.neoemf.data.mapdb.util.<a href="fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util">MapDbURI</a></dt>
 <dd>
-<div class="block">The scheme associated to the URI.</div>
+<div class="block">The scheme associated to the <code>URI</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#scheme--">scheme()</a></span> - Method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
 <dd>&nbsp;</dd>

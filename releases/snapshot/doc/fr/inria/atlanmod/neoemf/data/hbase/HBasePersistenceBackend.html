@@ -120,7 +120,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">HBasePersistenceBackend</span>
 extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data">AbstractPersistenceBackend</a></pre>
-<div class="block">Dummy back-end implementation for HBase to fit core architecture.
+<div class="block">Dummy <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a> implementation for HBase to fit core architecture.
  <p>
  The real access to the HBase Table is done in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/store/DirectWriteHBaseStore.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.store"><code>DirectWriteHBaseStore</code></a> and <a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/store/ReadOnlyHBaseStore.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.store"><code>ReadOnlyHBaseStore</code></a>.</div>
 </li>
@@ -159,10 +159,14 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
 <caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
-<th class="colOne" scope="col">Constructor and Description</th>
+<th class="colFirst" scope="col">Modifier</th>
+<th class="colLast" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackend.html#HBasePersistenceBackend--">HBasePersistenceBackend</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackend.html#HBasePersistenceBackend--">HBasePersistenceBackend</a></span>()</code>
+<div class="block">Constructs a new <code>HBasePersistenceBackend</code>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -186,7 +190,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/HBasePersistenceBackend.html#isClosed--">isClosed</a></span>()</code>
-<div class="block">Returns whether the underlying database has been started or not.</div>
+<div class="block">Returns whether the underlying database is closed.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -252,7 +256,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <ul class="blockListLast">
 <li class="blockList">
 <h4>HBasePersistenceBackend</h4>
-<pre>public&nbsp;HBasePersistenceBackend()</pre>
+<pre>protected&nbsp;HBasePersistenceBackend()</pre>
+<div class="block">Constructs a new <code>HBasePersistenceBackend</code>.</div>
 </li>
 </ul>
 </li>
@@ -271,7 +276,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <h4>isClosed</h4>
 <pre>public&nbsp;boolean&nbsp;isClosed()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html#isClosed--">PersistenceBackend</a></code></span></div>
-<div class="block">Returns whether the underlying database has been started or not.</div>
+<div class="block">Returns whether the underlying database is closed.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if the database is closed, otherwise <code>false</code></dd>

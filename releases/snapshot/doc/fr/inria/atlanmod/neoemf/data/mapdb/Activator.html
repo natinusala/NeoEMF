@@ -120,8 +120,15 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">Activator</span>
 extends <a href="../../../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html" title="class in fr.inria.atlanmod.neoemf">AbstractActivator</a></pre>
-<div class="block">A <a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleActivator.html?is-external=true" title="class or interface in org.osgi.framework"><code>BundleActivator</code></a> that automatically registers an instance of <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbPersistenceBackendFactory</code></a> in the
- global <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactoryRegistry</code></a> when the plugin is started.</div>
+<div class="block">A <a href="https://osgi.org/javadoc/r6/core/org/osgi/framework/BundleActivator.html?is-external=true" title="class or interface in org.osgi.framework"><code>BundleActivator</code></a> that automatically registers a <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbPersistenceBackendFactory</code></a> with its
+ associated <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.util"><code>MapDbURI</code></a> in the global <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactoryRegistry</code></a> when loading an OSGi bundle.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbPersistenceBackendFactory</code></a>, 
+<a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackendFactoryRegistry.html" title="class in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackendFactoryRegistry</code></a></dd>
+<dt><span class="simpleTagLabel">Note:</span></dt>
+<dd>This class should not be used in standard use.</dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -251,7 +258,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/AbstractActivator.ht
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html#scheme--">scheme</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/AbstractActivator.html" title="class in fr.inria.atlanmod.neoemf">AbstractActivator</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the URI scheme</dd>
+<dd>the <code>URI</code> scheme</dd>
 </dl>
 </li>
 </ul>

@@ -106,6 +106,12 @@
 <pre>public interface <span class="typeNameLabel">DirectWriteStore</span>
 extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a></pre>
 <div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> that translates model-level operations into datastore calls.</div>
+<dl>
+<dt><span class="simpleTagLabel">In Future:</span></dt>
+<dd>an abstraction of <code>DirectWriteStore</code>s will be implemented to define a global behaviour. For now, it
+ requires to be re-implemented for handle a specific implementation of a database, but later, these functions will be
+ handled by <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a>.</dd>
+</dl>
 </li>
 </ul>
 </div>

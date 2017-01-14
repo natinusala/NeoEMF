@@ -111,12 +111,18 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public interface <span class="typeNameLabel">PersistenceBackend</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</a></pre>
-<div class="block">An adapter on top of a database that provides specific methods for communicating with a database implementation.
+<div class="block">An adapter on top of a database that provides specific methods for communicating with the database that it uses.
+ Each <code>PersistenceBackend</code> manage one single instance of a database.
  <p>
- Each <code>PersistenceBackend</code> manage one single instance of a database.</div>
+ It does not provide model-level translation; these functions are handled by
+ <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/DirectWriteStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>DirectWriteStore</code></a>s.</div>
 <dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/inria/atlanmod/neoemf/data/store/DirectWriteStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>DirectWriteStore</code></a></dd>
 <dt><span class="simpleTagLabel">In Future:</span></dt>
-<dd>an abstraction of <code>PersistenceBackend</code> will be implemented to define a global behaviour</dd>
+<dd>an abstraction of <code>PersistenceBackend</code>s will be implemented to define a global behaviour. For now, it
+ provides only basic methods for closing or saving a model, but later, it will provide generic methods to add, delete
+ or get a value.</dd>
 </dl>
 </li>
 </ul>
@@ -150,7 +156,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html#isClosed--">isClosed</a></span>()</code>
-<div class="block">Returns whether the underlying database has been started or not.</div>
+<div class="block">Returns whether the underlying database is closed.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -181,7 +187,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html
 <li class="blockList">
 <h4>isClosed</h4>
 <pre>boolean&nbsp;isClosed()</pre>
-<div class="block">Returns whether the underlying database has been started or not.</div>
+<div class="block">Returns whether the underlying database is closed.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if the database is closed, otherwise <code>false</code></dd>

@@ -76,13 +76,13 @@ var activeTableTab = "activeTableTab";
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -166,6 +166,27 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 </table>
 </li>
 </ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier</th>
+<th class="colLast" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#MapDbPersistenceBackend-org.mapdb.DB-">MapDbPersistenceBackend</a></span>(<a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/DB.html?is-external=true" title="class or interface in org.mapdb">DB</a>&nbsp;db)</code>
+<div class="block">Constructs a new <code>MapDbPersistenceBackend</code> wrapping the provided <code>db</code>.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -209,7 +230,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#isClosed--">isClosed</a></span>()</code>
-<div class="block">Returns whether the underlying database has been started or not.</div>
+<div class="block">Returns whether the underlying database is closed.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
@@ -321,6 +342,35 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 </ul>
 </li>
 </ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="MapDbPersistenceBackend-org.mapdb.DB-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>MapDbPersistenceBackend</h4>
+<pre>protected&nbsp;MapDbPersistenceBackend(<a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/DB.html?is-external=true" title="class or interface in org.mapdb">DB</a>&nbsp;db)</pre>
+<div class="block">Constructs a new <code>MapDbPersistenceBackend</code> wrapping the provided <code>db</code>.
+ <p>
+ This constructor initialize the different <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a>s from the MapDB engine and set
+ their respective <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/Serializer.html?is-external=true" title="class or interface in org.mapdb"><code>Serializer</code></a>s.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>db</code> - the <a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/DB.html?is-external=true" title="class or interface in org.mapdb"><code>DB</code></a> used to creates the used <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a>s and manage the database</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbPersistenceBackendFactory</code></a></dd>
+<dt><span class="simpleTagLabel">Note:</span></dt>
+<dd>This constructor is protected. To create a new <code>MapDbPersistenceBackend</code> use <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html#createPersistentBackend-java.io.File-java.util.Map-"><code>MapDbPersistenceBackendFactory.createPersistentBackend(java.io.File, Map)</code></a>.</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
@@ -335,7 +385,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <h4>isClosed</h4>
 <pre>public&nbsp;boolean&nbsp;isClosed()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html#isClosed--">PersistenceBackend</a></code></span></div>
-<div class="block">Returns whether the underlying database has been started or not.</div>
+<div class="block">Returns whether the underlying database is closed.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if the database is closed, otherwise <code>false</code></dd>
@@ -642,13 +692,13 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
