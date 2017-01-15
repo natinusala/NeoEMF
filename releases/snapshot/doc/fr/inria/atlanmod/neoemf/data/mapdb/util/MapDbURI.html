@@ -168,7 +168,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/PersistenceU
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html#SCHEME">SCHEME</a></span></code>
-<div class="block">The scheme associated to the <code>URI</code>.</div>
+<div class="block">The scheme associated to the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -284,7 +284,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/PersistenceU
 <h4>SCHEME</h4>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public static final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> SCHEME</pre>
-<div class="block">The scheme associated to the <code>URI</code>. This scheme is used to register <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbPersistenceBackendFactory</code></a>
+<div class="block">The scheme associated to the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>. This scheme is used to register <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackendFactory.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb"><code>MapDbPersistenceBackendFactory</code></a>
  and provide a <a href="../../../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResourceFactory.html" title="class in fr.inria.atlanmod.neoemf.resource"><code>PersistentResourceFactory</code></a> to an existing <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/ResourceSet.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>ResourceSet</code></a>.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -314,7 +314,7 @@ public static final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/
 <div class="block">Constructs a new <code>MapDbURI</code> from the given <code>internalURI</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>internalURI</code> - the base <code>URI</code></dd>
+<dd><code>internalURI</code> - the base <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a></dd>
 <dt><span class="simpleTagLabel">Note:</span></dt>
 <dd>This constructor is protected to avoid wrong <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> instantiations. Use <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html#createURI-org.eclipse.emf.common.util.URI-"><code>createURI(URI)</code></a>,
  <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html#createFileURI-java.io.File-"><code>createFileURI(File)</code></a>, or <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html#createFileURI-org.eclipse.emf.common.util.URI-"><code>createFileURI(URI)</code></a> instead.</dd>
@@ -342,9 +342,9 @@ public static&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc
  <code>uri</code> can be used to create a new <code>MapDbURI</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>uri</code> - the base <code>URI</code></dd>
+<dd><code>uri</code> - the base <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the created <code>URI</code></dd>
+<dd>the created <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the <code>uri</code> is <code>null</code></dd>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the scheme of the provided <code>uri</code> is not <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/util/MapDbURI.html#SCHEME"><code>SCHEME</code></a> or <a href="../../../../../../../fr/inria/atlanmod/neoemf/util/PersistenceURI.html#FILE_SCHEME"><code>PersistenceURI.FILE_SCHEME</code></a></dd>
@@ -366,9 +366,9 @@ public static&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc
 <div class="block">Creates a new <code>MapDbURI</code> from the given <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> descriptor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>file</code> - the <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> to build a <code>URI</code> from</dd>
+<dd><code>file</code> - the <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> to build a <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> from</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the created <code>URI</code></dd>
+<dd>the created <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the <code>file</code> is <code>null</code></dd>
 </dl>
@@ -387,9 +387,9 @@ public static&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc
  system.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>uri</code> - the base <code>URI</code></dd>
+<dd><code>uri</code> - the base <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the created <code>URI</code></dd>
+<dd>the created <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the <code>uri</code> is <code>null</code> or if the file referenced by the <code>uri</code>
                               cannot be found</dd>

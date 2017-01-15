@@ -129,8 +129,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">DirectWriteBlueprintsStore</span>
 extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractDirectWriteStore</a>&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints">BlueprintsPersistenceBackend</a>&gt;</pre>
-<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/DirectWriteStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>DirectWriteStore</code></a> that translates model-level operations to
- Blueprints calls.
+<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/DirectWriteStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>DirectWriteStore</code></a> that translates model-level operations to Blueprints calls.
  <p>
  This class implements the <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> interface that defines a set of operations to implement in order to
  allow EMF persistence delegation. If this store is used, every method call and property access on <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> is forwarded to this class, that takes care of the database serialization and deserialization
@@ -400,7 +399,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/Abstra
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html#reifyVertex-com.tinkerpop.blueprints.Vertex-org.eclipse.emf.ecore.EClass-">reifyVertex</a></span>(<a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints">Vertex</a>&nbsp;vertex,
            <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a>&nbsp;eClass)</code>
 <div class="block">Creates an <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>InternalEObject</code></a> from the given <code>vertex</code>, and sets its <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a> with the given
- <code>EClass</code>.</div>
+ <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>.</div>
 </td>
 </tr>
 <tr id="i21" class="rowColor">
@@ -1186,7 +1185,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/Abstra
 <pre>protected&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a>&nbsp;reifyVertex(<a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints">Vertex</a>&nbsp;vertex,
                                       <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a>&nbsp;eClass)</pre>
 <div class="block">Creates an <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>InternalEObject</code></a> from the given <code>vertex</code>, and sets its <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a> with the given
- <code>EClass</code>.
+ <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>.
  <p>
  This method speeds-up the reification for objects with a known <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a> by avoiding unnecessary database
  accesses.</div>
