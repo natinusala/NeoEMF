@@ -210,8 +210,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStoreDecorator.html#eObject-fr.inria.atlanmod.neoemf.core.Id-">eObject</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
-<div class="block">Returns the resolved <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a> identified by the given <code>id</code> or <code>null</code> if no <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a> can
- be resolved.</div>
+<div class="block">Returns the resolved <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a> identified by the given <code>id</code> or <code>null</code>.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -782,6 +781,10 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">Resource</a>&nbsp;resource()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html#resource--">PersistentStore</a></code></span></div>
 <div class="block">Returns the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> to persist and access.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the resource to persist and access</dd>
+</dl>
 </li>
 </ul>
 <a name="eObject-fr.inria.atlanmod.neoemf.core.Id-">
@@ -792,8 +795,13 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <h4>eObject</h4>
 <pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&nbsp;eObject(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html#eObject-fr.inria.atlanmod.neoemf.core.Id-">PersistentStore</a></code></span></div>
-<div class="block">Returns the resolved <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a> identified by the given <code>id</code> or <code>null</code> if no <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a> can
- be resolved.</div>
+<div class="block">Returns the resolved <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a> identified by the given <code>id</code> or <code>null</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the identifier of the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a> to resolve</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the resolved <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>, or <code>null</code> if no <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a> can be resolved</dd>
+</dl>
 </li>
 </ul>
 <a name="getAllInstances-org.eclipse.emf.ecore.EClass-boolean-">
@@ -824,6 +832,10 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractP
 <pre>public&nbsp;<a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a>&nbsp;getEStore()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html#getEStore--">PersistentStore</a></code></span></div>
 <div class="block">Utility method used for tests. Returns the decorated <code>PersistentStore</code>, if it exists.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the decorated <code>PersistentStore</code>, or <code>null</code> if it doesn't exist</dd>
+</dl>
 </li>
 </ul>
 <a name="save--">

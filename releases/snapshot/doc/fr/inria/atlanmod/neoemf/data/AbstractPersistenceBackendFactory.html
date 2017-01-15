@@ -196,7 +196,7 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBack
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackendFactory.html#getName--">getName</a></span>()</code>
-<div class="block">Returns the literal description of the created persistence back-end.</div>
+<div class="block">Returns the literal description of the created <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a>.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -286,7 +286,11 @@ protected static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/uti
 <li class="blockList">
 <h4>getName</h4>
 <pre>protected abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
-<div class="block">Returns the literal description of the created persistence back-end.</div>
+<div class="block">Returns the literal description of the created <a href="../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the literal description of the created <code>PersistenceBackend</code></dd>
+</dl>
 </li>
 </ul>
 <a name="createPersistentStore-fr.inria.atlanmod.neoemf.resource.PersistentResource-fr.inria.atlanmod.neoemf.data.PersistenceBackend-java.util.Map-">
@@ -365,7 +369,7 @@ protected static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/uti
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>directory</code> - the directory where the configuration must be stored</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/data/InvalidDataStoreException.html" title="class in fr.inria.atlanmod.neoemf.data">InvalidDataStoreException</a></code></dd>
+<dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/data/InvalidDataStoreException.html" title="class in fr.inria.atlanmod.neoemf.data">InvalidDataStoreException</a></code> - if the configuration cannot be created in the <code>directory</code></dd>
 </dl>
 </li>
 </ul>

@@ -171,7 +171,7 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistenceOp
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/option/AbstractPersistenceOptionsBuilder.html#asMap--">asMap</a></span>()</code>
-<div class="block">Returns a immutable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> containing all defined options.</div>
+<div class="block">Returns an immutable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> containing all defined options.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -278,6 +278,10 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistenceOp
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;noOption()</pre>
 <div class="block">Returns an immutable empty <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an immutable <code>Map</code></dd>
+</dl>
 </li>
 </ul>
 <a name="asMap--">
@@ -290,10 +294,12 @@ public static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/M
 public final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;asMap()
                                         throws <a href="../../../../../fr/inria/atlanmod/neoemf/option/InvalidOptionException.html" title="class in fr.inria.atlanmod.neoemf.option">InvalidOptionException</a></pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistenceOptionsBuilder.html#asMap--">PersistenceOptionsBuilder</a></code></span></div>
-<div class="block">Returns a immutable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> containing all defined options.</div>
+<div class="block">Returns an immutable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> containing all defined options.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistenceOptionsBuilder.html#asMap--">asMap</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistenceOptionsBuilder.html" title="interface in fr.inria.atlanmod.neoemf.option">PersistenceOptionsBuilder</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an immutable <code>Map</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/option/InvalidOptionException.html" title="class in fr.inria.atlanmod.neoemf.option">InvalidOptionException</a></code> - if a conflict is detected during building</dd>
 </dl>
@@ -323,6 +329,8 @@ public final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Ma
 <pre>protected&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/option/AbstractPersistenceOptionsBuilder.html" title="type parameter in AbstractPersistenceOptionsBuilder">B</a>&nbsp;storeOption(<a href="../../../../../fr/inria/atlanmod/neoemf/option/PersistentStoreOptions.html" title="interface in fr.inria.atlanmod.neoemf.option">PersistentStoreOptions</a>&nbsp;storeOption)</pre>
 <div class="block">Adds a feature defined by the given <code>storeOption</code> in the created options.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>storeOption</code> - the option to add</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder (for chaining)</dd>
 </dl>
@@ -338,6 +346,9 @@ public final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Ma
                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
 <div class="block">Adds a key/value in the created options. A custom configuration, which is not part of NeoEMF, can be added.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the key to add</dd>
+<dd><code>value</code> - the value of the <code>key</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder (for chaining)</dd>
 </dl>
