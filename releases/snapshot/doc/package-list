@@ -1,14 +1,13 @@
-fr.inria.atlanmod.neoemf
 fr.inria.atlanmod.neoemf.core
 fr.inria.atlanmod.neoemf.data
 fr.inria.atlanmod.neoemf.data.blueprints
-fr.inria.atlanmod.neoemf.data.blueprints.config
+fr.inria.atlanmod.neoemf.data.blueprints.configuration
 fr.inria.atlanmod.neoemf.data.blueprints.io
-fr.inria.atlanmod.neoemf.data.blueprints.neo4j.config
+fr.inria.atlanmod.neoemf.data.blueprints.neo4j.configuration
 fr.inria.atlanmod.neoemf.data.blueprints.neo4j.option
 fr.inria.atlanmod.neoemf.data.blueprints.option
 fr.inria.atlanmod.neoemf.data.blueprints.store
-fr.inria.atlanmod.neoemf.data.blueprints.tg.config
+fr.inria.atlanmod.neoemf.data.blueprints.tg.configuration
 fr.inria.atlanmod.neoemf.data.blueprints.util
 fr.inria.atlanmod.neoemf.data.hbase
 fr.inria.atlanmod.neoemf.data.hbase.option
@@ -28,7 +27,7 @@ fr.inria.atlanmod.neoemf.io.persistence
 fr.inria.atlanmod.neoemf.io.processor
 fr.inria.atlanmod.neoemf.io.reader
 fr.inria.atlanmod.neoemf.io.structure
-fr.inria.atlanmod.neoemf.logging
 fr.inria.atlanmod.neoemf.option
 fr.inria.atlanmod.neoemf.resource
 fr.inria.atlanmod.neoemf.util
+fr.inria.atlanmod.neoemf.util.logging
