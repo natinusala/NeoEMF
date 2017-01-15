@@ -281,7 +281,8 @@
 <tr class="altColor">
 <td class="colFirst"><code>protected com.github.benmanes.caffeine.cache.Cache&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>,<a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints">Vertex</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">AbstractBlueprintsHandler.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/io/AbstractBlueprintsHandler.html#verticesCache">verticesCache</a></span></code>
-<div class="block">Cache that holds recently processed <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints"><code>Vertices</code></a>.</div>
+<div class="block">In-memory cache that holds recently processed <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints"><code>Vertex</code></a>s, identified by the associated object
+ <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
 </td>
 </tr>
 </tbody>
@@ -541,7 +542,7 @@
 <tr class="altColor">
 <td class="colFirst"><code>protected com.github.benmanes.caffeine.cache.Cache&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>,<a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">DirectWriteMapDbStore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#persistentObjectsCache">persistentObjectsCache</a></span></code>
-<div class="block">An in-memory cache for <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>s.</div>
+<div class="block">In-memory cache that holds recently loaded <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>s, identified by their <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
 </td>
 </tr>
 </tbody>

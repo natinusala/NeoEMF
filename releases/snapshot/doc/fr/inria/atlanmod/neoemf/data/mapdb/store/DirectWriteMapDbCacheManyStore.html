@@ -331,9 +331,7 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#getFromMap-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EStructuralFeature-">DirectWriteMapDbStore</a></code></span></div>
 <div class="block">Returns the value associated to (<code>object</code>, <code>feature</code>) in the underlying database.
  <p>
- This method is a wrapper for <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#getFromMap-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-"><code>DirectWriteMapDbStore.getFromMap(FeatureKey)</code></a>. A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html" title="class in fr.inria.atlanmod.neoemf.data.structure"><code>FeatureKey</code></a> is computed for the given
- <code>object</code> and <code>feature</code> using <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/structure/FeatureKey.html#from-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EStructuralFeature-"><code>FeatureKey.from(PersistentEObject,
- EStructuralFeature)</code></a>.</div>
+ This method behaves like: <code>getFromMap(FeatureKey.from(object, feature)</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#getFromMap-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EStructuralFeature-">getFromMap</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></code></dd>
