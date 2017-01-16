@@ -120,9 +120,19 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">HBasePersistenceBackend</span>
 extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data">AbstractPersistenceBackend</a></pre>
-<div class="block">Dummy <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a> implementation for HBase to fit core architecture.
+<div class="block">Mock <a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html" title="interface in fr.inria.atlanmod.neoemf.data"><code>PersistenceBackend</code></a> implementation for HBase to fit core architecture.
  <p>
- The real access to the HBase Table is done in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/store/DirectWriteHBaseStore.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.store"><code>DirectWriteHBaseStore</code></a> and <a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/store/ReadOnlyHBaseStore.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.store"><code>ReadOnlyHBaseStore</code></a>.</div>
+ This class does not access HBase database, but is here to fit the requirement of the
+ core architecture. For historical reasons the real access to the HBase Table 
+ is done in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/store/DirectWriteHBaseStore.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.store"><code>DirectWriteHBaseStore</code></a> and <a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/store/ReadOnlyHBaseStore.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.store"><code>ReadOnlyHBaseStore</code></a>.
+ <p>
+ Moving HBase access to this class to fit NeoEMF backend architecture is planned in
+ a future release.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/store/DirectWriteHBaseStore.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.store"><code>DirectWriteHBaseStore</code></a>, 
+<a href="../../../../../../fr/inria/atlanmod/neoemf/data/hbase/store/ReadOnlyHBaseStore.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.store"><code>ReadOnlyHBaseStore</code></a></dd>
+</dl>
 </li>
 </ul>
 </div>
