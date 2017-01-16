@@ -145,7 +145,11 @@ var activeTableTab = "activeTableTab";
 <pre>public class <span class="typeNameLabel">NeoEContentsEList&lt;E&gt;</span>
 extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/util/EContentsEList.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.util">EContentsEList</a>&lt;E&gt;
 implements <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;E&gt;, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/util/InternalEList.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.util">InternalEList</a>&lt;E&gt;</pre>
-<div class="block">???</div>
+<div class="block">An <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/util/EContentsEList.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.util"><code>EContentsEList</code></a> implementation that delegates its operations to the associated
+ <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a>.
+ <p>
+ Instances of this class are created by <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true#getContents--" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource.getContents()</code></a> and allows to access the content
+ of a <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource"><code>PersistentResource</code></a> by lazily loading the elements.</div>
 </li>
 </ul>
 </div>
@@ -370,7 +374,7 @@ implements <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/or
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>owner</code> - the owner of this list</dd>
-<dd><code>features</code> - ???</dd>
+<dd><code>features</code> - the containment features that are handled by this list</dd>
 </dl>
 </li>
 </ul>

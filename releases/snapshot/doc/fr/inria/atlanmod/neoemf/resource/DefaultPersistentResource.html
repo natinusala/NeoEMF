@@ -133,7 +133,8 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a></pre>
 <div class="block">The default implementation of a <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource"><code>PersistentResource</code></a> that contains <a href="../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>.
  <p>
- ???</div>
+ <a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html" title="class in fr.inria.atlanmod.neoemf.resource"><code>DefaultPersistentResource</code></a>s is backend-agnostic and only delegates model element operations 
+ to its internal <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> which is reponsible of database access.</div>
 </li>
 </ul>
 </div>
@@ -190,7 +191,7 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#store">store</a></span></code>
-<div class="block">???</div>
+<div class="block">The <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> responsible of the database serialization.</div>
 </td>
 </tr>
 </table>
@@ -260,9 +261,7 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject.EStore</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#eStore--">eStore</a></span>()</code>
-<div class="block">???</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/resource/DefaultPersistentResource.html#eStore--">eStore</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
@@ -390,7 +389,7 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <li class="blockList">
 <h4>store</h4>
 <pre>protected&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store">PersistentStore</a> store</pre>
-<div class="block">???</div>
+<div class="block">The <a href="../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>PersistentStore</code></a> responsible of the database serialization.</div>
 </li>
 </ul>
 <a name="backend">
@@ -656,13 +655,11 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentR
 <li class="blockList">
 <h4>eStore</h4>
 <pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject.EStore</a>&nbsp;eStore()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#eStore--">PersistentResource</a></code></span></div>
-<div class="block">???</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html#eStore--">eStore</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/resource/PersistentResource.html" title="interface in fr.inria.atlanmod.neoemf.resource">PersistentResource</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>???</dd>
+<dd>the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>InternalEObject.EStore</code></a> used to store the model</dd>
 </dl>
 </li>
 </ul>
