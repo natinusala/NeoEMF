@@ -148,17 +148,18 @@ implements <a href="../../../../../../../fr/inria/atlanmod/neoemf/option/Persist
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsStoreOptions.html#AUTOCOMMIT">AUTOCOMMIT</a></span></code>
-<div class="block">???</div>
+<div class="block">Automatically saves modifications as calls are made.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsStoreOptions.html#CACHE_MANY">CACHE_MANY</a></span></code>
-<div class="block">???</div>
+<div class="block">Translates model-level operations to Blueprints calls, and uses an internal cache to store elements that are
+ part of multi-valued <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a>s to speed-up their access.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsStoreOptions.html#DIRECT_WRITE">DIRECT_WRITE</a></span></code>
-<div class="block">???</div>
+<div class="block">Translates model-level operations to Blueprints calls <i>(default <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/DirectWriteStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>DirectWriteStore</code></a>)</i>.</div>
 </td>
 </tr>
 </table>
@@ -225,7 +226,11 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>AUTOCOMMIT</h4>
 <pre>public static final&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsStoreOptions.html" title="enum in fr.inria.atlanmod.neoemf.data.blueprints.option">BlueprintsStoreOptions</a> AUTOCOMMIT</pre>
-<div class="block">???</div>
+<div class="block">Automatically saves modifications as calls are made.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AutocommitStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store"><code>AutocommitStoreDecorator</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="DIRECT_WRITE">
@@ -235,7 +240,11 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>DIRECT_WRITE</h4>
 <pre>public static final&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsStoreOptions.html" title="enum in fr.inria.atlanmod.neoemf.data.blueprints.option">BlueprintsStoreOptions</a> DIRECT_WRITE</pre>
-<div class="block">???</div>
+<div class="block">Translates model-level operations to Blueprints calls <i>(default <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/DirectWriteStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>DirectWriteStore</code></a>)</i>.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsStore.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.store"><code>DirectWriteBlueprintsStore</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="CACHE_MANY">
@@ -245,7 +254,12 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>CACHE_MANY</h4>
 <pre>public static final&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/option/BlueprintsStoreOptions.html" title="enum in fr.inria.atlanmod.neoemf.data.blueprints.option">BlueprintsStoreOptions</a> CACHE_MANY</pre>
-<div class="block">???</div>
+<div class="block">Translates model-level operations to Blueprints calls, and uses an internal cache to store elements that are
+ part of multi-valued <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a>s to speed-up their access.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/store/DirectWriteBlueprintsCacheManyStore.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.store"><code>DirectWriteBlueprintsCacheManyStore</code></a></dd>
+</dl>
 </li>
 </ul>
 </li>

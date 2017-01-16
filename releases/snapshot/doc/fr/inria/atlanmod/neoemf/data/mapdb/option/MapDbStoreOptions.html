@@ -150,27 +150,30 @@ implements <a href="../../../../../../../fr/inria/atlanmod/neoemf/option/Persist
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbStoreOptions.html#AUTOCOMMIT">AUTOCOMMIT</a></span></code>
-<div class="block">???</div>
+<div class="block">Automatically saves modifications as calls are made.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbStoreOptions.html#CACHE_MANY">CACHE_MANY</a></span></code>
-<div class="block">???</div>
+<div class="block">Translates model-level operations to Blueprints calls, and uses an internal cache to store elements that are
+ part of multi-valued <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a>s to speed-up their access.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbStoreOptions.html#DIRECT_WRITE">DIRECT_WRITE</a></span></code>
-<div class="block">???</div>
+<div class="block">Translates model-level operations to MapDB calls <i>(default <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/DirectWriteStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>DirectWriteStore</code></a>)</i>.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbStoreOptions.html#DIRECT_WRITE_INDICES">DIRECT_WRITE_INDICES</a></span></code>
-<div class="block">???</div>
+<div class="block">Translates model-level operations to MapDB calls, and persists <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> indices instead of serialized
+ arrays.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbStoreOptions.html#DIRECT_WRITE_LISTS">DIRECT_WRITE_LISTS</a></span></code>
-<div class="block">???</div>
+<div class="block">Translates model-level operations to MapDB calls, and uses <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>s instead of arrays to persist
+ multi-valued <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EAttribute</code></a>s and <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a>s.</div>
 </td>
 </tr>
 </table>
@@ -237,7 +240,11 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>AUTOCOMMIT</h4>
 <pre>public static final&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbStoreOptions.html" title="enum in fr.inria.atlanmod.neoemf.data.mapdb.option">MapDbStoreOptions</a> AUTOCOMMIT</pre>
-<div class="block">???</div>
+<div class="block">Automatically saves modifications as calls are made.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AutocommitStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store"><code>AutocommitStoreDecorator</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="DIRECT_WRITE">
@@ -247,7 +254,11 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>DIRECT_WRITE</h4>
 <pre>public static final&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbStoreOptions.html" title="enum in fr.inria.atlanmod.neoemf.data.mapdb.option">MapDbStoreOptions</a> DIRECT_WRITE</pre>
-<div class="block">???</div>
+<div class="block">Translates model-level operations to MapDB calls <i>(default <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/DirectWriteStore.html" title="interface in fr.inria.atlanmod.neoemf.data.store"><code>DirectWriteStore</code></a>)</i>.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbStore</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="DIRECT_WRITE_LISTS">
@@ -257,7 +268,12 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>DIRECT_WRITE_LISTS</h4>
 <pre>public static final&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbStoreOptions.html" title="enum in fr.inria.atlanmod.neoemf.data.mapdb.option">MapDbStoreOptions</a> DIRECT_WRITE_LISTS</pre>
-<div class="block">???</div>
+<div class="block">Translates model-level operations to MapDB calls, and uses <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>s instead of arrays to persist
+ multi-valued <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EAttribute</code></a>s and <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a>s.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbListsStore</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="DIRECT_WRITE_INDICES">
@@ -267,7 +283,12 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>DIRECT_WRITE_INDICES</h4>
 <pre>public static final&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbStoreOptions.html" title="enum in fr.inria.atlanmod.neoemf.data.mapdb.option">MapDbStoreOptions</a> DIRECT_WRITE_INDICES</pre>
-<div class="block">???</div>
+<div class="block">Translates model-level operations to MapDB calls, and persists <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> indices instead of serialized
+ arrays.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbIndicesStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbIndicesStore</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="CACHE_MANY">
@@ -277,7 +298,12 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>CACHE_MANY</h4>
 <pre>public static final&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbStoreOptions.html" title="enum in fr.inria.atlanmod.neoemf.data.mapdb.option">MapDbStoreOptions</a> CACHE_MANY</pre>
-<div class="block">???</div>
+<div class="block">Translates model-level operations to Blueprints calls, and uses an internal cache to store elements that are
+ part of multi-valued <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a>s to speed-up their access.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbCacheManyStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbCacheManyStore</code></a></dd>
+</dl>
 </li>
 </ul>
 </li>

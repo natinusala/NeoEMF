@@ -165,31 +165,31 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/option/AbstractPe
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.option">MapDbOptionsBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html#autocommit--">autocommit</a></span>()</code>
-<div class="block">???</div>
+<div class="block">Adds the <code>autocommit</code> feature in the created options.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.option">MapDbOptionsBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html#directWrite--">directWrite</a></span>()</code>
-<div class="block">???</div>
+<div class="block">Adds the <code>direct-write</code> feature in the created options.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.option">MapDbOptionsBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html#directWriteCacheMany--">directWriteCacheMany</a></span>()</code>
-<div class="block">???</div>
+<div class="block">Adds the <code>direct-write-cache-many</code> feature in the created options.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.option">MapDbOptionsBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html#directWriteIndices--">directWriteIndices</a></span>()</code>
-<div class="block">???</div>
+<div class="block">Adds the <code>direct-write-with-indices</code> feature in the created options.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.option">MapDbOptionsBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html#directWriteLists--">directWriteLists</a></span>()</code>
-<div class="block">???</div>
+<div class="block">Adds the <code>direct-write-with-lists</code> feature in the created options.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -272,10 +272,13 @@ public static&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/m
 <h4>autocommit</h4>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.option">MapDbOptionsBuilder</a>&nbsp;autocommit()</pre>
-<div class="block">???</div>
+<div class="block">Adds the <code>autocommit</code> feature in the created options.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder (for chaining)</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbStoreOptions.html#AUTOCOMMIT"><code>MapDbStoreOptions.AUTOCOMMIT</code></a>, 
+<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AutocommitStoreDecorator.html" title="class in fr.inria.atlanmod.neoemf.data.store"><code>AutocommitStoreDecorator</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -287,10 +290,13 @@ public&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/op
 <h4>directWrite</h4>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.option">MapDbOptionsBuilder</a>&nbsp;directWrite()</pre>
-<div class="block">???</div>
+<div class="block">Adds the <code>direct-write</code> feature in the created options.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder (for chaining)</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbStoreOptions.html#DIRECT_WRITE"><code>MapDbStoreOptions.DIRECT_WRITE</code></a>, 
+<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbStore</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -302,10 +308,13 @@ public&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/op
 <h4>directWriteLists</h4>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.option">MapDbOptionsBuilder</a>&nbsp;directWriteLists()</pre>
-<div class="block">???</div>
+<div class="block">Adds the <code>direct-write-with-lists</code> feature in the created options.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder (for chaining)</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbStoreOptions.html#DIRECT_WRITE_LISTS"><code>MapDbStoreOptions.DIRECT_WRITE_LISTS</code></a>, 
+<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbListsStore</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -317,10 +326,13 @@ public&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/op
 <h4>directWriteIndices</h4>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.option">MapDbOptionsBuilder</a>&nbsp;directWriteIndices()</pre>
-<div class="block">???</div>
+<div class="block">Adds the <code>direct-write-with-indices</code> feature in the created options.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder (for chaining)</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbStoreOptions.html#DIRECT_WRITE_INDICES"><code>MapDbStoreOptions.DIRECT_WRITE_INDICES</code></a>, 
+<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbIndicesStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbIndicesStore</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -332,10 +344,13 @@ public&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/op
 <h4>directWriteCacheMany</h4>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbOptionsBuilder.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.option">MapDbOptionsBuilder</a>&nbsp;directWriteCacheMany()</pre>
-<div class="block">???</div>
+<div class="block">Adds the <code>direct-write-cache-many</code> feature in the created options.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder (for chaining)</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/option/MapDbStoreOptions.html#CACHE_MANY"><code>MapDbStoreOptions.CACHE_MANY</code></a>, 
+<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbCacheManyStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbCacheManyStore</code></a></dd>
 </dl>
 </li>
 </ul>
