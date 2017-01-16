@@ -1,3 +1,5 @@
+'/home/travis/build/atlanmod/NeoEMF/neoemf-core/src/main/java/fr/inria/atlanmod/neoemf/annotations/Experimental.java'
+'/home/travis/build/atlanmod/NeoEMF/neoemf-core/src/main/java/fr/inria/atlanmod/neoemf/annotations/VisibleForTesting.java'
 '/home/travis/build/atlanmod/NeoEMF/neoemf-core/src/main/java/fr/inria/atlanmod/neoemf/core/DefaultPersistentEObject.java'
 '/home/travis/build/atlanmod/NeoEMF/neoemf-core/src/main/java/fr/inria/atlanmod/neoemf/core/Id.java'
 '/home/travis/build/atlanmod/NeoEMF/neoemf-core/src/main/java/fr/inria/atlanmod/neoemf/core/PersistenceFactory.java'
@@ -51,6 +53,7 @@
 '/home/travis/build/atlanmod/NeoEMF/neoemf-core/src/main/java/fr/inria/atlanmod/neoemf/util/logging/Level.java'
 '/home/travis/build/atlanmod/NeoEMF/neoemf-core/src/main/java/fr/inria/atlanmod/neoemf/util/logging/Logger.java'
 '/home/travis/build/atlanmod/NeoEMF/neoemf-core/src/main/java/fr/inria/atlanmod/neoemf/util/logging/NeoLogger.java'
+'/home/travis/build/atlanmod/NeoEMF/neoemf-core/src/main/javadoc/fr/inria/atlanmod/neoemf/annotations/package-info.java'
 '/home/travis/build/atlanmod/NeoEMF/neoemf-core/src/main/javadoc/fr/inria/atlanmod/neoemf/core/package-info.java'
 '/home/travis/build/atlanmod/NeoEMF/neoemf-core/src/main/javadoc/fr/inria/atlanmod/neoemf/data/package-info.java'
 '/home/travis/build/atlanmod/NeoEMF/neoemf-core/src/main/javadoc/fr/inria/atlanmod/neoemf/data/store/package-info.java'
