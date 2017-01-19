@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -272,19 +272,25 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 </td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#isDistributed--">isDistributed</a></span>()</code>
+<div class="block">Returns <code>true</code> if the backend is distributed, <code>false</code> otherwise.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#reifyVertex-com.tinkerpop.blueprints.Vertex-">reifyVertex</a></span>(<a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints">Vertex</a>&nbsp;vertex)</code>
 <div class="block">Reifies the given <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints"><code>Vertex</code></a> as a <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#reifyVertex-com.tinkerpop.blueprints.Vertex-org.eclipse.emf.ecore.EClass-">reifyVertex</a></span>(<a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints">Vertex</a>&nbsp;vertex,
            <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a>&nbsp;eClass)</code>
 <div class="block">Reifies the given <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints"><code>Vertex</code></a> as an <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#save--">save</a></span>()</code>
 <div class="block">Saves the modifications of the owned <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>s in the underlying database.</div>
@@ -461,6 +467,21 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <pre>public&nbsp;void&nbsp;save()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html#save--">PersistenceBackend</a></code></span></div>
 <div class="block">Saves the modifications of the owned <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>s in the underlying database.</div>
+</li>
+</ul>
+<a name="isDistributed--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isDistributed</h4>
+<pre>public&nbsp;boolean&nbsp;isDistributed()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/PersistenceBackend.html#isDistributed--">PersistenceBackend</a></code></span></div>
+<div class="block">Returns <code>true</code> if the backend is distributed, <code>false</code> otherwise.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if the backend is distributed, <code>false</code> otherwise.</dd>
+</dl>
 </li>
 </ul>
 <a name="getAllInstances-org.eclipse.emf.ecore.EClass-boolean-">
