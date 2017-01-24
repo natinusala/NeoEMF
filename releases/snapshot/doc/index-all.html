@@ -723,6 +723,10 @@
 <dd>
 <div class="block">Creates an element from the given <code>classifier</code> with the given <code>id</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyEqualityHelperFactory.html#createEqualityHelper--">createEqualityHelper()</a></span> - Method in class fr.inria.atlanmod.neoemf.util.emf.compare.<a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyEqualityHelperFactory.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare">LazyEqualityHelperFactory</a></dt>
+<dd>
+<div class="block">Returns a new lazy <code>IEqualityHelper</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsURI.html#createFileURI-java.io.File-">createFileURI(File)</a></span> - Static method in class fr.inria.atlanmod.neoemf.data.blueprints.util.<a href="fr/inria/atlanmod/neoemf/data/blueprints/util/BlueprintsURI.html" title="class in fr.inria.atlanmod.neoemf.data.blueprints.util">BlueprintsURI</a></dt>
 <dd>
 <div class="block">Creates a new <code>BlueprintsURI</code> from the given <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> descriptor.</div>
@@ -1435,6 +1439,8 @@
 <dd>
 <div class="block">Provides utility classes to ease URI management or containment list computation.</div>
 </dd>
+<dt><a href="fr/inria/atlanmod/neoemf/util/emf/compare/package-summary.html">fr.inria.atlanmod.neoemf.util.emf.compare</a> - package fr.inria.atlanmod.neoemf.util.emf.compare</dt>
+<dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/util/logging/package-summary.html">fr.inria.atlanmod.neoemf.util.logging</a> - package fr.inria.atlanmod.neoemf.util.logging</dt>
 <dd>
 <div class="block">Provides classes for logging information and events.</div>
@@ -2451,6 +2457,54 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html#lastSegment--">lastSegment()</a></span> - Method in class fr.inria.atlanmod.neoemf.util.<a href="fr/inria/atlanmod/neoemf/util/PersistenceURI.html" title="class in fr.inria.atlanmod.neoemf.util">PersistenceURI</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyEqualityHelperFactory.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare"><span class="typeNameLink">LazyEqualityHelperFactory</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/util/emf/compare/package-summary.html">fr.inria.atlanmod.neoemf.util.emf.compare</a></dt>
+<dd>
+<div class="block">Overrides <code>DefaultEqualityHelperFactory</code> methods to create
+ <code>LazyEqualityHelper</code> instances instead of default
+ <code>EqualityHelper</code> ones.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyEqualityHelperFactory.html#LazyEqualityHelperFactory--">LazyEqualityHelperFactory()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.util.emf.compare.<a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyEqualityHelperFactory.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare">LazyEqualityHelperFactory</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyEqualityHelperFactory.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare"><code>LazyEqualityHelperFactory</code></a> with a default cache.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyEqualityHelperFactory.html#LazyEqualityHelperFactory-com.google.common.cache.CacheBuilder-">LazyEqualityHelperFactory(CacheBuilder&lt;Object, Object&gt;)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.util.emf.compare.<a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyEqualityHelperFactory.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare">LazyEqualityHelperFactory</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyEqualityHelperFactory.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare"><code>LazyEqualityHelperFactory</code></a> using the given
+ <code>cacheBuilder</code>.</div>
+</dd>
+<dt><a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngine.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare"><span class="typeNameLink">LazyMatchEngine</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/util/emf/compare/package-summary.html">fr.inria.atlanmod.neoemf.util.emf.compare</a></dt>
+<dd>
+<div class="block">Overrides <code>DefaultMatchEngine</code> to allow lazy comparison of
+ <a href="fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>s.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngine.html#LazyMatchEngine-org.eclipse.emf.compare.match.eobject.IEObjectMatcher-org.eclipse.emf.compare.match.IComparisonFactory-">LazyMatchEngine(IEObjectMatcher, IComparisonFactory)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.util.emf.compare.<a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngine.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare">LazyMatchEngine</a></dt>
+<dd>
+<div class="block">Creates a new LazyMatchEngine.</div>
+</dd>
+<dt><a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngineFactory.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare"><span class="typeNameLink">LazyMatchEngineFactory</span></a> - Class in <a href="fr/inria/atlanmod/neoemf/util/emf/compare/package-summary.html">fr.inria.atlanmod.neoemf.util.emf.compare</a></dt>
+<dd>
+<div class="block">Overrides <code>MatchEngineFactoryImpl</code> methods to create
+ <a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngine.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare"><code>LazyMatchEngine</code></a> instances instead of <code>DefaultMatchEngine</code> ones.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngineFactory.html#LazyMatchEngineFactory--">LazyMatchEngineFactory()</a></span> - Constructor for class fr.inria.atlanmod.neoemf.util.emf.compare.<a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngineFactory.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare">LazyMatchEngineFactory</a></dt>
+<dd>
+<div class="block">Constructs a default <a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngine.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare"><code>LazyMatchEngine</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngineFactory.html#LazyMatchEngineFactory-org.eclipse.emf.compare.utils.UseIdentifiers-">LazyMatchEngineFactory(UseIdentifiers)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.util.emf.compare.<a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngineFactory.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare">LazyMatchEngineFactory</a></dt>
+<dd>
+<div class="block">Constructor that instantiate a <a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngineFactory.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare"><code>LazyMatchEngineFactory</code></a> that will
+ use identifiers as specified by the given <code>useIDs</code> enumeration.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngineFactory.html#LazyMatchEngineFactory-org.eclipse.emf.compare.utils.UseIdentifiers-org.eclipse.emf.compare.match.eobject.WeightProvider.Descriptor.Registry-">LazyMatchEngineFactory(UseIdentifiers, WeightProvider.Descriptor.Registry)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.util.emf.compare.<a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngineFactory.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare">LazyMatchEngineFactory</a></dt>
+<dd>
+<div class="block">Constructor that instantiate a <a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngine.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare"><code>LazyMatchEngine</code></a> that will use
+ identifiers as specified by the given <code>useIDs</code> enumeration.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngineFactory.html#LazyMatchEngineFactory-org.eclipse.emf.compare.match.eobject.IEObjectMatcher-org.eclipse.emf.compare.match.IComparisonFactory-">LazyMatchEngineFactory(IEObjectMatcher, IComparisonFactory)</a></span> - Constructor for class fr.inria.atlanmod.neoemf.util.emf.compare.<a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngineFactory.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare">LazyMatchEngineFactory</a></dt>
+<dd>
+<div class="block">Constructor that instantiate a <a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngine.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare"><code>LazyMatchEngine</code></a> with the given
+ parameters.</div>
+</dd>
 <dt><a href="fr/inria/atlanmod/neoemf/util/logging/Level.html" title="enum in fr.inria.atlanmod.neoemf.util.logging"><span class="typeNameLink">Level</span></a> - Enum in <a href="fr/inria/atlanmod/neoemf/util/logging/package-summary.html">fr.inria.atlanmod.neoemf.util.logging</a></dt>
 <dd>
 <div class="block">An object used for identifying the severity of an event.</div>
@@ -2582,6 +2636,9 @@
 <dd>
 <div class="block">Constructs a new <code>MapDbURI</code> from the given <code>internalURI</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngine.html#match-org.eclipse.emf.compare.Comparison-org.eclipse.emf.compare.scope.IComparisonScope-org.eclipse.emf.ecore.resource.ResourceSet-org.eclipse.emf.ecore.resource.ResourceSet-org.eclipse.emf.ecore.resource.ResourceSet-org.eclipse.emf.common.util.Monitor-">match(Comparison, IComparisonScope, ResourceSet, ResourceSet, ResourceSet, Monitor)</a></span> - Method in class fr.inria.atlanmod.neoemf.util.emf.compare.<a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngine.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare">LazyMatchEngine</a></dt>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngine.html#match-org.eclipse.emf.compare.Comparison-org.eclipse.emf.compare.scope.IComparisonScope-org.eclipse.emf.ecore.EObject-org.eclipse.emf.ecore.EObject-org.eclipse.emf.ecore.EObject-org.eclipse.emf.common.util.Monitor-">match(Comparison, IComparisonScope, EObject, EObject, EObject, Monitor)</a></span> - Method in class fr.inria.atlanmod.neoemf.util.emf.compare.<a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngine.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare">LazyMatchEngine</a></dt>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngine.html#match-org.eclipse.emf.compare.Comparison-org.eclipse.emf.compare.scope.IComparisonScope-org.eclipse.emf.ecore.resource.Resource-org.eclipse.emf.ecore.resource.Resource-org.eclipse.emf.ecore.resource.Resource-org.eclipse.emf.common.util.Monitor-">match(Comparison, IComparisonScope, Resource, Resource, Resource, Monitor)</a></span> - Method in class fr.inria.atlanmod.neoemf.util.emf.compare.<a href="fr/inria/atlanmod/neoemf/util/emf/compare/LazyMatchEngine.html" title="class in fr.inria.atlanmod.neoemf.util.emf.compare">LazyMatchEngine</a></dt>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/neoemf/io/hash/HasherFactory.html#md5--">md5()</a></span> - Static method in class fr.inria.atlanmod.neoemf.io.hash.<a href="fr/inria/atlanmod/neoemf/io/hash/HasherFactory.html" title="class in fr.inria.atlanmod.neoemf.io.hash">HasherFactory</a></dt>
 <dd>
 <div class="block">Returns an instance of a <a href="fr/inria/atlanmod/neoemf/io/hash/Hasher.html" title="interface in fr.inria.atlanmod.neoemf.io.hash"><code>Hasher</code></a> using <code>MD5</code> (128 bits).</div>

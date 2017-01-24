@@ -31,4 +31,5 @@ fr.inria.atlanmod.neoemf.io.structure
 fr.inria.atlanmod.neoemf.option
 fr.inria.atlanmod.neoemf.resource
 fr.inria.atlanmod.neoemf.util
+fr.inria.atlanmod.neoemf.util.emf.compare
 fr.inria.atlanmod.neoemf.util.logging
