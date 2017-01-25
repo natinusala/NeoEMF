@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -291,6 +291,12 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 </td>
 </tr>
 <tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#resolveInstanceOf-com.tinkerpop.blueprints.Vertex-">resolveInstanceOf</a></span>(<a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints">Vertex</a>&nbsp;vertex)</code>
+<div class="block">Compute the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a> associated to the model element with the provided <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints"><code>Vertex</code></a>.</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/blueprints/BlueprintsPersistenceBackend.html#save--">save</a></span>()</code>
 <div class="block">Saves the modifications of the owned <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a>s in the underlying database.</div>
@@ -551,6 +557,22 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/data/AbstractPersist
 <dd><code>object</code> - the <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> to find</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the vertex referenced by the provided <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EObject</code></a> or <code>null</code> when no such vertex exists</dd>
+</dl>
+</li>
+</ul>
+<a name="resolveInstanceOf-com.tinkerpop.blueprints.Vertex-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>resolveInstanceOf</h4>
+<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a>&nbsp;resolveInstanceOf(<a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints">Vertex</a>&nbsp;vertex)</pre>
+<div class="block">Compute the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a> associated to the model element with the provided <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints"><code>Vertex</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>vertex</code> - the <a href="http://www.tinkerpop.com/docs/javadocs/blueprints/2.6.0/com/tinkerpop/blueprints/Vertex.html?is-external=true" title="class or interface in com.tinkerpop.blueprints"><code>Vertex</code></a> of the model element to compute the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a> from</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a> representing the metaclass of the element</dd>
 </dl>
 </li>
 </ul>
