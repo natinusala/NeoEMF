@@ -138,21 +138,21 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="type parameter in Notifier">T</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#handler--">handler</a></span>()</code>
-<div class="block">Returns the <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that will be notified.</div>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#andThen-T-">andThen</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="type parameter in Notifier">T</a>&nbsp;handler)</code>
+<div class="block">Defines the <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that will be notified by this <code>Notifier</code>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#handler-T-">handler</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="type parameter in Notifier">T</a>&nbsp;handler)</code>
-<div class="block">Defines the <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that will be notified.</div>
+<td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="type parameter in Notifier">T</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#handler--">handler</a></span>()</code>
+<div class="block">Returns the <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that will be notified by this <code>Notifier</code>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>default boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#hasHandler--">hasHandler</a></span>()</code>
-<div class="block">Defines if this notifier has a <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> to notify.</div>
+<div class="block">Defines if this <code>Notifier</code> has a <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> to notify.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -219,26 +219,26 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>handler</h4>
 <pre><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="type parameter in Notifier">T</a>&nbsp;handler()</pre>
-<div class="block">Returns the <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that will be notified.</div>
+<div class="block">Returns the <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that will be notified by this <code>Notifier</code>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the handler</dd>
+<dd>the handler to notify</dd>
 </dl>
 </li>
 </ul>
-<a name="handler-fr.inria.atlanmod.neoemf.io.Handler-">
+<a name="andThen-fr.inria.atlanmod.neoemf.io.Handler-">
 <!--   -->
-</a><a name="handler-T-">
+</a><a name="andThen-T-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>handler</h4>
-<pre>void&nbsp;handler(<a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="type parameter in Notifier">T</a>&nbsp;handler)</pre>
-<div class="block">Defines the <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that will be notified.</div>
+<h4>andThen</h4>
+<pre>void&nbsp;andThen(<a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="type parameter in Notifier">T</a>&nbsp;handler)</pre>
+<div class="block">Defines the <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that will be notified by this <code>Notifier</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>handler</code> - the handler</dd>
+<dd><code>handler</code> - the handler to notify</dd>
 </dl>
 </li>
 </ul>
@@ -249,7 +249,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>hasHandler</h4>
 <pre>default&nbsp;boolean&nbsp;hasHandler()</pre>
-<div class="block">Defines if this notifier has a <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> to notify.</div>
+<div class="block">Defines if this <code>Notifier</code> has a <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> to notify.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if this notifier has a handler to notify.</dd>

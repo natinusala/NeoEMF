@@ -125,7 +125,7 @@
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/CounterProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">CounterProcessor</a></span></code>
-<div class="block">An <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> wrapper that counts the number of different element.</div>
+<div class="block">An <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that counts the number of different element.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -143,13 +143,13 @@
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/LoggingProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">LoggingProcessor</a></span></code>
-<div class="block">An <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> wrapper that logs every events.</div>
+<div class="block">An <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that logs every events.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/TimerProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">TimerProcessor</a></span></code>
-<div class="block">An <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> wrapper that measures elapsed time between the start and the end of an I/O process.</div>
+<div class="block">An <a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that measures elapsed time between the start and the end of an I/O process.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -168,19 +168,19 @@
 <tbody>
 <tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#AbstractProcessor-fr.inria.atlanmod.neoemf.io.processor.Processor-">AbstractProcessor</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&nbsp;processor)</code>
-<div class="block">Constructs a new <code>AbstractProcessor</code> with an embedded <code>processor</code>.</div>
+<div class="block">Constructs a new <code>AbstractProcessor</code> with the given <code>processor</code>.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/CounterProcessor.html#CounterProcessor-fr.inria.atlanmod.neoemf.io.processor.Processor-">CounterProcessor</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&nbsp;handler)</code>
-<div class="block">Constructs a new <code>CounterProcessor</code> on the underlying <code>handler</code>.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/CounterProcessor.html#CounterProcessor-fr.inria.atlanmod.neoemf.io.processor.Processor-">CounterProcessor</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&nbsp;processor)</code>
+<div class="block">Constructs a new <code>CounterProcessor</code> on the underlying <code>processor</code>.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/CounterProcessor.html#CounterProcessor-fr.inria.atlanmod.neoemf.io.processor.Processor-java.lang.String-">CounterProcessor</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&nbsp;handler,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/CounterProcessor.html#CounterProcessor-fr.inria.atlanmod.neoemf.io.processor.Processor-java.lang.String-">CounterProcessor</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&nbsp;processor,
                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
 <div class="block">Constructs a new <code>CounterProcessor</code> with the given <code>name</code> on the underlying
- <code>handler</code>.</div>
+ <code>processor</code>.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -189,20 +189,20 @@
 </td>
 </tr>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/LoggingProcessor.html#LoggingProcessor-fr.inria.atlanmod.neoemf.io.processor.Processor-">LoggingProcessor</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&nbsp;handler)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/LoggingProcessor.html#LoggingProcessor-fr.inria.atlanmod.neoemf.io.processor.Processor-">LoggingProcessor</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&nbsp;processor)</code>
 <div class="block">Constructs a new <code>LoggingProcessor</code>.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/TimerProcessor.html#TimerProcessor-fr.inria.atlanmod.neoemf.io.processor.Processor-">TimerProcessor</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&nbsp;handler)</code>
-<div class="block">Constructs a new <code>TimerProcessor</code> on the underlying <code>handler</code>.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/TimerProcessor.html#TimerProcessor-fr.inria.atlanmod.neoemf.io.processor.Processor-">TimerProcessor</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&nbsp;processor)</code>
+<div class="block">Constructs a new <code>TimerProcessor</code> on the underlying <code>processor</code>.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/TimerProcessor.html#TimerProcessor-fr.inria.atlanmod.neoemf.io.processor.Processor-java.lang.String-">TimerProcessor</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&nbsp;handler,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/TimerProcessor.html#TimerProcessor-fr.inria.atlanmod.neoemf.io.processor.Processor-java.lang.String-">TimerProcessor</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&nbsp;processor,
               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
 <div class="block">Constructs a new <code>TimerProcessor</code> with the given <code>name</code> on the underlying
- <code>handler</code>.</div>
+ <code>processor</code>.</div>
 </td>
 </tr>
 <tr class="rowColor">
