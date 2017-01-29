@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -75,13 +75,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -136,33 +136,6 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractRe
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#XMI_NS">XMI_NS</a></span></code>
-<div class="block">The namespace prefix of XMI.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#XSI_NS">XSI_NS</a></span></code>
-<div class="block">The namespace prefix of XSI.</div>
-</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -200,18 +173,12 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractRe
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#processCharacters-java.lang.String-">processCharacters</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;characters)</code>
-<div class="block">Processes characters.</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#processEndElement-java.lang.String-java.lang.String-">processEndElement</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
                  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;localName)</code>
 <div class="block">Processes the end of an element.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#processStartElement-java.lang.String-java.lang.String-java.lang.Iterable-">processStartElement</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;localName,
@@ -225,7 +192,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractRe
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;fr.inria.atlanmod.neoemf.io.reader.<a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">AbstractReader</a></h3>
-<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#format-java.lang.String-java.lang.String-">format</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#processEndDocument--">processEndDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#processNamespace-java.lang.String-java.lang.String-">processNamespace</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#processStartDocument--">processStartDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#progress-double-">progress</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#read-java.io.InputStream-">read</a></code></li>
+<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#processCharacters-java.lang.String-">processCharacters</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#processEndDocument--">processEndDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#processNamespace-java.lang.String-java.lang.String-">processNamespace</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#processStartDocument--">processStartDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#progress-double-">progress</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#read-java.io.InputStream-">read</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#run-java.io.InputStream-">run</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.io.AbstractInputNotifier">
@@ -256,42 +223,6 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractRe
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="XSI_NS">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>XSI_NS</h4>
-<pre>protected static final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> XSI_NS</pre>
-<div class="block">The namespace prefix of XSI.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../constant-values.html#fr.inria.atlanmod.neoemf.io.reader.AbstractXmiReader.XSI_NS">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="XMI_NS">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>XMI_NS</h4>
-<pre>protected static final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> XMI_NS</pre>
-<div class="block">The namespace prefix of XMI.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../constant-values.html#fr.inria.atlanmod.neoemf.io.reader.AbstractXmiReader.XMI_NS">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -345,20 +276,6 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractRe
 <dd><code>uri</code> - the URI of the element</dd>
 <dd><code>localName</code> - the name of the element</dd>
 <dd><code>attributes</code> - the attributes of the element</dd>
-</dl>
-</li>
-</ul>
-<a name="processCharacters-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>processCharacters</h4>
-<pre>protected&nbsp;void&nbsp;processCharacters(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;characters)</pre>
-<div class="block">Processes characters.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>characters</code> - a set of characters, as <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -432,13 +349,13 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractRe
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

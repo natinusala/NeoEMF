@@ -75,7 +75,7 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.fr.inria.atlanmod.neoemf.io.reader.AbstractXmiReader">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
@@ -137,21 +137,6 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXm
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>Field Summary</h3>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.fr.inria.atlanmod.neoemf.io.reader.AbstractXmiReader">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;fr.inria.atlanmod.neoemf.io.reader.<a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">AbstractXmiReader</a></h3>
-<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#XMI_NS">XMI_NS</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#XSI_NS">XSI_NS</a></code></li>
-</ul>
-</li>
-</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -183,8 +168,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXm
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/XmiStAXCursorReader.html#read-java.io.InputStream-">read</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;stream)</code>
-<div class="block">Reads a stream and notifies registered <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a>.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/XmiStAXCursorReader.html#run-java.io.InputStream-">run</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;stream)</code>
+<div class="block">Runs the reading on the <code>stream</code>.</div>
 </td>
 </tr>
 </table>
@@ -193,14 +178,14 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXm
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;fr.inria.atlanmod.neoemf.io.reader.<a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">AbstractXmiReader</a></h3>
-<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#defaultProcessor--">defaultProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#processCharacters-java.lang.String-">processCharacters</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#processEndElement-java.lang.String-java.lang.String-">processEndElement</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#processStartElement-java.lang.String-java.lang.String-java.lang.Iterable-">processStartElement</a></code></li>
+<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#defaultProcessor--">defaultProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#processEndElement-java.lang.String-java.lang.String-">processEndElement</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#processStartElement-java.lang.String-java.lang.String-java.lang.Iterable-">processStartElement</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.io.reader.AbstractReader">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;fr.inria.atlanmod.neoemf.io.reader.<a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">AbstractReader</a></h3>
-<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#format-java.lang.String-java.lang.String-">format</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#processEndDocument--">processEndDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#processNamespace-java.lang.String-java.lang.String-">processNamespace</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#processStartDocument--">processStartDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#progress-double-">progress</a></code></li>
+<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#processCharacters-java.lang.String-">processCharacters</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#processEndDocument--">processEndDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#processNamespace-java.lang.String-java.lang.String-">processNamespace</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#processStartDocument--">processStartDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#progress-double-">progress</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#read-java.io.InputStream-">read</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.io.AbstractInputNotifier">
@@ -254,25 +239,23 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXm
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="read-java.io.InputStream-">
+<a name="run-java.io.InputStream-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>read</h4>
-<pre>public&nbsp;void&nbsp;read(<a href="http://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;stream)
-          throws <a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/Reader.html#read-java.io.InputStream-">Reader</a></code></span></div>
-<div class="block">Reads a stream and notifies registered <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a>.</div>
+<h4>run</h4>
+<pre>public&nbsp;void&nbsp;run(<a href="http://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;stream)
+         throws <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#run-java.io.InputStream-">AbstractReader</a></code></span></div>
+<div class="block">Runs the reading on the <code>stream</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/Reader.html#read-java.io.InputStream-">read</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/Reader.html" title="interface in fr.inria.atlanmod.neoemf.io.reader">Reader</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#read-java.io.InputStream-">read</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">AbstractReader</a></code></dd>
+<dd><code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#run-java.io.InputStream-">run</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">AbstractReader</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>stream</code> - the stream to read</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if an error occurred during the I/O process</dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code> - if an error occurred during the I/O process</dd>
 </dl>
 </li>
 </ul>
@@ -330,7 +313,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXm
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.fr.inria.atlanmod.neoemf.io.reader.AbstractXmiReader">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
