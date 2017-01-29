@@ -114,11 +114,11 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io">InputHandler</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/Writer.html" title="interface in fr.inria.atlanmod.neoemf.io.writer">Writer</a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/Writer.html" title="interface in fr.inria.atlanmod.neoemf.io.writer">Writer</a></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/XmiStreamWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer">XmiStreamWriter</a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/XmiStAXCursorWriter.html" title="class in fr.inria.atlanmod.neoemf.io.writer">XmiStAXCursorWriter</a></dd>
 </dl>
 <hr>
 <br>
@@ -161,7 +161,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractWr
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractXmiWriter.html#processAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-">processAttribute</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Attribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Attribute</a>&nbsp;attribute)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractXmiWriter.html#processAttribute-fr.inria.atlanmod.neoemf.io.structure.RawAttribute-">processAttribute</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/RawAttribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure">RawAttribute</a>&nbsp;attribute)</code>
 <div class="block">Process an attribute in the current element.</div>
 </td>
 </tr>
@@ -185,7 +185,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractWr
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractXmiWriter.html#processReference-fr.inria.atlanmod.neoemf.io.structure.Reference-">processReference</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Reference</a>&nbsp;reference)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractXmiWriter.html#processReference-fr.inria.atlanmod.neoemf.io.structure.RawReference-">processReference</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/RawReference.html" title="class in fr.inria.atlanmod.neoemf.io.structure">RawReference</a>&nbsp;reference)</code>
 <div class="block">Process a reference from the current element to another element.</div>
 </td>
 </tr>
@@ -197,7 +197,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractWr
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractXmiWriter.html#processStartElement-fr.inria.atlanmod.neoemf.io.structure.Classifier-">processStartElement</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Classifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Classifier</a>&nbsp;classifier)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractXmiWriter.html#processStartElement-fr.inria.atlanmod.neoemf.io.structure.RawClassifier-">processStartElement</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/RawClassifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure">RawClassifier</a>&nbsp;classifier)</code>
 <div class="block">Process the start of an element.</div>
 </td>
 </tr>
@@ -254,39 +254,39 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractWr
 <li class="blockList">
 <h4>processStartDocument</h4>
 <pre>public&nbsp;void&nbsp;processStartDocument()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html#processStartDocument--">InputHandler</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#processStartDocument--">Handler</a></code></span></div>
 <div class="block">Process the start of a document.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyStartDocument--"><code>InputNotifier.notifyStartDocument()</code></a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartDocument--"><code>Notifier.notifyStartDocument()</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="processStartElement-fr.inria.atlanmod.neoemf.io.structure.Classifier-">
+<a name="processStartElement-fr.inria.atlanmod.neoemf.io.structure.RawClassifier-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>processStartElement</h4>
-<pre>public&nbsp;void&nbsp;processStartElement(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Classifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Classifier</a>&nbsp;classifier)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html#processStartElement-fr.inria.atlanmod.neoemf.io.structure.Classifier-">InputHandler</a></code></span></div>
+<pre>public&nbsp;void&nbsp;processStartElement(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/RawClassifier.html" title="class in fr.inria.atlanmod.neoemf.io.structure">RawClassifier</a>&nbsp;classifier)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#processStartElement-fr.inria.atlanmod.neoemf.io.structure.RawClassifier-">Handler</a></code></span></div>
 <div class="block">Process the start of an element.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>classifier</code> - the classifier of the new element</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.structure.Classifier-"><code>InputNotifier.notifyStartElement(Classifier)</code></a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.structure.RawClassifier-"><code>Notifier.notifyStartElement(RawClassifier)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="processAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-">
+<a name="processAttribute-fr.inria.atlanmod.neoemf.io.structure.RawAttribute-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>processAttribute</h4>
-<pre>public&nbsp;void&nbsp;processAttribute(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Attribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Attribute</a>&nbsp;attribute)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html#processAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-">InputHandler</a></code></span></div>
+<pre>public&nbsp;void&nbsp;processAttribute(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/RawAttribute.html" title="class in fr.inria.atlanmod.neoemf.io.structure">RawAttribute</a>&nbsp;attribute)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#processAttribute-fr.inria.atlanmod.neoemf.io.structure.RawAttribute-">Handler</a></code></span></div>
 <div class="block">Process an attribute in the current element.
  <p>
  An attribute is a simple key/value.</div>
@@ -294,18 +294,18 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractWr
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>attribute</code> - the new attribute</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-"><code>InputNotifier.notifyAttribute(Attribute)</code></a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyAttribute-fr.inria.atlanmod.neoemf.io.structure.RawAttribute-"><code>Notifier.notifyAttribute(RawAttribute)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="processReference-fr.inria.atlanmod.neoemf.io.structure.Reference-">
+<a name="processReference-fr.inria.atlanmod.neoemf.io.structure.RawReference-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>processReference</h4>
-<pre>public&nbsp;void&nbsp;processReference(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Reference.html" title="class in fr.inria.atlanmod.neoemf.io.structure">Reference</a>&nbsp;reference)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html#processReference-fr.inria.atlanmod.neoemf.io.structure.Reference-">InputHandler</a></code></span></div>
+<pre>public&nbsp;void&nbsp;processReference(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/RawReference.html" title="class in fr.inria.atlanmod.neoemf.io.structure">RawReference</a>&nbsp;reference)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#processReference-fr.inria.atlanmod.neoemf.io.structure.RawReference-">Handler</a></code></span></div>
 <div class="block">Process a reference from the current element to another element.
  <p>
  A reference is an attribute which is link to another element.</div>
@@ -313,7 +313,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractWr
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>reference</code> - the new reference</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyReference-fr.inria.atlanmod.neoemf.io.structure.Reference-"><code>InputNotifier.notifyReference(Reference)</code></a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyReference-fr.inria.atlanmod.neoemf.io.structure.RawReference-"><code>Notifier.notifyReference(RawReference)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -324,11 +324,11 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractWr
 <li class="blockList">
 <h4>processEndElement</h4>
 <pre>public&nbsp;void&nbsp;processEndElement()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html#processEndElement--">InputHandler</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#processEndElement--">Handler</a></code></span></div>
 <div class="block">Process the end of the current element.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyEndElement--"><code>InputNotifier.notifyEndElement()</code></a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyEndElement--"><code>Notifier.notifyEndElement()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -339,11 +339,11 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractWr
 <li class="blockList">
 <h4>processEndDocument</h4>
 <pre>public&nbsp;void&nbsp;processEndDocument()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html#processEndDocument--">InputHandler</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#processEndDocument--">Handler</a></code></span></div>
 <div class="block">Process the end of a document.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyEndDocument--"><code>InputNotifier.notifyEndDocument()</code></a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyEndDocument--"><code>Notifier.notifyEndDocument()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -354,13 +354,13 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/writer/AbstractWr
 <li class="blockList">
 <h4>processCharacters</h4>
 <pre>public&nbsp;void&nbsp;processCharacters(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;characters)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html#processCharacters-java.lang.String-">InputHandler</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html#processCharacters-java.lang.String-">Handler</a></code></span></div>
 <div class="block">Process a set of characters.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>characters</code> - the new characters</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputNotifier.html#notifyCharacters-java.lang.String-"><code>InputNotifier.notifyCharacters(String)</code></a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyCharacters-java.lang.String-"><code>Notifier.notifyCharacters(String)</code></a></dd>
 </dl>
 </li>
 </ul>

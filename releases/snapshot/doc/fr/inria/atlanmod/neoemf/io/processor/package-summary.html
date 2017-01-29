@@ -89,7 +89,7 @@
 <tr class="altColor">
 <td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a></td>
 <td class="colLast">
-<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/InputHandler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>InputHandler</code></a> that pre-processes and post-processes received events.</div>
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that pre-processes and post-processes received events.</div>
 </td>
 </tr>
 </tbody>
@@ -110,9 +110,33 @@
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/CounterProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">CounterProcessor</a></td>
+<td class="colLast">
+<div class="block">An <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> wrapper that counts the number of different element.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/DefaultProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">DefaultProcessor</a></td>
+<td class="colLast">
+<div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that notifies registered <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> of events, without any treatment.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/EcoreProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">EcoreProcessor</a></td>
 <td class="colLast">
 <div class="block">A <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a> that creates and links simple elements to an EMF structure.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/LoggingProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">LoggingProcessor</a></td>
+<td class="colLast">
+<div class="block">An <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> wrapper that logs every events.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/TimerProcessor.html" title="class in fr.inria.atlanmod.neoemf.io.processor">TimerProcessor</a></td>
+<td class="colLast">
+<div class="block">An <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> wrapper that measures elapsed time between the start and the end of an I/O process.</div>
 </td>
 </tr>
 <tr class="altColor">
