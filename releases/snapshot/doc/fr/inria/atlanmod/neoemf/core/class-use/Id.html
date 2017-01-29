@@ -120,6 +120,14 @@
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.data.map.core">fr.inria.atlanmod.neoemf.data.map.core</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.data.map.core.store">fr.inria.atlanmod.neoemf.data.map.core.store</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.data.mapdb">fr.inria.atlanmod.neoemf.data.mapdb</a></td>
 <td class="colLast">
 <div class="block">Provides classes related to data management specific to a MapDB implementation.</div>
@@ -132,24 +140,18 @@
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.data.mapdb.store">fr.inria.atlanmod.neoemf.data.mapdb.store</a></td>
-<td class="colLast">
-<div class="block">Provides specific classes to map model-level operations into MapDB-level operations.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.data.store">fr.inria.atlanmod.neoemf.data.store</a></td>
 <td class="colLast">
 <div class="block">Provides classes to map model-level operations into persistence-level operations.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.data.structure">fr.inria.atlanmod.neoemf.data.structure</a></td>
 <td class="colLast">
 <div class="block">Provides simple representations of objects used to translate model-level operations in persistence calls.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.io.persistence">fr.inria.atlanmod.neoemf.io.persistence</a></td>
 <td class="colLast">
 <div class="block">Provides classes linking I/O features to persistence features.</div>
@@ -441,6 +443,85 @@
 </tbody>
 </table>
 </li>
+<li class="blockList"><a name="fr.inria.atlanmod.neoemf.data.map.core">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a> in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/map/core/package-summary.html">fr.inria.atlanmod.neoemf.data.map.core</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/map/core/package-summary.html">fr.inria.atlanmod.neoemf.data.map.core</a> with parameters of type <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ContainerInfo</a></code></td>
+<td class="colLast"><span class="typeNameLabel">MapBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/map/core/MapBackend.html#containerFor-fr.inria.atlanmod.neoemf.core.Id-">containerFor</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
+<div class="block">Retrieves container for a given object <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ClassInfo</a></code></td>
+<td class="colLast"><span class="typeNameLabel">MapBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/map/core/MapBackend.html#metaclassFor-fr.inria.atlanmod.neoemf.core.Id-">metaclassFor</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
+<div class="block">Retrieves the metaclass (<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>) of the element with the given <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">MapBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/map/core/MapBackend.html#storeContainer-fr.inria.atlanmod.neoemf.core.Id-fr.inria.atlanmod.neoemf.data.structure.ContainerInfo-">storeContainer</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
+              <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ContainerInfo</a>&nbsp;container)</code>
+<div class="block">Stores container information for a given id in the Container Map.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">MapBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/map/core/MapBackend.html#storeMetaclass-fr.inria.atlanmod.neoemf.core.Id-fr.inria.atlanmod.neoemf.data.structure.ClassInfo-">storeMetaclass</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
+              <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ClassInfo</a>&nbsp;metaclass)</code>
+<div class="block">Stores metaclass (<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>) information for the element with the given <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="fr.inria.atlanmod.neoemf.data.map.core.store">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a> in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/package-summary.html">fr.inria.atlanmod.neoemf.data.map.core.store</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing fields, and an explanation">
+<caption><span>Fields in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/package-summary.html">fr.inria.atlanmod.neoemf.data.map.core.store</a> with type parameters of type <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected com.github.benmanes.caffeine.cache.Cache&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>,<a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">DirectWriteMapStore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html#persistentObjectsCache">persistentObjectsCache</a></span></code>
+<div class="block">In-memory cache that holds recently loaded <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>s, identified by their <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/package-summary.html">fr.inria.atlanmod.neoemf.data.map.core.store</a> with parameters of type <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DirectWriteMapStore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html#eObject-fr.inria.atlanmod.neoemf.core.Id-">eObject</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DirectWriteMapStore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html#resolveInstanceOf-fr.inria.atlanmod.neoemf.core.Id-">resolveInstanceOf</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
+<div class="block">Compute the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a> associated to the model element with the provided <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="fr.inria.atlanmod.neoemf.data.mapdb">
 <!--   -->
 </a>
@@ -454,29 +535,21 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ContainerInfo</a></code></td>
-<td class="colLast"><span class="typeNameLabel">MapDbPersistenceBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#containerFor-fr.inria.atlanmod.neoemf.core.Id-">containerFor</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
-<div class="block">Retrieves container for a given object <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
-</td>
+<td class="colLast"><span class="typeNameLabel">MapDbPersistenceBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#containerFor-fr.inria.atlanmod.neoemf.core.Id-">containerFor</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ClassInfo</a></code></td>
-<td class="colLast"><span class="typeNameLabel">MapDbPersistenceBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#metaclassFor-fr.inria.atlanmod.neoemf.core.Id-">metaclassFor</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>
-<div class="block">Retrieves the metaclass (<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>) of the element with the given <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
-</td>
+<td class="colLast"><span class="typeNameLabel">MapDbPersistenceBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#metaclassFor-fr.inria.atlanmod.neoemf.core.Id-">metaclassFor</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">MapDbPersistenceBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#storeContainer-fr.inria.atlanmod.neoemf.core.Id-fr.inria.atlanmod.neoemf.data.structure.ContainerInfo-">storeContainer</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
-              <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ContainerInfo</a>&nbsp;container)</code>
-<div class="block">Stores container information for a given id in the Container Map.</div>
-</td>
+              <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ContainerInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ContainerInfo</a>&nbsp;container)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">MapDbPersistenceBackend.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html#storeMetaclass-fr.inria.atlanmod.neoemf.core.Id-fr.inria.atlanmod.neoemf.data.structure.ClassInfo-">storeMetaclass</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id,
-              <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ClassInfo</a>&nbsp;metaclass)</code>
-<div class="block">Stores metaclass (<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EClass</code></a>) information for the element with the given <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
-</td>
+              <a href="../../../../../../fr/inria/atlanmod/neoemf/data/structure/ClassInfo.html" title="class in fr.inria.atlanmod.neoemf.data.structure">ClassInfo</a>&nbsp;metaclass)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -525,39 +598,6 @@
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">IdSerializer.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/serializer/IdSerializer.html#serialize-org.mapdb.DataOutput2-fr.inria.atlanmod.neoemf.core.Id-">serialize</a></span>(<a href="http://www.mapdb.org/javadoc/latest/mapdb/org/mapdb/DataOutput2.html?is-external=true" title="class or interface in org.mapdb">DataOutput2</a>&nbsp;out,
          <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li class="blockList"><a name="fr.inria.atlanmod.neoemf.data.mapdb.store">
-<!--   -->
-</a>
-<h3>Uses of <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a> in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb.store</a></h3>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing fields, and an explanation">
-<caption><span>Fields in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb.store</a> with type parameters of type <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>protected com.github.benmanes.caffeine.cache.Cache&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>,<a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">DirectWriteMapDbStore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#persistentObjectsCache">persistentObjectsCache</a></span></code>
-<div class="block">In-memory cache that holds recently loaded <a href="../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a>s, identified by their <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>Id</code></a>.</div>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/package-summary.html">fr.inria.atlanmod.neoemf.data.mapdb.store</a> with parameters of type <a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DirectWriteMapDbStore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#eObject-fr.inria.atlanmod.neoemf.core.Id-">eObject</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/core/Id.html" title="interface in fr.inria.atlanmod.neoemf.core">Id</a>&nbsp;id)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>

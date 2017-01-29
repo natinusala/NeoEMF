@@ -95,6 +95,10 @@
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.data.map.core.store">fr.inria.atlanmod.neoemf.data.map.core.store</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.data.mapdb.store">fr.inria.atlanmod.neoemf.data.mapdb.store</a></td>
 <td class="colLast">
 <div class="block">Provides specific classes to map model-level operations into MapDB-level operations.</div>
@@ -153,6 +157,47 @@
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/hbase/store/ReadOnlyHBaseStore.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.store">ReadOnlyHBaseStore</a></span></code>
 <div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/hbase/store/DirectWriteHBaseStore.html" title="class in fr.inria.atlanmod.neoemf.data.hbase.store"><code>DirectWriteHBaseStore</code></a> that only allows read operations on the underlying database.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="fr.inria.atlanmod.neoemf.data.map.core.store">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractDirectWriteStore</a> in <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/package-summary.html">fr.inria.atlanmod.neoemf.data.map.core.store</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">AbstractDirectWriteStore</a> in <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/package-summary.html">fr.inria.atlanmod.neoemf.data.map.core.store</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteCachedMapStore.html" title="class in fr.inria.atlanmod.neoemf.data.map.core.store">DirectWriteCachedMapStore</a>&lt;P extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/MapBackend.html" title="interface in fr.inria.atlanmod.neoemf.data.map.core">MapBackend</a>&gt;</span></code>
+<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html" title="class in fr.inria.atlanmod.neoemf.data.map.core.store"><code>DirectWriteMapStore</code></a> that uses an internal cache to store persisted <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a>s that are part
+ of multi-valued <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a>s to speed-up their access.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html" title="class in fr.inria.atlanmod.neoemf.data.map.core.store">DirectWriteMapStore</a>&lt;P extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/MapBackend.html" title="interface in fr.inria.atlanmod.neoemf.data.map.core">MapBackend</a>&gt;</span></code>
+<div class="block">An abstract <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html" title="class in fr.inria.atlanmod.neoemf.data.store"><code>AbstractDirectWriteStore</code></a> that redirects certain methods according to the instance of the
+ encountered <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithIndices.html" title="class in fr.inria.atlanmod.neoemf.data.map.core.store">DirectWriteMapStoreWithIndices</a>&lt;P extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/MapBackend.html" title="interface in fr.inria.atlanmod.neoemf.data.map.core">MapBackend</a>&gt;</span></code>
+<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html" title="class in fr.inria.atlanmod.neoemf.data.map.core.store"><code>DirectWriteMapStore</code></a> that persists <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> indices instead of serialized arrays.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html" title="class in fr.inria.atlanmod.neoemf.data.map.core.store">DirectWriteMapStoreWithLists</a>&lt;P extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/MapBackend.html" title="interface in fr.inria.atlanmod.neoemf.data.map.core">MapBackend</a>&gt;</span></code>
+<div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html" title="class in fr.inria.atlanmod.neoemf.data.map.core.store"><code>DirectWriteMapStore</code></a> that uses Java <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>s instead of arrays to persist multi-valued
+ <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EAttribute</code></a>s and <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a>s.</div>
 </td>
 </tr>
 </tbody>

@@ -18,12 +18,6 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
-var altColor = "altColor";
-var rowColor = "rowColor";
-var tableTab = "tableTab";
-var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -74,16 +68,16 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.fr.inria.atlanmod.neoemf.data.mapdb.store.DirectWriteMapDbStore">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.fr.inria.atlanmod.neoemf.data.map.core.store.DirectWriteMapStoreWithLists">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.fr.inria.atlanmod.neoemf.data.map.core.store.DirectWriteMapStoreWithLists">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.summary">Method</a></li>
+<li><a href="#methods.inherited.from.class.fr.inria.atlanmod.neoemf.data.map.core.store.DirectWriteMapStoreWithLists">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">Method</a></li>
+<li>Method</li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -103,13 +97,18 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractPersistentStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">fr.inria.atlanmod.neoemf.data.store.AbstractPersistentStore</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">fr.inria.atlanmod.neoemf.data.store.AbstractDirectWriteStore</a>&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/MapDbPersistenceBackend.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb">MapDbPersistenceBackend</a>&gt;</li>
+<li><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html" title="class in fr.inria.atlanmod.neoemf.data.store">fr.inria.atlanmod.neoemf.data.store.AbstractDirectWriteStore</a>&lt;P&gt;</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">fr.inria.atlanmod.neoemf.data.mapdb.store.DirectWriteMapDbStore</a></li>
+<li><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html" title="class in fr.inria.atlanmod.neoemf.data.map.core.store">fr.inria.atlanmod.neoemf.data.map.core.store.DirectWriteMapStore</a>&lt;P&gt;</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html" title="class in fr.inria.atlanmod.neoemf.data.map.core.store">fr.inria.atlanmod.neoemf.data.map.core.store.DirectWriteMapStoreWithLists</a>&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/MapBackend.html" title="interface in fr.inria.atlanmod.neoemf.data.map.core">MapBackend</a>&gt;</li>
 <li>
 <ul class="inheritance">
 <li>fr.inria.atlanmod.neoemf.data.mapdb.store.DirectWriteMapDbListsStore</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -129,7 +128,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">DirectWriteMapDbListsStore</span>
-extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></pre>
+extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html" title="class in fr.inria.atlanmod.neoemf.data.map.core.store">DirectWriteMapStoreWithLists</a>&lt;<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/MapBackend.html" title="interface in fr.inria.atlanmod.neoemf.data.map.core">MapBackend</a>&gt;</pre>
 <div class="block">A <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store"><code>DirectWriteMapDbStore</code></a> that uses Java <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>s instead of arrays to persist multi-valued
  <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EAttribute</code></a>s and <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EReference</code></a>s.
  <p>
@@ -153,6 +152,21 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested.class.summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="nested.classes.inherited.from.class.fr.inria.atlanmod.neoemf.data.map.core.store.DirectWriteMapStoreWithLists">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from class&nbsp;fr.inria.atlanmod.neoemf.data.map.core.store.<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html" title="class in fr.inria.atlanmod.neoemf.data.map.core.store">DirectWriteMapStoreWithLists</a></h3>
+<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.FeatureKeyCacheLoader.html" title="class in fr.inria.atlanmod.neoemf.data.map.core.store">DirectWriteMapStoreWithLists.FeatureKeyCacheLoader</a></code></li>
+</ul>
+</li>
+</ul>
 <!-- =========== FIELD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="field.summary">
@@ -160,11 +174,18 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/
 </a>
 <h3>Field Summary</h3>
 <ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.fr.inria.atlanmod.neoemf.data.mapdb.store.DirectWriteMapDbStore">
+<li class="blockList"><a name="fields.inherited.from.class.fr.inria.atlanmod.neoemf.data.map.core.store.DirectWriteMapStoreWithLists">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;fr.inria.atlanmod.neoemf.data.mapdb.store.<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></h3>
-<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#DEFAULT_CACHE_SIZE">DEFAULT_CACHE_SIZE</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#persistentObjectsCache">persistentObjectsCache</a></code></li>
+<h3>Fields inherited from class&nbsp;fr.inria.atlanmod.neoemf.data.map.core.store.<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html" title="class in fr.inria.atlanmod.neoemf.data.map.core.store">DirectWriteMapStoreWithLists</a></h3>
+<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html#objectsCache">objectsCache</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.fr.inria.atlanmod.neoemf.data.map.core.store.DirectWriteMapStore">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;fr.inria.atlanmod.neoemf.data.map.core.store.<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html" title="class in fr.inria.atlanmod.neoemf.data.map.core.store">DirectWriteMapStore</a></h3>
+<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html#DEFAULT_CACHE_SIZE">DEFAULT_CACHE_SIZE</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html#persistentObjectsCache">persistentObjectsCache</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.fr.inria.atlanmod.neoemf.data.store.AbstractDirectWriteStore">
@@ -209,124 +230,19 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/
 <!--   -->
 </a>
 <h3>Method Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tr id="i0" class="altColor">
-<td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html#addAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-java.lang.Object-">addAttribute</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-            <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EAttribute</a>&nbsp;attribute,
-            int&nbsp;index,
-            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>
-<div class="block">Adds the <code>value</code> at the <code>index</code> in the content of the <code>attribute</code> of the <code>object</code>.</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html#addReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-fr.inria.atlanmod.neoemf.core.PersistentEObject-">addReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-            <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;reference,
-            int&nbsp;index,
-            <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;referencedObject)</code>
-<div class="block">Adds the <code>value</code> at the <code>index</code> in the content of the <code>reference</code> of the <code>object</code>.</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html#clear-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">clear</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a>&nbsp;internalObject,
-     <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EStructuralFeature</a>&nbsp;feature)</code>
-<div class="block">Removes all values form the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true#eGet-org.eclipse.emf.ecore.EStructuralFeature-boolean-" title="class or interface in org.eclipse.emf.ecore"><code>content</code></a> of the object's feature</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html#getAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-">getAttribute</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-            <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EAttribute</a>&nbsp;attribute,
-            int&nbsp;index)</code>
-<div class="block">Returns the value at the <code>index</code> in the content of the <code>attribute</code> of the <code>object</code>.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html#getFromMap-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EStructuralFeature-">getFromMap</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-          <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EStructuralFeature</a>&nbsp;feature)</code>
-<div class="block">Returns the value associated to (<code>object</code>, <code>feature</code>) in the underlying database.</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html#getReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-">getReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-            <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;reference,
-            int&nbsp;index)</code>
-<div class="block">Returns the value at the <code>index</code> in the content of the <code>reference</code> of the <code>object</code>.</div>
-</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html#indexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">indexOf</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a>&nbsp;internalObject,
-       <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EStructuralFeature</a>&nbsp;feature,
-       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>
-<div class="block">Returns the first index of the given value in the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true#eGet-org.eclipse.emf.ecore.EStructuralFeature-boolean-" title="class or interface in org.eclipse.emf.ecore"><code>content</code></a> of the object's feature.</div>
-</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html#lastIndexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">lastIndexOf</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a>&nbsp;internalObject,
-           <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EStructuralFeature</a>&nbsp;feature,
-           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>
-<div class="block">Returns the last index of the given value in the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true#eGet-org.eclipse.emf.ecore.EStructuralFeature-boolean-" title="class or interface in org.eclipse.emf.ecore"><code>content</code></a> of the object's feature.</div>
-</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html#removeAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-">removeAttribute</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-               <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EAttribute</a>&nbsp;attribute,
-               int&nbsp;index)</code>
-<div class="block">Removes the value at the <code>index</code> in the content of the <code>attribute</code> of the <code>object</code>.</div>
-</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html#removeReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-">removeReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-               <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;reference,
-               int&nbsp;index)</code>
-<div class="block">Removes the value at the <code>index</code> in the content of the <code>reference</code> of the <code>object</code>.</div>
-</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html#setAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-java.lang.Object-">setAttribute</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-            <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EAttribute</a>&nbsp;attribute,
-            int&nbsp;index,
-            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>
-<div class="block">Sets the value at the <code>index</code> in the content of the <code>attribute</code> of the <code>object</code>.</div>
-</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html#setReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-fr.inria.atlanmod.neoemf.core.PersistentEObject-">setReference</a></span>(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-            <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;reference,
-            int&nbsp;index,
-            <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;value)</code>
-<div class="block">Sets the value at the <code>index</code> in the content of the <code>reference</code> of the <code>object</code>.</div>
-</td>
-</tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbListsStore.html#size-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">size</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a>&nbsp;internalObject,
-    <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EStructuralFeature</a>&nbsp;feature)</code>
-<div class="block">Returns the number of values in the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true#eGet-org.eclipse.emf.ecore.EStructuralFeature-boolean-" title="class or interface in org.eclipse.emf.ecore"><code>content</code></a> of the object's feature.</div>
-</td>
-</tr>
-</table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.data.mapdb.store.DirectWriteMapDbStore">
+<li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.data.map.core.store.DirectWriteMapStoreWithLists">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;fr.inria.atlanmod.neoemf.data.mapdb.store.<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></h3>
-<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#contains-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">contains</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#eObject-fr.inria.atlanmod.neoemf.core.Id-">eObject</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#getContainer-org.eclipse.emf.ecore.InternalEObject-">getContainer</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#getContainingFeature-org.eclipse.emf.ecore.InternalEObject-">getContainingFeature</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#getFromMap-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">getFromMap</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#isSet-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">isSet</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#toArray-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">toArray</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#toArray-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-T:A-">toArray</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#unset-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">unset</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#updateContainment-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-">updateContainment</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#updateInstanceOf-fr.inria.atlanmod.neoemf.core.PersistentEObject-">updateInstanceOf</a></code></li>
+<h3>Methods inherited from class&nbsp;fr.inria.atlanmod.neoemf.data.map.core.store.<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html" title="class in fr.inria.atlanmod.neoemf.data.map.core.store">DirectWriteMapStoreWithLists</a></h3>
+<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html#addAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-java.lang.Object-">addAttribute</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html#addReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-fr.inria.atlanmod.neoemf.core.PersistentEObject-">addReference</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html#clear-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">clear</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html#getAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-">getAttribute</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html#getFromMap-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EStructuralFeature-">getFromMap</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html#getReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-">getReference</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html#indexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">indexOf</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html#lastIndexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">lastIndexOf</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html#manyValueFrom-java.lang.Object-">manyValueFrom</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html#removeAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-">removeAttribute</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html#removeReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-">removeReference</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html#setAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-java.lang.Object-">setAttribute</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html#setReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-fr.inria.atlanmod.neoemf.core.PersistentEObject-">setReference</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStoreWithLists.html#size-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">size</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.data.map.core.store.DirectWriteMapStore">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;fr.inria.atlanmod.neoemf.data.map.core.store.<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html" title="class in fr.inria.atlanmod.neoemf.data.map.core.store">DirectWriteMapStore</a></h3>
+<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html#contains-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">contains</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html#eObject-fr.inria.atlanmod.neoemf.core.Id-">eObject</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html#getContainer-org.eclipse.emf.ecore.InternalEObject-">getContainer</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html#getContainingFeature-org.eclipse.emf.ecore.InternalEObject-">getContainingFeature</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html#getFromMap-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-">getFromMap</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html#isSet-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">isSet</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html#resolveInstanceOf-fr.inria.atlanmod.neoemf.core.Id-">resolveInstanceOf</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html#toArray-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">toArray</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html#toArray-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-T:A-">toArray</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html#unset-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">unset</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html#updateContainment-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-">updateContainment</a>, <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/map/core/store/DirectWriteMapStore.html#updateInstanceOf-fr.inria.atlanmod.neoemf.core.PersistentEObject-">updateInstanceOf</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.data.store.AbstractDirectWriteStore">
@@ -377,353 +293,6 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>resource</code> - the resource to persist and access</dd>
 <dd><code>backend</code> - the persistence back-end used to store the model</dd>
-</dl>
-</li>
-</ul>
-</li>
-</ul>
-<!-- ============ METHOD DETAIL ========== -->
-<ul class="blockList">
-<li class="blockList"><a name="method.detail">
-<!--   -->
-</a>
-<h3>Method Detail</h3>
-<a name="indexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>indexOf</h4>
-<pre>public&nbsp;int&nbsp;indexOf(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a>&nbsp;internalObject,
-                   <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EStructuralFeature</a>&nbsp;feature,
-                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#indexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">AbstractDirectWriteStore</a></code></span></div>
-<div class="block">Returns the first index of the given value in the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true#eGet-org.eclipse.emf.ecore.EStructuralFeature-boolean-" title="class or interface in org.eclipse.emf.ecore"><code>content</code></a> of the object's feature.
- <p>
- By default, calls the associated methods depending on the type of the <code>feature</code>.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true#indexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-" title="class or interface in org.eclipse.emf.ecore">indexOf</a></code>&nbsp;in interface&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject.EStore</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#indexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">indexOf</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>internalObject</code> - the object in question.</dd>
-<dd><code>feature</code> - a <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/ETypedElement.html?is-external=true#isMany--" title="class or interface in org.eclipse.emf.ecore"><code>many-valued</code></a> feature of the object.</dd>
-<dd><code>value</code> - the value in question.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the first index of the given value in the content of the object's feature.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#indexOfAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-java.lang.Object-"><code>AbstractDirectWriteStore.indexOfAttribute(PersistentEObject, EAttribute, Object)</code></a>, 
-<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#indexOfReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-"><code>AbstractDirectWriteStore.indexOfReference(PersistentEObject, EReference, PersistentEObject)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="lastIndexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>lastIndexOf</h4>
-<pre>public&nbsp;int&nbsp;lastIndexOf(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a>&nbsp;internalObject,
-                       <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EStructuralFeature</a>&nbsp;feature,
-                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#lastIndexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">AbstractDirectWriteStore</a></code></span></div>
-<div class="block">Returns the last index of the given value in the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true#eGet-org.eclipse.emf.ecore.EStructuralFeature-boolean-" title="class or interface in org.eclipse.emf.ecore"><code>content</code></a> of the object's feature.
- <p>
- By default, calls the associated methods depending on the type of the <code>feature</code>.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true#lastIndexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-" title="class or interface in org.eclipse.emf.ecore">lastIndexOf</a></code>&nbsp;in interface&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject.EStore</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#lastIndexOf-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-">lastIndexOf</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>internalObject</code> - the object in question.</dd>
-<dd><code>feature</code> - a <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/ETypedElement.html?is-external=true#isMany--" title="class or interface in org.eclipse.emf.ecore"><code>many-valued</code></a> feature of the object.</dd>
-<dd><code>value</code> - the value in question.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the last index of the given value in the content of the object's feature.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#lastIndexOfAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-java.lang.Object-"><code>AbstractDirectWriteStore.lastIndexOfAttribute(PersistentEObject, EAttribute, Object)</code></a>, 
-<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#lastIndexOfReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-"><code>AbstractDirectWriteStore.lastIndexOfReference(PersistentEObject, EReference, PersistentEObject)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="clear-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>clear</h4>
-<pre>public&nbsp;void&nbsp;clear(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a>&nbsp;internalObject,
-                  <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EStructuralFeature</a>&nbsp;feature)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#clear-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">AbstractDirectWriteStore</a></code></span></div>
-<div class="block">Removes all values form the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true#eGet-org.eclipse.emf.ecore.EStructuralFeature-boolean-" title="class or interface in org.eclipse.emf.ecore"><code>content</code></a> of the object's feature
- <p>
- By default, calls the associated methods depending on the type of the <code>feature</code>.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true#clear-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-" title="class or interface in org.eclipse.emf.ecore">clear</a></code>&nbsp;in interface&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject.EStore</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#clear-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">clear</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>internalObject</code> - the object in question.</dd>
-<dd><code>feature</code> - a <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/ETypedElement.html?is-external=true#isMany--" title="class or interface in org.eclipse.emf.ecore"><code>many-valued</code></a> feature of the object.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#clearAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-"><code>AbstractDirectWriteStore.clearAttribute(PersistentEObject, EAttribute)</code></a>, 
-<a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#clearReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-"><code>AbstractDirectWriteStore.clearReference(PersistentEObject, EReference)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="getAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getAttribute</h4>
-<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;getAttribute(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-                              <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EAttribute</a>&nbsp;attribute,
-                              int&nbsp;index)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#getAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-">AbstractDirectWriteStore</a></code></span></div>
-<div class="block">Returns the value at the <code>index</code> in the content of the <code>attribute</code> of the <code>object</code>.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#getAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-">getAttribute</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>object</code> - the object</dd>
-<dd><code>attribute</code> - an attribute of the <code>object</code></dd>
-<dd><code>index</code> - an index within the content or <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html#NO_INDEX"><code>PersistentStore.NO_INDEX</code></a></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the value</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#get-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-"><code>AbstractDirectWriteStore.get(InternalEObject, EStructuralFeature, int)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="getReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getReference</h4>
-<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;getReference(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-                              <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;reference,
-                              int&nbsp;index)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#getReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-">AbstractDirectWriteStore</a></code></span></div>
-<div class="block">Returns the value at the <code>index</code> in the content of the <code>reference</code> of the <code>object</code>.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#getReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-">getReference</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>object</code> - the object</dd>
-<dd><code>reference</code> - a reference of the <code>object</code></dd>
-<dd><code>index</code> - an index within the content or <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html#NO_INDEX"><code>PersistentStore.NO_INDEX</code></a></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the value</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#get-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-"><code>AbstractDirectWriteStore.get(InternalEObject, EStructuralFeature, int)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="setAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-java.lang.Object-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setAttribute</h4>
-<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;setAttribute(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-                              <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EAttribute</a>&nbsp;attribute,
-                              int&nbsp;index,
-                              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#setAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-java.lang.Object-">AbstractDirectWriteStore</a></code></span></div>
-<div class="block">Sets the value at the <code>index</code> in the content of the <code>attribute</code> of the <code>object</code>.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#setAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-java.lang.Object-">setAttribute</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>object</code> - the object</dd>
-<dd><code>attribute</code> - an attribute of the <code>object</code></dd>
-<dd><code>index</code> - an index within the content or <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html#NO_INDEX"><code>PersistentStore.NO_INDEX</code></a></dd>
-<dd><code>value</code> - the new value</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the previous value</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#set-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-java.lang.Object-"><code>AbstractDirectWriteStore.set(InternalEObject, EStructuralFeature, int, Object)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="setReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-fr.inria.atlanmod.neoemf.core.PersistentEObject-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setReference</h4>
-<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;setReference(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-                              <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;reference,
-                              int&nbsp;index,
-                              <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;value)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#setReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-fr.inria.atlanmod.neoemf.core.PersistentEObject-">AbstractDirectWriteStore</a></code></span></div>
-<div class="block">Sets the value at the <code>index</code> in the content of the <code>reference</code> of the <code>object</code>.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#setReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-fr.inria.atlanmod.neoemf.core.PersistentEObject-">setReference</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>object</code> - the object</dd>
-<dd><code>reference</code> - a reference of the <code>object</code></dd>
-<dd><code>index</code> - an index within the content or <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/PersistentStore.html#NO_INDEX"><code>PersistentStore.NO_INDEX</code></a></dd>
-<dd><code>value</code> - the new value</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the previous value</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#set-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-java.lang.Object-"><code>AbstractDirectWriteStore.set(InternalEObject, EStructuralFeature, int, Object)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="addAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-java.lang.Object-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>addAttribute</h4>
-<pre>protected&nbsp;void&nbsp;addAttribute(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-                            <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EAttribute</a>&nbsp;attribute,
-                            int&nbsp;index,
-                            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#addAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-java.lang.Object-">AbstractDirectWriteStore</a></code></span></div>
-<div class="block">Adds the <code>value</code> at the <code>index</code> in the content of the <code>attribute</code> of the <code>object</code>.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#addAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-java.lang.Object-">addAttribute</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>object</code> - the object</dd>
-<dd><code>attribute</code> - a many-valued attribute of the <code>object</code></dd>
-<dd><code>index</code> - an index within the content</dd>
-<dd><code>value</code> - the value to add</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#add-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-java.lang.Object-"><code>AbstractDirectWriteStore.add(InternalEObject, EStructuralFeature, int, Object)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="addReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-fr.inria.atlanmod.neoemf.core.PersistentEObject-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>addReference</h4>
-<pre>protected&nbsp;void&nbsp;addReference(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-                            <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;reference,
-                            int&nbsp;index,
-                            <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;referencedObject)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#addReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-fr.inria.atlanmod.neoemf.core.PersistentEObject-">AbstractDirectWriteStore</a></code></span></div>
-<div class="block">Adds the <code>value</code> at the <code>index</code> in the content of the <code>reference</code> of the <code>object</code>.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#addReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-fr.inria.atlanmod.neoemf.core.PersistentEObject-">addReference</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>object</code> - the object</dd>
-<dd><code>reference</code> - a many-valued reference of the <code>object</code></dd>
-<dd><code>index</code> - an index within the content</dd>
-<dd><code>referencedObject</code> - the value to add</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#add-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-java.lang.Object-"><code>AbstractDirectWriteStore.add(InternalEObject, EStructuralFeature, int, Object)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="removeAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>removeAttribute</h4>
-<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;removeAttribute(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-                                 <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EAttribute</a>&nbsp;attribute,
-                                 int&nbsp;index)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#removeAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-">AbstractDirectWriteStore</a></code></span></div>
-<div class="block">Removes the value at the <code>index</code> in the content of the <code>attribute</code> of the <code>object</code>.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#removeAttribute-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EAttribute-int-">removeAttribute</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>object</code> - the object</dd>
-<dd><code>attribute</code> - a many-valued attribute of the <code>object</code></dd>
-<dd><code>index</code> - the index within the content of the value to remove</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the removed value</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#remove-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-"><code>AbstractDirectWriteStore.remove(InternalEObject, EStructuralFeature, int)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="removeReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>removeReference</h4>
-<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;removeReference(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-                                 <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;reference,
-                                 int&nbsp;index)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#removeReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-">AbstractDirectWriteStore</a></code></span></div>
-<div class="block">Removes the value at the <code>index</code> in the content of the <code>reference</code> of the <code>object</code>.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#removeReference-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EReference-int-">removeReference</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>object</code> - the object</dd>
-<dd><code>reference</code> - a many-valued reference of the <code>object</code></dd>
-<dd><code>index</code> - the index within the content of the value to remove</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the removed value</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/store/AbstractDirectWriteStore.html#remove-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-int-"><code>AbstractDirectWriteStore.remove(InternalEObject, EStructuralFeature, int)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="size-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>size</h4>
-<pre>public&nbsp;int&nbsp;size(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a>&nbsp;internalObject,
-                <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EStructuralFeature</a>&nbsp;feature)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true#size-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-" title="class or interface in org.eclipse.emf.ecore">org.eclipse.emf.ecore.InternalEObject.EStore</a></code></span></div>
-<div class="block">Returns the number of values in the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true#eGet-org.eclipse.emf.ecore.EStructuralFeature-boolean-" title="class or interface in org.eclipse.emf.ecore"><code>content</code></a> of the object's feature.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true#size-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-" title="class or interface in org.eclipse.emf.ecore">size</a></code>&nbsp;in interface&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.EStore.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject.EStore</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#size-org.eclipse.emf.ecore.InternalEObject-org.eclipse.emf.ecore.EStructuralFeature-">size</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>internalObject</code> - the object in question.</dd>
-<dd><code>feature</code> - a <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/ETypedElement.html?is-external=true#isMany--" title="class or interface in org.eclipse.emf.ecore"><code>many-valued</code></a> feature of the object.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the number of values in the content of the object's feature.</dd>
-</dl>
-</li>
-</ul>
-<a name="getFromMap-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EStructuralFeature-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>getFromMap</h4>
-<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;getFromMap(<a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core">PersistentEObject</a>&nbsp;object,
-                            <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EStructuralFeature</a>&nbsp;feature)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#getFromMap-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EStructuralFeature-">DirectWriteMapDbStore</a></code></span></div>
-<div class="block">Returns the value associated to (<code>object</code>, <code>feature</code>) in the underlying database.
- <p>
- This method behaves like: <code>getFromMap(FeatureKey.from(object, feature)</code>.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#getFromMap-fr.inria.atlanmod.neoemf.core.PersistentEObject-org.eclipse.emf.ecore.EStructuralFeature-">getFromMap</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html" title="class in fr.inria.atlanmod.neoemf.data.mapdb.store">DirectWriteMapDbStore</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>object</code> - the <a href="../../../../../../../fr/inria/atlanmod/neoemf/core/PersistentEObject.html" title="interface in fr.inria.atlanmod.neoemf.core"><code>PersistentEObject</code></a> to look for</dd>
-<dd><code>feature</code> - the <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.html?is-external=true" title="class or interface in org.eclipse.emf.ecore"><code>EStructuralFeature</code></a> of <code>object</code> to look for</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> stored in the database if it exists, <code>null</code> otherwise. Note that the returned
- <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> can be a single element or a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a>.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/DirectWriteMapDbStore.html#getFromMap-fr.inria.atlanmod.neoemf.data.structure.FeatureKey-"><code>DirectWriteMapDbStore.getFromMap(FeatureKey)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -780,16 +349,16 @@ extends <a href="../../../../../../../fr/inria/atlanmod/neoemf/data/mapdb/store/
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.fr.inria.atlanmod.neoemf.data.mapdb.store.DirectWriteMapDbStore">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.fr.inria.atlanmod.neoemf.data.map.core.store.DirectWriteMapStoreWithLists">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.fr.inria.atlanmod.neoemf.data.map.core.store.DirectWriteMapStoreWithLists">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.summary">Method</a></li>
+<li><a href="#methods.inherited.from.class.fr.inria.atlanmod.neoemf.data.map.core.store.DirectWriteMapStoreWithLists">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">Method</a></li>
+<li>Method</li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">
