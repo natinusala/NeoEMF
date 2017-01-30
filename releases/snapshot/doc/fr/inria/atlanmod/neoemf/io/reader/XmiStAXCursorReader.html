@@ -149,7 +149,9 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXm
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/XmiStAXCursorReader.html#XmiStAXCursorReader--">XmiStAXCursorReader</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/XmiStAXCursorReader.html#XmiStAXCursorReader-fr.inria.atlanmod.neoemf.io.processor.Processor-">XmiStAXCursorReader</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&nbsp;processor)</code>
+<div class="block">Constructs a new <code>XmiStAXCursorReader</code> with the given <code>processor</code>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -178,7 +180,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXm
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;fr.inria.atlanmod.neoemf.io.reader.<a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">AbstractXmiReader</a></h3>
-<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#defaultProcessor--">defaultProcessor</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#flushStartElement--">flushStartElement</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#readAttribute-java.lang.String-java.lang.String-java.lang.String-">readAttribute</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#readEndElement--">readEndElement</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#readStartElement-java.lang.String-java.lang.String-">readStartElement</a></code></li>
+<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#flushStartElement--">flushStartElement</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#readAttribute-java.lang.String-java.lang.String-java.lang.String-">readAttribute</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#readEndElement--">readEndElement</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#readStartElement-java.lang.String-java.lang.String-">readStartElement</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.neoemf.io.reader.AbstractReader">
@@ -192,7 +194,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXm
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;fr.inria.atlanmod.neoemf.io.<a href="../../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="class in fr.inria.atlanmod.neoemf.io">AbstractNotifier</a></h3>
-<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html#andThen-H-">andThen</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html#handler--">handler</a></code></li>
+<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html#next--">next</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -206,7 +208,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXm
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;fr.inria.atlanmod.neoemf.io.<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a></h3>
-<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#andThen-T-">andThen</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#handler--">handler</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#hasHandler--">hasHandler</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyAttribute-fr.inria.atlanmod.neoemf.io.structure.RawAttribute-">notifyAttribute</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyCharacters-java.lang.String-">notifyCharacters</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyEndDocument--">notifyEndDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyEndElement--">notifyEndElement</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyReference-fr.inria.atlanmod.neoemf.io.structure.RawReference-">notifyReference</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartDocument--">notifyStartDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.structure.RawClassifier-">notifyStartElement</a></code></li>
+<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#next--">next</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyAttribute-fr.inria.atlanmod.neoemf.io.structure.RawAttribute-">notifyAttribute</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyCharacters-java.lang.String-">notifyCharacters</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyEndDocument--">notifyEndDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyEndElement--">notifyEndElement</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyReference-fr.inria.atlanmod.neoemf.io.structure.RawReference-">notifyReference</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartDocument--">notifyStartDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.structure.RawClassifier-">notifyStartElement</a></code></li>
 </ul>
 </li>
 </ul>
@@ -222,13 +224,18 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXm
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="XmiStAXCursorReader--">
+<a name="XmiStAXCursorReader-fr.inria.atlanmod.neoemf.io.processor.Processor-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>XmiStAXCursorReader</h4>
-<pre>public&nbsp;XmiStAXCursorReader()</pre>
+<pre>public&nbsp;XmiStAXCursorReader(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&nbsp;processor)</pre>
+<div class="block">Constructs a new <code>XmiStAXCursorReader</code> with the given <code>processor</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>processor</code> - the processor to notify</dd>
+</dl>
 </li>
 </ul>
 </li>
