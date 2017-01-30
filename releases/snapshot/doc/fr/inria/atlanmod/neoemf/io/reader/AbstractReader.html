@@ -166,20 +166,20 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/Reader.
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#processCharacters-java.lang.String-">processCharacters</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;characters)</code>
-<div class="block">Processes characters.</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#progress-double-">progress</a></span>(double&nbsp;percent)</code>
 <div class="block">Logs the progress of the current reading.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#read-java.io.InputStream-">read</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;stream)</code>
 <div class="block">Reads a stream and notifies registered <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a>.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#readCharacters-java.lang.String-">readCharacters</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;characters)</code>
+<div class="block">Processes characters.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -192,7 +192,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/Reader.
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#readNamespace-java.lang.String-java.lang.String-">readNamespace</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;prefix,
              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</code>
-<div class="block">Processes a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/RawNamespace.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>RawNamespace</code></a> declaration.</div>
+<div class="block">Processes a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Namespace.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Namespace</code></a> declaration.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -227,7 +227,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/Reader.
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;fr.inria.atlanmod.neoemf.io.<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a></h3>
-<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#next--">next</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyAttribute-fr.inria.atlanmod.neoemf.io.structure.RawAttribute-">notifyAttribute</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyCharacters-java.lang.String-">notifyCharacters</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyEndDocument--">notifyEndDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyEndElement--">notifyEndElement</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyReference-fr.inria.atlanmod.neoemf.io.structure.RawReference-">notifyReference</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartDocument--">notifyStartDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.structure.RawClassifier-">notifyStartElement</a></code></li>
+<code><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#next--">next</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyAttribute-fr.inria.atlanmod.neoemf.io.structure.Attribute-">notifyAttribute</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyCharacters-java.lang.String-">notifyCharacters</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyEndDocument--">notifyEndDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyEndElement--">notifyEndElement</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyReference-fr.inria.atlanmod.neoemf.io.structure.Reference-">notifyReference</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartDocument--">notifyStartDocument</a>, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#notifyStartElement-fr.inria.atlanmod.neoemf.io.structure.Element-">notifyStartElement</a></code></li>
 </ul>
 </li>
 </ul>
@@ -271,7 +271,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/Reader.
 <ul class="blockList">
 <li class="blockList">
 <h4>readStartDocument</h4>
-<pre>protected&nbsp;void&nbsp;readStartDocument()</pre>
+<pre>protected final&nbsp;void&nbsp;readStartDocument()</pre>
 <div class="block">Processes the start of the document.</div>
 </li>
 </ul>
@@ -281,15 +281,15 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/Reader.
 <ul class="blockList">
 <li class="blockList">
 <h4>readNamespace</h4>
-<pre>protected&nbsp;void&nbsp;readNamespace(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;prefix,
-                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</pre>
-<div class="block">Processes a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/RawNamespace.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>RawNamespace</code></a> declaration.</div>
+<pre>protected final&nbsp;void&nbsp;readNamespace(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;prefix,
+                                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</pre>
+<div class="block">Processes a <a href="../../../../../../fr/inria/atlanmod/neoemf/io/structure/Namespace.html" title="class in fr.inria.atlanmod.neoemf.io.structure"><code>Namespace</code></a> declaration.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>prefix</code> - the prefix</dd>
 <dd><code>uri</code> - the URI associated with the <code>prefix</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><code>RawNamespace.Registry#register(String, String)</code></dd>
+<dd><code>Namespace.Registry#register(String, String)</code></dd>
 </dl>
 </li>
 </ul>
@@ -299,17 +299,17 @@ implements <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/Reader.
 <ul class="blockList">
 <li class="blockList">
 <h4>readEndDocument</h4>
-<pre>protected&nbsp;void&nbsp;readEndDocument()</pre>
+<pre>protected final&nbsp;void&nbsp;readEndDocument()</pre>
 <div class="block">Processes the end of the current document.</div>
 </li>
 </ul>
-<a name="processCharacters-java.lang.String-">
+<a name="readCharacters-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>processCharacters</h4>
-<pre>protected&nbsp;void&nbsp;processCharacters(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;characters)</pre>
+<h4>readCharacters</h4>
+<pre>protected&nbsp;void&nbsp;readCharacters(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;characters)</pre>
 <div class="block">Processes characters.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

@@ -133,7 +133,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/Importer.html#fromXmi-java.io.InputStream-fr.inria.atlanmod.neoemf.io.persistence.PersistenceHandler-">fromXmi</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;stream,
-       <a href="../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a>&nbsp;inputHandler)</code>
+       <a href="../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a>&nbsp;persistenceHandler)</code>
 <div class="block">Imports a XMI file into persistence handlers.</div>
 </td>
 </tr>
@@ -166,13 +166,13 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>fromXmi</h4>
 <pre>public static&nbsp;void&nbsp;fromXmi(<a href="http://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;stream,
-                           <a href="../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a>&nbsp;inputHandler)
+                           <a href="../../../../../fr/inria/atlanmod/neoemf/io/persistence/PersistenceHandler.html" title="interface in fr.inria.atlanmod.neoemf.io.persistence">PersistenceHandler</a>&nbsp;persistenceHandler)
                     throws <a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <div class="block">Imports a XMI file into persistence handlers.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>stream</code> - the stream of XMI data</dd>
-<dd><code>inputHandler</code> - persistence handlers where to store the read data</dd>
+<dd><code>persistenceHandler</code> - persistence handlers where to store the read data</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if there is no handler to notify</dd>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if an error occurred during the import</dd>
