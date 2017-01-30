@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/XmiConstants.html" title="interface in fr.inria.atlanmod.neoemf.io.reader"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/XmiSAXReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/io/reader/Reader.html" target="_top">Frames</a></li>
@@ -101,7 +101,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&gt;</dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
@@ -110,7 +110,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">Reader</span>
-extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&gt;</pre>
+extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</pre>
 <div class="block">An <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Notifier</code></a> that reads data from a file.</div>
 <dl>
 <dt><span class="simpleTagLabel">Note:</span></dt>
@@ -137,7 +137,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" ti
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/Reader.html#read-java.io.InputStream-">read</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;stream)</code>
-<div class="block">Reads a stream and notifies registered <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a>.</div>
+<div class="block">Reads a stream and notifies registered <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -170,7 +170,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" ti
 <h4>read</h4>
 <pre>void&nbsp;read(<a href="http://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;stream)
    throws <a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<div class="block">Reads a stream and notifies registered <a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor"><code>Processor</code></a>.</div>
+<div class="block">Reads a stream and notifies registered <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>stream</code> - the stream to read</dd>
@@ -209,7 +209,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" ti
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/XmiConstants.html" title="interface in fr.inria.atlanmod.neoemf.io.reader"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/XmiSAXReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/neoemf/io/reader/Reader.html" target="_top">Frames</a></li>

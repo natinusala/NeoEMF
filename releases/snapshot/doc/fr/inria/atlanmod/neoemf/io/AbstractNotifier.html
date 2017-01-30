@@ -143,8 +143,8 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" ti
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html#AbstractNotifier-H-">AbstractNotifier</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="type parameter in AbstractNotifier">H</a>&nbsp;handler)</code>
-<div class="block">Constructs a new <code>AbstractNotifier</code> with the given <code>handler</code>.</div>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html#AbstractNotifier-H...-">AbstractNotifier</a></span>(<a href="../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="type parameter in AbstractNotifier">H</a>...&nbsp;handlers)</code>
+<div class="block">Constructs a new <code>AbstractNotifier</code> with the given <code>handlers</code>.</div>
 </td>
 </tr>
 </table>
@@ -163,7 +163,7 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" ti
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="type parameter in AbstractNotifier">H</a></code></td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="type parameter in AbstractNotifier">H</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html#next--">next</a></span>()</code>
 <div class="block">Returns the <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that will be notified by this <code>Notifier</code>.</div>
 </td>
@@ -197,19 +197,20 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" ti
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AbstractNotifier-fr.inria.atlanmod.neoemf.io.Handler-">
+<a name="AbstractNotifier-fr.inria.atlanmod.neoemf.io.Handler:A-">
 <!--   -->
-</a><a name="AbstractNotifier-H-">
+</a><a name="AbstractNotifier-H...-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AbstractNotifier</h4>
-<pre>public&nbsp;AbstractNotifier(<a href="../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="type parameter in AbstractNotifier">H</a>&nbsp;handler)</pre>
-<div class="block">Constructs a new <code>AbstractNotifier</code> with the given <code>handler</code>.</div>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/SafeVarargs.html?is-external=true" title="class or interface in java.lang">@SafeVarargs</a>
+public&nbsp;AbstractNotifier(<a href="../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="type parameter in AbstractNotifier">H</a>...&nbsp;handlers)</pre>
+<div class="block">Constructs a new <code>AbstractNotifier</code> with the given <code>handlers</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>handler</code> - the handler to notify</dd>
+<dd><code>handlers</code> - the handlers to notify</dd>
 </dl>
 </li>
 </ul>
@@ -227,7 +228,7 @@ implements <a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" ti
 <ul class="blockListLast">
 <li class="blockList">
 <h4>next</h4>
-<pre>public&nbsp;<a href="../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="type parameter in AbstractNotifier">H</a>&nbsp;next()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="type parameter in AbstractNotifier">H</a>&gt;&nbsp;next()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html#next--">Notifier</a></code></span></div>
 <div class="block">Returns the <a href="../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a> that will be notified by this <code>Notifier</code>.</div>
 <dl>

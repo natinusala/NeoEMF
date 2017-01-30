@@ -30,6 +30,7 @@ fr.inria.atlanmod.neoemf.io.persistence
 fr.inria.atlanmod.neoemf.io.processor
 fr.inria.atlanmod.neoemf.io.reader
 fr.inria.atlanmod.neoemf.io.structure
+fr.inria.atlanmod.neoemf.io.util
 fr.inria.atlanmod.neoemf.io.writer
 fr.inria.atlanmod.neoemf.option
 fr.inria.atlanmod.neoemf.resource

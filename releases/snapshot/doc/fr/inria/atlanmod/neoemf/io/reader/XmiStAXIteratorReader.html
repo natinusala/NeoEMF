@@ -100,7 +100,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="class in fr.inria.atlanmod.neoemf.io">fr.inria.atlanmod.neoemf.io.AbstractNotifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&gt;</li>
+<li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="class in fr.inria.atlanmod.neoemf.io">fr.inria.atlanmod.neoemf.io.AbstractNotifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</li>
 <li>
 <ul class="inheritance">
 <li><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html" title="class in fr.inria.atlanmod.neoemf.io.reader">fr.inria.atlanmod.neoemf.io.reader.AbstractReader</a></li>
@@ -124,7 +124,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&gt;, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/Reader.html" title="interface in fr.inria.atlanmod.neoemf.io.reader">Reader</a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;, <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/Reader.html" title="interface in fr.inria.atlanmod.neoemf.io.reader">Reader</a></dd>
 </dl>
 <hr>
 <br>
@@ -149,8 +149,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXm
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/XmiStAXIteratorReader.html#XmiStAXIteratorReader-fr.inria.atlanmod.neoemf.io.processor.Processor-">XmiStAXIteratorReader</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&nbsp;processor)</code>
-<div class="block">Constructs a new <code>XmiStAXIteratorReader</code> with the given <code>processor</code>.</div>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/XmiStAXIteratorReader.html#XmiStAXIteratorReader-fr.inria.atlanmod.neoemf.io.Handler-">XmiStAXIteratorReader</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&nbsp;handler)</code>
+<div class="block">Constructs a new <code>XmiStAXIteratorReader</code> with the given <code>handler</code>.</div>
 </td>
 </tr>
 </table>
@@ -224,17 +224,17 @@ extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXm
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="XmiStAXIteratorReader-fr.inria.atlanmod.neoemf.io.processor.Processor-">
+<a name="XmiStAXIteratorReader-fr.inria.atlanmod.neoemf.io.Handler-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>XmiStAXIteratorReader</h4>
-<pre>public&nbsp;XmiStAXIteratorReader(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/Processor.html" title="interface in fr.inria.atlanmod.neoemf.io.processor">Processor</a>&nbsp;processor)</pre>
-<div class="block">Constructs a new <code>XmiStAXIteratorReader</code> with the given <code>processor</code>.</div>
+<pre>public&nbsp;XmiStAXIteratorReader(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&nbsp;handler)</pre>
+<div class="block">Constructs a new <code>XmiStAXIteratorReader</code> with the given <code>handler</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>processor</code> - the processor to notify</dd>
+<dd><code>handler</code> - the handler to notify</dd>
 </dl>
 </li>
 </ul>

@@ -108,6 +108,12 @@
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.io.reader">fr.inria.atlanmod.neoemf.io.reader</a></td>
+<td class="colLast">
+<div class="block">Provides classes related to data reading.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#fr.inria.atlanmod.neoemf.io.writer">fr.inria.atlanmod.neoemf.io.writer</a></td>
 <td class="colLast">
 <div class="block">Provides classes related to data writing.</div>
@@ -171,6 +177,19 @@
 <td class="colFirst"><code>interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/Notifier.html" title="interface in fr.inria.atlanmod.neoemf.io">Notifier</a>&lt;T extends <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&gt;</span></code>
 <div class="block">An object that notifies registered <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io"><code>Handler</code></a>s of events during an I/O process, such as import or export.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../../fr/inria/atlanmod/neoemf/io/package-summary.html">fr.inria.atlanmod.neoemf.io</a> with parameters of type <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html#AbstractNotifier-H...-">AbstractNotifier</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/AbstractNotifier.html" title="type parameter in AbstractNotifier">H</a>...&nbsp;handlers)</code>
+<div class="block">Constructs a new <code>AbstractNotifier</code> with the given <code>handlers</code>.</div>
 </td>
 </tr>
 </tbody>
@@ -288,7 +307,7 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#AbstractProcessor-fr.inria.atlanmod.neoemf.io.Handler-">AbstractProcessor</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&nbsp;handler)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/AbstractProcessor.html#AbstractProcessor-fr.inria.atlanmod.neoemf.io.Handler...-">AbstractProcessor</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>...&nbsp;handler)</code>
 <div class="block">Constructs a new <code>AbstractProcessor</code> with the given <code>handler</code>.</div>
 </td>
 </tr>
@@ -315,6 +334,44 @@
 <tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/processor/XPathProcessor.html#XPathProcessor-fr.inria.atlanmod.neoemf.io.Handler-">XPathProcessor</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&nbsp;handler)</code>
 <div class="block">Constructs a new <code>XPathProcessor</code> with the given <code>handler</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="fr.inria.atlanmod.neoemf.io.reader">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a> in <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/package-summary.html">fr.inria.atlanmod.neoemf.io.reader</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/package-summary.html">fr.inria.atlanmod.neoemf.io.reader</a> with parameters of type <a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractReader.html#AbstractReader-fr.inria.atlanmod.neoemf.io.Handler-">AbstractReader</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&nbsp;handler)</code>
+<div class="block">Constructs a new <code>AbstractReader</code> with the given <code>handler</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/AbstractXmiReader.html#AbstractXmiReader-fr.inria.atlanmod.neoemf.io.Handler-">AbstractXmiReader</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&nbsp;handler)</code>
+<div class="block">Constructs a new <code>AbstractXmiReader</code> with the given <code>handler</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/XmiSAXReader.html#XmiSAXReader-fr.inria.atlanmod.neoemf.io.Handler-">XmiSAXReader</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&nbsp;handler)</code>
+<div class="block">Constructs a new <code>XmiSAXReader</code> with the given <code>handler</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/XmiStAXCursorReader.html#XmiStAXCursorReader-fr.inria.atlanmod.neoemf.io.Handler-">XmiStAXCursorReader</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&nbsp;handler)</code>
+<div class="block">Constructs a new <code>XmiStAXCursorReader</code> with the given <code>handler</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/neoemf/io/reader/XmiStAXIteratorReader.html#XmiStAXIteratorReader-fr.inria.atlanmod.neoemf.io.Handler-">XmiStAXIteratorReader</a></span>(<a href="../../../../../../fr/inria/atlanmod/neoemf/io/Handler.html" title="interface in fr.inria.atlanmod.neoemf.io">Handler</a>&nbsp;handler)</code>
+<div class="block">Constructs a new <code>XmiStAXIteratorReader</code> with the given <code>handler</code>.</div>
 </td>
 </tr>
 </tbody>
