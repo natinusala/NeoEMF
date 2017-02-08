@@ -20,7 +20,6 @@ fr.inria.atlanmod.neoemf.data.map.core.store
 fr.inria.atlanmod.neoemf.data.mapdb
 fr.inria.atlanmod.neoemf.data.mapdb.option
 fr.inria.atlanmod.neoemf.data.mapdb.serializer
-fr.inria.atlanmod.neoemf.data.mapdb.store
 fr.inria.atlanmod.neoemf.data.mapdb.util
 fr.inria.atlanmod.neoemf.data.store
 fr.inria.atlanmod.neoemf.data.structure
