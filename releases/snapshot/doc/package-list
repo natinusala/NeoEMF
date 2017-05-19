@@ -15,10 +15,11 @@ fr.inria.atlanmod.neoemf.data.hbase.option
 fr.inria.atlanmod.neoemf.data.hbase.store
 fr.inria.atlanmod.neoemf.data.hbase.structure
 fr.inria.atlanmod.neoemf.data.hbase.util
+fr.inria.atlanmod.neoemf.data.map.core
+fr.inria.atlanmod.neoemf.data.map.core.store
 fr.inria.atlanmod.neoemf.data.mapdb
 fr.inria.atlanmod.neoemf.data.mapdb.option
 fr.inria.atlanmod.neoemf.data.mapdb.serializer
-fr.inria.atlanmod.neoemf.data.mapdb.store
 fr.inria.atlanmod.neoemf.data.mapdb.util
 fr.inria.atlanmod.neoemf.data.store
 fr.inria.atlanmod.neoemf.data.structure
@@ -28,7 +29,10 @@ fr.inria.atlanmod.neoemf.io.persistence
 fr.inria.atlanmod.neoemf.io.processor
 fr.inria.atlanmod.neoemf.io.reader
 fr.inria.atlanmod.neoemf.io.structure
+fr.inria.atlanmod.neoemf.io.util
+fr.inria.atlanmod.neoemf.io.writer
 fr.inria.atlanmod.neoemf.option
 fr.inria.atlanmod.neoemf.resource
 fr.inria.atlanmod.neoemf.util
+fr.inria.atlanmod.neoemf.util.emf.compare
 fr.inria.atlanmod.neoemf.util.logging

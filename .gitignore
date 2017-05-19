@@ -1,2 +1,15 @@
+### IntelliJ
 .idea/
 *.iml
+
+### NeoEMF: Project
+neoemf-io/
+neoemf-data/
+neoemf-utils/
+neoemf-core/
+benchmarks/
+neoemf-tests/
+
+### NeoEMF: Addons
+plugins/
+examples/
