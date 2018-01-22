@@ -5,10 +5,12 @@
          comparisonMethod="maven">
 
     <ignoreVersions> <!-- Ignore ALPHA and BETA versions -->
-        <ignoreVersion type="regex">.*-[aA]lpha(\d+)?</ignoreVersion>
-        <ignoreVersion type="regex">.*-[bB]eta(\d+)?</ignoreVersion>
+        <ignoreVersion type="regex">.*-[aA]lpha-?(\d+)?</ignoreVersion>
+        <ignoreVersion type="regex">.*-[bB]eta-?(\d+)?</ignoreVersion>
         <ignoreVersion type="regex">.*-rc(\d+)?</ignoreVersion>
+        <ignoreVersion type="regex">.*-M(\d+)?</ignoreVersion>
         <ignoreVersion type="regex">.*-android</ignoreVersion>
+        <ignoreVersion type="regex">.*-v([\d\.\-]+)?</ignoreVersion><!-- Eclipse bundles -->
     </ignoreVersions>
 
 </ruleset>

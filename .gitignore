@@ -11,5 +11,8 @@ benchmarks/
 neoemf-tests/
 
 ### NeoEMF: Addons
+archetype/
 plugins/
 examples/
+
+.keystore
