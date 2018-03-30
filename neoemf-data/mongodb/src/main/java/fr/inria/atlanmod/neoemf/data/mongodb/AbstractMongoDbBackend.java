@@ -11,11 +11,8 @@ package fr.inria.atlanmod.neoemf.data.mongodb;
 import com.mongodb.Block;
 import com.mongodb.ClientSessionOptions;
 import com.mongodb.async.SingleResultCallback;
-import com.mongodb.async.client.MongoClient;
+import com.mongodb.async.client.*;
 import com.mongodb.MongoClientException;
-import com.mongodb.async.client.FindIterable;
-import com.mongodb.async.client.MongoCollection;
-import com.mongodb.async.client.MongoDatabase;
 import com.mongodb.client.result.UpdateResult;
 import com.mongodb.session.ClientSession;
 import com.sun.org.apache.xpath.internal.SourceTree;
@@ -195,14 +192,19 @@ abstract class AbstractMongoDbBackend extends AbstractBackend implements MongoDb
      * @return true if the database contains the collection, false otherwise
      */
     private boolean hasCollection(String collection) {
-        /*for (String c : this.mongoDatabase.listCollectionNames()) {
-            if (c.equals(collection))
-                return true;
-        }
+        MongoIterable<String> iterable = this.mongoDatabase.listCollectionNames();
+        List<Boolean> list = new ArrayList<Boolean>();
+        iterable.forEach((Block<String>) name -> {
+            if (name.equals(collection))
+                list.add(true);
+        }, new SingleResultCallback<Void>() {
+            @Override
+            public void onResult(Void aVoid, Throwable throwable) {
 
-        return false;
-        */
-        return true;
+            }
+        });
+
+        return list.size() > 0;
     }
 
     @Override
