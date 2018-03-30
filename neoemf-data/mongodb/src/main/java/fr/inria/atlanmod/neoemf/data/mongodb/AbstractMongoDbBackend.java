@@ -18,6 +18,7 @@ import com.mongodb.async.client.MongoCollection;
 import com.mongodb.async.client.MongoDatabase;
 import com.mongodb.client.result.UpdateResult;
 import com.mongodb.session.ClientSession;
+import com.sun.org.apache.xpath.internal.SourceTree;
 import fr.inria.atlanmod.commons.log.Log;
 import fr.inria.atlanmod.neoemf.core.Id;
 import fr.inria.atlanmod.neoemf.core.IdConverters;
@@ -27,6 +28,8 @@ import fr.inria.atlanmod.neoemf.data.bean.SingleFeatureBean;
 import fr.inria.atlanmod.neoemf.data.mongodb.model.MetaClass;
 import fr.inria.atlanmod.neoemf.data.mongodb.model.SingleFeature;
 import fr.inria.atlanmod.neoemf.data.mongodb.model.StoredInstance;
+import fr.inria.atlanmod.neoemf.data.store.Store;
+import jdk.nashorn.internal.runtime.StoredScript;
 import org.bson.conversions.Bson;
 
 import javax.annotation.Nonnull;
@@ -192,12 +195,14 @@ abstract class AbstractMongoDbBackend extends AbstractBackend implements MongoDb
      * @return true if the database contains the collection, false otherwise
      */
     private boolean hasCollection(String collection) {
-        for (String c : this.mongoDatabase.listCollectionNames()) {
+        /*for (String c : this.mongoDatabase.listCollectionNames()) {
             if (c.equals(collection))
                 return true;
         }
 
         return false;
+        */
+        return true;
     }
 
     @Override
@@ -205,9 +210,19 @@ abstract class AbstractMongoDbBackend extends AbstractBackend implements MongoDb
         if (SHOULD_DELETE_TEST_DATABASES && isTestDatabase()) {
             Log.info("Deleting test database " + this.mongoDatabase.getName());
             if (this.clientSession == null)
-                this.mongoDatabase.drop();
+                this.mongoDatabase.drop(new SingleResultCallback<Void>() {
+                    @Override
+                    public void onResult(Void aVoid, Throwable throwable) {
+
+                    }
+                });
             else
-                this.mongoDatabase.drop(this.clientSession);
+                this.mongoDatabase.drop(this.clientSession, new SingleResultCallback<Void>() {
+                    @Override
+                    public void onResult(Void aVoid, Throwable throwable) {
+
+                    }
+                });
         }
 
         if (clientSession != null)
@@ -222,7 +237,17 @@ abstract class AbstractMongoDbBackend extends AbstractBackend implements MongoDb
         checkNotNull(id, "id");
 
         String hexId = id.toHexString();
-        StoredInstance instance = (StoredInstance) find(eq("_id", hexId)).first();
+
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+        find(eq("_id", hexId)).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return Optional.empty();
+        }
 
         if (instance == null || instance.getContainer() == null) {
             return Optional.empty();
@@ -239,7 +264,16 @@ abstract class AbstractMongoDbBackend extends AbstractBackend implements MongoDb
         String hexId = id.toHexString();
         SingleFeature newContainer = SingleFeature.fromSingleFeatureBean(container);
 
-        StoredInstance instance = (StoredInstance) find(eq("_id", hexId)).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(eq("_id", hexId)).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
         if (instance == null) {
             instance = new StoredInstance();
             instance.setId(hexId);
@@ -261,7 +295,16 @@ abstract class AbstractMongoDbBackend extends AbstractBackend implements MongoDb
         checkNotNull(id, "id");
 
         String hexId = id.toHexString();
-        StoredInstance instance = (StoredInstance) find(eq("_id", hexId)).first();
+
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+        find(eq("_id", hexId)).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
 
         if (instance != null && instance.getContainer() != null) {
             updateOne(eq("_id", hexId), unset("container"));
@@ -274,7 +317,17 @@ abstract class AbstractMongoDbBackend extends AbstractBackend implements MongoDb
         checkNotNull(id, "id");
 
         String hexId = id.toHexString();
-        StoredInstance instance = (StoredInstance) find(eq("_id", hexId)).first();
+
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+        find(eq("_id", hexId)).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return Optional.empty();
+        }
 
         if (instance == null || instance.getMetaClass() == null) {
             return Optional.empty();
@@ -292,7 +345,17 @@ abstract class AbstractMongoDbBackend extends AbstractBackend implements MongoDb
         String hexId = id.toHexString();
         MetaClass newMetaClass = MetaClass.fromClassBean(metaClass);
 
-        StoredInstance instance = (StoredInstance) find(eq("_id", hexId)).first();
+
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(eq("_id", hexId)).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
         if (instance == null) {
             instance = new StoredInstance();
             instance.setId(hexId);
@@ -325,6 +388,11 @@ abstract class AbstractMongoDbBackend extends AbstractBackend implements MongoDb
             ).forEach((Block<StoredInstance>) storedInstance -> {
                 Id id = IdConverters.withHexString().revert(storedInstance.getId());
                 list.add(id);
+            }, new SingleResultCallback<Void>() {
+                @Override
+                public void onResult(Void aVoid, Throwable throwable) {
+
+                }
             });
         }
 

@@ -74,7 +74,7 @@ public class MongoDbBackendFactory extends AbstractBackendFactory<MongoDbConfig>
 
         CodecRegistry pojoCodecRegistry = fromRegistries(MongoClients.getDefaultCodecRegistry(), fromProviders(PojoCodecProvider.builder().automatic(true).build()));
 
-        MongoClient client = MongoClients.create(new ConnectionString(config.getHost()+config.getPort()));
+        MongoClient client = MongoClients.create(new ConnectionString("mongodb://"+config.getHost()+":"+config.getPort()));
         MongoDatabase database = client.getDatabase(databaseName)
                 .withCodecRegistry(pojoCodecRegistry);
 
