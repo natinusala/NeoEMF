@@ -9,7 +9,9 @@
 package fr.inria.atlanmod.neoemf.data.mongodb;
 
 import com.mongodb.*;
-import com.mongodb.client.MongoDatabase;
+import com.mongodb.async.client.MongoClient;
+import com.mongodb.async.client.MongoClients;
+import com.mongodb.async.client.MongoDatabase;
 import fr.inria.atlanmod.commons.annotation.Static;
 import fr.inria.atlanmod.commons.log.Log;
 import fr.inria.atlanmod.neoemf.data.AbstractBackendFactory;
@@ -70,9 +72,9 @@ public class MongoDbBackendFactory extends AbstractBackendFactory<MongoDbConfig>
         //This will not throw any exception even if the connection failed
         //due to MongoDb driver's asynchronous nature
 
-        CodecRegistry pojoCodecRegistry = fromRegistries(MongoClient.getDefaultCodecRegistry(), fromProviders(PojoCodecProvider.builder().automatic(true).build()));
+        CodecRegistry pojoCodecRegistry = fromRegistries(MongoClients.getDefaultCodecRegistry(), fromProviders(PojoCodecProvider.builder().automatic(true).build()));
 
-        MongoClient client = new MongoClient(config.getHost(), config.getPort());
+        MongoClient client = MongoClients.create(new ConnectionString(config.getHost()+config.getPort()));
         MongoDatabase database = client.getDatabase(databaseName)
                 .withCodecRegistry(pojoCodecRegistry);
 

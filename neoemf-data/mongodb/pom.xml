@@ -23,7 +23,7 @@
     <dependencies>
         <dependency>
             <groupId>org.mongodb</groupId>
-            <artifactId>mongodb-driver</artifactId>
+            <artifactId>mongodb-driver-async</artifactId>
             <version>3.6.3</version>
         </dependency>
     </dependencies>

@@ -8,8 +8,8 @@
 
 package fr.inria.atlanmod.neoemf.data.mongodb;
 
-import com.mongodb.MongoClient;
-import com.mongodb.client.MongoDatabase;
+import com.mongodb.async.client.MongoClient;
+import com.mongodb.async.client.MongoDatabase;
 import fr.inria.atlanmod.commons.collect.MoreIterables;
 import fr.inria.atlanmod.commons.io.serializer.BinarySerializerFactory;
 import fr.inria.atlanmod.commons.io.serializer.StringSerializer;
@@ -18,7 +18,6 @@ import fr.inria.atlanmod.neoemf.core.Id;
 import fr.inria.atlanmod.neoemf.core.IdConverters;
 import fr.inria.atlanmod.neoemf.data.bean.ManyFeatureBean;
 import fr.inria.atlanmod.neoemf.data.bean.SingleFeatureBean;
-import fr.inria.atlanmod.neoemf.data.mongodb.config.MongoDbConfig;
 import fr.inria.atlanmod.neoemf.data.mongodb.model.StoredInstance;
 
 import javax.annotation.Nonnegative;
@@ -55,19 +54,33 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
 
     //region Single-valued attributes
 
+    StoredInstance result;
+    boolean callback;
+
     @Nonnull
     @Override
     public <V> Optional<V> valueOf(SingleFeatureBean key) {
         checkNotNull(key, "key");
 
-        StoredInstance instance = find(eq("_id", key.owner().toHexString()))
-                .projection(include("singlevaluedValues")).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
 
-        String kid = String.valueOf(key.id());
+        find(eq("_id", key.owner().toHexString()))
+                .projection(include("singlevaluedValues")).first(storedInstanceCallback);
 
-        return instance != null && instance.getSinglevaluedValues().containsKey(kid)
-                ? Optional.of((V) deserializeValue(instance.getSinglevaluedValues().get(kid)))
-                : Optional.empty();
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+            String kid = String.valueOf(key.id());
+
+            return instance != null && instance.getSinglevaluedValues().containsKey(kid)
+                    ? Optional.of((V) deserializeValue(instance.getSinglevaluedValues().get(kid)))
+                    : Optional.empty();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return Optional.empty();
+        }
+
+
     }
 
     private String serializeValue(Object o) {
@@ -91,8 +104,17 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
 
         String hexId = key.owner().toHexString();
 
-        StoredInstance instance = find(eq("_id", hexId)).projection(include("singlevaluedValues")).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
 
+        find(eq("_id", hexId)).projection(include("singlevaluedValues")).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return Optional.empty();
+        }
         if (instance == null) {
             instance = new StoredInstance();
             instance.setId(hexId);
@@ -137,8 +159,18 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
         String hexId = key.owner().toHexString();
         String stringKeyId = String.valueOf(key.id());
 
-        StoredInstance instance = find(eq("_id", hexId))
-                .projection(include("singlevaluedReferences." + key.id())).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(eq("_id", hexId))
+                .projection(include("singlevaluedReferences." + key.id())).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return Optional.empty();
+        }
 
         if (instance == null || instance.getSinglevaluedReferences() == null) {
             return Optional.empty();
@@ -161,8 +193,18 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
         String hexId = key.owner().toHexString();
         String stringKeyId = String.valueOf(key.id());
 
-        StoredInstance instance = find(eq("_id", hexId))
-                .projection(include("singlevaluedReferences." + key.id())).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(eq("_id", hexId))
+                .projection(include("singlevaluedReferences." + key.id())).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return Optional.empty();
+        }
 
         if (instance == null) {
             instance = new StoredInstance();
@@ -211,8 +253,17 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
         String hexId = key.owner().toHexString();
         String stringKeyId = String.valueOf(key.id());
 
-        StoredInstance instance = find(eq("_id", hexId))
-                .projection(include("multivaluedValues." + stringKeyId)).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(eq("_id", hexId))
+                .projection(include("multivaluedValues." + stringKeyId)).first(storedInstanceCallback);
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return Optional.empty();
+        }
 
         try {
             if (instance == null || instance.getMultivaluedValues() == null) {
@@ -234,10 +285,20 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
     public <V> Stream<V> allValuesOf(SingleFeatureBean key) {
         checkNotNull(key, "key");
 
-        StoredInstance instance = find(
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(
                 eq("_id", key.owner().toHexString()))
                 .projection(include("multivaluedValues." + key.id()))
-                .first();
+                .first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return Stream.empty();
+        }
 
         if (instance == null || instance.getMultivaluedReferences().size() == 0)
             return Stream.empty();
@@ -259,8 +320,18 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
         String hexId = key.owner().toHexString();
         String stringKeyId = String.valueOf(key.id());
 
-        StoredInstance instance = find(eq("_id", hexId))
-                .projection(include(("multivaluedValues"))).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(eq("_id", hexId))
+                .projection(include(("multivaluedValues"))).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return Optional.empty();
+        }
 
         if (instance == null) {
             return Optional.empty();
@@ -291,8 +362,17 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
         String hexId = key.owner().toHexString();
         String stringKeyId = String.valueOf(key.id());
 
-        StoredInstance instance = find(eq("_id", hexId))
-                .projection(include(("multivaluedValues." + stringKeyId))).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(eq("_id", hexId))
+                .projection(include(("multivaluedValues." + stringKeyId))).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
 
         //TODO vérifier si franchement, ya pas mieux (update la liste directement dans mongo)
         List<String> multivaluedValues = instance.getMultivaluedValues().get(stringKeyId);
@@ -331,8 +411,17 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
         String hexId = key.owner().toHexString();
         String stringKeyId = String.valueOf(key.id());
 
-        StoredInstance instance = find(eq("_id", hexId))
-                .projection(include(("multivaluedValues." + stringKeyId))).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(eq("_id", hexId))
+                .projection(include(("multivaluedValues." + stringKeyId))).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
 
         List<String> multivaluedValues = instance.getMultivaluedValues().get(stringKeyId);
         if (multivaluedValues == null) {
@@ -367,11 +456,20 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
         String hexId = key.owner().toHexString();
         String stringKeyId = String.valueOf(key.id());
 
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
 
-        StoredInstance instance = find(eq("_id", hexId))
-                .projection(include("multivaluedValues")).first();
+        find(eq("_id", hexId))
+                .projection(include("multivaluedValues")).first(storedInstanceCallback);
 
         Optional<V> res = Optional.empty();
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return res;
+        }
 
         res = (instance != null && instance.getMultivaluedValues().containsKey(stringKeyId) && key.position() < instance.getMultivaluedValues().get(stringKeyId).size())
                 ? Optional.of((V) deserializeValue(instance.getMultivaluedValues().get(stringKeyId).get(key.position())))
@@ -410,8 +508,18 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
 
         String hexId = key.owner().toHexString();
 
-        StoredInstance instance = find(eq("_id", hexId))
-                .projection(include("singlevaluedValues")).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(eq("_id", hexId))
+                .projection(include("singlevaluedValues")).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return Optional.empty();
+        }
 
         if (instance == null || instance.getSinglevaluedValues() == null || instance.getSinglevaluedValues().isEmpty()) {
             return Optional.empty();
@@ -428,8 +536,17 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
         String hexId = feature.owner().toHexString();
         String stringKeyId = String.valueOf(feature.id());
 
-        StoredInstance instance = find(eq("_id", hexId))
-                .projection(include("multivaluedValues")).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(eq("_id", hexId))
+                .projection(include("multivaluedValues")).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
 
         List<String> multivaluedValues = instance.getMultivaluedValues().get(stringKeyId);
         if (multivaluedValues == null) {
@@ -451,8 +568,17 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
         String hexId = feature.owner().toHexString();
         String stringKeyId = String.valueOf(feature.id());
 
-        StoredInstance instance = find(eq("_id", hexId))
-                .projection(include("multivaluedValues")).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(eq("_id", hexId))
+                .projection(include("multivaluedValues")).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
 
         List<String> multivaluedValues = instance.getMultivaluedValues().get(stringKeyId);
         if (multivaluedValues == null) {
@@ -487,9 +613,18 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
         String hexId = key.owner().toHexString();
         String stringKeyId = String.valueOf(key.id());
 
-        StoredInstance instance = find(eq("_id", hexId))
-                .projection(include("multivaluedReferences." + key.id())).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
 
+        find(eq("_id", hexId))
+                .projection(include("multivaluedReferences." + key.id())).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return Optional.empty();
+        }
         if (instance == null || instance.getMultivaluedReferences() == null) {
             return Optional.empty();
         } else if (!instance.getMultivaluedReferences().containsKey(stringKeyId)) {
@@ -507,10 +642,20 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
     public Stream<Id> allReferencesOf(SingleFeatureBean key) {
         checkNotNull(key, "key");
 
-        StoredInstance instance = find(
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(
                 eq("_id", key.owner().toHexString()))
                 .projection(include("multivaluedReferences." + key.id()))
-                .first();
+                .first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return Stream.empty();
+        }
 
         if (instance == null || instance.getMultivaluedReferences().size() == 0)
             return Stream.empty();
@@ -530,8 +675,18 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
         String hexId = key.owner().toHexString();
         String stringKeyId = String.valueOf(key.id());
 
-        StoredInstance instance = find(eq("_id", hexId))
-                .projection(include("multivaluedReferences")).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(eq("_id", hexId))
+                .projection(include("multivaluedReferences")).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return Optional.empty();
+        }
 
         if (instance == null) {
             return Optional.empty();
@@ -557,8 +712,18 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
         String hexId = key.owner().toHexString();
         String stringKeyId = String.valueOf(key.id());
 
-        StoredInstance instance = find(eq("_id", hexId))
-                .projection(include("multivaluedReferences")).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(eq("_id", hexId))
+                .projection(include("multivaluedReferences")).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return;
+        }
 
         if(instance == null){
             return;
@@ -600,8 +765,18 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
         String hexId = key.owner().toHexString();
         String stringKeyId = String.valueOf(key.id());
 
-        StoredInstance instance = find(eq("_id", hexId))
-                .projection(include("multivaluedReferences")).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(eq("_id", hexId))
+                .projection(include("multivaluedReferences")).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return;
+        }
 
         if (instance == null) {
             return;
@@ -642,8 +817,18 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
         String hexId = key.owner().toHexString();
         String stringKeyId = String.valueOf(key.id());
 
-        StoredInstance instance = find(eq("_id", hexId))
-                .projection(include("multivaluedReferences")).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(eq("_id", hexId))
+                .projection(include("multivaluedReferences")).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return Optional.empty();
+        }
 
         if (instance == null || instance.getMultivaluedReferences().get(stringKeyId) == null) {
             return Optional.empty();
@@ -677,8 +862,18 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
 
         String hexId = key.owner().toHexString();
 
-        StoredInstance instance = find(eq("_id", hexId))
-                .projection(include("singlevaluedReferences")).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(eq("_id", hexId))
+                .projection(include("singlevaluedReferences")).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return Optional.empty();
+        }
 
         if (instance == null || instance.getSinglevaluedReferences() == null || instance.getSinglevaluedReferences().isEmpty()) {
             return Optional.empty();
@@ -695,8 +890,17 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
         String hexId = key.owner().toHexString();
         String stringKeyId = String.valueOf(key.id());
 
-        StoredInstance instance = find(eq("_id", hexId))
-                .projection(include("multivaluedReferences")).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(eq("_id", hexId))
+                .projection(include("multivaluedReferences")).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
 
         List<String> multivaluedReference = instance.getMultivaluedReferences().get(stringKeyId);
         if (multivaluedReference == null) {
@@ -718,8 +922,17 @@ class DefaultMongoDbBackend extends AbstractMongoDbBackend {
         String hexId = feature.owner().toHexString();
         String stringKeyId = String.valueOf(feature.id());
 
-        StoredInstance instance = find(eq("_id", hexId))
-                .projection(include("multivaluedReferences")).first();
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        find(eq("_id", hexId))
+                .projection(include("multivaluedReferences")).first(storedInstanceCallback);
+
+        StoredInstance instance = null;
+        try {
+            instance = storedInstanceCallback.waitForCompletion();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
 
         List<String> multivaluedReference = instance.getMultivaluedReferences().get(stringKeyId);
         if (multivaluedReference == null) {

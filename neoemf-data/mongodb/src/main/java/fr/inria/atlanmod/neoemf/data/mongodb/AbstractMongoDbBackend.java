@@ -10,11 +10,12 @@ package fr.inria.atlanmod.neoemf.data.mongodb;
 
 import com.mongodb.Block;
 import com.mongodb.ClientSessionOptions;
-import com.mongodb.MongoClient;
+import com.mongodb.async.SingleResultCallback;
+import com.mongodb.async.client.MongoClient;
 import com.mongodb.MongoClientException;
-import com.mongodb.client.FindIterable;
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
+import com.mongodb.async.client.FindIterable;
+import com.mongodb.async.client.MongoCollection;
+import com.mongodb.async.client.MongoDatabase;
 import com.mongodb.client.result.UpdateResult;
 import com.mongodb.session.ClientSession;
 import fr.inria.atlanmod.commons.log.Log;
@@ -23,7 +24,6 @@ import fr.inria.atlanmod.neoemf.core.IdConverters;
 import fr.inria.atlanmod.neoemf.data.AbstractBackend;
 import fr.inria.atlanmod.neoemf.data.bean.ClassBean;
 import fr.inria.atlanmod.neoemf.data.bean.SingleFeatureBean;
-import fr.inria.atlanmod.neoemf.data.mongodb.config.MongoDbConfig;
 import fr.inria.atlanmod.neoemf.data.mongodb.model.MetaClass;
 import fr.inria.atlanmod.neoemf.data.mongodb.model.SingleFeature;
 import fr.inria.atlanmod.neoemf.data.mongodb.model.StoredInstance;
@@ -105,11 +105,13 @@ abstract class AbstractMongoDbBackend extends AbstractBackend implements MongoDb
      * @param var2 the second update one parameter
      */
     protected void updateOne(Bson var1, Bson var2) {
-        waitForUpdateCompletion(
-                clientSession == null ?
-                        instancesCollection.updateOne(var1, var2) :
-                        instancesCollection.updateOne(clientSession, var1, var2)
-        );
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+
+        if (clientSession == null)
+            instancesCollection.updateOne(var1, var2, storedInstanceCallback);
+        else
+            instancesCollection.updateOne(clientSession, var1, var2, storedInstanceCallback);
+
     }
 
     protected FindIterable<StoredInstance> find(Bson var1) {
@@ -127,10 +129,12 @@ abstract class AbstractMongoDbBackend extends AbstractBackend implements MongoDb
      * @param var the instance to store
      */
     protected void insertOne(StoredInstance var) {
-        if (clientSession == null)
-            instancesCollection.insertOne(var);
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
+        if (clientSession == null) {
+            instancesCollection.insertOne(var, storedInstanceCallback);
+        }
         else
-            instancesCollection.insertOne(clientSession, var);
+            instancesCollection.insertOne(clientSession, var, storedInstanceCallback);
     }
 
     /**
@@ -148,9 +152,15 @@ abstract class AbstractMongoDbBackend extends AbstractBackend implements MongoDb
 
         //Causally Consistent Client Session
         try {
-            this.clientSession = mongoClient.startSession(ClientSessionOptions.builder().causallyConsistent(true).build());
+            SyncAsyncClientSession asyncClientSession = new SyncAsyncClientSession();
+
+            mongoClient.startSession(ClientSessionOptions.builder().causallyConsistent(true).build(), asyncClientSession);
+            this.clientSession = asyncClientSession.waitForCompletion();
+
         } catch (MongoClientException ex) {
             Log.info("MongoDB server does not support sessions, disabling sessions support");
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
         }
     }
 
@@ -162,8 +172,14 @@ abstract class AbstractMongoDbBackend extends AbstractBackend implements MongoDb
      * @return the corresponding {@link MongoCollection} instance
      */
     private MongoCollection getOrCreateCollection(String name, Class modelClass) {
+        SyncAsyncStoredInstance storedInstanceCallback = new SyncAsyncStoredInstance();
         if (!hasCollection(name))
-            this.mongoDatabase.createCollection(name);
+            this.mongoDatabase.createCollection(name, new SingleResultCallback<Void>() {
+                @Override
+                public void onResult(Void aVoid, Throwable throwable) {
+
+                }
+            });
 
         return this.mongoDatabase.getCollection(name, modelClass);
     }
